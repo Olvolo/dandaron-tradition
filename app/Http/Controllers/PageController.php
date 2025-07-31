@@ -7,16 +7,37 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function show($slug = 'home') // Если slug не передан, по умолчанию считаем, что это 'home'
+    public function show($slug = 'home')
     {
-        // TODO: Здесь будет сложная логика поиска по вложенным slug'ам,
-        // но пока для простоты ищем только по последнему сегменту.
-        $placement = Placement::where('slug', $slug)->firstOrFail();
+        // TODO: Реализовать логику поиска по вложенным slug'ам
+        $placement = Placement::where('slug', $slug)->with(['placementable', 'children'])->firstOrFail();
 
-        // TODO: Здесь будет логика для отображения нужного шаблона
-        // в зависимости от того, что привязано к placement'у (статья, книга и т.д.)
+        // Логика "файловой системы":
+        // Если у элемента есть дочерние элементы, он в первую очередь является "папкой" (разделом).
+        // Мы показываем шаблон раздела, который может отобразить и описание самого раздела (если оно есть), и ссылки на дочерние элементы.
+        if ($placement->children->isNotEmpty()) {
+            return view('pages.section', [
+                'placement' => $placement,
+                'subSections' => $placement->children
+            ]);
+        }
 
-        // Временный вывод для проверки
-        return "Вы на странице: " . $placement->title;
+        // Если дочерних элементов нет, но есть привязанный контент, значит это "файл".
+        // Показываем этот контент.
+        if ($placement->placementable) {
+            $content = $placement->placementable;
+
+            if ($content instanceof \App\Models\Article) {
+                return view('pages.article', ['article' => $content]);
+            }
+
+            if ($content instanceof \App\Models\Book) {
+                $content->load(['authors', 'chapters']);
+                return view('pages.book', ['book' => $content]);
+            }
+        }
+
+        // Если нет ни дочерних элементов, ни контента - это пустая страница-раздел.
+        return "Этот раздел пока пуст.";
     }
 }

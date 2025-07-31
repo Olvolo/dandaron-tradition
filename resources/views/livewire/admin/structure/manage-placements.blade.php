@@ -58,20 +58,28 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="border-l pl-6">
                             <h3 class="font-semibold text-gray-800">Привязать контент</h3>
-                            <p class="text-sm text-gray-500 mb-4">(Эта функция будет доступна после создания статей и книг)</p>
+                            <p class="text-sm text-gray-500 mb-4">Выберите либо статью, либо книгу.</p>
 
                             <div class="mb-4">
-                                <label class="block text-sm font-medium text-gray-500">Статья</label>
-                                <select disabled class="mt-1 block w-full bg-gray-100 border-gray-300 rounded-md shadow-sm">
-                                    <option>Нет доступных статей</option>
+                                <label for="link_article" class="block text-sm font-medium text-gray-700">Статья</label>
+                                <select id="link_article" wire:model="article_link_id" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                                    <option value="">— Не выбрано —</option>
+                                    @foreach ($articles as $article)
+                                        <option value="{{ $article->id }}">{{ $article->title }}</option>
+                                    @endforeach
                                 </select>
                             </div>
+
                             <div class="mb-4">
-                                <label class="block text-sm font-medium text-gray-500">Книга</label>
-                                <select disabled class="mt-1 block w-full bg-gray-100 border-gray-300 rounded-md shadow-sm">
-                                    <option>Нет доступных книг</option>
+                                <label for="link_book" class="block text-sm font-medium text-gray-700">Книга</label>
+                                <select id="link_book" wire:model="book_link_id" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                                    <option value="">— Не выбрано —</option>
+                                    @foreach ($books as $book)
+                                        <option value="{{ $book->id }}">{{ $book->title }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>

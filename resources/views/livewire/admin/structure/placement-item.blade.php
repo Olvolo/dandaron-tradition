@@ -11,7 +11,12 @@
                 @else
                     <div class="w-6 mr-2"></div>
                 @endif
-                <span class="font-semibold">{{ $item->title }}</span>
+
+                <div>
+                    <span class="font-semibold">{{ $item->title }}</span>
+                    {{-- Вот эта строка добавит слаг --}}
+                    <span class="ml-2 text-sm text-gray-500 font-mono">/{{ $item->slug }}</span>
+                </div>
             </div>
 
             <div class="space-x-2 text-sm">

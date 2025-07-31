@@ -2,6 +2,8 @@
 
 namespace App\Livewire\Admin\Structure;
 
+use App\Models\Article;
+use App\Models\Book;
 use App\Models\Placement;
 use Illuminate\Support\Str;
 use Livewire\Attributes\Layout;
@@ -15,23 +17,36 @@ class ManagePlacements extends Component
     public $parent_id;
     public $title = '';
     public $slug = '';
-    public $order_column = 0; // <-- Новое свойство
+    public $order_column = 0;
     public $show_in_menu = false;
     public $show_on_main = false;
 
-    // TODO: Сюда будем загружать списки статей и книг для привязки
-    public $articles = [];
-    public $books = [];
+    // Новые свойства для связи
+    public $article_link_id = null;
+    public $book_link_id = null;
+
+    // Этот метод сработает КАЖДЫЙ раз, когда меняется $article_link_id
+    public function updatedArticleLinkId($value): void
+    {
+        if ($value) {
+            $this->book_link_id = null; // Сбрасываем выбор книги
+        }
+    }
+
+    // Этот метод сработает КАЖДЫЙ раз, когда меняется $book_link_id
+    public function updatedBookLinkId($value): void
+    {
+        if ($value) {
+            $this->article_link_id = null; // Сбрасываем выбор статьи
+        }
+    }
 
     public function render()
     {
-        $placements = Placement::whereNull('parent_id')
-            ->with('children')
-            ->orderBy('order_column')
-            ->get();
-
         return view('livewire.admin.structure.manage-placements', [
-            'placements' => $placements,
+            'placements' => Placement::whereNull('parent_id')->with('children')->orderBy('order_column')->get(),
+            'articles' => Article::all(),
+            'books' => Book::all(),
         ]);
     }
 
@@ -44,6 +59,7 @@ class ManagePlacements extends Component
 
     public function edit($id)
     {
+        $this->resetForm(); // Сначала сбрасываем, чтобы очистить старые данные
         $placement = Placement::findOrFail($id);
         $this->placement_id = $id;
         $this->parent_id = $placement->parent_id;
@@ -53,9 +69,11 @@ class ManagePlacements extends Component
         $this->show_in_menu = $placement->show_in_menu;
         $this->show_on_main = $placement->show_on_main;
 
-        // TODO: Загрузить данные о привязанном контенте
-        // $this->placementable_type = $placement->placementable_type;
-        // $this->placementable_id = $placement->placementable_id;
+        if ($placement->placementable_type === 'App\\Models\\Article') {
+            $this->article_link_id = $placement->placementable_id;
+        } elseif ($placement->placementable_type === 'App\\Models\\Book') {
+            $this->book_link_id = $placement->placementable_id;
+        }
 
         $this->isModalOpen = true;
     }
@@ -73,10 +91,19 @@ class ManagePlacements extends Component
             'show_on_main' => 'boolean',
         ]);
 
+        if ($this->article_link_id) {
+            $validatedData['placementable_type'] = 'App\\Models\\Article';
+            $validatedData['placementable_id'] = $this->article_link_id;
+        } elseif ($this->book_link_id) {
+            $validatedData['placementable_type'] = 'App\\Models\\Book';
+            $validatedData['placementable_id'] = $this->book_link_id;
+        } else {
+            $validatedData['placementable_type'] = null;
+            $validatedData['placementable_id'] = null;
+        }
+
         Placement::updateOrCreate(['id' => $this->placement_id], $validatedData);
-
         session()->flash('message', $this->placement_id ? 'Элемент структуры обновлен.' : 'Элемент структуры создан.');
-
         $this->closeModal();
     }
 
@@ -101,5 +128,7 @@ class ManagePlacements extends Component
         $this->order_column = 0;
         $this->show_in_menu = false;
         $this->show_on_main = false;
+        $this->article_link_id = null;
+        $this->book_link_id = null;
     }
 }

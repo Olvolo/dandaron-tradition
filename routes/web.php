@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ChapterController;
 use App\Livewire\Admin\Authors\ManageAuthors;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Structure\ManagePlacements;
@@ -10,11 +11,20 @@ use App\Livewire\Admin\Content\ManageBooks;
 use App\Livewire\Admin\Content\BookEdit;
 use Illuminate\Support\Facades\Route;
 
-// Роут для главной страницы. Он будет вызывать тот же метод, что и остальные,
-// но мы явно указываем, что ищем слаг 'home'.
+/*
+|--------------------------------------------------------------------------
+| Публичные маршруты
+|--------------------------------------------------------------------------
+*/
 Route::get('/', [PageController::class, 'show'])->name('home');
+Route::get('/chapters/{chapter:slug}', [ChapterController::class, 'show'])->name('chapters.show');
 
-// Роуты Админки
+
+/*
+|--------------------------------------------------------------------------
+| Маршруты Админ-панели
+|--------------------------------------------------------------------------
+*/
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
     Route::get('/authors', ManageAuthors::class)->name('authors.index');
@@ -25,6 +35,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/books/{book}/edit', BookEdit::class)->name('books.edit');
 });
 
-// "Всеядный" роут для всех остальных публичных страниц.
-// Он должен быть САМЫМ ПОСЛЕДНИМ в файле!
+/*
+|--------------------------------------------------------------------------
+| "Всеядный" маршрут (всегда должен быть последним!)
+|--------------------------------------------------------------------------
+*/
 Route::get('/{slug}', [PageController::class, 'show'])->where('slug', '.*')->name('page.show');

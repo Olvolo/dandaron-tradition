@@ -47,4 +47,12 @@ class Placement extends Model
     {
         return $this->morphTo();
     }
+
+    /**
+     * Рекурсивная связь для загрузки всего дерева меню.
+     */
+    public function childrenRecursive(): HasMany
+    {
+        return $this->children()->with('childrenRecursive');
+    }
 }

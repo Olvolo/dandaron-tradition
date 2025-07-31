@@ -7,6 +7,7 @@ use App\Models\Book;
 use App\Models\Chapter;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Illuminate\Support\Str;
 
 #[Layout('layouts.admin')]
 class BookEdit extends Component
@@ -70,12 +71,15 @@ class BookEdit extends Component
             'chapter_order_column' => 'required|integer',
             'chapter_content_html' => 'required|string',
         ]);
+        // Автоматически генерируем slug из заголовка
+        $validatedData['slug'] = Str::slug($validatedData['chapter_title']);
 
         $this->book->chapters()->updateOrCreate(
             ['id' => $this->chapter_id],
             [
                 'parent_id' => $validatedData['chapter_parent_id'],
                 'title' => $validatedData['chapter_title'],
+                'slug' => $validatedData['slug'],
                 'order_column' => $validatedData['chapter_order_column'],
                 'content_html' => $validatedData['chapter_content_html'],
             ]

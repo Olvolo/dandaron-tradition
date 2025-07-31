@@ -15,6 +15,7 @@ class Chapter extends Model
         'parent_id',
         'order_column',
         'title',
+        'slug',
         'content_html',
     ];
     // Связь с дочерними элементами (один уровень)
