@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Laravel\Scout\Searchable;
 
 class Article extends Model
 {
-    use HasFactory;
+    use HasFactory, Searchable;
 
     /**
      * Атрибуты, разрешённые для массового заполнения.
@@ -60,5 +62,20 @@ class Article extends Model
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class, 'article_tag');
+    }
+    /**
+     * Определяет данные модели, которые должны индексироваться.
+     */
+    public function toSearchableArray(): array
+    {
+        return [
+            'title' => $this->title,
+            'annotation' => $this->annotation,
+            'content_html' => strip_tags($this->content_html), // Индексируем только чистый текст
+        ];
+    }
+    public function placement(): MorphOne
+    {
+        return $this->morphOne(Placement::class, 'placementable');
     }
 }

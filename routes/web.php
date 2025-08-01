@@ -10,6 +10,7 @@ use App\Livewire\Admin\Content\ManageArticles;
 use App\Livewire\Admin\Content\ManageBooks;
 use App\Livewire\Admin\Content\BookEdit;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/books/{book}/edit', BookEdit::class)->name('books.edit');
 });
 
+Route::get('/search', SearchController::class)->name('search');
 /*
 |--------------------------------------------------------------------------
 | "Всеядный" маршрут (всегда должен быть последним!)

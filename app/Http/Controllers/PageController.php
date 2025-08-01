@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+use App\Models\Book;
 use App\Models\Placement;
-use Illuminate\Http\Request;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
 
 class PageController extends Controller
 {
-    public function show($slug = null) // Убрали 'home' по умолчанию
+    public function show($slug = null): View|Application|Factory // Убрали 'home' по умолчанию
     {
         // Если URL пустой, ищем главную страницу. Иначе ищем по полному слагу.
         $searchSlug = $slug ?? '';
@@ -20,10 +24,10 @@ class PageController extends Controller
 
         if ($placement->placementable) {
             $content = $placement->placementable;
-            if ($content instanceof \App\Models\Article) {
+            if ($content instanceof Article) {
                 return view('pages.article', ['article' => $content]);
             }
-            if ($content instanceof \App\Models\Book) {
+            if ($content instanceof Book) {
                 $content->load(['authors', 'chapters.childrenRecursive']);
                 return view('pages.book', ['book' => $content]);
             }
