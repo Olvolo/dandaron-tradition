@@ -21,7 +21,7 @@
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
             @forelse ($books as $book)
-                <tr>
+                <tr wire:key="book-{{ $book->id }}">
                     <td class="px-6 py-4 whitespace-nowrap font-medium">{{ $book->title }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ $book->authors->pluck('name')->join(', ') }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">

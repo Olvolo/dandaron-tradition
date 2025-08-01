@@ -21,6 +21,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::composer('layouts.partials.header', MainMenuComposer::class);
+        // Передаём массив, чтобы Composer работал и для шапки, и для подвала
+        View::composer(
+            ['layouts.partials.header', 'layouts.partials.footer'],
+            MainMenuComposer::class
+        );
     }
 }

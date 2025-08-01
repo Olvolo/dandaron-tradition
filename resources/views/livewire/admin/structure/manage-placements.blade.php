@@ -16,7 +16,8 @@
         @else
             <ul class="space-y-2">
                 @foreach ($placements as $placement)
-                    @include('livewire.admin.structure.placement-item', ['item' => $placement])
+                    {{-- Заменяем @include на вызов Livewire-компонента --}}
+                    <livewire:admin.structure.placement-item :placement="$placement" :key="'placement-'.$placement->id" />
                 @endforeach
             </ul>
         @endif

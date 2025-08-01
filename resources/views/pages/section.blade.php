@@ -12,7 +12,7 @@
     @if ($subSections->isNotEmpty())
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($subSections as $section)
-                <a href="/{{ $section->slug }}" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" wire:navigate>
+                <a href="{{ url($section->full_slug) }}" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" >
                     <h2 class="text-xl font-bold text-gray-800">{{ $section->title }}</h2>
                     {{-- В будущем здесь можно будет выводить аннотацию раздела --}}
                 </a>

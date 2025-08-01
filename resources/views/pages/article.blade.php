@@ -1,3 +1,6 @@
+@section('title', $article->title . ' | Dandaron Tradition')
+@section('description', Str::limit(strip_tags($article->annotation ?: $article->content_html), 255))
+
 <x-layout>
     <div class="bg-white/80 p-8 rounded-lg shadow-lg">
         <h1 class="text-3xl font-bold mb-4">{{ $article->title }}</h1>

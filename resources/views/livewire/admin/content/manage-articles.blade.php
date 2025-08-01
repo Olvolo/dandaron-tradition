@@ -21,7 +21,7 @@
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
             @forelse ($articles as $article)
-                <tr>
+                <tr wire:key="article-{{ $article->id }}">
                     <td class="px-6 py-4 whitespace-nowrap font-medium">{{ $article->title }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{{ $article->parent->title ?? '—' }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">

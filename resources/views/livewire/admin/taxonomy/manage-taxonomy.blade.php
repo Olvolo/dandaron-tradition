@@ -23,7 +23,7 @@
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
                     @forelse ($categories as $category)
-                        <tr>
+                        <tr wire:key="category-{{ $category->id }}">
                             <td class="px-6 py-4 whitespace-nowrap">{{ $category->name }}</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                 <button wire:click="edit('Category', {{ $category->id }})" class="text-indigo-600 hover:text-indigo-900">Ред.</button>
@@ -53,7 +53,7 @@
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
                     @forelse ($tags as $tag)
-                        <tr>
+                        <tr wire:key="tag-{{ $tag->id }}">
                             <td class="px-6 py-4 whitespace-nowrap">{{ $tag->name }}</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                 <button wire:click="edit('Tag', {{ $tag->id }})" class="text-indigo-600 hover:text-indigo-900">Ред.</button>

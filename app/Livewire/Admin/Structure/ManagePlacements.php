@@ -7,6 +7,7 @@ use App\Models\Book;
 use App\Models\Placement;
 use Illuminate\Support\Str;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 #[Layout('layouts.admin')]
@@ -43,13 +44,20 @@ class ManagePlacements extends Component
 
     public function render()
     {
+        // Используем тот же "умный" рекурсивный метод, что и для публичного меню
+        $placements = Placement::whereNull('parent_id')
+            ->with('childrenRecursive') // <-- ИЗМЕНЕНИЕ ЗДЕСЬ
+            ->orderBy('order_column')
+            ->get();
+
         return view('livewire.admin.structure.manage-placements', [
-            'placements' => Placement::whereNull('parent_id')->with('children')->orderBy('order_column')->get(),
+            'placements' => $placements,
             'articles' => Article::all(),
             'books' => Book::all(),
         ]);
     }
 
+    #[On('createPlacement')]
     public function create($parentId = null)
     {
         $this->resetForm();
@@ -57,11 +65,12 @@ class ManagePlacements extends Component
         $this->isModalOpen = true;
     }
 
-    public function edit($id)
+    #[On('editPlacement')]
+    public function edit($placementId)
     {
-        $this->resetForm(); // Сначала сбрасываем, чтобы очистить старые данные
-        $placement = Placement::findOrFail($id);
-        $this->placement_id = $id;
+       // $this->resetForm(); // Сначала сбрасываем, чтобы очистить старые данные
+        $placement = Placement::findOrFail($placementId);
+        $this->placement_id = $placementId;
         $this->parent_id = $placement->parent_id;
         $this->title = $placement->title;
         $this->slug = $placement->slug;
@@ -107,9 +116,10 @@ class ManagePlacements extends Component
         $this->closeModal();
     }
 
-    public function delete($id)
+    #[On('deletePlacement')]
+    public function delete($placementId)
     {
-        Placement::find($id)->delete();
+        Placement::find($placementId)->delete();
         session()->flash('message', 'Элемент структуры удален.');
     }
 

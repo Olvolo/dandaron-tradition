@@ -7,37 +7,33 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function show($slug = 'home')
+    public function show($slug = null) // Убрали 'home' по умолчанию
     {
-        // TODO: Реализовать логику поиска по вложенным slug'ам
-        $placement = Placement::where('slug', $slug)->with(['placementable', 'children'])->firstOrFail();
+        // Если URL пустой, ищем главную страницу. Иначе ищем по полному слагу.
+        $searchSlug = $slug ?? '';
 
-        // Логика "файловой системы":
-        // Если у элемента есть дочерние элементы, он в первую очередь является "папкой" (разделом).
-        // Мы показываем шаблон раздела, который может отобразить и описание самого раздела (если оно есть), и ссылки на дочерние элементы.
-        if ($placement->children->isNotEmpty()) {
-            return view('pages.section', [
-                'placement' => $placement,
-                'subSections' => $placement->children
-            ]);
-        }
+        $placement = Placement::where('full_slug', $searchSlug)->firstOrFail();
 
-        // Если дочерних элементов нет, но есть привязанный контент, значит это "файл".
-        // Показываем этот контент.
+        // --- Вся остальная логика остается без изменений ---
+
+        $placement->load(['placementable', 'children']);
+
         if ($placement->placementable) {
             $content = $placement->placementable;
-
             if ($content instanceof \App\Models\Article) {
                 return view('pages.article', ['article' => $content]);
             }
-
             if ($content instanceof \App\Models\Book) {
-                $content->load(['authors', 'chapters']);
+                $content->load(['authors', 'chapters.childrenRecursive']);
                 return view('pages.book', ['book' => $content]);
             }
         }
 
-        // Если нет ни дочерних элементов, ни контента - это пустая страница-раздел.
-        return "Этот раздел пока пуст.";
+        if ($placement->children->isNotEmpty()) {
+            $subSections = $placement->children()->with('parent.parent')->get(); // Упростили загрузку
+            return view('pages.section', ['placement' => $placement, 'subSections' => $subSections]);
+        }
+
+        return view('pages.empty', ['placement' => $placement]);
     }
 }

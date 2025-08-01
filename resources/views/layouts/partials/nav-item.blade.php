@@ -1,6 +1,6 @@
 {{-- Этот шаблон будет отвечать за один пункт меню и его дочерние элементы --}}
 <li class="relative group">
-    <a href="/{{ $item->slug }}" class="hover:text-amber-600" wire:navigate>{{ $item->title }}</a>
+    <a href="{{ url($item->full_slug) }}" class="hover:text-amber-600" wire:navigate>{{ $item->title }}</a>
 
     {{-- Если есть дочерние элементы, создаём вложенный список --}}
     @if($item->childrenRecursive->isNotEmpty())

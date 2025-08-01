@@ -21,7 +21,7 @@
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
             @forelse ($authors as $author)
-                <tr>
+                <tr wire:key="author-{{ $author->id }}">
                     <td class="px-6 py-4 whitespace-nowrap">{{ $author->id }}</td>
                     <td class="px-6 py-4 whitespace-nowrap">{{ $author->name }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
