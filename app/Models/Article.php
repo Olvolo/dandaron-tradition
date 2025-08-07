@@ -10,6 +10,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Laravel\Scout\Searchable;
 
+/**
+ * @method static where(string $string, string $string1, $article_id)
+ * @method static updateOrCreate(array $array, array $validatedData)
+ * @method static find($id)
+ * @property mixed $title
+ * @property mixed $annotation
+ * @property mixed $content_html
+ */
 class Article extends Model
 {
     use HasFactory, Searchable;
@@ -23,8 +31,11 @@ class Article extends Model
         'annotation',
         'content_html',
         'custom_styles',
+        'is_protected',
+        'background_image_url',
+        'custom_styles',
     ];
-
+    protected $casts = ['is_protected' => 'boolean'];
     /**
      * Связь с родительской статьёй.
      */
@@ -71,11 +82,22 @@ class Article extends Model
         return [
             'title' => $this->title,
             'annotation' => $this->annotation,
-            'content_html' => strip_tags($this->content_html), // Индексируем только чистый текст
+            'content_html' => strip_tags($this->content_html),
         ];
     }
     public function placement(): MorphOne
     {
         return $this->morphOne(Placement::class, 'placementable');
+    }
+    public function getUrl()
+    {
+        if ($this->placement) {
+            return url($this->placement->full_slug);
+        }
+        return '#';
+    }
+    public function getTypeName()
+    {
+        return 'Статья';
     }
 }

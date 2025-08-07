@@ -1,10 +1,10 @@
-<x-layout>
-    {{-- Alpine.js компонент для управления состоянием панели оглавления --}}
+<x-layout :content="$book">
+    @section('title', $book->title)
     <div x-data="{ tocOpen: false }">
 
         <div class="bg-white/80 p-8 rounded-lg shadow-lg">
             {{-- "Обложка" книги --}}
-            <h1 class="text-4xl font-bold mb-2">{{ $book->title }}</h1>
+            <h1 class="text-4xl text-center font-bold mb-2">{{ $book->title }}</h1>
             <p class="text-lg text-gray-700 mb-4">Авторы: {{ $book->authors->pluck('name')->join(', ') }}</p>
 
             @if($book->annotation)

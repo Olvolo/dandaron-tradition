@@ -10,7 +10,7 @@ use Livewire\Component;
 #[Layout('layouts.admin')]
 class ManageBooks extends Component
 {
-    public $isModalOpen = false;
+    public bool $isModalOpen = false;
     public $book_id;
 
     // Поля формы
@@ -18,6 +18,7 @@ class ManageBooks extends Component
     public $description = '';
     public $annotation = '';
     public $custom_styles = '';
+    public $is_protected = false;
     public $selectedAuthors = [];
 
     public function render()
@@ -28,13 +29,13 @@ class ManageBooks extends Component
         ]);
     }
 
-    public function create()
+    public function create(): void
     {
         $this->resetForm();
         $this->isModalOpen = true;
     }
 
-    public function edit($id)
+    public function edit($id): void
     {
         $book = Book::with('authors')->findOrFail($id);
         $this->book_id = $id;
@@ -42,18 +43,20 @@ class ManageBooks extends Component
         $this->description = $book->description;
         $this->annotation = $book->annotation;
         $this->custom_styles = $book->custom_styles;
+        $this->is_protected = $book->is_protected;
         $this->selectedAuthors = $book->authors->pluck('id')->toArray();
 
         $this->isModalOpen = true;
     }
 
-    public function store()
+    public function store(): void
     {
         $validatedData = $this->validate([
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'annotation' => 'nullable|string',
             'custom_styles' => 'nullable|string',
+            'is_protected' => 'boolean',
         ]);
 
         $book = Book::updateOrCreate(['id' => $this->book_id], $validatedData);
@@ -63,25 +66,26 @@ class ManageBooks extends Component
         $this->closeModal();
     }
 
-    public function delete($id)
+    public function delete($id): void
     {
         Book::find($id)->delete();
         session()->flash('message', 'Книга успешно удалена.');
     }
 
-    public function closeModal()
+    public function closeModal(): void
     {
         $this->isModalOpen = false;
         $this->resetForm();
     }
 
-    private function resetForm()
+    private function resetForm(): void
     {
         $this->book_id = null;
         $this->title = '';
         $this->description = '';
         $this->annotation = '';
         $this->custom_styles = '';
+        $this->is_protected = false;
         $this->selectedAuthors = [];
     }
 }

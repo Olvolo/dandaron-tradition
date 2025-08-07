@@ -13,7 +13,8 @@ use Livewire\Component;
 #[Layout('layouts.admin')]
 class ManagePlacements extends Component
 {
-    public $isModalOpen = false;
+    public bool $isModalOpen = false;
+    public $placements;
     public $placement_id;
     public $parent_id;
     public $title = '';
@@ -21,6 +22,9 @@ class ManagePlacements extends Component
     public $order_column = 0;
     public $show_in_menu = false;
     public $show_on_main = false;
+    public $is_protected = false;
+    public  $background_image_url = '';
+    public  $custom_styles = '';
 
     // Новые свойства для связи
     public $article_link_id = null;
@@ -44,21 +48,17 @@ class ManagePlacements extends Component
 
     public function render()
     {
-        // Используем тот же "умный" рекурсивный метод, что и для публичного меню
-        $placements = Placement::whereNull('parent_id')
-            ->with('childrenRecursive') // <-- ИЗМЕНЕНИЕ ЗДЕСЬ
-            ->orderBy('order_column')
-            ->get();
+        // The main error was here: changed 'order' to 'order_column'
+        $this->placements = Placement::whereNull('parent_id')->with('childrenRecursive')->orderBy('order_column')->get();
 
         return view('livewire.admin.structure.manage-placements', [
-            'placements' => $placements,
             'articles' => Article::all(),
             'books' => Book::all(),
         ]);
     }
 
     #[On('createPlacement')]
-    public function create($parentId = null)
+    public function create($parentId = null): void
     {
         $this->resetForm();
         $this->parent_id = $parentId;
@@ -66,9 +66,8 @@ class ManagePlacements extends Component
     }
 
     #[On('editPlacement')]
-    public function edit($placementId)
+    public function edit($placementId): void
     {
-       // $this->resetForm(); // Сначала сбрасываем, чтобы очистить старые данные
         $placement = Placement::findOrFail($placementId);
         $this->placement_id = $placementId;
         $this->parent_id = $placement->parent_id;
@@ -77,6 +76,9 @@ class ManagePlacements extends Component
         $this->order_column = $placement->order_column;
         $this->show_in_menu = $placement->show_in_menu;
         $this->show_on_main = $placement->show_on_main;
+        $this->is_protected = $placement->is_protected;
+        $this->background_image_url = $placement->background_image_url;
+        $this->custom_styles = $placement->custom_styles;
 
         if ($placement->placementable_type === 'App\\Models\\Article') {
             $this->article_link_id = $placement->placementable_id;
@@ -87,17 +89,20 @@ class ManagePlacements extends Component
         $this->isModalOpen = true;
     }
 
-    public function store()
+    public function store(): void
     {
         $this->slug = $this->slug ? Str::slug($this->slug) : Str::slug($this->title);
 
         $validatedData = $this->validate([
             'parent_id' => 'nullable|exists:placements,id',
             'title' => 'required|string|max:255',
-            'slug' => 'required|string|max:255',
+            'slug' => 'required|string|max:255|unique:placements,slug,'.$this->placement_id,
             'order_column' => 'required|integer',
             'show_in_menu' => 'boolean',
             'show_on_main' => 'boolean',
+            'is_protected' => 'boolean',
+            'background_image_url' => 'nullable|string|max:255',
+            'custom_styles' => 'nullable|string',
         ]);
 
         if ($this->article_link_id) {
@@ -117,19 +122,19 @@ class ManagePlacements extends Component
     }
 
     #[On('deletePlacement')]
-    public function delete($placementId)
+    public function delete($placementId): void
     {
         Placement::find($placementId)->delete();
         session()->flash('message', 'Элемент структуры удален.');
     }
 
-    public function closeModal()
+    public function closeModal(): void
     {
         $this->isModalOpen = false;
         $this->resetForm();
     }
 
-    private function resetForm()
+    private function resetForm(): void
     {
         $this->placement_id = null;
         $this->parent_id = null;
@@ -138,7 +143,10 @@ class ManagePlacements extends Component
         $this->order_column = 0;
         $this->show_in_menu = false;
         $this->show_on_main = false;
+        $this->is_protected = false;
         $this->article_link_id = null;
         $this->book_link_id = null;
+        $this->background_image_url = '';
+        $this->custom_styles = '';
     }
 }

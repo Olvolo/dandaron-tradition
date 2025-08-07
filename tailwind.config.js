@@ -1,25 +1,21 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./app/Livewire/**/*.php",
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
     ],
+
     theme: {
         extend: {
-            colors: {
-                'sky': {
-                    'light': '#87CEEB', // Светло-небесный
-                    'DEFAULT': '#00BFFF', // Глубокий небесно-голубой
-                    'dark': '#1E90FF',  // Темно-небесный
-                },
-                'golden': {
-                    'light': '#FFD700', // Светло-золотой
-                    'DEFAULT': '#DAA520', // Золотистый
-                    'dark': '#B8860B',   // Темно-золотой
-                }
-            }
+            fontFamily: {
+                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
         },
     },
-    plugins: [],
-}
+
+    plugins: [forms],
+};

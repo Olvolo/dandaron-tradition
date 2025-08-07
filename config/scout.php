@@ -135,17 +135,24 @@ return [
     | See: https://www.meilisearch.com/docs/learn/configuration/instance_options#all-instance-options
     |
     */
-
     'meilisearch' => [
         'host' => env('MEILISEARCH_HOST', 'http://localhost:7700'),
         'key' => env('MEILISEARCH_KEY'),
         'index-settings' => [
-            // 'users' => [
-            //     'filterableAttributes'=> ['id', 'name', 'email'],
-            // ],
+            'articles' => [
+                'filterableAttributes' => ['id'],
+                'searchableAttributes' => ['title', 'content_html']
+            ],
+            'books' => [
+                'filterableAttributes' => ['id'],
+                'searchableAttributes' => ['title', 'description']
+            ],
+            'chapters' => [
+                'filterableAttributes' => ['id'],
+                'searchableAttributes' => ['title', 'content_html']
+            ],
         ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Typesense Configuration

@@ -16,7 +16,7 @@ class ManageTaxonomy extends Component
 
     // Свойства для формы
     public $isModalOpen = false;
-    public $modelType = 'Category'; // 'Category' или 'Tag'
+    public string $modelType = 'Category'; // 'Category' или 'Tag'
     public $itemId;
     public $name = '';
     public $slug = '';
@@ -28,14 +28,14 @@ class ManageTaxonomy extends Component
         return view('livewire.admin.taxonomy.manage-taxonomy');
     }
 
-    public function create($modelType)
+    public function create($modelType): void
     {
         $this->resetForm();
         $this->modelType = $modelType;
         $this->isModalOpen = true;
     }
 
-    public function edit($modelType, $id)
+    public function edit($modelType, $id): void
     {
         $this->modelType = $modelType;
         $modelClass = 'App\\Models\\' . $this->modelType;
@@ -48,7 +48,7 @@ class ManageTaxonomy extends Component
         $this->isModalOpen = true;
     }
 
-    public function store()
+    public function store(): void
     {
         $this->slug = Str::slug($this->name); // Автоматически генерируем slug
 
@@ -65,20 +65,20 @@ class ManageTaxonomy extends Component
         $this->closeModal();
     }
 
-    public function delete($modelType, $id)
+    public function delete($modelType, $id): void
     {
         $modelClass = 'App\\Models\\' . $modelType;
         $modelClass::find($id)->delete();
         session()->flash('message', $modelType . ' успешно удалена.');
     }
 
-    public function closeModal()
+    public function closeModal(): void
     {
         $this->isModalOpen = false;
         $this->resetForm();
     }
 
-    private function resetForm()
+    private function resetForm(): void
     {
         $this->itemId = null;
         $this->name = '';

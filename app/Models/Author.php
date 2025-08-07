@@ -18,5 +18,6 @@ class Author extends Model
         'name',
         'bio',
         'image_path',
+
     ];
 }

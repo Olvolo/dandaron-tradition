@@ -6,18 +6,18 @@ use App\Models\Book;
 use App\Models\Chapter;
 use Illuminate\Support\Str;
 use Livewire\Component;
-use Livewire\Attributes\On;
 
 class ManageChapters extends Component
 {
     public Book $book;
 
-    public $isChapterModalOpen = false;
+    public bool $isChapterModalOpen = false;
     public $chapter_id;
     public $chapter_parent_id = null;
     public $chapter_title = '';
     public $chapter_order_column = 0;
     public $chapter_content_html = '';
+    public  $custom_styles = '';
 
     protected $listeners = [
         'createChapter' => 'createChapter',
@@ -25,14 +25,14 @@ class ManageChapters extends Component
         'deleteChapter' => 'deleteChapter',
     ];
 
-    public function createChapter($parentId = null)
+    public function createChapter($parentId = null): void
     {
         $this->resetChapterForm();
         $this->chapter_parent_id = $parentId;
         $this->isChapterModalOpen = true;
     }
 
-    public function editChapter($chapterId)
+    public function editChapter($chapterId): void
     {
         $chapter = Chapter::findOrFail($chapterId);
         $this->chapter_id = $chapterId;
@@ -40,22 +40,24 @@ class ManageChapters extends Component
         $this->chapter_title = $chapter->title;
         $this->chapter_order_column = $chapter->order_column;
         $this->chapter_content_html = $chapter->content_html;
+        $this->custom_styles = $chapter->custom_styles; // Load the styles
         $this->isChapterModalOpen = true;
     }
 
-    public function deleteChapter($chapterId)
+    public function deleteChapter($chapterId): void
     {
         Chapter::find($chapterId)->delete();
         session()->flash('chapter_message', 'Глава успешно удалена.');
     }
 
-    public function storeChapter()
+    public function storeChapter(): void
     {
         $validatedData = $this->validate([
             'chapter_parent_id' => 'nullable|exists:chapters,id',
             'chapter_title' => 'required|string|max:255',
             'chapter_order_column' => 'required|integer',
             'chapter_content_html' => 'required|string',
+            'custom_styles' => 'nullable|string',
         ]);
         $validatedData['slug'] = Str::slug($validatedData['chapter_title']);
 
@@ -65,24 +67,26 @@ class ManageChapters extends Component
             'slug' => $validatedData['slug'],
             'order_column' => $validatedData['chapter_order_column'],
             'content_html' => $validatedData['chapter_content_html'],
+            'custom_styles' => $validatedData['custom_styles']
         ]);
         session()->flash('chapter_message', $this->chapter_id ? 'Глава обновлена.' : 'Глава создана.');
         $this->closeChapterModal();
     }
 
-    public function closeChapterModal()
+    public function closeChapterModal(): void
     {
         $this->isChapterModalOpen = false;
         $this->resetChapterForm();
     }
 
-    private function resetChapterForm()
+    private function resetChapterForm(): void
     {
         $this->chapter_id = null;
         $this->chapter_parent_id = null;
         $this->chapter_title = '';
         $this->chapter_order_column = 0;
         $this->chapter_content_html = '';
+        $this->custom_styles = '';
     }
 
     public function render()

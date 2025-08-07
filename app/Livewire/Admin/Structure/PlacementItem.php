@@ -8,19 +8,19 @@ use Livewire\Component;
 class PlacementItem extends Component
 {
     public Placement $placement;
-    public bool $open = true;
+    public $open = true;
 
-    public function createChildPlacement()
+    public function createChildPlacement(): void
     {
         $this->dispatch('createPlacement', parentId: $this->placement->id);
     }
 
-    public function editPlacement()
+    public function editPlacement(): void
     {
         $this->dispatch('editPlacement', placementId: $this->placement->id);
     }
 
-    public function deletePlacement()
+    public function deletePlacement(): void
     {
         $this->dispatch('deletePlacement', placementId: $this->placement->id);
     }

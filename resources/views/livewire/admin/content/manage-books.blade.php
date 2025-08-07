@@ -10,7 +10,7 @@
         </div>
     @endif
 
-    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="overflow-x-auto bg-white rounded-lg shadow">
         <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-50">
             <tr>
@@ -64,6 +64,12 @@
                     <div class="mb-4">
                         <label for="custom_styles" class="block text-sm font-medium text-gray-700">Кастомные CSS-стили</label>
                         <textarea id="custom_styles" wire:model.defer="custom_styles" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm font-mono text-sm"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center">
+                            <input id="is_protected_book" wire:model.defer="is_protected" type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                            <label for="is_protected_book" class="ml-2 block text-sm text-gray-900">Защищено (только для вошедших)</label>
+                        </div>
                     </div>
                 </form>
                 <div class="flex justify-end space-x-4 mt-6 pt-4 border-t">

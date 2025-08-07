@@ -2,23 +2,25 @@
 
 namespace App\Console\Commands;
 
+use Exception;
 use Illuminate\Console\Command;
 use MeiliSearch\Client;
+use Symfony\Component\Console\Command\Command as CommandAlias;
 
 class ConfigureMeiliSearch extends Command
 {
     protected $signature = 'app:configure-meili-search';
     protected $description = 'Configures MeiliSearch indexes with the correct settings.';
 
-    public function handle()
+    public function handle(): int
     {
         $this->info('Configuring MeiliSearch indexes...');
 
         try {
             $meiliSearch = new Client(config('scout.meilisearch.host'), config('scout.meilisearch.key'));
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $this->error('Could not connect to MeiliSearch: ' . $e->getMessage());
-            return Command::FAILURE;
+            return CommandAlias::FAILURE;
         }
 
         // --- Настройки для индекса 'articles' ---
@@ -47,6 +49,6 @@ class ConfigureMeiliSearch extends Command
 
         $this->info('MeiliSearch configuration updated successfully!');
 
-        return Command::SUCCESS;
+        return CommandAlias::SUCCESS;
     }
 }

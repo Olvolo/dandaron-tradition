@@ -7,9 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Collection;
 
 /**
  * @method static where(string $string, mixed $slug)
+ * @method static find($placementId)
+ * @method static updateOrCreate(array $array, array $validatedData)
+ * @method static findOrFail($placementId)
+ * @method static whereNull(string $string)
+ * @property mixed $id
+ * @property mixed $slug
+ * @property mixed $parent
  */
 class Placement extends Model
 {
@@ -25,6 +33,9 @@ class Placement extends Model
         'placementable_id',
         'show_in_menu',
         'show_on_main',
+        'is_protected',
+        'background_image_url',
+        'custom_styles',
     ];
 
     /**
@@ -35,6 +46,7 @@ class Placement extends Model
     protected $casts = [
         'show_in_menu' => 'boolean',
         'show_on_main' => 'boolean',
+        'is_protected' => 'boolean',
     ];
 
     /**
@@ -109,7 +121,7 @@ class Placement extends Model
     /**
      * Получить все родительские элементы до корня.
      */
-    public function getAncestors()
+    public function getAncestors(): Collection
     {
         $ancestors = collect();
         $current = $this->parent;
@@ -141,7 +153,7 @@ class Placement extends Model
     /**
      * Этот метод будет автоматически вызываться при сохранении модели.
      */
-    protected static function boot()
+    protected static function boot(): void
     {
         parent::boot();
 

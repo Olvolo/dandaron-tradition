@@ -16,9 +16,9 @@ class BookEdit extends Component
     public $description;
     public $annotation;
     public $custom_styles;
-    public $selectedAuthors = [];
+    public array $selectedAuthors = [];
 
-    public function mount(Book $book)
+    public function mount(Book $book): void
     {
         $this->book = $book;
         $this->title = $book->title;
@@ -28,7 +28,7 @@ class BookEdit extends Component
         $this->selectedAuthors = $book->authors->pluck('id')->toArray();
     }
 
-    public function updateBook()
+    public function updateBook(): null
     {
         $validatedData = $this->validate([
             'title' => 'required|string|max:255',
