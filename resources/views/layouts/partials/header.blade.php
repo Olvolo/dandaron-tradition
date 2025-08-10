@@ -1,65 +1,40 @@
-<header class="bg-white shadow-md">
-    <nav class="container mx-auto p-4 flex justify-between items-center">
-        {{-- Логотип --}}
-        <a href="{{ route('home') }}" class="flex items-center" wire:navigate>
-            <img
-                src="{{ asset('images/logo/logo.webp') }}"
-                alt="Dandaron Tradition"
-                class="h-10 w-auto"
-            >
-        </a>
-
-        {{-- Основное меню --}}
-        <div class="hidden md:flex items-center space-x-8">
-            <a href="{{ route('home') }}"
-               class="text-gray-900 hover:text-blue-600 transition">
-                Главная
-            </a>
-
-            @foreach($menuItems as $item)
-                <a href="{{ url($item->full_slug) }}"
-                   class="text-gray-900 hover:text-blue-600 transition">
-                    {{ $item->title }}
+<header class="bg-white border-b border-gray-100 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            {{-- Левая часть: Логотип --}}
+            <div class="flex items-center space-x-8">
+                <a href="{{ route('home') }}" class="flex items-center space-x-2 flex-shrink-0">
+                    <img src="{{ asset('images/logo/logo.webp') }}" alt="Логотип" class="h-10 w-auto">
                 </a>
-            @endforeach
-        </div>
 
-        {{-- Поисковая форма --}}
-        <div class="flex-1 max-w-md mx-4">
-            <form action="{{ route('search') }}" method="GET" class="flex">
-                <input
-                    type="text"
-                    name="q"
-                    value="{{ request('q') }}"
-                    placeholder="Поиск по сайту..."
-                    class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                <button type="submit"
-                        class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition">
-                    Найти
-                </button>
-            </form>
-        </div>
-
-        {{-- Аутентификация --}}
-        <div class="text-sm">
-            @auth
-                <div class="flex items-center space-x-4">
-                    <span>{{ Auth::user()->name }}</span>
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <button type="submit"
-                                class="hover:text-amber-600 transition">
-                            Выйти
+                {{-- Поисковая форма только на больших экранах --}}
+                <div class="hidden lg:block flex-1 max-w-sm">
+                    <form action="{{ route('search') }}" method="GET" class="relative">
+                        <input
+                            type="text"
+                            name="q"
+                            value="{{ request('q') }}"
+                            placeholder="Поиск..."
+                            class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
+                        >
+                        <button type="submit" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-sky-600 transition-colors">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
                         </button>
                     </form>
                 </div>
-            @else
-                <a href="{{ route('login') }}" class="hover:text-amber-600 transition">Войти</a>
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 hover:text-amber-600 transition">Регистрация</a>
-                @endif
-            @endauth
+            </div>
+
+            {{-- Правая часть: Навигация --}}
+            <div class="flex items-center">
+                <x-navigation />
+            </div>
         </div>
-    </nav>
+
+        {{-- Поисковая форма для мобильных и планшетов --}}
+        <div class="lg:hidden pb-4 border-t border-gray-100 pt-4">
+            <x-search-form />
+        </div>
+    </div>
 </header>

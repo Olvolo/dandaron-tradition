@@ -30,7 +30,7 @@
 @include('layouts.partials.header')
 
 {{-- Основной контент, который теперь будет "растягиваться", прижимая футер к низу --}}
-<main class="flex-grow container mx-auto p-4 md:p-6">
+<main class="flex-grow container mx-auto p-4 md:p-6 pt-24">
     {{ $slot }}
 </main>
 

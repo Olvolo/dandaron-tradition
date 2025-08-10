@@ -1,4 +1,4 @@
-@extends('layouts.app') {{-- или ваш базовый шаблон --}}
+@extends('layouts.app')
 
 @section('title', 'Результаты поиска')
 

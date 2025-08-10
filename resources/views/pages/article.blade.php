@@ -1,13 +1,6 @@
 <x-layout :content="$article">
     @section('title', $article->title)
 
-    {{--
-        1.  Initializes two variables for Alpine.js:
-            - toc: an empty array to hold our generated table of contents.
-            - tocOpen: a boolean to control the side panel's visibility (initially false).
-        2.  x-init automatically finds all h2/h3/h4 headings in the article and populates the 'toc'
-         array.
-    --}}
     <div
         x-data="{ toc: [], tocOpen: false }"
         x-init="
@@ -27,19 +20,16 @@
         class="prose prose-lg max-w-none">
         <h1 class="text-center">{{ $article->title }}</h1>
 
-        {{-- The article content itself. We add x-ref="content" so Alpine.js knows where to look for headings. --}}
         <div x-ref="content">
             {!! $article->content_html !!}
         </div>
 
-        {{-- FLOATING BUTTON - Appears only if the 'toc' array is not empty --}}
         <template x-if="toc.length > 0">
             <button @click="tocOpen = true" class="fixed bottom-5 left-5 z-40 px-4 py-2 bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-700">
                 Содержание
             </button>
         </template>
 
-        {{-- SIDE PANEL - Exactly like the book's ToC panel --}}
         <template x-teleport="body">
             <div x-show="tocOpen" x-cloak class="fixed inset-0 z-50 flex">
                 {{-- Overlay --}}

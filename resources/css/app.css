@@ -38,14 +38,8 @@
     @apply text-red-500 font-bold;
 }
 
-/*blockquote {*/
-/*    border-left-width: 4px;*/
-/*    padding-left: 1.5rem;*/
-/*    margin: 1rem 0;*/
-/*    font-size: 1.3rem;*/
-/*}*/
 blockquote {
-    @apply border-l-4 border-gray-500 pl-6 my-6 text-gray-800 text-lg italic;
+    @apply border-l-4 border-gray-500 pl-6 my-6 text-gray-900 text-xl italic font-semibold;
 }
 .prose ol,
 .prose ul {

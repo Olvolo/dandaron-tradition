@@ -77,7 +77,19 @@
                                     <span class="text-red-500 text-sm">{{ $message }}</span>
                                     @enderror
                                 </div>
+                            </div>{{-- НОВЫЙ БЛОК: Выбор родительского элемента --}}
+                            <div class="mt-4">
+                                <label for="parent_id" class="block text-sm font-medium text-gray-700">Родительский элемент</label>
+                                <select id="parent_id" wire:model.defer="parent_id" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                                    <option value="">-- Нет (Корневой элемент) --</option>
+                                    {{-- Мы будем использовать рекурсивный компонент для отображения дерева --}}
+                                    @foreach(\App\Models\Placement::whereNull('parent_id')->orderBy('order_column')->get() as $rootPlacement)
+                                        @include('livewire.admin.structure.placement-option', ['placement' => $rootPlacement, 'level' => 0])
+                                    @endforeach
+                                </select>
                             </div>
+
+
 
                             <!-- Чекбоксы -->
                             <div class="flex flex-wrap gap-6 mb-4">

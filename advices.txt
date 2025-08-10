@@ -118,3 +118,6 @@ Win + R → shell:startup
 Скопируйте туда ярлык на этот bat-файл
 
 После запуска сервера все функции поиска с подсветкой должны работать корректно.
+
+Запуск поиска
+.\meilisearch --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
