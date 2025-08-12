@@ -7,36 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Dandaron Tradition' }}</title>
     <meta name="description" content="{{ $description ?? 'Онлайн-архив статей и книг, посвящённый работам ряда авторов.' }}">
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    {{-- Блок для инъекции кастомных стилей --}}
-    @if($content && $content->custom_styles)
+    {{-- Кастомные стили --}}
+    @if(!empty($content->custom_styles))
         <style>
             {!! $content->custom_styles !!}
         </style>
     @endif
 </head>
-{{-- Alpine.js для кнопки "Наверх" и новая Flexbox-структура для "липкого" футера --}}
 <body
     x-data="{ atTop: true }" @scroll.window="atTop = (window.scrollY < 100)"
     class="antialiased font-sans bg-gray-100 text-gray-900 flex flex-col min-h-screen"
-    {{-- Блок для установки фона страницы --}}
-    @if($content && property_exists($content, 'background_image_url') && $content->background_image_url)
+    {{-- Фоновое изображение через inline стили --}}
+    @if(!empty($content->background_image_url))
         style="background-image: url('{{ asset($content->background_image_url) }}'); background-size: cover; background-position: center; background-attachment: fixed;"
     @endif
 >
 
 @include('layouts.partials.header')
 
-{{-- Основной контент, который теперь будет "растягиваться", прижимая футер к низу --}}
 <main class="flex-grow container mx-auto p-4 md:p-6 pt-24">
     {{ $slot }}
 </main>
 
 @include('layouts.partials.footer')
 
-{{-- ВОЗВРАЩАЕМ КНОПКУ "НАВЕРХ" --}}
 <button
     x-show="!atTop"
     @click="window.scrollTo({top: 0, behavior: 'smooth'})"

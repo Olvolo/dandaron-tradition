@@ -85,3 +85,14 @@ mark {
 .prose figcaption {
     @apply mt-2 text-center italic text-gray-600 text-sm;
 }
+
+.search-highlight {
+    background-color: #fef08a;
+    padding: 0.1em 0.2em;
+    border-radius: 0.25em;
+}
+
+mark.bg-yellow-200 {
+    padding: 0.1em;
+    border-radius: 0.15em;
+}

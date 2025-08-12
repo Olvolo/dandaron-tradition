@@ -2,7 +2,7 @@
 
 <nav x-data="{ isOpen: false }" class="relative">
     {{-- Десктопная навигация --}}
-    <div class="hidden md:flex items-center {{ $inFooter ? 'space-x-4' : 'space-x-6' }}">
+    <div class="hidden lg:flex items-center {{ $inFooter ? 'space-x-4' : 'space-x-6' }}">
         @foreach ($items as $item)
             <x-nav-item :item="$item" />
         @endforeach
@@ -25,8 +25,11 @@
     </div>
 
     {{-- Мобильная навигация --}}
-    <div class="md:hidden">
+    <div class="lg:hidden">
+
         <button @click="isOpen = !isOpen" class="p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
+
+
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>

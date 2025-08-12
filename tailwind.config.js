@@ -8,14 +8,35 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                // Основные цвета проекта
+                'main-page': '#001366',
+                'primary': '',           // bg-primary, text-primary
+                'secondary': '',         // bg-secondary, text-secondary
+                'accent': '',            // bg-accent, text-accent
+
+                // Цвета состояний
+                'success': '',           // bg-success, text-success
+                'warning': '',           // bg-warning, text-warning
+                'danger': '',            // bg-danger, text-danger
+                'info': '',              // bg-info, text-info
+
+                // Нейтральные цвета
+                'light': '',             // bg-light, text-light
+                'dark': '',              // bg-dark, text-dark
+                'muted': '',             // bg-muted, text-muted
+
+                // Дополнительные цвета
+                'highlight': '',         // bg-highlight, text-highlight
+                'soft': '',              // bg-soft, text-soft
+                'bright': '',            // bg-bright, text-bright
+            }
         },
     },
-
     plugins: [forms],
 };

@@ -14,6 +14,10 @@ use Illuminate\Support\Str;
 
 class PageController extends Controller
 {
+    /**
+     * @param string|null $slug
+     * @return View|RedirectResponse
+     */
     public function show(string $slug = null): View|RedirectResponse
     {
         $searchSlug = $slug ?? '';
@@ -22,10 +26,16 @@ class PageController extends Controller
         if ($placement->is_protected && !Auth::check()) {
             return redirect()->route('login');
         }
-        $placement->load(['placementable', 'children.parent']);
+
+        $placement->load(['placementable', 'children' => function ($query) {
+                $query->orderBy('order_column', 'asc');
+            },
+            'children.parent'
+        ]);
 
         if ($placement->placementable) {
             $content = $placement->placementable;
+
             $query = request()->input('q') ?? session('last_search_query');
 
             if (property_exists($content, 'is_protected') && $content->is_protected && !Auth::check()) {
@@ -47,6 +57,7 @@ class PageController extends Controller
         }
 
         if ($placement->children->isNotEmpty()) {
+            $subSections = $placement->children()->orderBy('order_column', 'asc')->get();
             return view('pages.section', [
                 'placement' => $placement,
                 'subSections' => $placement->children,
@@ -59,13 +70,21 @@ class PageController extends Controller
 
     public function home()
     {
+        // Получаем главную страницу (с пустым full_slug для главной)
+        $homePlacement = Placement::where('full_slug', '')->first();
+
         $featured = Placement::where('show_on_main', true)
             ->with('placementable')
+            ->orderBy('order_column', 'asc')
             ->limit(6)
             ->get();
 
-        return view('home', compact('featured'));
+        return view('home', [
+            'featured' => $featured,
+            'content' => $homePlacement  // Передаем Placement напрямую
+        ]);
     }
+
     protected function highlightContent($content, string $query)
     {
         if (empty($query)) return $content;

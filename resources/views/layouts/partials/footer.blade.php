@@ -4,7 +4,9 @@
             <p>&copy; {{ date('Y') }} Dandaron Tradition. All Rights Reserved.</p>
         </div>
 
-        {{-- Компонент навигации с параметром, чтобы скрыть кнопки входа/регистрации --}}
-        <x-navigation :in-footer="true" />
+        {{-- Компонент навигации с дополнительными классами для мобильной версии --}}
+        <div class="w-full md:w-auto relative">
+            <x-navigation :in-footer="true" />
+        </div>
     </div>
 </footer>

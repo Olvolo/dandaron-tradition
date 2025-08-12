@@ -2,13 +2,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             {{-- Левая часть: Логотип --}}
-            <div class="flex items-center space-x-8">
+            <div class="flex items-center space-x-4 md:space-x-8">
                 <a href="{{ route('home') }}" class="flex items-center space-x-2 flex-shrink-0">
                     <img src="{{ asset('images/logo/logo.webp') }}" alt="Логотип" class="h-10 w-auto">
                 </a>
 
                 {{-- Поисковая форма только на больших экранах --}}
-                <div class="hidden lg:block flex-1 max-w-sm">
+                <div class="hidden md:block flex-1 max-w-sm lg:max-w-md">
                     <form action="{{ route('search') }}" method="GET" class="relative">
                         <input
                             type="text"
@@ -32,8 +32,8 @@
             </div>
         </div>
 
-        {{-- Поисковая форма для мобильных и планшетов --}}
-        <div class="lg:hidden pb-4 border-t border-gray-100 pt-4">
+        {{-- Поисковая форма для мобильных --}}
+        <div class="md:hidden pb-4 border-t border-gray-100 pt-4">
             <x-search-form />
         </div>
     </div>
