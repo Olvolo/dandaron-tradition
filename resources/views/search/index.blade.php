@@ -1,6 +1,8 @@
 <x-app-layout>
     <div class="max-w-4xl mx-auto mt-8">
-        <h1 class="text-2xl font-bold mb-4">Результаты поиска по запросу: "{{ $query }}"</h1>
+        <h1 class="text-2xl text-sky-950 font-bold mx-4 mb-4">Результаты поиска по запросу: "{{
+        $query
+        }}"</h1>
 
         @if($results->isEmpty())
             <p>Ничего не найдено.</p>

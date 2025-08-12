@@ -96,3 +96,101 @@ mark.bg-yellow-200 {
     padding: 0.1em;
     border-radius: 0.15em;
 }
+
+/*!* Основные стили для карточек контента *!*/
+/*.content-card {*/
+/*    !* Полупрозрачный белый фон с эффектом матового стекла *!*/
+/*    background-color: rgba(255, 255, 255, 0.85);*/
+/*    backdrop-filter: blur(10px);*/
+/*    -webkit-backdrop-filter: blur(10px); !* для Safari *!*/
+
+/*    !* Мягкие скругленные углы *!*/
+/*    border-radius: 16px;*/
+
+/*    !* Тонкая светлая рамка для дополнительного контраста *!*/
+/*    border: 1px solid rgba(255, 255, 255, 0.3);*/
+
+/*    !* Тень для глубины *!*/
+/*    box-shadow:*/
+/*        0 8px 32px rgba(0, 19, 102, 0.12),*/
+/*        0 2px 8px rgba(0, 19, 102, 0.08);*/
+
+/*    !* Плавные переходы для hover-эффектов *!*/
+/*    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
+/*}*/
+
+/*!* Эффект при наведении *!*/
+/*.content-card:hover {*/
+/*    !* Немного увеличиваем прозрачность и усиливаем тень *!*/
+/*    background-color: rgba(255, 255, 255, 0.92);*/
+/*    box-shadow:*/
+/*        0 12px 48px rgba(0, 19, 102, 0.16),*/
+/*        0 4px 12px rgba(0, 19, 102, 0.12);*/
+
+/*    !* Легкий подъем карточки *!*/
+/*    transform: translateY(-4px);*/
+/*}*/
+
+/*!* Если внутри карточки есть заголовки *!*/
+/*.content-card h3,*/
+/*.content-card h4 {*/
+/*    color: #001366;*/
+/*}*/
+
+/*!* Если есть текст/описание *!*/
+/*.content-card p {*/
+/*    color: rgba(0, 19, 102, 0.8);*/
+/*}*/
+
+/*!* Альтернативный вариант - более яркий и контрастный *!*/
+/*.content-card-bright {*/
+/*    background-color: rgba(255, 255, 255, 0.95);*/
+/*    backdrop-filter: blur(12px);*/
+/*    -webkit-backdrop-filter: blur(12px);*/
+/*    border-radius: 20px;*/
+/*    border: 2px solid rgba(255, 255, 255, 0.5);*/
+/*    box-shadow: 0 16px 64px rgba(0, 19, 102, 0.15);*/
+/*}*/
+
+/*.content-card-bright:hover {*/
+/*    background-color: #ffffff;*/
+/*    box-shadow: 0 20px 80px rgba(0, 19, 102, 0.2);*/
+/*    transform: translateY(-6px);*/
+/*}*/
+
+/*!* Дополнительные стили для внутренних элементов *!*/
+/*.content-card-content {*/
+/*    padding: 1.5rem;*/
+/*}*/
+
+/*.content-card-image {*/
+/*    border-radius: 12px 12px 0 0;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*!* Для мобильных устройств - упрощаем эффекты *!*/
+/*@media (max-width: 768px) {*/
+/*    .content-card {*/
+/*        backdrop-filter: blur(8px);*/
+/*        -webkit-backdrop-filter: blur(8px);*/
+/*    }*/
+
+/*    .content-card:hover {*/
+/*        transform: none; !* убираем подъем на мобильных *!*/
+/*    }*/
+/*}*/
+
+.glassmorphism-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 19, 102, 0.12), 0 2px 8px rgba(0, 19, 102, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glassmorphism-card:hover {
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 12px 48px rgba(0, 19, 102, 0.16), 0 4px 12px rgba(0, 19, 102, 0.12);
+    transform: translateY(-4px);
+}
