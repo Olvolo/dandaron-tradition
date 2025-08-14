@@ -32,7 +32,9 @@
 
     <div class="{{ $inFooter ? 'lg:block' : 'lg:hidden' }}">
 
-        <button @click="isOpen = !isOpen" class="p-2 rounded-md {{ $inFooter ? 'text-sky-100 hover:text-sky-200 hover:bg-sky-700' : 'text-sky-900 hover:text-gray-900 hover:bg-sky-100' }} focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
+        <button @click="isOpen = !isOpen" class="p-2 rounded-md {{ $inFooter ? 'text-sky-100
+        hover:text-sky-200 hover:bg-sky-700' : 'text-sky-900 hover:text-sky-950 hover:bg-sky-100'
+        }} focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
 
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>

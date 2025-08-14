@@ -57,10 +57,13 @@ class PageController extends Controller
         }
 
         if ($placement->children->isNotEmpty()) {
+            // This line correctly fetches and sorts the subsections.
             $subSections = $placement->children()->orderBy('order_column', 'asc')->get();
+
             return view('pages.section', [
                 'placement' => $placement,
-                'subSections' => $placement->children,
+                // THE FIX: Use the new, correctly sorted variable here.
+                'subSections' => $subSections,
                 'content' => $placement
             ]);
         }

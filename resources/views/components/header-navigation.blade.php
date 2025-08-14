@@ -8,9 +8,9 @@
         @endif
 
         {{-- Блок аутентификации --}}
-        <div class="pl-6 border-l border-gray-200 flex items-center space-x-4">
+        <div class="pl-6 border-l border-sky-300 flex items-center space-x-4">
             @guest
-                <a href="{{ route('login') }}" class="text-sm text-gray-700 hover:text-sky-600 transition-colors">
+                <a href="{{ route('login') }}" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
                     Вход
                 </a>
                 <a href="{{ route('register') }}" class="text-sm font-medium px-4 py-2 bg-sky-500 text-white rounded-md hover:bg-sky-600 transition-colors">
@@ -18,12 +18,12 @@
                 </a>
             @endguest
             @auth
-                <a href="{{ route('dashboard') }}" class="text-sm text-gray-700 hover:text-sky-600 transition-colors">
+                <a href="{{ route('dashboard') }}" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
                     Личный кабинет
                 </a>
                 <form method="POST" action="{{ route('logout') }}" class="inline">
                     @csrf
-                    <button type="submit" class="text-sm text-gray-700 hover:text-sky-600 transition-colors">
+                    <button type="submit" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
                         Выход
                     </button>
                 </form>
@@ -33,7 +33,7 @@
 
     {{-- Мобильное меню --}}
     <div class="lg:hidden">
-        <button @click="isOpen = !isOpen" class="p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
+        <button @click="isOpen = !isOpen" class="p-2 rounded-md text-sky-800 hover:text-sky-950 hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -57,22 +57,22 @@
                     @endforeach
                 @endif
 
-                <div class="border-t border-gray-200 mt-2 pt-2">
+                <div class="border-t border-sky-300 mt-2 pt-2">
                     @guest
-                        <a href="{{ route('login') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+                        <a href="{{ route('login') }}" class="block px-4 py-2 text-sm text-sky-800 hover:bg-sky-200 transition-colors">
                             Вход
                         </a>
-                        <a href="{{ route('register') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+                        <a href="{{ route('register') }}" class="block px-4 py-2 text-sm text-sky-800 hover:bg-sky-200 transition-colors">
                             Регистрация
                         </a>
                     @endguest
                     @auth
-                        <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+                        <a href="{{ route('dashboard') }}" class="block px-4 py-2 text-sm text-sky-800 hover:bg-sky-200 transition-colors">
                             Личный кабинет
                         </a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <button type="submit" class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+                            <button type="submit" class="w-full text-left block px-4 py-2 text-sm text-sky-800 hover:bg-sky-200 transition-colors">
                                 Выход
                             </button>
                         </form>

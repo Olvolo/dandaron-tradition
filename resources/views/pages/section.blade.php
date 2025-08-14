@@ -1,22 +1,20 @@
 <x-layout :content="$placement">
-    {{-- Сначала выводим основной контент главной страницы (если он есть) --}}
-    @if ($placement->placementable)
-        <div class="bg-white/80 p-8 rounded-lg shadow-lg mb-8">
-            <div class="prose prose-lg max-w-none">
-                {!! $placement->placementable->content_html !!}
-            </div>
-        </div>
-    @endif
+    @section('title', $placement->title)
 
-    {{-- Теперь выводим карточки дочерних разделов --}}
-    @if ($subSections->isNotEmpty())
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            @foreach($subSections as $section)
-                <a href="{{ url($section->full_slug) }}" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" >
-                    <h2 class="text-xl text-center font-bold text-gray-800">{{ $section->title }}</h2>
-                    {{-- В будущем здесь можно будет выводить аннотацию раздела --}}
-                </a>
-            @endforeach
+    <div class="prose prose-lg max-w-none mb-12">
+        <h1 class="text-center">{{ $placement->title }}</h1>
+    </div>
+
+    @if($subSections->isNotEmpty())
+        {{-- This wrapper will center the grid block --}}
+        <div class="flex justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                @foreach($subSections as $subSection)
+                    <div class="w-72">
+                        <x-content-card :item="$subSection" />
+                    </div>
+                @endforeach
+            </div>
         </div>
     @endif
 </x-layout>
