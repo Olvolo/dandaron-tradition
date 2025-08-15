@@ -34,7 +34,7 @@
           style="background-image: url('{{ asset($content->background_image_url) }}'); background-size: cover; background-position: center; background-attachment: fixed;"
     @endif
 >
-<div class="min-h-screen bg-gray-100">
+<div class="min-h-screen bg-sky-200">
     @include('layouts.partials.header')
 
     <!-- Page Heading -->
@@ -83,5 +83,6 @@
         });
     </script>
 @endif
+
 </body>
 </html>

@@ -135,3 +135,9 @@ Win + R → shell:startup
         </div>
 
         <img src="/images/articles/fail"
+
+        Очистка:
+        php artisan cache:clear
+        php artisan config:clear
+        php artisan route:clear
+        php artisan view:clear

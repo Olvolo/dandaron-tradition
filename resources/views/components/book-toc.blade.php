@@ -13,7 +13,7 @@
                 <div class="flex-shrink-0 p-6 border-b">
                     <div class="flex items-center justify-between">
                         <h3 class="text-xl font-semibold">Оглавление</h3>
-                        <button @click="tocOpen = false" class="p-1 rounded-full hover:bg-gray-200">&times;</button>
+                        <button @click="tocOpen = false" class="p-1 rounded-full hover:bg-sky-300">&times;</button>
                     </div>
                 </div>
                 <div class="flex-grow p-6 overflow-y-auto">

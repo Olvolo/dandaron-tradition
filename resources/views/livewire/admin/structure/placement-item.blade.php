@@ -3,7 +3,7 @@
         <div class="flex justify-between items-center p-3">
             <div class="flex items-center">
                 @if ($placement->children->isNotEmpty())
-                    <button wire:click="$toggle('open')" class="mr-2 text-gray-500 hover:text-gray-800">
+                    <button wire:click="$toggle('open')" class="mr-2 text-sky-600 hover:text-sky-900">
                         <svg class="h-4 w-4 transform transition-transform" @if($open) style="transform: rotate(90deg);" @endif fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                     </button>
                 @else
@@ -11,7 +11,7 @@
                 @endif
                 <div>
                     <span class="font-semibold">{{ $placement->title }}</span>
-                    <span class="ml-2 text-sm text-gray-500 font-mono">/{{ $placement->slug }}</span>
+                    <span class="ml-2 text-sm text-sky-600 font-mono">/{{ $placement->slug }}</span>
                 </div>
             </div>
             <div class="space-x-2 text-sm">

@@ -20,31 +20,35 @@
             @endforeach
         </ul>
     @else
-        <p class="text-gray-500">Глав пока нет.</p>
+        <p class="text-sky-600">Глав пока нет.</p>
     @endif
 
     {{-- Модальное окно для создания/редактирования глав --}}
     @if ($isChapterModalOpen)
         <div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div @click.away="closeChapterModal" class="bg-white rounded-lg shadow-xl p-6 w-full max-w-4xl">
+            <div @click.away="closeChapterModal" class="bg-sky-50 rounded-lg shadow-xl p-6 w-full
+            max-w-4xl">
                 <h2 class="text-xl font-bold mb-4">{{ $chapter_id ? 'Редактировать главу' : 'Создать главу' }}</h2>
                 <form>
                     <div class="mb-4">
-                        <label for="chapter_title" class="block text-sm font-medium text-gray-700">Название главы</label>
-                        <input type="text" id="chapter_title" wire:model.defer="chapter_title" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                        <label for="chapter_title" class="block text-sm font-medium text-sky-800">Название главы</label>
+                        <input type="text" id="chapter_title" wire:model.defer="chapter_title"
+                               class="mt-1 block w-full border-sky-400 rounded-md shadow-sm">
                     </div>
                     <div class="mb-4">
-                        <label for="chapter_order_column" class="block text-sm font-medium text-gray-700">Порядок</label>
-                        <input type="number" id="chapter_order_column" wire:model.defer="chapter_order_column" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                        <label for="chapter_order_column" class="block text-sm font-medium text-sky-800">Порядок</label>
+                        <input type="number" id="chapter_order_column" wire:model.defer="chapter_order_column" class="mt-1 block w-full border-sky-400 rounded-md shadow-sm">
                     </div>
                     <div class="mb-4">
-                        <label for="chapter_content_html" class="block text-sm font-medium text-gray-700">HTML-код Главы</label>
-                        <textarea id="chapter_content_html" wire:model.defer="chapter_content_html" rows="15" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm font-mono text-sm"></textarea>
+                        <label for="chapter_content_html" class="block text-sm font-medium text-sky-800">HTML-код Главы</label>
+                        <textarea id="chapter_content_html" wire:model.defer="chapter_content_html" rows="15" class="mt-1 block w-full border-sky-400 rounded-md shadow-sm font-mono text-sm"></textarea>
                     </div>
                 </form>
                 <div class="flex justify-end space-x-4 mt-6 pt-4 border-t">
-                    <button wire:click="closeChapterModal" class="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400">Отмена</button>
-                    <button wire:click.prevent="storeChapter" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Сохранить</button>
+                    <button wire:click="closeChapterModal" class="px-4 py-2 bg-sky-400 rounded-md
+                    hover:bg-sky-500">Отмена</button>
+                    <button wire:click.prevent="storeChapter" class="px-4 py-2 bg-blue-600 text-sky-50
+                     rounded-md hover:bg-blue-700">Сохранить</button>
                 </div>
             </div>
         </div>

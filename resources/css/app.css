@@ -12,6 +12,7 @@
 .prose h4 + p {
     text-indent: 0;
 }
+
 /* Улучшенные стили для заголовков */
 .prose h1 {
     @apply text-4xl font-bold text-sky-950 mb-6 mt-10 text-center;
@@ -28,8 +29,8 @@
 .prose h4 {
     @apply text-xl font-medium text-sky-700 mb-3 mt-5;
 }
-.prose-lg h1, .prose-lg h2, .prose-lg h3, .prose-lg strong {
-}
+
+/* ИСПРАВЛЕНО: Убрано пустое правило */
 
 .citation-mark {
     @apply text-red-500 font-bold;
@@ -41,6 +42,7 @@
 blockquote {
     @apply border-l-4 border-sky-600 pl-6 my-6 text-sky-950 text-xl italic font-semibold;
 }
+
 .prose ol,
 .prose ul {
     list-style-type: revert;
@@ -59,13 +61,6 @@ blockquote {
 .prose ol.list-none {
     list-style-type: none;
     padding-left: 0;
-}
-
-mark {
-    background-color: #FEF08A;
-    padding: 0.1em 0.2em;
-    border-radius: 0.25em;
-    color: inherit;
 }
 
 /* Стиль для выделенного текста */
@@ -97,100 +92,27 @@ mark.bg-yellow-200 {
     border-radius: 0.15em;
 }
 
-/*!* Основные стили для карточек контента *!*/
-/*.content-card {*/
-/*    !* Полупрозрачный белый фон с эффектом матового стекла *!*/
-/*    background-color: rgba(255, 255, 255, 0.85);*/
-/*    backdrop-filter: blur(10px);*/
-/*    -webkit-backdrop-filter: blur(10px); !* для Safari *!*/
+.centered-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 288px);
+    justify-content: center;
+    gap: 2rem;
+    grid-auto-rows: 200px;
+}
 
-/*    !* Мягкие скругленные углы *!*/
-/*    border-radius: 16px;*/
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.2;
+}
 
-/*    !* Тонкая светлая рамка для дополнительного контраста *!*/
-/*    border: 1px solid rgba(255, 255, 255, 0.3);*/
+html {
+    scroll-behavior: smooth;
+}
 
-/*    !* Тень для глубины *!*/
-/*    box-shadow:*/
-/*        0 8px 32px rgba(0, 19, 102, 0.12),*/
-/*        0 2px 8px rgba(0, 19, 102, 0.08);*/
-
-/*    !* Плавные переходы для hover-эффектов *!*/
-/*    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*}*/
-
-/*!* Эффект при наведении *!*/
-/*.content-card:hover {*/
-/*    !* Немного увеличиваем прозрачность и усиливаем тень *!*/
-/*    background-color: rgba(255, 255, 255, 0.92);*/
-/*    box-shadow:*/
-/*        0 12px 48px rgba(0, 19, 102, 0.16),*/
-/*        0 4px 12px rgba(0, 19, 102, 0.12);*/
-
-/*    !* Легкий подъем карточки *!*/
-/*    transform: translateY(-4px);*/
-/*}*/
-
-/*!* Если внутри карточки есть заголовки *!*/
-/*.content-card h3,*/
-/*.content-card h4 {*/
-/*    color: #001366;*/
-/*}*/
-
-/*!* Если есть текст/описание *!*/
-/*.content-card p {*/
-/*    color: rgba(0, 19, 102, 0.8);*/
-/*}*/
-
-/*!* Альтернативный вариант - более яркий и контрастный *!*/
-/*.content-card-bright {*/
-/*    background-color: rgba(255, 255, 255, 0.95);*/
-/*    backdrop-filter: blur(12px);*/
-/*    -webkit-backdrop-filter: blur(12px);*/
-/*    border-radius: 20px;*/
-/*    border: 2px solid rgba(255, 255, 255, 0.5);*/
-/*    box-shadow: 0 16px 64px rgba(0, 19, 102, 0.15);*/
-/*}*/
-
-/*.content-card-bright:hover {*/
-/*    background-color: #ffffff;*/
-/*    box-shadow: 0 20px 80px rgba(0, 19, 102, 0.2);*/
-/*    transform: translateY(-6px);*/
-/*}*/
-
-/*!* Дополнительные стили для внутренних элементов *!*/
-/*.content-card-content {*/
-/*    padding: 1.5rem;*/
-/*}*/
-
-/*.content-card-image {*/
-/*    border-radius: 12px 12px 0 0;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*!* Для мобильных устройств - упрощаем эффекты *!*/
-/*@media (max-width: 768px) {*/
-/*    .content-card {*/
-/*        backdrop-filter: blur(8px);*/
-/*        -webkit-backdrop-filter: blur(8px);*/
-/*    }*/
-
-/*    .content-card:hover {*/
-/*        transform: none; !* убираем подъем на мобильных *!*/
-/*    }*/
-/*}*/
-
-/*.glassmorphism-card {*/
-/*    background-color: rgba(255, 255, 255, 0.85);*/
-/*    backdrop-filter: blur(10px);*/
-/*    -webkit-backdrop-filter: blur(10px);*/
-/*    border: 1px solid rgba(255, 255, 255, 0.3);*/
-/*    box-shadow: 0 8px 32px rgba(0, 19, 102, 0.12), 0 2px 8px rgba(0, 19, 102, 0.08);*/
-/*    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*}*/
-
-/*.glassmorphism-card:hover {*/
-/*    background-color: rgba(255, 255, 255, 0.92);*/
-/*    box-shadow: 0 12px 48px rgba(0, 19, 102, 0.16), 0 4px 12px rgba(0, 19, 102, 0.12);*/
-/*    transform: translateY(-4px);*/
-/*}*/
+/* Убедитесь что элементы с id видимы */
+[id] {
+    scroll-margin-top: 80px;
+}

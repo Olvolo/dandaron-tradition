@@ -8,12 +8,13 @@
         @endif
 
         {{-- Блок аутентификации --}}
-        <div class="pl-6 border-l border-sky-300 flex items-center space-x-4">
+        <div class="pl-4 border-l border-sky-300 flex items-center space-x-2">
             @guest
                 <a href="{{ route('login') }}" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
                     Вход
                 </a>
-                <a href="{{ route('register') }}" class="text-sm font-medium px-4 py-2 bg-sky-500 text-white rounded-md hover:bg-sky-600 transition-colors">
+                <a href="{{ route('register') }}" class="text-sm font-medium px-4 py-2 bg-sky-500
+                 text-sky-50 rounded-md hover:bg-sky-600 transition-colors">
                     Регистрация
                 </a>
             @endguest

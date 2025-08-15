@@ -96,8 +96,13 @@ class Article extends Model
         }
         return '#';
     }
-    public function getTypeName()
+
+    public function getFixedContentAttribute(): string
     {
-        return 'Статья';
+        // Убираем двойное экранирование
+        $fixed = html_entity_decode($this->content_html, ENT_QUOTES, 'UTF-8');
+        // На случай тройного экранирования (редко, но бывает)
+        $fixed = html_entity_decode($fixed, ENT_QUOTES, 'UTF-8');
+        return $fixed;
     }
 }

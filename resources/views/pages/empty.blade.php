@@ -7,7 +7,7 @@
             {{-- Хлебные крошки --}}
             @if($placement->parent)
                 <nav class="mb-6">
-                    <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                    <ol class="flex items-center space-x-2 text-sm text-sky-700">
                         <li><a href="{{ url('/') }}" class="hover:text-blue-600">Главная</a></li>
 
                         @php
@@ -16,7 +16,7 @@
 
                         @foreach($ancestors as $ancestor)
                             @if($ancestor->slug !== 'home')
-                                <li class="before:content-['/'] before:mx-2 before:text-gray-400">
+                                <li class="before:content-['/'] before:mx-2 before:text-sky-500">
                                     <a href="{{ url($ancestor->full_slug) }}" class="hover:text-blue-600">
                                         {{ $ancestor->title }}
                                     </a>
@@ -24,8 +24,8 @@
                             @endif {{-- <-- Закрываем внутренний @if --}}
                         @endforeach
 
-                        <li class="before:content-['/'] before:mx-2 before:text-gray-400">
-                            <span class="text-gray-900 font-medium">{{ $placement->title }}</span>
+                        <li class="before:content-['/'] before:mx-2 before:text-sky-500">
+                            <span class="text-sky-950 font-medium">{{ $placement->title }}</span>
                         </li>
                     </ol>
                 </nav>
@@ -33,7 +33,7 @@
 
             {{-- Заголовок страницы --}}
             <div class="mb-8">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                <h1 class="text-4xl font-bold text-sky-950 mb-4">
                     {{ $placement->title }}
                 </h1>
             </div>
@@ -43,7 +43,7 @@
 
                 @if($placement->slug === 'kontakty')
                     {{-- Специальный контент для страницы контактов --}}
-                    <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                    <div class="bg-sky-100 p-6 rounded-lg mb-8">
                         {{-- ... код для контактов ... --}}
                     </div>
                 @else

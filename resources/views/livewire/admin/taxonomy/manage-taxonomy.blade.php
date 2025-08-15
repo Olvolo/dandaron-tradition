@@ -14,14 +14,14 @@
                 <button wire:click="create('Category')" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">Создать категорию</button>
             </div>
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
+                <table class="min-w-full divide-y divide-sky-300">
+                    <thead class="bg-sky-100">
                     <tr>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Название</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Действия</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-sky-100 uppercase tracking-wider">Название</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-sky-100 uppercase tracking-wider">Действия</th>
                     </tr>
                     </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
+                    <tbody class="bg-white divide-y divide-sky-300">
                     @forelse ($categories as $category)
                         <tr wire:key="category-{{ $category->id }}">
                             <td class="px-6 py-4 whitespace-nowrap">{{ $category->name }}</td>
@@ -31,7 +31,7 @@
                             </td>
                         </tr>
                     @empty
-                        <tr><td colspan="2" class="p-4 text-center text-gray-500">Нет категорий.</td></tr>
+                        <tr><td colspan="2" class="p-4 text-center text-sky-100">Нет категорий.</td></tr>
                     @endforelse
                     </tbody>
                 </table>
@@ -44,14 +44,14 @@
                 <button wire:click="create('Tag')" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">Создать тег</button>
             </div>
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
+                <table class="min-w-full divide-y divide-sky-300">
+                    <thead class="bg-sky-100">
                     <tr>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Название</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Действия</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-sky-100 uppercase tracking-wider">Название</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-sky-100 uppercase tracking-wider">Действия</th>
                     </tr>
                     </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
+                    <tbody class="bg-white divide-y divide-sky-300">
                     @forelse ($tags as $tag)
                         <tr wire:key="tag-{{ $tag->id }}">
                             <td class="px-6 py-4 whitespace-nowrap">{{ $tag->name }}</td>
@@ -61,7 +61,7 @@
                             </td>
                         </tr>
                     @empty
-                        <tr><td colspan="2" class="p-4 text-center text-gray-500">Нет тегов.</td></tr>
+                        <tr><td colspan="2" class="p-4 text-center text-sky-100">Нет тегов.</td></tr>
                     @endforelse
                     </tbody>
                 </table>
@@ -75,13 +75,13 @@
                 <h2 class="text-xl font-bold mb-4">{{ $itemId ? 'Редактировать' : 'Создать' }} {{ $modelType === 'Category' ? 'категорию' : 'тег' }}</h2>
                 <form>
                     <div class="mb-4">
-                        <label for="name" class="block text-sm font-medium text-gray-700">Название</label>
-                        <input type="text" id="name" wire:model.lazy="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <label for="name" class="block text-sm font-medium text-sky-800">Название</label>
+                        <input type="text" id="name" wire:model.lazy="name" class="mt-1 block w-full border-sky-400 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
                         @error('name') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                     </div>
                 </form>
                 <div class="flex justify-end space-x-4 mt-6">
-                    <button wire:click="closeModal()" class="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400">Отмена</button>
+                    <button wire:click="closeModal()" class="px-4 py-2 bg-sky-400 rounded-md hover:bg-sky-500">Отмена</button>
                     <button wire:click.prevent="store()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Сохранить</button>
                 </div>
             </div>

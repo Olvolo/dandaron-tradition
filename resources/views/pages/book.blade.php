@@ -5,10 +5,10 @@
         <div class="bg-white/80 p-8 rounded-lg shadow-lg">
             {{-- "Обложка" книги --}}
             <h1 class="text-4xl text-center font-bold mb-2">{{ $book->title }}</h1>
-            <p class="text-lg text-gray-700 mb-4">Авторы: {{ $book->authors->pluck('name')->join(', ') }}</p>
+            <p class="text-lg text-sky-800 mb-4">Авторы: {{ $book->authors->pluck('name')->join(', ') }}</p>
 
             @if($book->annotation)
-                <p class="text-xl text-gray-800 italic mb-6 border-l-4 border-amber-400 pl-4">{{ $book->annotation }}</p>
+                <p class="text-xl text-sky-900 italic mb-6 border-l-4 border-amber-400 pl-4">{{ $book->annotation }}</p>
             @endif
 
             @if($book->description)
@@ -39,7 +39,7 @@
                     <div class="flex-shrink-0 p-6 border-b">
                         <div class="flex items-center justify-between">
                             <h3 class="text-xl font-semibold">Оглавление</h3>
-                            <button @click="tocOpen = false" class="p-1 rounded-full hover:bg-gray-200">&times;</button>
+                            <button @click="tocOpen = false" class="p-1 rounded-full hover:bg-sky-300">&times;</button>
                         </div>
                     </div>
                     <div class="flex-grow p-6 overflow-y-auto">
