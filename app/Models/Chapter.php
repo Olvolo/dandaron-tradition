@@ -32,7 +32,6 @@ class Chapter extends Model
         'custom_styles',
         'background_image_url',
     ];
-    // Связь с дочерними элементами (один уровень)
     public function children(): HasMany
     {
         return $this->hasMany(Chapter::class, 'parent_id')->orderBy('order_column');
@@ -64,13 +63,11 @@ class Chapter extends Model
     {
         return $this->belongsTo(Book::class);
     }
-    public function getUrl()
+    public function getUrl(): string
     {
-        if ($this->placement) {
-            return url($this->placement->full_slug);
-        }
-        return '#';
+        return route('chapters.show', $this);
     }
+
     public function getTypeName()
     {
         return 'Глава';

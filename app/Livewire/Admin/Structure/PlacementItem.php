@@ -8,8 +8,12 @@ use Livewire\Component;
 class PlacementItem extends Component
 {
     public Placement $placement;
-    public $open = true;
+    public $open = false;
 
+    public function toggle(): void
+    {
+        $this->open = !$this->open;
+    }
     public function createChildPlacement(): void
     {
         $this->dispatch('createPlacement', parentId: $this->placement->id);

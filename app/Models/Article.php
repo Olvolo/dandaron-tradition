@@ -96,7 +96,15 @@ class Article extends Model
         }
         return '#';
     }
+    public function getTypeName()
+    {
+        if ($this->parent_id) {
+            $parentTitle = $this->parent ? $this->parent->title : 'Неизвестная книга';
+            return "Глава из книги «{$parentTitle}»";
+        }
 
+        return 'Статья';
+    }
     public function getFixedContentAttribute(): string
     {
         // Убираем двойное экранирование

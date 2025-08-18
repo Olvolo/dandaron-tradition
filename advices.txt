@@ -141,3 +141,32 @@ Win + R → shell:startup
         php artisan config:clear
         php artisan route:clear
         php artisan view:clear
+
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    url('/backgrounds/sky_fairies.webp’);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+<div class="flex justify-center">
+            <figure class="rounded-lg shadow-md max-w-[400px]
+                      text-center mb-4">
+                <img src="/images/authors/Pupyshev.webp"
+                     alt=" Виктор Николаевич Пупышев "
+                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"  style="max-width: 400px;">
+            </figure>
+        </div>
+
+git add .
+git commit -m "fix articles content and styles"
+git push origin master
+
+cd C:\meilisearch
+.\meilisearch.exe --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
