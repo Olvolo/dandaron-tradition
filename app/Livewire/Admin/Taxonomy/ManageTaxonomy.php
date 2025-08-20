@@ -23,8 +23,8 @@ class ManageTaxonomy extends Component
 
     public function render()
     {
-        $this->categories = Category::latest()->get();
-        $this->tags = Tag::latest()->get();
+        $this->categories = Category::orderBy('name', 'asc')->get();
+        $this->tags = Tag::orderBy('name', 'asc')->get();
         return view('livewire.admin.taxonomy.manage-taxonomy');
     }
 

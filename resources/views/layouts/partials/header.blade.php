@@ -1,4 +1,4 @@
-<header class="bg-sky-200 border-b border-sky-300 sticky top-0 z-40">
+<header class="bg-sky-200 border-b border-sky-300 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             {{-- Левая часть: Логотип --}}

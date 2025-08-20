@@ -3,13 +3,11 @@
         <h1 class="text-2xl font-bold">Управление статьями</h1>
         <button wire:click="create()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Создать статью</button>
     </div>
-
     @if (session()->has('message'))
         <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
             <span class="block sm:inline">{{ session('message') }}</span>
         </div>
     @endif
-
     <div class="overflow-x-auto bg-white rounded-lg shadow">
         <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-50">
@@ -35,66 +33,68 @@
             </tbody>
         </table>
     </div>
-
     @if ($isModalOpen)
         <div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-4xl">
+            <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-[95vw] max-h-[90vh] overflow-y-auto">
                 <h2 class="text-xl font-bold mb-4">{{ $article_id ? 'Редактировать статью' : 'Создать статью' }}</h2>
                 <form>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-                        <div>
-                            <div class="mb-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 overflow-hidden">
+                        <div class="space-y-4 min-w-0">
+                            <div class="min-w-0">
                                 <label for="title" class="block text-sm font-medium text-gray-700">Заголовок</label>
-                                <input type="text" id="title" wire:model.defer="title" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                                <input type="text" id="title" wire:model.defer="title" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm resize-x min-w-[200px] max-w-full">
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <label for="annotation" class="block text-sm font-medium text-gray-700">Аннотация</label>
-                                <textarea id="annotation" wire:model.defer="annotation" rows="3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
+                                <textarea id="annotation" wire:model.defer="annotation" rows="3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm resize min-w-[200px] min-h-[3rem] max-w-full"></textarea>
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <label for="parent_id" class="block text-sm font-medium text-gray-700">Родительский раздел</label>
-                                <select id="parent_id" wire:model.defer="parent_id" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                                <select id="parent_id" wire:model.defer="parent_id" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm min-w-[200px] max-w-full">
                                     <option value=""> — Нет — </option>
                                     @foreach ($potentialParents as $parent)
                                         <option value="{{ $parent->id }}">{{ $parent->title }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <label for="content_html" class="block text-sm font-medium text-gray-700">HTML-код Контента</label>
-                                <textarea id="content_html" wire:model.defer="content_html" rows="15" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm font-mono text-sm"></textarea>
+                                <textarea id="content_html" wire:model.defer="content_html" rows="15" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm font-mono text-sm resize min-w-[200px] min-h-[15rem] max-w-full"></textarea>
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <label for="custom_styles" class="block text-sm font-medium text-gray-700">Кастомные CSS-стили</label>
-                                <textarea id="custom_styles" wire:model.defer="custom_styles" rows="5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm font-mono text-sm"></textarea>
+                                <textarea id="custom_styles" wire:model.defer="custom_styles" rows="5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm font-mono text-sm resize min-w-[200px] min-h-[5rem] max-w-full"></textarea>
                             </div>
                         </div>
-                        <div>
-                            <div class="mb-4">
+                        <div class="space-y-4 min-w-0">
+                            <div class="min-w-0">
                                 <label for="authors" class="block text-sm font-medium text-gray-700">Авторы</label>
-                                <select id="authors" wire:model.defer="selectedAuthors" multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" size="5">
-                                    @foreach($allAuthors as $author)
+                                <select id="authors" wire:model.defer="selectedAuthors" multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm resize min-h-[8rem] min-w-[200px] max-w-full">
+                                    @foreach($allAuthors->sortBy('name') as $author)
                                         <option value="{{ $author->id }}">{{ $author->name }}</option>
                                     @endforeach
                                 </select>
+                                <p class="mt-1 text-xs text-gray-500">Удерживайте Ctrl (Cmd на Mac) для выбора нескольких элементов</p>
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <label for="categories" class="block text-sm font-medium text-gray-700">Категории</label>
-                                <select id="categories" wire:model.defer="selectedCategories" multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" size="5">
-                                    @foreach($allCategories as $category)
+                                <select id="categories" wire:model.defer="selectedCategories" multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm resize min-h-[8rem] min-w-[200px] max-w-full">
+                                    @foreach($allCategories->sortBy('name') as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
+                                <p class="mt-1 text-xs text-gray-500">Удерживайте Ctrl (Cmd на Mac) для выбора нескольких элементов</p>
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <label for="tags" class="block text-sm font-medium text-gray-700">Теги</label>
-                                <select id="tags" wire:model.defer="selectedTags" multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" size="5">
-                                    @foreach($allTags as $tag)
+                                <select id="tags" wire:model.defer="selectedTags" multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm resize min-h-[8rem] min-w-[200px] max-w-full">
+                                    @foreach($allTags->sortBy('name') as $tag)
                                         <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                                     @endforeach
                                 </select>
+                                <p class="mt-1 text-xs text-gray-500">Удерживайте Ctrl (Cmd на Mac) для выбора нескольких элементов</p>
                             </div>
-                            <div class="mb-4">
+                            <div class="min-w-0">
                                 <div class="flex items-center">
                                     <input id="is_protected_article" wire:model.defer="is_protected" type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                     <label for="is_protected_article" class="ml-2 block text-sm text-gray-900">Защищено (только для вошедших)</label>
@@ -111,3 +111,5 @@
         </div>
     @endif
 </div>
+
+

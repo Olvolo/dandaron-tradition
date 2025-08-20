@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Dandaron Tradition' }}</title>
+    <meta name="description" content="{{ $content->annotation ?? 'Dandaron Tradition - онлайн-архив статей и книг, посвящённый работам ряда авторов.' }}">
+
     <meta name="description" content="{{ $description ?? 'Онлайн-архив статей и книг, посвящённый работам ряда авторов.' }}">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +33,7 @@
 
 @include('layouts.partials.header')
 
-<main class="flex-grow container mx-auto p-4 md:p-6 pt-4">
+<main class="flex-grow container mx-auto p-4 md:p-6 pt-20 xl:pt-24">
     {{ $slot }}
 </main>
 

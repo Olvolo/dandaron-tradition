@@ -170,3 +170,6 @@ git push origin master
 
 cd C:\meilisearch
 .\meilisearch.exe --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
+
+Адрес ссылки при адресе  http://dandaron-tradition.test/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii:
+<a href="/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii" class="text-blue-500 hover:underline">О. О. РОЗЕНБЕРГ И ПРОБЛЕМА ЯЗЫКА ОПИСАНИЯ В БУДДОЛОГИИ</a>.<a href="#ref-89" class="text-blue-500 hover:underline">↩</a>
