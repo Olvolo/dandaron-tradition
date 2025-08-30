@@ -173,3 +173,9 @@ cd C:\meilisearch
 
 Адрес ссылки при адресе  http://dandaron-tradition.test/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii:
 <a href="/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii" class="text-blue-500 hover:underline">О. О. РОЗЕНБЕРГ И ПРОБЛЕМА ЯЗЫКА ОПИСАНИЯ В БУДДОЛОГИИ</a>.<a href="#ref-89" class="text-blue-500 hover:underline">↩</a>
+
+
+<div class="diagram-container">
+                <img src="/schemes/***" alt="***"
+                     style="width: 100%; max-width: 600px;">
+            </div>

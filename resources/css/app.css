@@ -169,3 +169,19 @@ html {
     scroll-margin-top: 80px;
 }
 
+.diagram-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram-container img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    vertical-align: top; /* Альтернатива display: block */
+}
