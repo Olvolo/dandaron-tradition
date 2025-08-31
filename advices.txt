@@ -179,3 +179,16 @@ cd C:\meilisearch
                 <img src="/schemes/***" alt="***"
                      style="width: 100%; max-width: 600px;">
             </div>
+
+            <div class="flex justify-center my-4">
+                <figure class="rounded-lg shadow-md max-w-[300px] text-center">
+                    <img src="/images/***"
+                         alt="***"
+                         class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+                    <figcaption class="mt-2 mb-4 px-4 italic text-gray-800 text-sm">
+                        ***
+                    </figcaption>
+                </figure>
+            </div>
+
+             <span class="underline"></span> - подчёркивание
