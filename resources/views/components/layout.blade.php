@@ -33,7 +33,7 @@
 
 @include('layouts.partials.header')
 
-<main class="flex-grow container mx-auto p-4 md:p-6 pt-20 xl:pt-24">
+<main class="flex-grow container mx-auto p-4 md:p-6 pt-10 xl:pt-12">
     {{ $slot }}
 </main>
 

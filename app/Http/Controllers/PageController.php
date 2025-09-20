@@ -18,6 +18,7 @@ class PageController extends Controller
      * @param string|null $slug
      * @return View|RedirectResponse
      */
+
     public function show(string $slug = null): View|RedirectResponse
     {
         $searchSlug = $slug ?? '';
@@ -28,19 +29,21 @@ class PageController extends Controller
         }
 
         $placement->load(['placementable', 'children' => function ($query) {
-                $query->orderBy('order_column', 'asc');
-            },
+            $query->orderBy('order_column', 'asc');
+        },
             'children.parent'
         ]);
 
         if ($placement->placementable) {
             $content = $placement->placementable;
 
-            $query = request()->input('q') ?? session('last_search_query');
-
-            if (property_exists($content, 'is_protected') && $content->is_protected && !Auth::check()) {
+            // Проверяем is_protected у самого контента (Article/Book)
+            if (($content->hasAttribute('is_protected') || isset($content->is_protected))
+                && $content->is_protected && !Auth::check()) {
                 return redirect()->route('login');
             }
+
+            $query = request()->input('q') ?? session('last_search_query');
 
             // Применяем подсветку, если есть поисковый запрос
             if ($query) {
@@ -57,12 +60,10 @@ class PageController extends Controller
         }
 
         if ($placement->children->isNotEmpty()) {
-            // This line correctly fetches and sorts the subsections.
             $subSections = $placement->children()->orderBy('order_column', 'asc')->get();
 
             return view('pages.section', [
                 'placement' => $placement,
-                // THE FIX: Use the new, correctly sorted variable here.
                 'subSections' => $subSections,
                 'content' => $placement
             ]);
@@ -70,6 +71,9 @@ class PageController extends Controller
 
         return view('pages.empty', ['placement' => $placement, 'content' => $placement]);
     }
+
+
+
 
     public function home()
     {

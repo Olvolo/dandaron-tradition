@@ -1,53 +1,17 @@
+================================================================================
+                    ПАМЯТКА ПО ФОРМАТИРОВАНИЮ И РАБОТЕ С ПРОЕКТОМ
+================================================================================
+
+🎨 CSS-СТИЛИ ДЛЯ ФОНОВ СТРАНИЦ
+================================================================================
+
+УНИВЕРСАЛЬНЫЙ CSS-ШАБЛОН:
+
 body {
-  position: relative;
-  font-family: sans-serif;
-  color: #fff; /* по умолчанию — белый текст */
-  font-size: 150%;
+  /* Фоновое изображение */
+  --background-image: url('/backgrounds/your_image.webp');
 
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* затемнение */
-    url('/backgrounds/your_image.webp');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* Если хочешь использовать затемнение через псевдоэлемент: */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* затемнение — можно заменить на светлый, градиент и т.д. */
-  z-index: -1;
-}
-Что можно менять в шаблоне
-rgba(0,0,0,0.4) → на rgba(255,255,255,0.2) для осветления.
-
-linear-gradient(...) → можешь задать разные градиенты:
-linear-gradient(to top, #111, transparent)
-radial-gradient(circle, rgba(0,0,0,0.6), transparent)
-
-url(...) — путь к своему изображению.
-
-z-index: -1 — псевдоэлемент остаётся под контентом.
-
-
-git add .
-git commit -m "feat: Implement site-wide search with MeiliSearch"
-git push origin master
-
-
-НИВЕРСАЛЬНЫЙ CSS-ШАБЛОН
-css
-Копировать
-Редактировать
-body {
-  /* 🔁 Фоновое изображение */
-  --background-image: url('/backgrounds/pink_green.webp');
-
-  /* 🌗 Наложение: затемнение (черный), осветление (белый) или градиент */
+  /* Наложение: затемнение, осветление или градиент */
   --overlay: rgba(0, 0, 0, 0.4); /* затемнение */
   /* --overlay: rgba(255, 255, 255, 0.3); */ /* осветление */
   /* --overlay: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)); */ /* градиент */
@@ -58,95 +22,23 @@ body {
   background-position: center center;
   background-attachment: fixed;
 
-  /* 🖋️ Текст и шрифт */
-  font-size: 150%;           /* Увеличенный шрифт */
+  /* Текст и шрифт */
+  font-size: 150%;
   font-family: sans-serif;
-  color: #fff;               /* белый текст поверх тёмного фона */
+  color: #fff;
 
   /* Обеспечение контекста */
   position: relative;
   min-height: 100vh;
 }
-🔄 КАК ПРИМЕНЯТЬ
-Чтобы использовать этот шаблон на новой странице:
 
-Поменяй путь к изображению:
+ПРИМЕРЫ ГОТОВЫХ СТИЛЕЙ:
 
-css
-Копировать
-Редактировать
---background-image: url('/backgrounds/new_photo.jpg');
-Выбери наложение:
-
-Затемнение:
-
-css
-Копировать
-Редактировать
---overlay: rgba(0, 0, 0, 0.5);
-Осветление:
-
-css
-Копировать
-Редактировать
---overlay: rgba(255, 255, 255, 0.2);
-Градиент:
-
-css
-Копировать
-Редактировать
---overlay: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
-Настрой масштаб шрифта, например:
-
-css
-Копировать
-Редактировать
-font-size: 130%;
-
-
-7. Автозапуск (если нужно)
-Создайте файл start_meilisearch.bat в папке C:\meilisearch:
-
-bat
-@echo off
-cd /d "C:\meilisearch"
-start "Meilisearch" "meilisearch.exe" --master-key=Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE
-Добавьте его в автозагрузку через:
-
-Win + R → shell:startup
-
-Скопируйте туда ярлык на этот bat-файл
-
-После запуска сервера все функции поиска с подсветкой должны работать корректно.
-
-Запуск поиска
-.\meilisearch --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
-
-
-
- <div class="flex justify-center">
-            <figure class="rounded-lg shadow-md max-w-[400px]
-                      text-center mb-4">
-                <img src="/images/authors/***"
-                     alt="***"
-                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"
-                     style="max-width: 400px;">
-            </figure>
-        </div>
-
-        <img src="/images/articles/fail"
-
-        Очистка:
-        php artisan cache:clear
-        php artisan config:clear
-        php artisan route:clear
-        php artisan view:clear
-
-
+1) Светлый фон с осветлением:
 body {
   background:
     linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
-    url('/backgrounds/sky_fairies.webp’);
+    url('/backgrounds/sky_fairies.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,40 +47,171 @@ body {
   font-size: 110%;
 }
 
-<div class="flex justify-center">
-            <figure class="rounded-lg shadow-md max-w-[400px]
-                      text-center mb-4">
-                <img src="/images/authors/Pupyshev.webp"
-                     alt=" Виктор Николаевич Пупышев "
-                     class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"  style="max-width: 400px;">
-            </figure>
-        </div>
+2) Тёмный фон с затемнением:
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/backgrounds/pink_green.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-size: 110%;
+}
 
+НАСТРОЙКА НАЛОЖЕНИЙ:
+• Затемнение:           rgba(0, 0, 0, 0.4)
+• Осветление:           rgba(255, 255, 255, 0.3)
+• Градиент сверху вниз: linear-gradient(to top, #111, transparent)
+• Радиальный градиент:  radial-gradient(circle, rgba(0,0,0,0.6), transparent)
+
+================================================================================
+🖼️ HTML-ШАБЛОНЫ ДЛЯ ИЗОБРАЖЕНИЙ
+================================================================================
+
+ПОРТРЕТ АВТОРА:
+<div class="flex justify-center">
+    <figure class="rounded-lg shadow-md max-w-[400px] text-center mb-4">
+        <img src="/images/authors/author_name.webp"
+             alt="Имя Автора"
+             class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out"
+             style="max-width: 400px;">
+    </figure>
+</div>
+
+ИЗОБРАЖЕНИЕ С ПОДПИСЬЮ:
+<div class="flex justify-center my-4">
+    <figure class="rounded-lg shadow-md max-w-[600px] text-center">
+        <img src="/images/image_name.webp"
+             alt="Описание изображения"
+             class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+        <figcaption class="mt-2 mb-4 px-4 italic text-gray-800 text-sm">
+            Подпись к изображению
+        </figcaption>
+    </figure>
+</div>
+
+СХЕМА ИЛИ ДИАГРАММА:
+<div class="diagram-container">
+    <img src="/schemes/diagram_name.webp"
+         alt="Описание схемы"
+         style="width: 100%; max-width: 600px;">
+</div>
+
+================================================================================
+📝 ЭЛЕМЕНТЫ ФОРМАТИРОВАНИЯ ТЕКСТА
+================================================================================
+
+ПОДЧЁРКИВАНИЕ:
+<span class="underline">подчёркнутый текст</span>
+
+МАРКИРОВАННЫЙ СПИСОК БЕЗ ТОЧЕК:
+<ul class="list-none pl-2 space-y-1 ml-2">
+    <li class="my-2">Элемент списка 1</li>
+    <li class="my-2">Элемент списка 2</li>
+</ul>
+
+ССЫЛКИ:
+Обычная ссылка:
+<a href="/путь/к/странице" class="text-blue-500 hover:underline">Текст ссылки</a>
+
+Ссылка на сноску:
+<a href="#ref-89" class="text-blue-500 hover:underline">↩</a>
+
+================================================================================
+🔍 НАСТРОЙКА И ЗАПУСК MEILISEARCH
+================================================================================
+
+УСТАНОВКА И ПЕРВЫЙ ЗАПУСК:
+1. Скачать meilisearch.exe в папку C:\meilisearch
+2. Запуск через командную строку:
+   cd C:\meilisearch
+   .\meilisearch.exe --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
+
+БЫСТРЫЙ ЗАПУСК:
+.\meilisearch --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
+
+АВТОЗАПУСК (опционально):
+1. Создать файл start_meilisearch.bat в C:\meilisearch:
+   @echo off
+   cd /d "C:\meilisearch"
+   start "Meilisearch" "meilisearch.exe" --master-key=Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE
+
+2. Добавить в автозагрузку:
+   Win + R → shell:startup
+   Скопировать туда ярлык на bat-файл
+
+================================================================================
+🚀 КОМАНДЫ LARAVEL
+================================================================================
+
+ОЧИСТКА КЭША:
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+
+КОМАНДЫ ДЛЯ РАЗРАБОТКИ:
+php artisan serve                    # Запуск локального сервера
+php artisan migrate                  # Выполнение миграций
+php artisan db:seed                  # Заполнение БД тестовыми данными
+
+================================================================================
+📦 GIT-КОМАНДЫ
+================================================================================
+
+СТАНДАРТНЫЙ ЦИКЛ КОММИТА:
 git add .
-git commit -m "fix articles content and styles"
+git commit -m "описание изменений"
 git push origin master
 
-cd C:\meilisearch
-.\meilisearch.exe --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
+ПРИМЕРЫ СООБЩЕНИЙ КОММИТОВ:
+git commit -m "feat: Implement site-wide search with MeiliSearch"
+git commit -m "fix: articles content and styles"
+git commit -m "docs: Update project documentation"
+git commit -m "style: Improve CSS formatting"
 
-Адрес ссылки при адресе  http://dandaron-tradition.test/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii:
-<a href="/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii" class="text-blue-500 hover:underline">О. О. РОЗЕНБЕРГ И ПРОБЛЕМА ЯЗЫКА ОПИСАНИЯ В БУДДОЛОГИИ</a>.<a href="#ref-89" class="text-blue-500 hover:underline">↩</a>
+ПРОВЕРКА СТАТУСА:
+git status                           # Статус изменений
+git log --oneline                    # История коммитов (краткая)
 
+================================================================================
+🔗 СТРУКТУРА ПУТЕЙ И ССЫЛОК
+================================================================================
 
-<div class="diagram-container">
-                <img src="/schemes/***" alt="***"
-                     style="width: 100%; max-width: 600px;">
-            </div>
+СТРУКТУРА ПАПОК:
+/images/authors/         # Портреты авторов
+/images/articles/        # Изображения к статьям
+/backgrounds/           # Фоновые изображения
+/schemes/              # Схемы и диаграммы
 
-            <div class="flex justify-center my-4">
-                <figure class="rounded-lg shadow-md max-w-[300px] text-center">
-                    <img src="/images/***"
-                         alt="***"
-                         class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
-                    <figcaption class="mt-2 mb-4 px-4 italic text-gray-800 text-sm">
-                        ***
-                    </figcaption>
-                </figure>
-            </div>
+ПРИМЕР ПОЛНОГО ПУТИ ДЛЯ ССЫЛОК:
+При адресе: http://dandaron-tradition.test/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii
 
-             <span class="underline"></span> - подчёркивание
+Ссылка будет:
+<a href="/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii" class="text-blue-500 hover:underline">ТЕКСТ ССЫЛКИ</a>
+
+================================================================================
+📋 ПОЛЕЗНЫЕ ЗАМЕТКИ
+================================================================================
+
+• Используйте WebP формат для изображений (лучшее сжатие)
+• Максимальная ширина изображений авторов: 400px
+• Для схем рекомендуемая максимальная ширина: 600px
+• CSS-переменные позволяют легко менять фоны через --background-image и --overlay
+• Всегда добавляйте alt-теги к изображениям для доступности
+• При работе с MeiliSearch сервер должен быть запущен для корректной работы поиска
+
+================================================================================
+<!-- Разделитель с Дхармачакрой -->
+<div class="relative my-8">
+    <div class="absolute inset-0 flex items-center">
+        <div class="w-full border-t border-black"></div>
+    </div>
+    <div class="relative flex justify-center">
+        <span class="bg-white px-3 text-2xl text-black">
+            ☸
+        </span>
+    </div>
+</div>
