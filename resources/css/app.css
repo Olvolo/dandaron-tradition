@@ -6,13 +6,20 @@
     text-indent: 1.5em;
     margin-bottom: 1em;
 }
+
 .prose h1 + p,
 .prose h2 + p,
 .prose h3 + p,
 .prose h4 + p {
     text-indent: 0;
 }
+.prose {
+    @apply text-lg; /* Увеличивает базовый размер шрифта (делает текст "крупнее") */
+}
 
+.prose p {
+    @apply font-normal text-gray-900; /* Делает текст абзацев "темнее" */
+}
 /* Улучшенные стили для заголовков */
 .prose h1 {
     @apply text-4xl font-bold text-sky-900 mb-6 mt-4 text-center;
@@ -85,10 +92,11 @@
 }
 
 .citation-mark {
-    @apply text-red-500 font-bold;
+    @apply text-red-500 font-bold transition-all duration-200 rounded;
 }
-.citation-mark sup {
-    @apply text-red-500 font-bold;
+
+.citation-mark:hover {
+    @apply text-blue-600 scale-110 border border-blue-600 shadow-md;
 }
 
 blockquote {
