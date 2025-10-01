@@ -14,11 +14,11 @@
     text-indent: 0;
 }
 .prose {
-    @apply text-lg; /* Увеличивает базовый размер шрифта (делает текст "крупнее") */
+    @apply text-xl; /* Увеличивает базовый размер шрифта (делает текст "крупнее") */
 }
 
 .prose p {
-    @apply font-normal text-gray-900; /* Делает текст абзацев "темнее" */
+    @apply font-medium text-sky-950; /* Делает текст абзацев "темнее" */
 }
 /* Улучшенные стили для заголовков */
 .prose h1 {
@@ -34,7 +34,7 @@
 }
 
 .prose h4 {
-    @apply text-xl font-medium text-sky-700 mb-3 mt-4;
+    @apply text-xl font-medium text-sky-800 mb-3 mt-4;
 }
 
 /* Стили для таблицы с выравниванием слов и тире */
@@ -92,7 +92,7 @@
 }
 
 .citation-mark {
-    @apply text-red-500 font-bold transition-all duration-200 rounded;
+    @apply text-red-600 font-bold transition-all duration-200 rounded;
 }
 
 .citation-mark:hover {
@@ -128,17 +128,22 @@ mark {
     @apply bg-yellow-200 px-1 py-0.5 rounded;
 }
 
-/* Дополнительные стили для контента статьи */
 .prose {
-    @apply max-w-4xl mx-auto;
+    @apply max-w-6xl mx-auto;
 }
 
-.prose img {
-    @apply mx-auto rounded-lg shadow-md;
+/* Добавьте это: */
+.prose > div {
+    max-width: 100%;
+}
+
+.prose figure {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .prose figcaption {
-    @apply mt-2 text-center italic text-sky-700 text-sm;
+    @apply mt-2 text-center italic text-sky-700 text-base;
 }
 
 .search-highlight {
@@ -153,11 +158,10 @@ mark.bg-yellow-200 {
 }
 
 .centered-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 288px);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    grid-auto-rows: 200px;
 }
 
 .line-clamp-3 {

@@ -81,7 +81,7 @@ body {
 </div>
 
 ИЗОБРАЖЕНИЕ С ПОДПИСЬЮ:
-<div class="flex justify-center my-4">
+<div class="not-prose flex justify-center my-4">
     <figure class="rounded-lg shadow-md max-w-[600px] text-center">
         <img src="/images/image_name.webp"
              alt="Описание изображения"
@@ -191,7 +191,10 @@ git log --oneline                    # История коммитов (крат
 
 Ссылка будет:
 <a href="/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii" class="text-blue-500 hover:underline">ТЕКСТ ССЫЛКИ</a>
-
+<a href="/anthology/montlevic-vladimir-mixailovic/articles-montlevich/articles-montlevich
+-netroystvenost/otkrytyi-gorizont" class="text-blue-500 hover:underline">Открытый горизонт</a>
+<a href="/anthology/montlevic-vladimir-mixailovic/articles-montlevich/articles
+-montlevich-netroystvenost/akasa" class="text-blue-500 hover:underline">Акаша</a>
 ================================================================================
 📋 ПОЛЕЗНЫЕ ЗАМЕТКИ
 ================================================================================
@@ -215,3 +218,70 @@ git log --oneline                    # История коммитов (крат
         </span>
     </div>
 </div>
+
+<!-- ============================================ -->
+<!-- Справка по конвертации Tailwind → inline CSS -->
+<!-- ============================================ -->
+
+<!-- Размеры текста -->
+text-xs      → font-size: 0.75rem;
+text-sm      → font-size: 0.875rem;
+text-base    → font-size: 1rem;
+text-lg      → font-size: 1.125rem;
+text-xl      → font-size: 1.25rem;
+text-2xl     → font-size: 1.5rem;
+text-3xl     → font-size: 1.875rem;
+text-4xl     → font-size: 2.25rem;
+text-5xl     → font-size: 3rem;
+
+<!-- Цвета red-700 -->
+text-red-700 → color: #b91c1c;
+bg-red-700   → background-color: #b91c1c;
+text-sky-900 → color: #0c4a6e;
+
+<!-- Выравнивание -->
+text-left    → text-align: left;
+text-center  → text-align: center;
+text-right   → text-align: right;
+
+<!-- Жирность -->
+font-bold    → font-weight: bold;
+font-semibold → font-weight: 600;
+font-medium  → font-weight: 500;
+
+<!-- Курсив -->
+italic       → font-style: italic;
+
+<!-- Отступы (margin) -->
+m-4          → margin: 1rem;
+my-4         → margin-top: 1rem; margin-bottom: 1rem;
+mt-4         → margin-top: 1rem;
+mb-4         → margin-bottom: 1rem;
+
+<p style="text-align: left; font-style: italic; font-weight: bold; color: #b91c1c;">Текст</p>
+<p style="font-size: 2.25rem; color: #b91c1c;">Текст</p>
+style="font-size: 1.25rem; color: #0c4a6e; font-weight: 600;"
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.25)),
+    url('/backgrounds/color_stream.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    url('/backgrounds/light_in_sky.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
