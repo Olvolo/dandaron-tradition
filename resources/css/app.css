@@ -100,7 +100,7 @@
 }
 
 blockquote {
-    @apply border-l-4 border-sky-600 pl-4 my-4 text-sky-950 text-xl italic font-semibold;
+    @apply border-l-4 border-sky-600 pl-4 my-4 text-sky-950 text-2xl italic font-semibold;
 }
 
 .prose ol,
@@ -196,4 +196,93 @@ html {
     max-width: 600px;
     height: auto;
     vertical-align: top; /* Альтернатива display: block */
+}
+
+.comparison-table {
+    @apply w-full max-w-4xl mx-auto border-collapse border border-sky-300 text-sm sm:text-base;
+}
+.comparison-table thead tr {
+    @apply bg-sky-100;
+}
+.comparison-table th {
+    @apply border border-sky-300 px-2 py-3 sm:px-4 font-bold text-sky-900;
+}
+.comparison-table td {
+    @apply border border-sky-300 px-2 py-2 sm:px-4 sm:py-3 text-sky-950;
+}
+.comparison-table tbody tr:nth-child(even) {
+    @apply bg-sky-50;
+}
+
+
+
+.mandala-table {
+    @apply w-full border-collapse;
+    min-width: 800px;
+}
+
+@media (min-width: 768px) {
+    .mandala-table {
+        @apply text-sm;
+    }
+}
+
+.mandala-table th,
+.mandala-table td {
+    @apply border border-sky-300;
+    padding: 0.15rem 0.3rem; /* Минимальные отступы */
+}
+
+@media (min-width: 768px) {
+    .mandala-table {
+        @apply text-sm;
+    }
+
+    .mandala-table th,
+    .mandala-table td {
+        padding: 0.25rem 0.4rem;
+    }
+}
+
+.mandala-table thead th {
+    @apply bg-sky-200 font-bold text-sky-900 text-center;
+}
+
+.mandala-table .cell-heading {
+    @apply bg-sky-200 font-bold text-sky-900 text-center;
+    font-size: 0.8rem;
+}
+
+.mandala-table .cell-group {
+    @apply bg-sky-200 font-semibold text-sky-900 text-center py-1;
+    padding: 0.4rem 0.3rem;
+}
+
+.mandala-table td {
+    @apply text-center text-sky-950;
+}
+
+/* Цветные ячейки */
+.mandala-table .bg-white-100 {
+    @apply bg-sky-50;
+}
+
+.mandala-table .bg-yellowish {
+    @apply bg-yellow-200;
+}
+
+.mandala-table .bg-yellow_bright {
+    @apply bg-yellow-400;
+}
+
+.mandala-table .bg-coral {
+    @apply bg-red-200;
+}
+
+.mandala-table .bg-green_neon {
+    @apply bg-green-200;
+}
+
+.mandala-table .bg-blue_semi {
+    @apply bg-blue-300;
 }

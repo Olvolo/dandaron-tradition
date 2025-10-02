@@ -191,6 +191,7 @@ git log --oneline                    # История коммитов (крат
 
 Ссылка будет:
 <a href="/anthology/piatigorskii-aleksandr-moiseevic/articles-pyatigorsky/o-o-rozenberg-i-problema-iazyka-opisaniia-v-buddologii" class="text-blue-500 hover:underline">ТЕКСТ ССЫЛКИ</a>
+
 <a href="/anthology/montlevic-vladimir-mixailovic/articles-montlevich/articles-montlevich
 -netroystvenost/otkrytyi-gorizont" class="text-blue-500 hover:underline">Открытый горизонт</a>
 <a href="/anthology/montlevic-vladimir-mixailovic/articles-montlevich/articles
@@ -276,8 +277,8 @@ body {
 
 body {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
-    url('/backgrounds/light_in_sky.webp');
+    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+    url('/backgrounds/salad_blue.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
