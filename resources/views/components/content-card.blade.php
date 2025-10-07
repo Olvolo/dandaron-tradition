@@ -15,7 +15,7 @@
           bg-sky-100/60 backdrop-blur-sm border border-sky-100/40
           hover:bg-sky-100/80 hover:shadow-xl
           flex flex-col items-center justify-center text-center">
-    <h3 class="font-bold text-2xl text-sky-900 group-hover:text-sky-800 transition-colors flex-1
+    <h3 class="font-bold text-2xl text-sky-950 group-hover:text-sky-800 transition-colors flex-1
     flex items-center">
         <span class="line-clamp-3">{{ $displayItem->title }}</span>
     </h3>

@@ -263,9 +263,14 @@ mb-4         → margin-bottom: 1rem;
 <p style="font-size: 2.25rem; color: #b91c1c;">Текст</p>
 style="font-size: 1.25rem; color: #0c4a6e; font-weight: 600;"
 
+<!-- ============================================ -->
+<!-- Фоны для статей -->
+<!-- ============================================ -->
+
+
 body {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.25)),
+    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
     url('/backgrounds/color_stream.webp');
   background-size: cover;
   background-position: center;
@@ -285,4 +290,230 @@ body {
   background-attachment: fixed;
   color: white;
   font-size: 110%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url('/backgrounds/light_throu_color.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url('/backgrounds/spektr-i-vspyski-cvetnogo-sveta.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('/backgrounds/watercolor.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('/backgrounds/star_mandala.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-semibold;
+  font-size: 110%;
+}
+
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('/backgrounds/ice_flowers.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('/backgrounds/river_ice.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('/backgrounds/gray_marmor.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+Для статьи Ушакова:
+/* Создаём эффект "белого листа" для блока статьи */
+.prose {
+  background-color: white;
+  padding: 2.5rem 3.5rem;
+  border-radius: 3px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Применяем чёрный цвет и шрифт пишущей машинки к тексту внутри статьи */
+.prose p, .prose li, .prose blockquote {
+  color: #000000; /* Чистый чёрный для максимального контраста */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem; /* Увеличиваем размер шрифта */
+  line-height: 1.8; /* Увеличиваем межстрочный интервал для читаемости */
+  font-weight: 600; /* Делаем шрифт чуть жирнее */
+}
+
+/* Отдельно стилизуем заголовки, чтобы они тоже соответствовали */
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-weight: 800; /* Делаем заголовки жирнее */
+  letter-spacing: 0.5px; /* Небольшое увеличение межбуквенного интервала */
+}
+
+<!-- ============================================ -->
+<!-- Фон для разделов-->
+<!-- ============================================ -->
+
+/* 1. Меняем фоновую картинку для самого <body> */
+body {
+    background-image: url('/backgrounds/sky_fairies.webp');
+}
+
+/* 2. Меняем старый затемняющий слой на новый, осветляющий */
+/* Мы предполагаем, что используется псевдо-элемент ::before.
+   Если не сработает, попробуйте заменить ::before на ::after */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35));
+    z-index: -1; /* Убедитесь, что z-index соответствует вашим глобальным стилям */
+}
+
+
+body {
+    background-image: url('/backgrounds/sky_fairies.webp');
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
+    z-index: -1;
+}
+
+gradient_blue.webp
+
+ice_flowers.webp
+body {
+    background-image: url('/backgrounds/ice_flowers.webpp');
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.6));
+    z-index: -1;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+    url('/backgrounds/color_silk.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 110%;
+}
+
+body {
+    background-image: url('/backgrounds/spektr-i-vspyski-cvetnogo-sveta.webp');
+     background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 110%;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    z-index: -1;
+}
+color_stream.webp
+gradient_blue.webp
+texture_blue_green.webp
+golden_marble.webp
+ice_marble.webp
+starry_sky.webp
+salad_blue.webp
+miyal.webp
+body {
+    background-image: url('/backgrounds/miyal.webp');
+     background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 110%;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    z-index: -1;
 }

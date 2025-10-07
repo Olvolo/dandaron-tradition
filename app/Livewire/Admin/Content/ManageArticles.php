@@ -8,10 +8,13 @@ use App\Models\Category;
 use App\Models\Tag;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 #[Layout('layouts.admin')]
 class ManageArticles extends Component
 {
+    use WithPagination;
+
     public bool $isModalOpen = false;
     public $article_id;
 
@@ -28,10 +31,13 @@ class ManageArticles extends Component
     public array $selectedCategories = [];
     public array $selectedTags = [];
 
+
     public function render()
     {
         return view('livewire.admin.content.manage-articles', [
-            'articles' => Article::with('parent')->latest()->get(),
+            // ИЗМЕНЕНИЯ В ЭТОЙ СТРОКЕ:
+            'articles' => Article::with('parent')->orderBy('title', 'asc')->paginate(20),
+
             'potentialParents' => Article::where('id', '!=', $this->article_id)->get(),
             'allAuthors' => Author::all(),
             'allCategories' => Category::all(),

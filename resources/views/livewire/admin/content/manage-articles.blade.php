@@ -33,6 +33,9 @@
             </tbody>
         </table>
     </div>
+    <div class="mt-6">
+        {{ $articles->links() }}
+    </div>
     @if ($isModalOpen)
         <div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-[95vw] max-h-[90vh] overflow-y-auto">

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E31F27;}
+	.st1{fill:#1D1D1B;}
+	.st2{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st4{fill:none;}
+	.st5{stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st6{font-family:'CourierNewPSMT';}
+	.st7{font-size:52px;}
+	.st8{letter-spacing:6;}
+	.st9{letter-spacing:3;}
+</style>
+<symbol  id="Arrow_3" viewBox="-11.59 -10.76 23.18 21.53">
+	<g>
+		<g>
+			<g>
+				<polygon class="st0" points="-11.59,-10.76 -2.67,0 -11.59,10.76 11.59,0 				"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<polygon class="st1" points="-11.59,-10.76 -2.67,0 -11.59,10.76 11.59,0 				"/>
+			</g>
+		</g>
+	</g>
+</symbol>
+<ellipse class="st2" cx="535.5" cy="400" rx="229" ry="222.5"/>
+<ellipse class="st3" cx="533.5" cy="404" rx="48" ry="43.5"/>
+<path class="st2" d="M533.5,422.5c-4.01,16.23-0.54,32.38,10,41c9.68,7.92,22.06,6.8,31,6c19.68-1.77,32.95-12.46,37-16
+	c16.89-14.74,21.08-33.69,23-43c5.57-27.01-3.1-48.93-6-56c-16.17-39.36-58.06-65.3-97-71c-62.87-9.21-125.72,33.18-151,90
+	c-34.19,76.83,14.16,148.92,17,153c50.05,71.96,146.47,77.67,206,63c64.68-15.93,102.58-60.01,113-73c30.96-38.58,40.59-78.3,44-98"
+	/>
+<line class="st2" x1="529.5" y1="177.5" x2="529.5" y2="177.5"/>
+<line class="st2" x1="529.5" y1="367.5" x2="530.5" y2="367.5"/>
+<line class="st3" x1="529.5" y1="180.5" x2="530.5" y2="180.5"/>
+<line class="st3" x1="530.5" y1="356.5" x2="531.5" y2="356.5"/>
+<line class="st2" x1="529.5" y1="184.5" x2="529.5" y2="360.5"/>
+<line class="st2" x1="638.5" y1="383.5" x2="814.5" y2="383.5"/>
+<line class="st2" x1="531.5" y1="279.5" x2="846.5" y2="278.5"/>
+<line class="st2" x1="855.5" y1="197.5" x2="628.5" y2="196.5"/>
+<use xlink:href="#Arrow_3"  width="23.18" height="21.53" x="-11.59" y="-10.76" transform="matrix(8.420928e-17 -1.5097 -1.3522 -9.089788e-17 529.5556 196.5109)" style="overflow:visible;"/>
+<use xlink:href="#Arrow_3"  width="23.18" height="21.53" x="-11.59" y="-10.76" transform="matrix(-0.4942 -1.2739 -1.1508 0.4465 627.1852 354.8172)" style="overflow:visible;"/>
+<use xlink:href="#Arrow_3"  width="23.18" height="21.53" x="-11.59" y="-10.76" transform="matrix(1.1391 0.9787 0.9203 -1.0712 688.8892 237.1859)" style="overflow:visible;"/>
+<rect x="869.76" y="171.76" class="st4" width="213.24" height="65.88"/>
+<text transform="matrix(1 0 0 1 869.7598 203.6353)" class="st5 st6 st7 st8">МЫСЛЬ</text>
+<rect x="865.92" y="259.28" class="st4" width="187.08" height="45.36"/>
+<text transform="matrix(1 0 0 1 865.9199 291.1553)" class="st5 st6 st7 st9">ТЕЛО</text>
+<rect x="866.12" y="359.8" class="st4" width="167.4" height="48.6"/>
+<text transform="matrix(1 0 0 1 866.1201 391.6758)" class="st5 st6 st7 st8">РЕЧЬ</text>
+</svg>
