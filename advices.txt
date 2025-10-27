@@ -259,6 +259,10 @@ my-4         → margin-top: 1rem; margin-bottom: 1rem;
 mt-4         → margin-top: 1rem;
 mb-4         → margin-bottom: 1rem;
 
+<p class="text-right italic text-gray-700 mt-4">
+    Перевод предисловия статьи с английского и текста с тибетского — О.&nbsp;Л.&nbsp;Волошановский
+ </p>
+
 <p style="text-align: left; font-style: italic; font-weight: bold; color: #b91c1c;">Текст</p>
 <p style="font-size: 2.25rem; color: #b91c1c;">Текст</p>
 style="font-size: 1.25rem; color: #0c4a6e; font-weight: 600;"
@@ -499,8 +503,9 @@ ice_marble.webp
 starry_sky.webp
 salad_blue.webp
 miyal.webp
+gray_marmor.webp
 body {
-    background-image: url('/backgrounds/miyal.webp');
+    background-image: url('/backgrounds/gray_marmor.webp');
      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
