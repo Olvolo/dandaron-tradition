@@ -9,8 +9,8 @@ use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
-use Meilisearch\Client as MeilisearchClient;
 use Illuminate\Support\Str;
+use Throwable;
 
 class PageController extends Controller
 {
@@ -72,9 +72,6 @@ class PageController extends Controller
         return view('pages.empty', ['placement' => $placement, 'content' => $placement]);
     }
 
-
-
-
     public function home()
     {
         // Получаем главную страницу (с пустым full_slug для главной)
@@ -94,30 +91,41 @@ class PageController extends Controller
 
     protected function highlightContent($content, string $query)
     {
-        if (empty($query)) return $content;
+        if (empty($query)) {
+            return $content;
+        }
 
         try {
+            // Получаем имя класса (строку)
             $modelClass = get_class($content);
-            $indexName = config('scout.prefix').Str::plural(Str::lower($modelClass));
 
-            $search = new MeilisearchClient(config('scout.meilisearch.host'));
-            $result = $search->index($indexName)->search($query, [
-                'filter' => "id = $content->id",
-                'attributesToHighlight' => ['*'],
-                'highlightPreTag' => '<mark class="search-highlight">',
-                'highlightPostTag' => '</mark>',
-                'limit' => 1
-            ]);
+            // Убеждаемся, что этот класс действительно существует и поддерживает Scout
+            if (class_exists($modelClass) && method_exists($modelClass, 'search')) {
 
-            if (!empty($result->getHits())) {
-                $highlighted = $result->getHits()[0]['_formatted'];
-                foreach ($highlighted as $field => $value) {
-                    if (property_exists($content, $field)) {
-                        $content->$field = $value;
+                // Выполняем поиск по текущей модели
+                $results = $modelClass::search($query)->get();
+
+                // Проверяем, есть ли совпадение именно для текущего ID
+                $matched = $results->firstWhere('id', $content->id ?? null);
+
+                if ($matched) {
+                    $pattern = '/' . preg_quote($query, '/') . '/iu';
+
+                    // Подсвечиваем совпадения в основных текстовых полях
+                    foreach (['title', 'annotation', 'content_html'] as $field) {
+                        if (!empty($content->$field)) {
+                            $content->$field = preg_replace(
+                                $pattern,
+                                '<mark class="search-highlight">$0</mark>',
+                                $content->$field
+                            );
+                        }
                     }
                 }
+            } else {
+                logger()->warning("Model $modelClass не поддерживает Scout::search()");
             }
-        } catch (Exception $e) {
+        } catch (Throwable $e) {
             logger()->error("Highlight failed for $modelClass: ".$e->getMessage());
         }
 

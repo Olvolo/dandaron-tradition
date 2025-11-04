@@ -120,28 +120,48 @@ body {
 <a href="#ref-89" class="text-blue-500 hover:underline">↩</a>
 
 ================================================================================
-🔍 НАСТРОЙКА И ЗАПУСК MEILISEARCH
-================================================================================
+TNTSearch — краткая инструкция
+1. Установка
+bash
 
-УСТАНОВКА И ПЕРВЫЙ ЗАПУСК:
-1. Скачать meilisearch.exe в папку C:\meilisearch
-2. Запуск через командную строку:
-   cd C:\meilisearch
-   .\meilisearch.exe --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
+composer require teamtnt/laravel-scout-tntsearch-driver
+php artisan vendor:publish --provider="Laravel\Scout\ScoutServiceProvider"
+2. Настройка
+В .env:
 
-БЫСТРЫЙ ЗАПУСК:
-.\meilisearch --master-key="Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE"
+SCOUT_DRIVER=tntsearch
+В моделях (Chapter, Book, Article):
 
-АВТОЗАПУСК (опционально):
-1. Создать файл start_meilisearch.bat в C:\meilisearch:
-   @echo off
-   cd /d "C:\meilisearch"
-   start "Meilisearch" "meilisearch.exe" --master-key=Uh0i04MA2E6iec3g_JVVF8jcpcmQfsbFPjWJ3s72WuE
+php
 
-2. Добавить в автозагрузку:
-   Win + R → shell:startup
-   Скопировать туда ярлык на bat-файл
+use Laravel\Scout\Searchable;
 
+class Chapter extends Model
+{
+    use Searchable;
+
+    public function toSearchableArray(): array
+    {
+        return [
+            'title' => $this->title ?? '',
+            'content_html' => substr(strip_tags($this->content_html ?? ''), 0, 10000),
+        ];
+    }
+}
+3. Импорт (выполнять один раз и после крупных обновлений)
+bash
+
+php -d memory_limit=1G artisan scout:import "App\Models\Chapter" --chunk=50
+php -d memory_limit=1G artisan scout:import "App\Models\Book" --chunk=50
+php -d memory_limit=1G artisan scout:import "App\Models\Article" --chunk=50
+Индексы сохраняются в storage/tntsearch/.
+
+4. Поиск
+
+Chapter::search('запрос')->get();
+5. На продакшене
+Убедись, что storage/tntsearch/ доступна для записи.
+APP_DEBUG=false
 ================================================================================
 🚀 КОМАНДЫ LARAVEL
 ================================================================================

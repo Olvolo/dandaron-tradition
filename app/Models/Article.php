@@ -17,6 +17,7 @@ use Laravel\Scout\Searchable;
  * @property mixed $title
  * @property mixed $annotation
  * @property mixed $content_html
+ * @property mixed $id
  */
 class Article extends Model
 {
@@ -79,7 +80,9 @@ class Article extends Model
      */
     public function toSearchableArray(): array
     {
+        $content = $this->content_html ?? '';
         return [
+            'id' => $this->id,
             'title' => $this->title,
             'annotation' => $this->annotation,
             'content_html' => strip_tags($this->content_html),

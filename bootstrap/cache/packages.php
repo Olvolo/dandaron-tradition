@@ -66,4 +66,11 @@
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
     ),
   ),
+  'teamtnt/laravel-scout-tntsearch-driver' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'TeamTNT\\Scout\\TNTSearchScoutServiceProvider',
+    ),
+  ),
 );

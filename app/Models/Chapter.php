@@ -46,11 +46,15 @@ class Chapter extends Model
      */
     public function toSearchableArray(): array
     {
+        $content = $this->content_html ?? '';
+        // Оставляем только первые 10 000 символов — этого более чем достаточно для поиска
         return [
-            'title' => $this->title,
-            'content_html' => strip_tags($this->content_html),
+            'id' => $this->id,
+            'title' => $this->title ?? '',
+            'content_html' => substr(strip_tags($content), 0, 10000),
         ];
     }
+
     public function placement(): MorphOne
     {
         return $this->morphOne(Placement::class, 'placementable');

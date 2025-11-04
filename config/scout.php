@@ -16,8 +16,8 @@ return [
     |
     */
 
-    'driver' => env('SCOUT_DRIVER', 'algolia'),
-
+    'driver' => env('SCOUT_DRIVER', 'tntsearch'),
+//    'driver' => env('SCOUT_DRIVER', 'database'),
     /*
     |--------------------------------------------------------------------------
     | Index Prefix
@@ -112,47 +112,27 @@ return [
     |
     */
 
-    'algolia' => [
-        'id' => env('ALGOLIA_APP_ID', ''),
-        'secret' => env('ALGOLIA_SECRET', ''),
-        'index-settings' => [
+//    'algolia' => [
+//        'id' => env('ALGOLIA_APP_ID', ''),
+//        'secret' => env('ALGOLIA_SECRET', ''),
+//        'index-settings' => [
             // 'users' => [
             //     'searchableAttributes' => ['id', 'name', 'email'],
             //     'attributesForFaceting'=> ['filterOnly(email)'],
             // ],
+//        ],
+//    ],
+
+    'tntsearch' => [
+        'storage'  => storage_path('indexes'), // папка, где будут храниться индексы
+        'fuzziness' => true,
+        'fuzzy' => [
+            'prefix_length' => 2,
+            'max_expansions' => 50,
+            'distance' => 2,
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Meilisearch Configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure your Meilisearch settings. Meilisearch is an open
-    | source search engine with minimal configuration. Below, you can state
-    | the host and key information for your own Meilisearch installation.
-    |
-    | See: https://www.meilisearch.com/docs/learn/configuration/instance_options#all-instance-options
-    |
-    */
-    'meilisearch' => [
-        'host' => env('MEILISEARCH_HOST', 'http://localhost:7700'),
-        'key' => env('MEILISEARCH_KEY'),
-        'index-settings' => [
-            'articles' => [
-                'filterableAttributes' => ['id'],
-                'searchableAttributes' => ['title', 'content_html']
-            ],
-            'books' => [
-                'filterableAttributes' => ['id'],
-                'searchableAttributes' => ['title', 'description']
-            ],
-            'chapters' => [
-                'filterableAttributes' => ['id'],
-                'searchableAttributes' => ['title', 'content_html']
-            ],
-        ],
-    ],
     /*
     |--------------------------------------------------------------------------
     | Typesense Configuration

@@ -15,6 +15,7 @@ use Laravel\Scout\Searchable;
  * @property mixed $annotation
  * @property mixed $title
  * @property mixed $description
+ * @property mixed $id
  * @method static find($id)
  * @method static updateOrCreate(array $array, array $validatedData)
  */
@@ -47,6 +48,7 @@ class Book extends Model
     public function toSearchableArray(): array
     {
         return [
+            'id' => $this->id,
             'title' => $this->title,
             'annotation' => $this->annotation,
             'description' => strip_tags($this->description),

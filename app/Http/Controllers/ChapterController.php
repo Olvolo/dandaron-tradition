@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Chapter;
-use Exception;
 use Illuminate\View\View;
-use Meilisearch\Client as MeilisearchClient;
+use Illuminate\Support\Str;
 
 class ChapterController extends Controller
 {
@@ -14,6 +13,7 @@ class ChapterController extends Controller
         $chapter->load('book');
 
         $query = request()->input('q') ?? session('last_search_query');
+
         if ($query) {
             $chapter = $this->highlightContent($chapter, $query);
         }
@@ -27,22 +27,21 @@ class ChapterController extends Controller
 
     protected function highlightContent(Chapter $chapter, string $query): Chapter
     {
-        try {
-            $search = new MeilisearchClient(config('scout.meilisearch.host'));
-            $result = $search->index(config('scout.prefix').'chapters')->search($query, [
-                'filter' => ['id = '.$chapter->id],
-                'attributesToHighlight' => ['content_html'],
-                'highlightPreTag' => '<mark class="search-highlight">',
-                'highlightPostTag' => '</mark>',
-                'limit' => 1
-            ]);
+        // Поиск в Scout (TNTSearch)
+        $results = Chapter::search($query)->get();
 
-            if (count($result->getHits()) > 0) {
-                $highlighted = $result->getHits()[0]['_formatted'];
-                $chapter->content_html = $highlighted['content_html'] ?? $chapter->content_html;
-            }
-        } catch (Exception $e) {
-            logger()->error('Meilisearch highlight error: '.$e->getMessage());
+        // Находим именно текущую главу в результатах
+        $matched = $results->firstWhere('id', $chapter->id);
+
+        if ($matched) {
+            $content = $chapter->content_html;
+            // Простая подсветка найденного слова
+            $pattern = '/' . preg_quote($query, '/') . '/iu';
+            $chapter->content_html = preg_replace(
+                $pattern,
+                '<mark class="search-highlight">$0</mark>',
+                $content
+            );
         }
 
         return $chapter;
