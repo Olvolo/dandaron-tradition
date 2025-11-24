@@ -1,4 +1,3 @@
-@extends('layouts.app')
 @section('title', 'Вопросы и ответы о Ваджрасаттве')
 @section('content')
 

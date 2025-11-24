@@ -30,24 +30,22 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// --- Маршруты Админ-панели (ФИНАЛЬНАЯ ВЕРСИЯ) ---
+// --- Маршруты Админ-панели ---
 Route::prefix('admin')->name('admin.')
-    ->middleware(['auth', 'is_admin']) // <-- Возвращаем правильную, теперь рабочую, защиту
+    ->middleware(['auth', 'is_admin'])
     ->group(function () {
-    Route::get('/dashboard', AdminDashboard::class)->name('dashboard');
-    Route::get('/authors', ManageAuthors::class)->name('authors.index');
-    Route::get('/taxonomy', ManageTaxonomy::class)->name('taxonomy.index');
-    Route::get('/structure', ManagePlacements::class)->name('structure.index');
-    Route::get('/articles', ManageArticles::class)->name('articles.index');
-    Route::get('/books', ManageBooks::class)->name('books.index');
-    Route::get('/books/{book}/edit', BookEdit::class)->name('books.edit');
-        // НОВЫЙ МАРШРУТ ДЛЯ ПЕСОЧНИЦЫ
-    Route::get('/sandbox/html-preview', [SandboxController::class, 'htmlPreview'])->name('sandbox.html');
-
-});
+        Route::get('/dashboard', AdminDashboard::class)->name('dashboard');
+        Route::get('/authors', ManageAuthors::class)->name('authors.index');
+        Route::get('/taxonomy', ManageTaxonomy::class)->name('taxonomy.index');
+        Route::get('/structure', ManagePlacements::class)->name('structure.index');
+        Route::get('/articles', ManageArticles::class)->name('articles.index');
+        Route::get('/books', ManageBooks::class)->name('books.index');
+        Route::get('/books/{book}/edit', BookEdit::class)->name('books.edit');
+        Route::get('/sandbox/html-preview', [SandboxController::class, 'htmlPreview'])->name('sandbox.html');
+    });
 
 // Подключение маршрутов входа/регистрации/выхода
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
-// "Всеядный" маршрут для публичных страниц (ОБЯЗАТЕЛЬНО ПОСЛЕДНИЙ)
+// "Всеядный" маршрут для публичных страниц (ОБЯЗАТЕЛЬНО ПОСЛЕДНИЙ!)
 Route::get('/{slug}', [PageController::class, 'show'])->where('slug', '.*')->name('page.show');

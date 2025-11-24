@@ -112,6 +112,24 @@ body {
     <li class="my-2">Элемент списка 2</li>
 </ul>
 
+Стих посередине
+<div class="flex justify-center">
+            <ul class="text-left list-none w-64">
+                <li>Покой...</li>
+                <li>и чуть</li>
+                <li>заметная заря.</li>
+                <li>Ни солнца, ни луны.</li>
+                <li>Покой...</li>
+                <li>в незримой дымке</li>
+                <li>свет живой</li>
+                <li>заполнил мною</li>
+                <li>те края,</li>
+                <li>что</li>
+                <li>в прошлых жизнях</li>
+                <li>не прошли с тобой...</li>
+            </ul>
+        </div>
+
 ССЫЛКИ:
 Обычная ссылка:
 <a href="/путь/к/странице" class="text-blue-500 hover:underline">Текст ссылки</a>
@@ -214,6 +232,7 @@ git log --oneline                    # История коммитов (крат
 
 <a href="/anthology/montlevic-vladimir-mixailovic/articles-montlevich/articles-montlevich
 -netroystvenost/otkrytyi-gorizont" class="text-blue-500 hover:underline">Открытый горизонт</a>
+
 <a href="/anthology/montlevic-vladimir-mixailovic/articles-montlevich/articles
 -montlevich-netroystvenost/akasa" class="text-blue-500 hover:underline">Акаша</a>
 ================================================================================
@@ -229,16 +248,16 @@ git log --oneline                    # История коммитов (крат
 
 ================================================================================
 <!-- Разделитель с Дхармачакрой -->
-<div class="relative my-8">
-    <div class="absolute inset-0 flex items-center">
-        <div class="w-full border-t border-black"></div>
-    </div>
-    <div class="relative flex justify-center">
-        <span class="bg-white px-3 text-2xl text-black">
-            ☸
-        </span>
-    </div>
-</div>
+        <div class="relative my-12">
+            <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t border-sky-400"></div>
+            </div>
+            <div class="relative flex justify-center">
+            <span class="bg-sky-50 px-4 text-2xl text-sky-800">
+                ☸
+            </span>
+            </div>
+        </div>
 
 <!-- ============================================ -->
 <!-- Справка по конвертации Tailwind → inline CSS -->
@@ -515,6 +534,7 @@ body::after {
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     z-index: -1;
 }
+
 color_stream.webp
 gradient_blue.webp
 texture_blue_green.webp
@@ -524,8 +544,9 @@ starry_sky.webp
 salad_blue.webp
 miyal.webp
 gray_marmor.webp
+
 body {
-    background-image: url('/backgrounds/gray_marmor.webp');
+    background-image: url('/backgrounds/stupa_morning.webp');
      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -539,6 +560,45 @@ body::after {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    z-index: -1;
+}
+
+body {
+    background-image: url('/backgrounds/budda_sangha.webp');
+     background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 110%;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    z-index: -1;
+}
+
+Panoram_Dhamek.webp
+body {
+    background-image: url('/backgrounds/Panoram_Dhamek.webp');
+     background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 110%;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     z-index: -1;
 }

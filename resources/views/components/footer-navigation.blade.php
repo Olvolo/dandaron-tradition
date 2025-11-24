@@ -1,24 +1,3 @@
-{{--@props(['item', 'isMobile' => false])--}}
-
-{{--@if ($isMobile)--}}
-{{--    --}}{{-- Мобильная версия для footer (разворачивается вверх) --}}
-{{--    <a href="{{ url($item->full_slug) }}" class="block px-4 py-2 text-sm text-sky-100 hover:text-sky-200">--}}
-{{--        {{ $item->title }}--}}
-{{--    </a>--}}
-{{--    @if($item->children->where('show_in_menu', true)->isNotEmpty())--}}
-{{--        <div class="pl-4">--}}
-{{--            @foreach($item->children->where('show_in_menu', true) as $child)--}}
-{{--                <x-footer-nav-item :item="$child" :is-mobile="true" />--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
-{{--    @endif--}}
-{{--@else--}}
-{{--    --}}{{-- Десктопная версия для footer (простые ссылки) --}}
-{{--    <a href="{{ url($item->full_slug) }}" class="text-sky-100 hover:text-sky-200 transition-colors">--}}
-{{--        {{ $item->title }}--}}
-{{--    </a>--}}
-{{--@endif--}}
-
 <nav x-data="{ isOpen: false }" class="relative">
     {{-- Десктопная версия (простой горизонтальный список) --}}
     <div class="hidden md:flex flex-wrap justify-center items-center space-x-6">

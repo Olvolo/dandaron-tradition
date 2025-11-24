@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Book;
 use App\Models\Placement;
-use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;

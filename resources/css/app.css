@@ -218,3 +218,38 @@ html {
     @apply bg-sky-50;
 }
 
+.tree-indent {
+    transition: all 0.2s ease;
+}
+
+[x-cloak] { display: none !important; }
+
+/* GPU-ускорение для стрелок */
+.arrow-icon {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Плавное появление/скрытие без x-transition */
+.menu-children {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 5000px;
+}
+
+.menu-children.hidden {
+    max-height: 0;
+    transition: max-height 0.15s ease-in;
+}
+
+/* Оптимизация скроллинга для сайдбара */
+aside .sticky {
+    contain: layout style paint;
+    content-visibility: auto;
+}
+
+/* Уменьшение repaint при наведении */
+.group:hover {
+    contain: layout;
+}
+

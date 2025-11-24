@@ -1,24 +1,3 @@
-{{--<x-layout :content="$content">--}}
-
-{{--    <div class="container mx-auto md:py-8">--}}
-
-{{--        @if($featured->isNotEmpty())--}}
-
-{{--            <h2 class="text-3xl text-center text-main-page font-bold mt-4 mb-8 md:mt-8 md:mb-12 italic">--}}
-{{--                Духовным подвижникам посвящается</h2>--}}
-
-{{--            <div class="block md:flex md:justify-center">--}}
-
-{{--                <div class="space-y-4 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">--}}
-{{--                    @foreach($featured as $item)--}}
-{{--                        <div class="w-full md:w-72">--}}
-{{--                            <x-content-card :item="$item"/>--}}
-{{--                        </div>--}}
-{{--                    @endforeach--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--    @endif--}}
-{{--</x-layout>--}}
 <x-layout :content="$content">
     <div class="container mx-auto pt-2 pb-4 md:py-8 px-4">
         @if($featured->isNotEmpty())

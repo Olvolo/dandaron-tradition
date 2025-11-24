@@ -8,17 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
 
-/**
- * @method static where(string $string, mixed $slug)
- * @method static find($placementId)
- * @method static updateOrCreate(array $array, array $validatedData)
- * @method static findOrFail($placementId)
- * @method static whereNull(string $string)
- * @property mixed $id
- * @property mixed $slug
- * @property mixed $parent
- */
 class Placement extends Model
 {
     use HasFactory;
@@ -27,10 +18,10 @@ class Placement extends Model
         'parent_id',
         'title',
         'slug',
-        'full_slug',
-        'order_column',
+        'full_slug', // ДОБАВЛЯЕМ в fillable!
         'placementable_type',
         'placementable_id',
+        'order_column',
         'show_in_menu',
         'show_on_main',
         'is_protected',
@@ -38,105 +29,153 @@ class Placement extends Model
         'custom_styles',
     ];
 
-    /**
-     * Атрибуты, которые должны быть приведены к определённым типам.
-     *
-     * @var array
-     */
     protected $casts = [
         'show_in_menu' => 'boolean',
         'show_on_main' => 'boolean',
         'is_protected' => 'boolean',
     ];
 
+    protected static function booted()
+    {
+        // При сохранении пересчитываем full_slug
+        static::saving(function ($placement) {
+            $placement->updateFullSlug();
+        });
+
+        // После сохранения обновляем потомков
+        static::saved(function ($placement) {
+            $placement->updateDescendantsFullSlugs();
+            Cache::forget('menu_tree');
+            Cache::forget('menu_tree_optimized');
+            Cache::forget('placement_slugs_map');
+        });
+
+        static::deleted(function () {
+            Cache::forget('menu_tree');
+            Cache::forget('menu_tree_optimized');
+            Cache::forget('placement_slugs_map');
+        });
+    }
+
     /**
-     * Связь с родительским элементом.
+     * Обновляем full_slug ПЕРЕД сохранением
      */
+    protected function updateFullSlug(): void
+    {
+        if ($this->slug === 'home') {
+            $this->full_slug = '';
+            return;
+        }
+
+        $parts = [];
+        $current = $this;
+
+        // Собираем slugs до корня
+        while ($current !== null && $current->slug !== null) {
+            if ($current->slug !== 'home') {
+                array_unshift($parts, $current->slug);
+            }
+
+            // Если parent_id изменился, загружаем нового родителя
+            if ($current->isDirty('parent_id') && $current->parent_id) {
+                $current = self::find($current->parent_id);
+            } else {
+                $current = $current->parent;
+            }
+        }
+
+        $this->full_slug = implode('/', $parts);
+    }
+
+    /**
+     * Обновляем full_slug у всех потомков (рекурсивно)
+     */
+    protected function updateDescendantsFullSlugs(): void
+    {
+        $children = $this->children()->get();
+
+        foreach ($children as $child) {
+            $child->updateFullSlug();
+            $child->saveQuietly(); // Сохраняем без триггера событий
+            $child->updateDescendantsFullSlugs();
+        }
+    }
+
+    /**
+     * Быстрый поиск по full_slug через индекс БД
+     */
+    public static function findByFullSlug(string $slug): ?self
+    {
+        return self::where('full_slug', $slug)->first();
+    }
+
+    /**
+     * Метод для ручного сброса кеша
+     */
+    public static function clearMenuCache(): void
+    {
+        Cache::forget('menu_tree');
+        Cache::forget('placement_slugs_map');
+    }
+
     public function parent(): BelongsTo
     {
         return $this->belongsTo(Placement::class, 'parent_id');
     }
 
-    /**
-     * Связь с дочерними элементами.
-     */
     public function children(): HasMany
     {
-        return $this->hasMany(Placement::class, 'parent_id')->orderBy('order_column');
+        return $this->hasMany(Placement::class, 'parent_id')
+            ->orderBy('order_column');
     }
 
-    /**
-     * Полиморфная связь с контентом.
-     */
     public function placementable(): MorphTo
     {
         return $this->morphTo();
     }
 
-    /**
-     * Рекурсивная связь для загрузки всего дерева меню.
-     */
     public function childrenRecursive(): HasMany
     {
         return $this->children()->with('childrenRecursive');
     }
 
     /**
-     * Аксессор для получения полного, вложенного слага.
-     * ИСПРАВЛЕННАЯ ВЕРСИЯ с лучшей обработкой edge cases.
-     */
-    public function getFullSlugAttribute(): string
-    {
-        // Используем кэширование для избежания повторных вычислений
-        if (isset($this->attributes['cached_full_slug'])) {
-            return $this->attributes['cached_full_slug'];
-        }
-
-        $parts = [];
-        $current = $this;
-
-        // Собираем полный путь от потомка к родителю
-        while ($current !== null) {
-            array_unshift($parts, $current->slug);
-            $current = $current->parent;
-        }
-
-        // Обработка главной страницы
-        if (count($parts) === 1 && $parts[0] === 'home') {
-            $result = 'home';
-        } else {
-            // Убираем 'home' из публичного URL для вложенных страниц
-            if (count($parts) > 1 && $parts[0] === 'home') {
-                array_shift($parts);
-            }
-            $result = implode('/', $parts);
-        }
-
-        // Кэшируем результат
-        $this->attributes['cached_full_slug'] = $result;
-
-        return $result;
-    }
-
-    /**
-     * Получить все родительские элементы до корня.
+     * Список всех предков (с кешированием запроса)
      */
     public function getAncestors(): Collection
     {
-        $ancestors = collect();
-        $current = $this->parent;
+        if (!$this->parent_id) {
+            return collect();
+        }
 
-        while ($current !== null) {
-            $ancestors->push($current);
+        // Загружаем всю цепочку родителей одним запросом
+        $ancestors = collect();
+        $parentIds = [];
+        $current = $this;
+
+        // Собираем все parent_id
+        while ($current->parent_id) {
+            $parentIds[] = $current->parent_id;
             $current = $current->parent;
+        }
+
+        if (empty($parentIds)) {
+            return collect();
+        }
+
+        // Загружаем всех родителей одним запросом
+        $parents = self::whereIn('id', $parentIds)->get()->keyBy('id');
+
+        // Восстанавливаем порядок
+        $current = $this;
+        while ($current->parent_id && isset($parents[$current->parent_id])) {
+            $ancestors->push($parents[$current->parent_id]);
+            $current = $parents[$current->parent_id];
         }
 
         return $ancestors;
     }
 
-    /**
-     * Проверить, является ли данный элемент потомком указанного.
-     */
     public function isDescendantOf(Placement $placement): bool
     {
         $current = $this->parent;
@@ -149,39 +188,5 @@ class Placement extends Model
         }
 
         return false;
-    }
-    /**
-     * Этот метод будет автоматически вызываться при сохранении модели.
-     */
-    protected static function boot(): void
-    {
-        parent::boot();
-
-        static::saving(function ($model) {
-            // Перед сохранением вычисляем и устанавливаем полный слаг
-            $model->full_slug = $model->buildFullSlug();
-        });
-    }
-
-    /**
-     * Вычисляет полный слаг, двигаясь вверх по цепочке родителей.
-     * Эта версия надежна и не зависит от порядка сохранения.
-     */
-    public function buildFullSlug(): string
-    {
-        // У главной страницы всегда пустой full_slug
-        if ($this->slug === 'home') {
-            return '';
-        }
-
-        $parts = [];
-        $current = $this;
-
-        while ($current !== null && $current->slug !== 'home') {
-            array_unshift($parts, $current->slug);
-            $current = $current->parent;
-        }
-
-        return implode('/', $parts);
     }
 }
