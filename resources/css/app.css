@@ -253,3 +253,73 @@ aside .sticky {
     contain: layout;
 }
 
+/* Стили для видеогалереи - Вариант 3 */
+.video-card {
+    @apply transition-all duration-300;
+}
+
+.video-card .bg-gradient-to-br {
+    @apply from-gray-100 to-gray-200 rounded-t-lg p-2;
+}
+
+.video-card .aspect-video {
+    @apply bg-gray-900 rounded-lg overflow-hidden shadow-md;
+}
+
+.video-card.group:hover .aspect-video {
+    @apply shadow-xl;
+}
+
+.video-card .relative.bg-white {
+    @apply rounded-b-lg overflow-hidden;
+}
+
+.video-card figcaption {
+    @apply px-4 py-3 text-center font-semibold text-gray-700 text-sm leading-tight;
+}
+
+/* Сетка карточек - адаптивная под разные экраны */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+/* На планшетах - 2 колонки */
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* На больших экранах - 3 колонки */
+@media (min-width: 1280px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* Стили для карточек контента */
+.content-card {
+    @apply h-full p-6 rounded-2xl transition-all duration-300
+    bg-sky-100/60 backdrop-blur-sm border border-sky-100/40
+    hover:bg-sky-100/80 hover:shadow-xl hover:scale-[1.02]
+    flex flex-col items-center justify-center text-center;
+    min-height: 180px;
+}
+
+.content-card h3 {
+    @apply font-bold text-2xl text-sky-950
+    transition-colors flex-1 flex items-center justify-center;
+}
+
+.content-card:hover h3 {
+    @apply text-sky-800;
+}
+
+.content-card .card-type {
+    @apply text-sm text-sky-900 mt-3 tracking-wider flex-shrink-0
+    font-medium uppercase;
+}

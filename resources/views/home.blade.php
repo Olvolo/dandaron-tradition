@@ -1,7 +1,7 @@
 <x-layout :content="$content">
-    <div class="container mx-auto pt-2 pb-4 md:py-8 px-4">
+    <div class="container mx-auto pt-2 pb-4 md:py-6 px-4">
         @if($featured->isNotEmpty())
-            <h2 class="text-2xl md:text-3xl text-center text-main-page font-bold mb-4 md:mt-8 md:mb-12 italic">
+            <h2 class="text-2xl md:text-3xl text-center text-main-page font-bold mb-4 md:mb-12 italic">
                 Духовным подвижникам посвящается
             </h2>
 
@@ -35,13 +35,11 @@
                 @endforeach
             </div>
 
-            {{-- Карточки для десктопа --}}
-            <div class="hidden md:flex justify-center">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {{-- Карточки для десктопа - используем cards-grid --}}
+            <div class="hidden md:block">
+                <div class="cards-grid">
                     @foreach($featured as $item)
-                        <div class="w-72">
-                            <x-content-card :item="$item"/>
-                        </div>
+                        <x-content-card :item="$item"/>
                     @endforeach
                 </div>
             </div>

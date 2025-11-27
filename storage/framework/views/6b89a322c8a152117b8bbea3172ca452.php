@@ -51,7 +51,7 @@ unset($__defined_vars, $__key, $__value); ?>
     });
 ?>
 
-<div class="space-y-0.5">
+<div class="divide-y divide-sky-100/50">
     <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $menuItems; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <?php if (isset($component)) { $__componentOriginal68382ff5897471103dc79e4a4e923fa6 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal68382ff5897471103dc79e4a4e923fa6 = $attributes; } ?>

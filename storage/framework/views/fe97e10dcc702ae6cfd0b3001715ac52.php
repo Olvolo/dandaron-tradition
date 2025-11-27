@@ -1,4 +1,4 @@
-<?php use App\Models\Placement; ?>
+<?php?>
 <?php $attributes ??= new \Illuminate\View\ComponentAttributeBag;
 
 $__newAttributes = [];
@@ -66,34 +66,22 @@ unset($__defined_vars, $__key, $__value); ?>
 
 <?php echo $__env->make('layouts.partials.header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
-<div class="flex-grow max-w-screen-3xl mx-auto px-4 md:px-6 pt-2 md:pt-6 pb-6">
+<div class="flex-grow max-w-screen-3xl mx-auto px-4 md:px-6 pt-24 pb-6">
     <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,2fr)_minmax(240px,1fr)] gap-4 md:gap-6">
 
         <aside class="hidden xl:block">
-            <div class="sticky top-16 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pr-2">
+            <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pr-2">
                 <div class="bg-gradient-to-br from-sky-50/90 via-white/80 to-sky-50/90
-                    backdrop-blur-xl border border-sky-200/60
-                    rounded-2xl shadow-lg shadow-sky-200/30
-                    p-4 relative overflow-hidden">
+            backdrop-blur-xl border border-sky-200/60
+            rounded-2xl shadow-lg shadow-sky-200/30
+            p-4 relative overflow-hidden">
 
                     
                     <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-sky-200/20 to-transparent rounded-full blur-2xl"></div>
                     <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-sky-300/10 to-transparent rounded-full blur-xl"></div>
 
                     
-                    <div class="relative mb-4 pb-3 border-b border-sky-200/50">
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                            <h2 class="text-sky-800 font-bold text-sm uppercase tracking-wide">
-                                Разделы сайта
-                            </h2>
-                        </div>
-                    </div>
-
-                    
-                    <div class="relative">
+                    <div class="relative pt-8">
                         <?php if (isset($component)) { $__componentOriginal73510ed79b0513caa61757fa57cf31a7 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal73510ed79b0513caa61757fa57cf31a7 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.tree-menu','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -121,15 +109,30 @@ unset($__defined_vars, $__key, $__value); ?>
 
         
         <main>
-            <?php echo e($slot); ?>
+            <div class="bg-sky-50/10 backdrop-blur-sm rounded-2xl p-4 border border-sky-300/20">
+                <?php echo e($slot); ?>
 
+            </div>
         </main>
-
         
         <aside class="hidden xl:block">
-            <div class="sticky top-16 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pl-2">
-                <div class="text-sm text-sky-700 italic">
-                    Правый сайдбар (изображение, цитаты и другие блоки)
+            <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pl-2">
+                <div class="bg-sky-50/10 backdrop-blur-sm rounded-2xl p-4 border border-sky-200/30">
+
+                    
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-sky-200/20 to-transparent rounded-full blur-2xl"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-sky-300/10 to-transparent rounded-full blur-xl"></div>
+
+                    
+                    <div class="flex justify-center">
+                        <figure class="rounded-lg shadow-sm w-full max-w-none">
+                            <img
+                                src="<?php echo e(asset('images/authors/dandaron_dharmaraja_right_sidebar.webp')); ?>"
+                                alt="Дандарон Дхармараджа"
+                                class="rounded-lg w-full h-auto object-contain"
+                            >
+                        </figure>
+                    </div>
                 </div>
             </div>
         </aside>
@@ -176,7 +179,7 @@ unset($__defined_vars, $__key, $__value); ?>
         class="absolute left-0 top-0 h-full w-72 bg-sky-50 shadow-xl p-4 overflow-y-auto"
     >
         <div class="flex justify-between items-center mb-4">
-            <h3 class="text-lg font-bold text-sky-900">Меню</h3>
+            <h3 class="text-lg font-bold text-sky-900">Карта сайта</h3>
             <button
                 @click="mobileLeftSidebar = false"
                 class="p-2 hover:bg-sky-200 rounded-md transition-colors"
@@ -236,7 +239,7 @@ unset($__defined_vars, $__key, $__value); ?>
         class="absolute right-0 top-0 h-full w-72 bg-sky-50 shadow-xl p-4 overflow-y-auto"
     >
         <div class="flex justify-between items-center mb-4">
-            <h3 class="text-lg font-bold text-sky-900">Материалы</h3>
+            <h3 class="text-lg font-bold text-sky-900">Врата</h3>
             <button
                 @click="mobileRightSidebar = false"
                 class="p-2 hover:bg-sky-200 rounded-md transition-colors"

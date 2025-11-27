@@ -23,7 +23,7 @@
     });
 @endphp
 
-<div class="space-y-0.5">
+<div class="divide-y divide-sky-100/50">
     @foreach ($menuItems as $item)
         <x-tree-menu-item :item="$item" :level="0"/>
     @endforeach

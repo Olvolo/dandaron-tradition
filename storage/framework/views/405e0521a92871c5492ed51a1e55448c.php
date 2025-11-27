@@ -30,14 +30,16 @@ unset($__defined_vars, $__key, $__value); ?>
 
 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($isMobile): ?>
     
-    <a href="<?php echo e(url($item->full_slug)); ?>" class="block px-4 py-2 text-sm text-sky-100 hover:text-sky-200">
+    <a href="<?php echo e(url($item->full_slug)); ?>" class="block px-4 py-2 text-sm text-sky-50
+    hover:text-sky-100">
         <?php echo e($item->title); ?>
 
     </a>
     <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($item->children->where('show_in_menu', true)->isNotEmpty()): ?>
         <div class="pl-4">
             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $item->children->where('show_in_menu', true); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $child): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <a href="<?php echo e(url($child->full_slug)); ?>" class="block px-8 py-1 text-xs text-sky-200 hover:text-sky-100">
+                <a href="<?php echo e(url($child->full_slug)); ?>" class="block px-8 py-1 text-xs
+                text-sky-100 hover:text-sky-50">
                     <?php echo e($child->title); ?>
 
                 </a>
@@ -46,7 +48,7 @@ unset($__defined_vars, $__key, $__value); ?>
     <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 <?php else: ?>
     
-    <a href="<?php echo e(url($item->full_slug)); ?>" class="text-sky-100 hover:text-sky-200 transition-colors">
+    <a href="<?php echo e(url($item->full_slug)); ?>" class="text-sky-50 hover:text-sky-100 transition-colors">
         <?php echo e($item->title); ?>
 
     </a>

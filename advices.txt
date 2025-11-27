@@ -584,8 +584,9 @@ body::after {
 }
 
 Panoram_Dhamek.webp
+
 body {
-    background-image: url('/backgrounds/Panoram_Dhamek.webp');
+    background-image: url('/backgrounds/Shri_Simha_mahasiddhi.webp');
      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
