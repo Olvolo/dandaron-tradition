@@ -7,8 +7,17 @@
 }
 
 .prose p {
-    text-indent: 1.5em;
+    text-indent: 0.75em;
     margin-bottom: 1em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+@media (min-width: 640px) {
+    .prose p {
+        text-indent: 1.5em;
+    }
 }
 
 .prose h1 + p,
@@ -104,7 +113,17 @@
 }
 
 blockquote {
-    @apply border-l-4 border-sky-600 pl-4 my-4 text-sky-950 text-2xl italic font-semibold;
+    @apply border-l-4 border-sky-600 pl-2 sm:pl-4 my-4 text-sky-950 text-lg font-normal;
+    font-style: normal;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Если нужно выделить важные цитаты, можно добавить класс */
+blockquote.emphasized {
+    @apply text-xl italic font-semibold;
 }
 
 .prose ol,

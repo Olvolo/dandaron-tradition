@@ -1,3 +1,217 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php?>
 <?php $attributes ??= new \Illuminate\View\ComponentAttributeBag;
 
@@ -52,9 +266,12 @@ unset($__defined_vars, $__key, $__value); ?>
     x-data="{
         atTop: true,
         mobileLeftSidebar: false,
-        mobileRightSidebar: false
+        mobileRightSidebar: false,
+        tocAvailable: false,
+        tocOpen: false
     }"
     @scroll.window="atTop = (window.scrollY < 100)"
+    @toc-ready.window="tocAvailable = true"
     class="antialiased font-sans bg-sky-200 text-sky-950 flex flex-col min-h-screen"
     <?php if(!empty($content->background_image_url)): ?>
         style="background-image: url('<?php echo e(asset($content->background_image_url)); ?>');
@@ -66,7 +283,7 @@ unset($__defined_vars, $__key, $__value); ?>
 
 <?php echo $__env->make('layouts.partials.header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
-<div class="flex-grow max-w-screen-3xl mx-auto px-4 md:px-6 pt-24 pb-6">
+<div class="flex-grow max-w-screen-3xl mx-auto px-2 sm:px-4 md:px-6 pt-24 pb-6">
     <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,2fr)_minmax(240px,1fr)] gap-4 md:gap-6">
 
         <aside class="hidden xl:block">
@@ -108,8 +325,8 @@ unset($__defined_vars, $__key, $__value); ?>
         </aside>
 
         
-        <main>
-            <div class="bg-sky-50/10 backdrop-blur-sm rounded-2xl p-4 border border-sky-300/20">
+        <main class="w-full">
+            <div class="bg-sky-50/10 backdrop-blur-sm rounded-2xl p-2 sm:p-4 border border-sky-300/20">
                 <?php echo e($slot); ?>
 
             </div>
@@ -140,6 +357,13 @@ unset($__defined_vars, $__key, $__value); ?>
     </div>
 </div>
 
+<button
+    x-show="tocAvailable"
+    @click="window.dispatchEvent(new CustomEvent('open-toc'))"
+    x-transition
+    class="fixed bottom-5 left-5 z-40 px-4 py-2 bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-700">
+    Содержание
+</button>
 <?php echo $__env->make('layouts.partials.footer', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
 
