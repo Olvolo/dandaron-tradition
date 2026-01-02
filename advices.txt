@@ -621,7 +621,7 @@ body::after {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
     z-index: -1;
 }
 
@@ -638,3 +638,63 @@ body::after {
                 <li></li>
                 <li></li>
             </ul>
+
+
+
+            <div>
+                 <hr style="height: 2px; background-color: #0284c7; border: none; margin: 8px 0;">
+
+                 <hr class="my-1 border-t-1 border-gray-300">
+            </div>
+
+
+            <div class="not-prose flex justify-center my-4">
+                <figure class="rounded-lg shadow-md max-w-[800px] text-center">
+                    <img src="/images/dharma/tantra/vajrabhairava/guru.webp"
+                         alt="Мандала Шри Ваджрабхайравы"
+                         class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+                </figure>
+            </div>
+
+            ИЗОБРАЖЕНИЕ С ПОДПИСЬЮ:
+            <div class="not-prose flex justify-center my-4">
+                <figure class="rounded-lg shadow-md max-w-[600px] text-center">
+                    <img src="/images/image_name.webp"
+                         alt="Описание изображения"
+                         class="rounded-lg w-full h-auto mx-auto object-contain transition-all duration-300 ease-in-out">
+                    <figcaption class="mt-2 mb-4 px-4 italic text-gray-800 text-sm">
+                        Подпись к изображению
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Блоки с изображениями и стихами -->
+
+            <!-- Вариант: Без подписи -->
+            <div class="not-prose my-8 pb-8 border-b border-sky-300">
+                <div class="flex flex-row gap-4 md:gap-6 items-center">
+                    <!-- Текст слева -->
+                    <div class="flex-1 border-l-4 border-sky-600 pl-4 md:pl-6">
+                        <ul class="list-none space-y-2">
+                            <li>
+                                <strong class="text-red-700">Om</strong>! Милостивый Драгоценный Коренной Учитель,
+                            </li>
+                            <li>Сущность Тела, Речи, Мысли, Достоинств и Деяний</li>
+                            <li>Всех Татхагат десяти направлений и трех времен,</li>
+                            <li>Источник 84000 собраний Дхармы, Владыка всей Сангхи арьев,</li>
+                            <li>
+                                Тебе подношу внутреннюю жертву – <strong class="text-red-700">Om a: Hum</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Изображение справа -->
+                    <div class="flex-shrink-0 w-28 md:w-32">
+                        <div class="rounded-lg shadow-md overflow-hidden">
+                            <img src="/images/dharma/tantra/vajrabhairava/guru.webp"
+                                 alt="Бидия Дандарон"
+                                 class="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-110">
+                        </div>
+                    </div>
+                </div>
+            </div>
+

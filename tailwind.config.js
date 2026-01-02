@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import colors from 'tailwindcss/colors';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,27 +15,21 @@ export default {
                 sans: ['Roboto', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                // Основные цвета проекта
+                'sky': colors.sky,
                 'main-page': '#001366',
-                'primary': '',           // bg-primary, text-primary
-                'secondary': '',         // bg-secondary, text-secondary
-                'accent': '',            // bg-accent, text-accent
-
-                // Цвета состояний
-                'success': '',           // bg-success, text-success
-                'warning': '',           // bg-warning, text-warning
-                'danger': '',            // bg-danger, text-danger
-                'info': '',              // bg-info, text-info
-
-                // Нейтральные цвета
-                'light': '',             // bg-light, text-light
-                'dark': '',              // bg-dark, text-dark
-                'muted': '',             // bg-muted, text-muted
-
-                // Дополнительные цвета
-                'highlight': '',         // bg-highlight, text-highlight
-                'soft': '',              // bg-soft, text-soft
-                'bright': '',            // bg-bright, text-bright
+                'amber-100': '#fef3c7',
+                'amber-200': '#fde68a',
+                'accent': '',
+                'success': '',
+                'warning': '',
+                'danger': '',
+                'info': '',
+                'light': '',
+                'dark': '',
+                'muted': '',
+                'highlight': '',
+                'soft': '',
+                'bright': '',
             }
         },
     },

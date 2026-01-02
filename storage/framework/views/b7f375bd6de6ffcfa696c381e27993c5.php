@@ -1,10 +1,11 @@
 <?php
-    $padding = ($level ?? 0) * 2;
     $headingLevel = 2 + ($level ?? 0);
 ?>
 
-<div style="padding-left: <?php echo e($padding); ?>rem;" class="mt-8 scroll-mt-20">
-    <?php echo "<h".$headingLevel." id=\"chapter-$chapter->slug\" class=\"text-2xl font-bold mb-4 text-center\">"; ?>    <?php echo e($chapter->title); ?>
+<div class="mt-8 scroll-mt-20">
+    <?php echo "<h".$headingLevel." id=\"chapter-$chapter->slug\" class=\"text-2xl font-bold mb-4 text-center\">"; ?>
+
+    <?php echo e($chapter->title); ?>
 
     <?php echo "</h".$headingLevel.">"; ?>
 

@@ -1,7 +1,8 @@
 <x-layout :content="$book">
     @section('title', $book->title)
 
-    <div class="bg-white/80 p-2 rounded-lg shadow-lg">
+{{--    <div class="bg-white/80 p-6 md:p-8 rounded-lg shadow-lg">--}}
+    <div class="bg-white/80 p-4 md:p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         {{-- "Обложка" книги --}}
         <h1 class="text-4xl text-center font-bold mb-2">{{ $book->title }}</h1>
         <p class="text-lg text-sky-800 mb-4">Авторы: {{ $book->authors->pluck('name')->join(', ') }}</p>

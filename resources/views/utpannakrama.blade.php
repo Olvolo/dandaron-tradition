@@ -9,11 +9,11 @@
 
     <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
         <p class="text-right italic">Лхундуб-пандита</p>
-        <h4 class="text-center font-bold">УСТРОЙСТВО ДВУХ ГЛУБОКИХ СТУПЕНЕЙ ПУТИ ЗАРОЖДЕНИЯ-ЗАВЕРШЕНИЯ
-            ШРИ МАХА ВАДЖРАБХАЙРАВЫ – СОКРОВИЩНИЦА ДРАГОЦЕННОСТЕЙ ТРЕХ ТЕЛ</h4>
+        <h4 class="text-center"><strong>УСТРОЙСТВО ДВУХ ГЛУБОКИХ СТУПЕНЕЙ ПУТИ ЗАРОЖДЕНИЯ-ЗАВЕРШЕНИЯ
+                ШРИ МАХА ВАДЖРАБХАЙРАВЫ – СОКРОВИЩНИЦА ДРАГОЦЕННОСТЕЙ ТРЕХ ТЕЛ</strong></h4>
         <p class="text-center">dpal rdo rje 'jigs byed chen po'i bskyed rdzogs kyi lam zab mo'i rim pa gnyis kyi rnam gzhag sku gsum nor bu'i bang mdzod ces bya ba</p>
         <p class="text-center">&nbsp;</p>
-        <p class="text-center font-semibold text-red-600">НАМО ГУРУ МАНДЖУГОША!</p>
+        <p class="text-center"><strong class="text-red-600">НАМО ГУРУ МАНДЖУГОША!</strong></p>
         <blockquote class="border-l-4 border-sky-600 pl-4 my-6 text-gray-800 text-xl">
             Кланяюсь Манджугхоше, единому Отцу всех Победоносцев,<br>
             Ямантаке, покоряющему войско внутренних и внешних мар,<br>

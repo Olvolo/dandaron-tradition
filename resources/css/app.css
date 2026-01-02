@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+body {
+    overflow-wrap: anywhere;
+}
+
 [x-cloak] {
     display: none !important;
 }
@@ -342,3 +352,4 @@ aside .sticky {
     @apply text-sm text-sky-900 mt-3 tracking-wider flex-shrink-0
     font-medium uppercase;
 }
+

@@ -1,0 +1,54 @@
+<div class="my-10 flex justify-center">
+    <div class="text-amber-900 text-lg tracking-widest">༄༅༄༅༄༅</div>
+</div>
+
+<hr class="hr-red-500 h-[6px] my-2">
+
+<hr style="height: 6px; background-color: #0284c7; border: none; margin: 8px 0;">
+<hr style="height: 5px; background-color: #0284c7; border: none; margin: 8px 0;">
+<hr style="height: 4px; background-color: #0284c7; border: none; margin: 8px 0;">
+<hr style="height: 3px; background-color: #0284c7; border: none; margin: 8px 0;">
+<hr style="height: 2px; background-color: #0284c7; border: none; margin: 8px 0;">
+<hr style="height: 1px; background-color: #0284c7; border: none; margin: 8px 0;">
+
+<hr class="my-8 border-t-1 border-gray-300">
+
+1.
+<div class="flex items-center justify-center my-8">
+    <div class="flex-grow border-t border-gray-300"></div>
+    <span class="mx-4 text-2xl text-red-800">༈</span>
+    <div class="flex-grow border-t border-gray-300"></div>
+</div>
+
+2. Линия с «Бесконечным узлом» (Srivatsa)
+
+<div class="relative flex py-5 items-center my-10">
+    <div class="flex-grow border-t border-amber-400"></div>
+    <span class="flex-shrink mx-4">
+        <svg class="w-8 h-8 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12,2L10.2,3.8L12,5.6L13.8,3.8L12,2M7.4,6.6L5.6,8.4L7.4,10.2L9.2,8.4L7.4,6.6M16.6,6.6L14.8,8.4L16.6,10.2L18.4,8.4L16.6,6.6M12,11.2L10.2,13L12,14.8L13.8,13L12,11.2M2.8,11.2L1,13L2.8,14.8L4.6,13L2.8,11.2M21.2,11.2L19.4,13L21.2,14.8L23,13L21.2,11.2M7.4,15.8L5.6,17.6L7.4,19.4L9.2,17.6L7.4,15.8M16.6,15.8L14.8,17.6L16.6,19.4L18.4,17.6L16.6,15.8M12,20.2L10.2,22L12,23.8L13.8,22L12,20.2Z"/>
+        </svg>
+    </span>
+    <div class="flex-grow border-t border-amber-400"></div>
+</div>
+
+<div class="relative flex items-center justify-center my-8 select-none">
+    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full border-t border-double border-red-200"></div>
+    </div>
+    <div class="relative px-4 bg-white">
+        <span class="text-xl text-red-900 tracking-[0.3em]">༓ ࿇ ༓ ࿇ ༓</span>
+    </div>
+</div>
+
+<div class="flex items-center justify-center my-10 group">
+    <div class="w-full border-t-2 border-amber-200 transition-all group-hover:border-amber-400"></div>
+    <div class="px-3">
+        <svg class="w-8 h-8 text-amber-700 transform rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v16H4z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9h6v6H9z" />
+        </svg>
+    </div>
+    <div class="w-full border-t-2 border-amber-200 transition-all group-hover:border-amber-400"></div>
+</div>
+

@@ -10,7 +10,8 @@
 <?php $component->withAttributes(['content' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($book)]); ?>
     <?php $__env->startSection('title', $book->title); ?>
 
-    <div class="bg-white/80 p-2 rounded-lg shadow-lg">
+
+    <div class="bg-white/80 p-4 md:p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         
         <h1 class="text-4xl text-center font-bold mb-2"><?php echo e($book->title); ?></h1>
         <p class="text-lg text-sky-800 mb-4">Авторы: <?php echo e($book->authors->pluck('name')->join(', ')); ?></p>
