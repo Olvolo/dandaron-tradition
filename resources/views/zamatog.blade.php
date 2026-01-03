@@ -4339,7 +4339,7 @@
                     SVaHa</strong></li>
             <li><strong class="text-red-700">Om Ka LA Ru PA SA PA RI Va RA aLOKE PRA Ti TSTSHA Hum
                     SVaHa</strong></li>
-            <li><strong class="text-red-700">Om Ka LA Ru PA SA PA RI Va RA NeVIDYA PRA Ti TSTSHA
+            <li><strong class="text-red-700">Om Ka LA Ru PA SA PA RI Va RA NAIVIDYA PRA Ti TSTSHA
                     Hum SVaHa</strong></li>
             <li><strong class="text-red-700">Om Ka LA Ru PA SA PA RI Va RA SHABDA PRA Ti TSTSHA Hum
                     SVaHa</strong></li>

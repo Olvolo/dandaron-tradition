@@ -46,7 +46,8 @@
                 <div class="flex-grow p-6 overflow-y-auto">
                     <ul class="space-y-2">
                         @foreach($book->chapters->whereNull('parent_id')->sortBy('order_column') as $chapter)
-                            @include('pages.partials.toc-item', ['chapter' => $chapter])
+{{--                            @include('pages.partials.toc-item', ['chapter' => $chapter])--}}
+                            @include('pages.partials.toc-item', ['chapter' => $chapter, 'level' => 0])
                         @endforeach
                     </ul>
                 </div>
