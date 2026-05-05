@@ -68,10 +68,10 @@ class Chapter extends Model
         return $this->belongsTo(Book::class);
     }
     public function getUrl(): string
-    {
-        return route('chapters.show', $this);
-    }
-
+{
+    // Используем именно тот роут, который прописан в web.php
+    return route('chapters.show', ['chapter' => $this->slug]);
+}
     public function getTypeName()
     {
         return 'Глава';

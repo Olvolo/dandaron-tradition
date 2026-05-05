@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'Microsoft Himalaya';
+        src: url('/fonts/microsoft-himalaya.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
 html {
     hyphens: auto;
     -webkit-hyphens: auto;
@@ -206,7 +216,7 @@ mark.bg-yellow-200 {
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 /* Убедитесь что элементы с id видимы */
@@ -352,4 +362,3 @@ aside .sticky {
     @apply text-sm text-sky-900 mt-3 tracking-wider flex-shrink-0
     font-medium uppercase;
 }
-

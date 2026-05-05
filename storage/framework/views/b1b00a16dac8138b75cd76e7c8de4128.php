@@ -11,6 +11,7 @@
     <?php $__env->startSection('title', $book->title); ?>
 
 
+
     <div class="bg-white/80 p-4 md:p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         
         <h1 class="text-4xl text-center font-bold mb-2"><?php echo e($book->title); ?></h1>
@@ -46,7 +47,7 @@
     <template x-teleport="body">
         <div x-show="tocOpen" x-cloak class="fixed inset-0 z-50 flex">
             <div @click="tocOpen = false" class="absolute inset-0 bg-black/50"></div>
-            <div class="relative flex flex-col max-w-xs w-full h-full bg-white">
+            <div class="relative flex flex-col max-w-md w-full h-full bg-white">
                 <div class="flex-shrink-0 p-6 border-b">
                     <div class="flex items-center justify-between">
                         <h3 class="text-xl font-semibold">Оглавление</h3>
@@ -54,9 +55,25 @@
                     </div>
                 </div>
                 <div class="flex-grow p-6 overflow-y-auto">
+                    
+                    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(auth()->guard()->check()): ?>
+                        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(auth()->user()->isAdmin()): ?>
+                            <div class="fixed top-20 right-5 z-40 bg-white/90 p-3 rounded-lg shadow-lg text-sm">
+                                <div class="font-semibold mb-2">Управление оглавлением:</div>
+                                
+                                <button @click="window.dispatchEvent(new CustomEvent('toc-control', {detail: {open: true}}))" 
+        class="block w-full text-left px-2 py-1 hover:bg-sky-100 rounded">
+    Развернуть всё
+</button>
+<button @click="window.dispatchEvent(new CustomEvent('toc-control', {detail: {open: false}}))" 
+        class="block w-full text-left px-2 py-1 hover:bg-sky-100 rounded">
+    Свернуть всё
+</button>
+                            </div>
+                        <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+                    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
                     <ul class="space-y-2">
                         <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $book->chapters->whereNull('parent_id')->sortBy('order_column'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $chapter): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
                             <?php echo $__env->make('pages.partials.toc-item', ['chapter' => $chapter, 'level' => 0], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
                     </ul>
@@ -64,6 +81,27 @@
             </div>
         </div>
     </template>
+
+    
+    <script>
+        function expandAll() {
+            Object.keys(localStorage).forEach(key => {
+                if (key.startsWith('_x_toc-')) {
+                    localStorage.setItem(key, 'true');
+                }
+            });
+            location.reload();
+        }
+
+        function collapseAll() {
+            Object.keys(localStorage).forEach(key => {
+                if (key.startsWith('_x_toc-')) {
+                    localStorage.setItem(key, 'false');
+                }
+            });
+            location.reload();
+        }
+    </script>
 
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>

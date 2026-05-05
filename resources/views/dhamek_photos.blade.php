@@ -15,7 +15,6 @@
             «<strong>первым поворотом Колеса Дхармы</strong>» и считается рождением сангхи —
             буддийской общины.
         </p>
-
         <p>
             Нынешняя ступа, сохранившаяся до наших дней, была воздвигнута в V веке н.э. при
             императоре Кумарагупте I из династии Гуптов, хотя археологи обнаружили следы более
@@ -25,7 +24,6 @@
             отличается от типичных полусферических ступ, что подчёркивает её исключительное значение
             как места проповеди Дхармы.
         </p>
-
         <p>
             Сарнатх (древнее название — <em>Ришипатана Мригадаявана</em>, «Олений парк») является
             одним из <strong>Четырёх Священных Мест</strong>, посещаемых последователями Будды.
@@ -33,11 +31,9 @@
             паринирваны (Кушинагар), Сарнатх завершает паломнический круг, символизирующий полный
             путь Будды.
         </p>
-
         <p class="text-base text-sky-700 italic text-center mt-4">
             Фотографии предоставлены Сергеем Топорковым
         </p>
-
         <!-- Переключатель режимов просмотра -->
         <div class="flex justify-center my-6">
             <div class="inline-flex rounded-lg shadow-sm border border-sky-200 overflow-hidden"
@@ -56,12 +52,9 @@
                 </button>
             </div>
         </div>
-
         <!-- Контейнер галереи -->
         <div id="photo-gallery" class="mt-6 min-h-[600px] pb-8"></div>
-
     </div>
-
     <script>
         const photos = [
             {
@@ -188,7 +181,6 @@
         });
     </script>
 
-
     <!-- Секция: Великая Ступа Боднатх -->
     <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-6 px-4 md:px-0 mt-12">
 
@@ -221,12 +213,10 @@
                 </button>
             </div>
         </div>
-
         <!-- Контейнер галереи -->
         <div id="photo-gallery-2" class="mt-6 min-h-[600px] pb-8"></div>
 
     </div>
-
     <script>
         const photos2 = [
             {
@@ -289,10 +279,8 @@
             },
             {src: '/images/origins/toporkov_photos/eyes.webp', alt: 'Всевидящие глаза'}
         ];
-
         let currentIndex2 = 0;
         let currentView2 = 'grid';
-
         function renderGrid2() {
             const html = photos2.map(photo => `
             <figure class="rounded-xl shadow-sm bg-sky-50/30 overflow-hidden border border-sky-100/50">
@@ -341,7 +329,6 @@
             </div>
         `;
         }
-
         function switchGalleryView2(mode) {
             currentView2 = mode;
             const gridBtn = document.getElementById('gallery-grid-btn-2');
@@ -361,7 +348,6 @@
                 gridBtn.classList.add('bg-white');
             }
         }
-
         function galleryNext2() {
             currentIndex2 = (currentIndex2 + 1) % photos2.length;
             if (currentView2 === 'carousel') renderCarousel2();

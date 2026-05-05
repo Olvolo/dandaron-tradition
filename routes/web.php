@@ -13,6 +13,8 @@ use App\Livewire\Admin\Structure\ManagePlacements;
 use App\Livewire\Admin\Taxonomy\ManageTaxonomy;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SandboxController;
+use App\Http\Controllers\SitemapController;
+
 
 // --- Публичные маршруты ---
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -46,6 +48,8 @@ Route::prefix('admin')->name('admin.')
 
 // Подключение маршрутов входа/регистрации/выхода
 require __DIR__ . '/auth.php';
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 // "Всеядный" маршрут для публичных страниц (ОБЯЗАТЕЛЬНО ПОСЛЕДНИЙ!)
 Route::get('/{slug}', [PageController::class, 'show'])->where('slug', '.*')->name('page.show');

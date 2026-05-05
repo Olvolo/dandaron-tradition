@@ -125,7 +125,7 @@
         <p class="italic mt-2"><strong class="text-green-700">Держа ваджр у правого бока или
                 вращая его, звоню дильбой, обходя ее языком по восьми направлениям внутренней
                 полости:</strong></p>
-        <p class="text-center my-6"><strong class="text-red-700">OM BAJRA DHRMa RA nI TA PRA RA
+        <p class="text-center my-6"><strong class="text-red-700">OM BAJRA DHARMa RA nI TA PRA RA
                 nI TA SAm PRA RA nI TA SARBA BUD DHA KshE TRA PRA TSA LI NI PRAJNYa PA RA MI Ta Na DA SVA BHa VE BAJRA SATVA HRi DA YA SANTO shA NI Hum Hum Hum HO HO HO SVa Ha`</strong>
         </p>
         <hr class="my-1 border-t-1 border-gray-300">
@@ -412,7 +412,7 @@
     <div>
         <hr style="height: 2px; background-color: #0284c7; border: none; margin: 8px 0;">
         <p>На языке каждого из ушедших от мира пирующих, слог <strong class="text-red-700">Hum</strong> превращается в одноконечный белый ваджр, который становится полым световым лучом.</p>
-        <p class="text-center my-6"><strong class="text-red-700">Om YA MA Ra Ja SA DO ME YA | YA ME DO RU nA YO DA YA | YA DA YO NI RA YA KshE YA | YA KshE YA TSATSHA NI Ra MA YA Hum Hum Hum PHAT PHAT SVa Ha</strong></p>
+        <p class="text-center my-6"><strong class="text-red-700">Om YA MA Ra Ja SA DO ME YA | YA ME DO RU nA YO DA YA | YA DA YO NI RA YA KshE YA | YA KshE YA TSATSHA NI Ra MA YA Hum Hum PHAT PHAT SVa Ha</strong></p>
         <p>– Ваджрабхайрава высасывает лучшую часть – сок балина, предназначая остаток балина для стражей сторон света.</p>
         <p class="text-center my-6"><strong class="text-red-700">Om BHU TSA RA NAm | YA Pa TA LA TSA RA YA | MaN KHE TSA RA YA | TA Pu RA BA NI Ga NAm | KA DAKshI nA Di Ga YA | Hum PA shTSI MA NAm | PHAt UD TA RA TI Ga YA | Om I | HRi: YA | STRI BA | VI KshI | KRI KO | Ta E | NA A | NA DE | Hum BHYO: PHAt SARBA BHU TE BHYA:</strong></p>
         <p class="italic mt-2">– <strong class="text-green-700">произнеси трижды.</strong> Остаток балина достается стражам.</p>
@@ -733,8 +733,10 @@
             <li><strong class="text-red-700">Om KU MA Ra RU PI nI JA: JA: Hum PHAT</strong> – цветы
             </li>
             <li><strong class="text-red-700">Om HRi: HA: HI PHAT</strong> – благовония</li>
-            <li><strong class="text-red-700">Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa HA HA Ha SA
-                    NI DI NI DiPTA YA SVaHa</strong> – светильник</li>
+            <li><strong class="text-red-700">Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa AṬṬAṬṬA
+                    HĀ SA Ha SA NI DI NI DiPTA YA SVaHa</strong> – светильник</li>
+            <li><strong class="text-red-700">(Oṃ dīptalocane vikṛtānane mahā-aṭṭaṭṭahāsini dini
+                    dīptāya svāhā)</strong></li>
             <li><strong class="text-red-700">Om BAJRA NeVIDYA a: Hum SVaHa</strong> – еда</li>
             <li><strong class="text-red-700">Om BAJRA SHABDA a: Hum</strong> – музыка</li>
         </ul>
@@ -2224,7 +2226,7 @@
             <li>Om VI KRI Ta NA NA DUshtAm SATTVA DA MA KA GA: GA: GA:</li>
             <li>Om KU MA Ra Ru PI nI JA: JA: Hum PHAt</li>
             <li>Om HRi: Ha: HI PHAT</li>
-            <li>Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa HA HA HA SA NI DI NI DiPTA YA SVaHa</li>
+            <li>Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa AṬṬAṬṬAHĀSA NI DI NI DiPTA YA SVaHa</li>
             <li>Om BAJRA NeVIDYA a: Hum SVaHa</li>
             <li>Om BAJRA SHABDA a: Hum</li>
             <li>Om SARBA TA THA GA TA CHITTAM BAJRA SVA BHa VA ATMA KO HAM</li>
@@ -3892,7 +3894,7 @@
                     GA:</strong></li>
             <li><strong class="text-red-700">Om KU MA Ra Ru PI nI JA: JA: Hum PHAt</strong></li>
             <li><strong class="text-red-700">Om HRi: Ha: HI PHAt</strong></li>
-            <li><strong class="text-red-700">Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa Attatta Ha SA
+            <li><strong class="text-red-700">Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa AṬṬAṬṬAHĀSA
                     NI DI NI DiPTA YA SVaHa</strong></li>
             <li><strong class="text-red-700">Om BAJRA NeVIDYA a: Hum SVaHa</strong></li>
             <li><strong class="text-red-700">Om BAJRA SHABDA a: Hum</strong></li>
@@ -4041,7 +4043,7 @@
                     GA:</strong></li>
             <li><strong class="text-red-700">Om KU MA Ra Ru PI nI JA: JA: Hum PHAt</strong></li>
             <li><strong class="text-red-700">Om HRi: Ha: HI PHAt</strong></li>
-            <li><strong class="text-red-700">Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa Attatta Ha SA
+            <li><strong class="text-red-700">Om DiPTA LO TSA NI VI KRI Ta NA NA MAHa AṬṬAṬṬAHĀSA
                     NI DI NI DiPTA YA SVaHa</strong></li>
             <li><strong class="text-red-700">Om BAJRA NeVIDYA a: Hum SVaHa</strong></li>
             <li><strong class="text-red-700">Om BAJRA SHABDA a: Hum</strong></li>

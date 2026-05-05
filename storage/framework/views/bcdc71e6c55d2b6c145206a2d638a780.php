@@ -27,7 +27,6 @@ foreach ($attributes->all() as $__key => $__value) {
 }
 
 unset($__defined_vars, $__key, $__value); ?>
-
 <?php
     $children = $item->children ?? collect();
     $hasChildren = $children->isNotEmpty();
@@ -37,38 +36,31 @@ unset($__defined_vars, $__key, $__value); ?>
 
     $isActive = ($currentPath === $itemPath);
 
-    // Правильная проверка предка, включая корень
     if ($itemPath === '') {
-        $isAncestorOfActive = ($currentPath !== ''); // Главная — предок всего, кроме "/"
+        $isAncestorOfActive = ($currentPath !== '');
     } else {
         $isAncestorOfActive = str_starts_with($currentPath, $itemPath . '/');
     }
 
     $isExpanded = $isActive || $isAncestorOfActive;
     $paddingLeft = 0.25 + ($level * 0.75);
+
+    $persistKey = 'menu-' . ($itemPath ?: 'home');
+    $openState = $isExpanded ? 'true' : 'false';
 ?>
 
-<div x-data="{ open: <?php echo \Illuminate\Support\Js::from($isExpanded)->toHtml() ?> }" class="py-1 border-b border-sky-300 last:border-b">
+<div x-data="{ open: $persist(<?php echo e($openState); ?>).as('<?php echo e($persistKey); ?>')}" class="py-1 border-b
+border-sky-300 last:border-b">
     <div class="flex items-center group hover:bg-sky-100/80 rounded-lg transition-all duration-200"
          style="padding-left: <?php echo e($paddingLeft); ?>rem">
 
         
         <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($hasChildren): ?>
-            <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($isExpanded): ?>
-                
-                <span class="p-1.5">
-                    <svg class="w-4 h-4 text-sky-600 rotate-90" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                    </svg>
-                </span>
-            <?php else: ?>
-                
-                <button @click.stop="open = !open" class="p-1.5 rounded-md hover:bg-sky-200/60 transition-colors">
-                    <svg class="w-4 h-4 text-sky-600 transition-transform" :class="open ? 'rotate-90' : ''" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-            <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+            <button @click.stop="open = !open" class="p-1.5 rounded-md hover:bg-sky-200/60 transition-colors">
+                <svg class="w-4 h-4 text-sky-600 transition-transform" :class="open ? 'rotate-90' : ''" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+            </button>
         <?php else: ?>
             <span class="w-7 flex-shrink-0"></span>
         <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
@@ -92,11 +84,9 @@ unset($__defined_vars, $__key, $__value); ?>
 
     
     <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($hasChildren): ?>
-        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($isExpanded): ?>
-            
-            <div class="space-y-0.5 mt-0.5">
-                <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $child): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <?php if (isset($component)) { $__componentOriginal68382ff5897471103dc79e4a4e923fa6 = $component; } ?>
+        <div x-show="open" x-collapse class="space-y-0.5 mt-0.5">
+            <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $child): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php if (isset($component)) { $__componentOriginal68382ff5897471103dc79e4a4e923fa6 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal68382ff5897471103dc79e4a4e923fa6 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.tree-menu-item','data' => ['item' => $child,'level' => $level + 1]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('tree-menu-item'); ?>
@@ -116,35 +106,8 @@ unset($__defined_vars, $__key, $__value); ?>
 <?php $component = $__componentOriginal68382ff5897471103dc79e4a4e923fa6; ?>
 <?php unset($__componentOriginal68382ff5897471103dc79e4a4e923fa6); ?>
 <?php endif; ?>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
-            </div>
-        <?php else: ?>
-            
-            <div x-show="open" x-collapse class="space-y-0.5 mt-0.5">
-                <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $child): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <?php if (isset($component)) { $__componentOriginal68382ff5897471103dc79e4a4e923fa6 = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal68382ff5897471103dc79e4a4e923fa6 = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.tree-menu-item','data' => ['item' => $child,'level' => $level + 1]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('tree-menu-item'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes(['item' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($child),'level' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($level + 1)]); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginal68382ff5897471103dc79e4a4e923fa6)): ?>
-<?php $attributes = $__attributesOriginal68382ff5897471103dc79e4a4e923fa6; ?>
-<?php unset($__attributesOriginal68382ff5897471103dc79e4a4e923fa6); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal68382ff5897471103dc79e4a4e923fa6)): ?>
-<?php $component = $__componentOriginal68382ff5897471103dc79e4a4e923fa6; ?>
-<?php unset($__componentOriginal68382ff5897471103dc79e4a4e923fa6); ?>
-<?php endif; ?>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
-            </div>
-        <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+        </div>
     <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 </div>
 <?php /**PATH C:\laragon\www\dandaron-tradition\resources\views/components/tree-menu-item.blade.php ENDPATH**/ ?>

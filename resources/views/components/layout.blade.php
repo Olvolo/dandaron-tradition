@@ -7,17 +7,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'Dandaron Tradition' }}</title>
+    {{-- 1. Динамический заголовок: название страницы + название сайта --}}
+    <title>{{ isset($title) ? $title . ' | Dandaron Tradition' : 'Dandaron Tradition' }}</title>
 
-    <meta name="description"
-          content="{{ $content->annotation ?? 'Dandaron Tradition - онлайн-архив статей и книг, посвящённый работам ряда авторов.' }}">
+    {{-- 2. Описание для Google (не более 160 символов) --}}
+    <meta name="description" content="{{ Str::limit(strip_tags($content->annotation ?? 'Dandaron Tradition - онлайн-архив статей и книг, посвящённый работам ряда авторов.'), 160) }}">
 
+    {{-- 3. Каноническая ссылка (защита от дублей) --}}
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- 4. Open Graph (Как страница будет выглядеть в соцсетях и мессенджерах) --}}
+    <meta property="og:title" content="{{ $title ?? 'Dandaron Tradition' }}">
+    <meta property="og:description" content="{{ Str::limit(strip_tags($content->annotation ?? 'Архив трудов...'), 160) }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="Dandaron Tradition">
+    @if(!empty($content->background_image_url))
+        <meta property="og:image" content="{{ asset($content->background_image_url) }}">
+    @endif
+
+    {{-- Подключение ресурсов --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    {{-- Кастомные стили --}}
+    {{-- Тибетские шрифты --}}
+    <style>
+        @@font-face {
+            font-family: 'Microsoft Himalaya';
+            src: url('{{ asset('fonts/microsoft-microsoft-himalaya.ttf') }}') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan&display=swap" rel="stylesheet">
+
+    {{-- Кастомные стили (если есть в БД) --}}
     @if(!empty($content->custom_styles))
         <style>{!! $content->custom_styles !!}</style>
     @endif
+
+    <script type="application/ld+json">
+    {
+  "@@context": "https://schema.org",
+  "@@type": "WebPage",
+  "name": "{{ $title ?? 'Dandaron Tradition' }}",
+  "description": "{{ Str::limit(strip_tags($content->annotation ?? 'Архив статей и книг'), 160) }}"
+    }
+    </script>
 </head>
 
 <body
@@ -42,7 +78,9 @@
 @include('layouts.partials.header')
 
 <div class="flex-grow max-w-screen-3xl mx-auto px-2 sm:px-4 md:px-6 pt-24 pb-6">
-    <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,2fr)_minmax(240px,1fr)] gap-4 md:gap-6">
+
+    <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,4fr)_minmax(240px,1fr)] gap-4 md:gap-6">
+
 
         <aside class="hidden xl:block">
             <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pr-2">

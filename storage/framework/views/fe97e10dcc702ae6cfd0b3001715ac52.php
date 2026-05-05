@@ -35,17 +35,53 @@ unset($__defined_vars, $__key, $__value); ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><?php echo e($title ?? 'Dandaron Tradition'); ?></title>
+    
+    <title><?php echo e(isset($title) ? $title . ' | Dandaron Tradition' : 'Dandaron Tradition'); ?></title>
 
-    <meta name="description"
-          content="<?php echo e($content->annotation ?? 'Dandaron Tradition - онлайн-архив статей и книг, посвящённый работам ряда авторов.'); ?>">
+    
+    <meta name="description" content="<?php echo e(Str::limit(strip_tags($content->annotation ?? 'Dandaron Tradition - онлайн-архив статей и книг, посвящённый работам ряда авторов.'), 160)); ?>">
 
+    
+    <link rel="canonical" href="<?php echo e(url()->current()); ?>">
+
+    
+    <meta property="og:title" content="<?php echo e($title ?? 'Dandaron Tradition'); ?>">
+    <meta property="og:description" content="<?php echo e(Str::limit(strip_tags($content->annotation ?? 'Архив трудов...'), 160)); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo e(url()->current()); ?>">
+    <meta property="og:site_name" content="Dandaron Tradition">
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(!empty($content->background_image_url)): ?>
+        <meta property="og:image" content="<?php echo e(asset($content->background_image_url)); ?>">
+    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+
+    
     <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
+
+    
+    <style>
+        @font-face {
+            font-family: 'Microsoft Himalaya';
+            src: url('<?php echo e(asset('fonts/microsoft-microsoft-himalaya.ttf')); ?>') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan&display=swap" rel="stylesheet">
 
     
     <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(!empty($content->custom_styles)): ?>
         <style><?php echo $content->custom_styles; ?></style>
     <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "<?php echo e($title ?? 'Dandaron Tradition'); ?>",
+  "description": "<?php echo e(Str::limit(strip_tags($content->annotation ?? 'Архив статей и книг'), 160)); ?>"
+    }
+    </script>
 </head>
 
 <body
@@ -70,7 +106,9 @@ unset($__defined_vars, $__key, $__value); ?>
 <?php echo $__env->make('layouts.partials.header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
 <div class="flex-grow max-w-screen-3xl mx-auto px-2 sm:px-4 md:px-6 pt-24 pb-6">
-    <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,2fr)_minmax(240px,1fr)] gap-4 md:gap-6">
+
+    <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,4fr)_minmax(240px,1fr)] gap-4 md:gap-6">
+
 
         <aside class="hidden xl:block">
             <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pr-2">

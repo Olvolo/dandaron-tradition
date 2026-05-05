@@ -1,36 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
+    /** @var \App\Models\Chapter $chapter */
+    /** @var int $level */
+
     $level = $level ?? 0;
 
     $icons = [
@@ -46,28 +17,43 @@
 
     $currentIcon = $icons[$level % 8];
 
-    // Размеры по уровням
     $iconSizes = ['w-4 h-4', 'w-4 h-4', 'w-3.5 h-3.5', 'w-3.5 h-3.5', 'w-3 h-3', 'w-3 h-3', 'w-3 h-3', 'w-3 h-3'];
     $iconSize = $iconSizes[min($level, 7)];
+
+    $hasChildren = $chapter->children->isNotEmpty();
 ?>
 
-<li class="text-sm text-black">
-    <a href="#chapter-<?php echo e($chapter->slug); ?>"
-       
-       @click.prevent="document.querySelector('#chapter-<?php echo e($chapter->slug); ?>').scrollIntoView
-           ({ behavior: 'smooth' }); tocOpen = false;"
-       class="flex items-start gap-1 py-1 hover:text-amber-600 transition-colors group">
 
-        <svg class="<?php echo e($iconSize); ?> flex-shrink-0 <?php echo e($currentIcon['color']); ?> group-hover:text-amber-600 mt-0.5"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?php echo e($currentIcon['path']); ?>"/>
-        </svg>
+    <li class="text-sm text-black" 
+    x-data="{ open: $persist(true).as('toc-<?php echo e($chapter->slug); ?>') }"
+    @toc-control.window="open = $event.detail.open">
+    <div class="flex items-start gap-1 py-1 group">
+        <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($hasChildren): ?>
+            <button @click="open = !open" class="flex-shrink-0 w-4 h-4 mt-0.5 text-gray-500 hover:text-gray-700 focus:outline-none">
+                <svg :class="open ? 'rotate-90' : ''" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        <?php else: ?>
+            <span class="w-4 h-4"></span>
+        <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
 
-        <span class="flex-1"><?php echo e($chapter->title); ?></span>
-    </a>
+        <a href="#chapter-<?php echo e($chapter->slug); ?>"
+           @click.prevent="document.querySelector('#chapter-<?php echo e($chapter->slug); ?>').scrollIntoView
+               ({ behavior: 'smooth' }); tocOpen = false;"
+           class="flex items-start gap-1 flex-1 hover:text-amber-600 transition-colors">
 
-    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($chapter->children->isNotEmpty()): ?>
-        <ul class="pl-4 mt-1 space-y-1">
+            <svg class="<?php echo e($iconSize); ?> flex-shrink-0 <?php echo e($currentIcon['color']); ?> group-hover:text-amber-600 mt-0.5"
+                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?php echo e($currentIcon['path']); ?>"/>
+            </svg>
+
+            <span class="flex-1"><?php echo e($chapter->title); ?></span>
+        </a>
+    </div>
+
+    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if($hasChildren): ?>
+        <ul x-show="open" x-collapse class="pl-4 mt-1 space-y-1">
             <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $chapter->children; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $child): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php echo $__env->make('pages.partials.toc-item', ['chapter' => $child, 'level' => $level + 1], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
