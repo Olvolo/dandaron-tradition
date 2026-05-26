@@ -23,48 +23,45 @@
 
     <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>1. Мир свободен от возникновения и исчезновения,</li>
-            <li>подобен цветку в небе. Он не постигается</li>
-            <li>ни как существующий, ни как несуществующий —</li>
-            <li>таков он в мудрости (<em>prajñā</em>) и сострадании (<em>kṛpā</em>).<a href="#citation-496" id="ref-496" class="citation-mark"><sup>496</sup></a></li>
+            <li>1. Мир (<em>lokaḥ</em>) свободен от возникновения и разрушения</li>
+            <li>(<em>utpāda-bhaṅga-rahita</em>), подобен цветку в небе (<em>khapuṣpa-saṃnibha</em>).</li>
+            <li>Он не устанавливается ни как существующий, ни как несуществующий —</li>
+            <li>через Твои мудрость (<em>prajñā</em>) и сострадание (<em>kṛpā</em>).<a href="#citation-496" id="ref-496" class="citation-mark"><sup>496</sup></a></li>
         </ul>
 
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>2. Мир всегда подобен сновидению и</li>
-            <li>свободен от крайностей вечности и уничтожения.</li>
-            <li>Он не постигается</li>
-            <li>ни как существующий, ни как несуществующий —</li>
-            <li>таков он в мудрости и сострадании.<a href="#citation-497" id="ref-497" class="citation-mark"><sup>497</sup></a></li>
+            <li>2. Мир свободен от крайностей вечности и уничтожения,</li>
+            <li>всегда подобен сновидению,</li>
+            <li>Он не устанавливается ни как существующий, ни как несуществующий —</li>
+            <li>через Твои мудрость (<em>prajñā</em>) и сострадание (<em>kṛpā</em>).<a href="#citation-497" id="ref-497" class="citation-mark"><sup>497</sup></a></li>
         </ul>
 
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>3. Все дхармы подобны магической иллюзии (<em>māyā</em>) —</li>
-            <li>не схватываются как ум (<em>citta</em>) или сознание (<em>vijñāna</em>).</li>
-            <li>Их нельзя установить</li>
-            <li>ни как существующие, ни как несуществующие —</li>
-            <li>таковы они в мудрости и сострадании.<a href="#citation-498" id="ref-498" class="citation-mark"><sup>498</sup></a></li>
+            <li>3. Все дхармы подобны магической иллюзии (<em>māyā</em>),</li>
+            <li>не удерживаются в категориях ума (<em>citta</em>)</li>
+            <li>и различающего сознания (<em>vijñāna</em>).</li>
+            <li>Они не устанавливаются ни как существующие, ни как несуществующие —</li>
+            <li>через Твои мудрость (<em>prajñā</em>) и сострадание (<em>kṛpā</em>).<a href="#citation-498" id="ref-498" class="citation-mark"><sup>498</sup></a></li>
         </ul>
 
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>4. Тебе всегда открыто отсутствие «я»</li>
-            <li>в дхармах и личности (<em>dharmapudgalanairātmya</em>),</li>
-            <li>а также очищение завес клеш и познаваемого (<em>kleśajñeya</em>)</li>
-            <li>через беспризнаковость (<em>animitta</em>) —</li>
-            <li>таково это в мудрости и сострадании.<a href="#citation-499" id="ref-499" class="citation-mark"><sup>499</sup></a></li>
+            <li>4. Отсутствие «я» дхарм и личности (<em>dharmapudgalanairātmya</em>),</li>
+            <li>завесы клеш и познаваемого (<em>kleśajñeya</em>) —</li>
+            <li>всегда прояснено Тобой через без-признаковость (<em>animitta</em>),</li>
+            <li>через Твои мудрость (<em>prajñā</em>) и сострадание (<em>kṛpā</em>).<a href="#citation-499" id="ref-499" class="citation-mark"><sup>499</sup></a></li>
         </ul>
 
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>5. Ты не угасаешь и не пребываешь в нирване,</li>
-            <li>и нирвана не пребывает в тебе.</li>
-            <li>Ты вне разделения на познающего и познаваемого,</li>
-            <li>свободен от крайностей бытия и небытия.<a href="#citation-500" id="ref-500" class="citation-mark"><sup>500</sup></a></li>
+            <li>5. Ты не угасаешь в нирване, ибо нирвана в Тебе пребывает.</li>
+            <li>Свободен Ты от различения познающего и познаваемого,</li>
+            <li>вне крайностей бытия и небытия.<a href="#citation-500" id="ref-500" class="citation-mark"><sup>500</sup></a></li>
         </ul>
 
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>6. Те, кто зрит Мудреца умиротворённым,</li>
-            <li>вне возникновения,</li>
-            <li>становятся свободными от цепляния (присвоения) (<em>anupādāna</em>)</li>
-            <li>и незапятнанными — здесь и там.<a href="#citation-501" id="ref-501" class="citation-mark"><sup>501</sup></a></li>
+            <li>6. Те, кто зрят Мудреца умиротворённым,</li>
+            <li>свободным от возникновения такого рода,</li>
+            <li>становятся свободными от цепляния (<em>nirupādānāḥ</em>),</li>
+            <li>незапятнанными — здесь и там.<a href="#citation-501" id="ref-501" class="citation-mark"><sup>501</sup></a></li>
         </ul>
     </blockquote>
 
@@ -5789,6 +5786,796 @@
 
 </div>
 
+<!— Гатхи 781-831 —>
+<div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
+
+    <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>781. Признак Будд — знание (<em>jñāna</em>),</li>
+            <li>свободное от изъянов воззрений (<em>dṛṣṭi-doṣa</em>),</li>
+            <li>имеющее своей областью</li>
+            <li>прямое личное видение (<em>pratyātma-dṛṣṭi-gatika</em>),</li>
+            <li>уничтожающее все изъяны.<a href="#citation-824" id="ref-824" class="citation-mark"><sup>824</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>782. Для глухих, слепых, немых,</li>
+            <li>для дряхлых стариков, для живущих враждой,</li>
+            <li>и особенно для духовно незрелых (<em>bāla</em>) —</li>
+            <li>святая жизнь (<em>brahmacarya</em>) недоступна.<a href="#citation-825" id="ref-825" class="citation-mark"><sup>825</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>783. Некоторые уходят в отречение (<em>pravrajanti</em>),</li>
+            <li>[привлечённые] скрытыми (<em>āvṛta</em>) божественными знаками</li>
+            <li>и признаками Чакравартина;</li>
+            <li>другие же проповедники (<em>pravādin</em>) этого не признают.<a href="#citation-826" id="ref-826" class="citation-mark"><sup>826</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>784. Вьяса, Канада, Ришабха, Капила,</li>
+            <li>Наставник из рода Шакья (<em>śākya-nāyaka</em>) —</li>
+            <li>после Моего ухода в Нирвану</li>
+            <li>появятся и подобные им.<a href="#citation-827" id="ref-827" class="citation-mark"><sup>827</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>785. Когда пройдёт сто лет после Моей Нирваны,</li>
+            <li>явятся Вьяса и Бхарата,</li>
+            <li>затем — Пандавы, Кауравы и Рама,</li>
+            <li>затем возникнет династия Маурьев.<a href="#citation-828" id="ref-828" class="citation-mark"><sup>828</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>786. За Маурьями последуют Нанды и Гупты,</li>
+            <li>затем — варвары (<em>mleccha</em>), низшие среди царей.</li>
+            <li>После варваров — смятение войн (<em>śastra-saṃkṣobha</em>),</li>
+            <li>после войн — Кали-юга.</li>
+            <li>В конце Кали-юги Истинная Дхарма (<em>saddharma</em>)</li>
+            <li>людьми взращиваема не будет.<a href="#citation-829" id="ref-829" class="citation-mark"><sup>829</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>787. Всё это и подобное ему, прошедшее, —</li>
+            <li>мир (<em>jagat</em>) вращается подобно колесу.</li>
+            <li>От соединения огня и солнца</li>
+            <li>разрушается Мир Желаний (<em>kāmadhātu</em>).<a href="#citation-830" id="ref-830" class="citation-mark"><sup>830</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>788. Затем вновь утвердится божественное,</li>
+            <li>и в том мире развернётся [жизнь]:</li>
+            <li>четыре варны (<em>cāturm-varṇa</em>), цари,</li>
+            <li>мудрецы-риши (<em>ṛṣi</em>) и сама Дхарма.<a href="#citation-831" id="ref-831" class="citation-mark"><sup>831</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>789. Веды, жертвоприношения и даяния —</li>
+            <li>как [части] устоя Дхармы (<em>dharma-sthā</em>) — продолжат существовать.</li>
+            <li>Через сказания (<em>ākhyāyika</em>), исторические предания (<em>itihāsa</em>) и прочее,</li>
+            <li>прозу, краткие заметки (<em>cūrṇikā</em>) и комментарии (<em>vārtika</em>) —</li>
+            <li>мир поистине придёт в смятение</li>
+            <li>из-за [передачи] услышанного от меня и подобного ему.<a href="#citation-832" id="ref-832" class="citation-mark"><sup>832</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>790. Доведя окраску до насыщенности,</li>
+            <li>пусть затем нарушит равномерность её окраса:</li>
+            <li>синей глиной и коровьим навозом</li>
+            <li>пусть сделает ткань неравномерно пёстрой.</li>
+            <li>Во всех одеяниях облик его остаётся необычным (<em>vicitrāṅga</em>),</li>
+            <li>лишённым признаков иноверческих аскетов (<em>tīrthya-liṅga-vivarjita</em>).<a href="#citation-833" id="ref-833" class="citation-mark"><sup>833</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>791. Йогин должен проповедовать Учение (<em>śāsana</em>) —</li>
+            <li>это воистину знамя (<em>dhvaja</em>) Будд.</li>
+            <li>Следует пить воду, очищенную тканью (<em>vastrapūta</em>),</li>
+            <li>носить поясной шнур (<em>kaṭisūtra</em>)</li>
+            <li>и принимать подаяние, приходящее в своё время,</li>
+            <li>свободное от недостойного (<em>nīca-varjita</em>).<a href="#citation-834" id="ref-834" class="citation-mark"><sup>834</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>792. Одно [рождение] — божественное, из небес (<em>svarga</em>),</li>
+            <li>два других — из человеческого рождения.</li>
+            <li>Наделённый признаками драгоценности (<em>ratna-lakṣaṇa</em>),</li>
+            <li>является владыка мира, рождённый среди богов.<a href="#citation-835" id="ref-835" class="citation-mark"><sup>835</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>793. Он наслаждается небесами и четырьмя континентами (<em>dvīpa</em>),</li>
+            <li>правя в согласии с Дхармой (<em>dharma-śāsana</em>).</li>
+            <li>Но, долго наслаждаясь ими,</li>
+            <li>он приходит в упадок из-за жажды (<em>tṛṣṇā</em>).<a href="#citation-836" id="ref-836" class="citation-mark"><sup>836</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>794. Крита-юга, Трета, Двапара и Кали —</li>
+            <li>в Крита-юге являюсь Я и другие,</li>
+            <li>а в Кали-юге — Шакьясимха.<a href="#citation-837" id="ref-837" class="citation-mark"><sup>837</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>795. Сиддхартха, сын Шакьев, Вишну, Вьяса и Махешвара —</li>
+            <li>и подобные им — будут причислены</li>
+            <li>к учениям иных школ (<em>tīrthya</em>) после Моего ухода.<a href="#citation-838" id="ref-838" class="citation-mark"><sup>838</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>796. «Так мною было услышано и прочее» —</li>
+            <li>так будет начинаться проповедь Шакьясимхи.</li>
+            <li>Затем это станет историческим преданием Вьясы.<a href="#citation-839" id="ref-839" class="citation-mark"><sup>839</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>797. Вишну и Махешвара будут проповедовать учение о творении.</li>
+            <li>Всё это и подобное ему произойдёт после Моего ухода.</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>798. Мать Моя — Васумати, отец — брахман Праджапати.</li>
+            <li>Я буду из рода Катьяяны, по имени —</li>
+            <li>Победитель, Свободный от Пыли (<em>Viraja</em>).<a href="#citation-840" id="ref-840" class="citation-mark"><sup>840</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>799. В Чампе Я буду рождён, там же — отец и дед.</li>
+            <li>Дед Мой по имени Сомагупта</li>
+            <li>будет происходить из Лунной династии.<a href="#citation-841" id="ref-841" class="citation-mark"><sup>841</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>800. Исполнив обеты и отрекшись от мира,</li>
+            <li>Я укажу тысячу верных способов видения (<em>naya</em>).</li>
+            <li>Дав Махамати посвящение и пророчество,</li>
+            <li>Я войду в окончательную Нирвану.<a href="#citation-842" id="ref-842" class="citation-mark"><sup>842</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>801. Мати передаст [учение] Дхарме,</li>
+            <li>Дхарма — Мекхале.</li>
+            <li>Ученик Мекхалы, по причине слабости,</li>
+            <li>в конце цикла разрушит её.<a href="#citation-843" id="ref-843" class="citation-mark"><sup>843</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>802. Кашьяпа, Кракуччханда, Канака и Винайака,</li>
+            <li>и Я, Свободный от Пыли, и другие —</li>
+            <li>все они Победители, свершившие своё дело.<a href="#citation-844" id="ref-844" class="citation-mark"><sup>844</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>803. В Крита-югу после этого</li>
+            <li>появится лидер по имени Мати.</li>
+            <li>Он будет Великим Героем (<em>Mahāvīra</em>),</li>
+            <li>раскрывающим пять познаваемых.<a href="#citation-845" id="ref-845" class="citation-mark"><sup>845</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>804. Ни в Двапаре, ни в Трете, ни впоследствии в Кали-юге</li>
+            <li>не появляются Владыки мира.</li>
+            <li>Они пробуждаются в Крита-юге.<a href="#citation-846" id="ref-846" class="citation-mark"><sup>846</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>805. С помощью неотъемлемых признаков (<em>ahārya-lakṣaṇa</em>),</li>
+            <li>вместе с десяткой непрерывных элементов (<em>acchinna-daśaka</em>),</li>
+            <li>узорами в форме лунных пятен павлина (<em>mora-candra</em>)</li>
+            <li>пусть [йогин] украсит верхнюю одежду (<em>uttarīya</em>).<a href="#citation-847" id="ref-847" class="citation-mark"><sup>847</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>806. В два или три пальца (<em>aṅgula</em>) должен быть узор,</li>
+            <li>и таким же — расстояние между ними.</li>
+            <li>Иначе украшение становится</li>
+            <li>привлекательным (<em>lobhanīya</em>) для неразумных (<em>bāliśa</em>).<a href="#citation-848" id="ref-848" class="citation-mark"><sup>848</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>807. Пусть он всегда гасит огонь страсти (<em>rāga-agni</em>),</li>
+            <li>пусть омывается водой знания (<em>jñāna-vāri</em>).</li>
+            <li>Тройное Прибежище (<em>tri-śaraṇa</em>) йогину</li>
+            <li>следует усердно принимать трижды в день (<em>tri-sandhyā</em>).<a href="#citation-849" id="ref-849" class="citation-mark"><sup>849</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>808. Подобно стреле, пучку травы или куску дерева,</li>
+            <li>подброшенным вверх: одно, будучи брошено, летит,</li>
+            <li>другое — падает; таковы же [последствия]</li>
+            <li>благих и неблагих деяний (<em>kuśalākuśala</em>).<a href="#citation-850" id="ref-850" class="citation-mark"><sup>850</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>809. «Одного», [превращающегося] во «многое»,</li>
+            <li>не существует нигде — вследствие различия признаков (<em>vailakṣaṇya</em>).</li>
+            <li>Ветер и сияние — все [они] выступают</li>
+            <li>как схватывающие условия (<em>grāhaka</em>)</li>
+            <li>и действуют как дающие [проявление], подобно полю (<em>kṣetra</em>).<a href="#citation-851" id="ref-851" class="citation-mark"><sup>851</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>810. Если бы «одно» воистину становилось «многим»,</li>
+            <li>всё было бы несотворённым (<em>akṛtaka</em>).</li>
+            <li>Но сотворённое подвержено разрушению —</li>
+            <li>таков ход рассуждения (<em>naya</em>) логиков.<a href="#citation-852" id="ref-852" class="citation-mark"><sup>852</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>811. Подобно светильнику и семени — [лишь] по сходству (<em>sādṛśya</em>);</li>
+            <li>откуда же [возникает] множественность?</li>
+            <li>«Одно» становится «многим» —</li>
+            <li>таков ход рассуждения логиков.<a href="#citation-853" id="ref-853" class="citation-mark"><sup>853</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>812. Из кунжута не возникает боб мунг,</li>
+            <li>ячмень не служит причиной рису.</li>
+            <li>Пшеница и злаки дают [собственные] виды;</li>
+            <li>как же «одно» [может стать] «многим»?<a href="#citation-854" id="ref-854" class="citation-mark"><sup>854</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>813. Панини, вождь речи (<em>śabda-netāra</em>), Акшапада,</li>
+            <li>Брихаспати — [все они] основатели локаяты (<em>lokāyata-praṇetāra</em>) —</li>
+            <li>и Брахмагарбха явятся [в будущем].<a href="#citation-855" id="ref-855" class="citation-mark"><sup>855</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>814. Катьяяна, составитель сутр (<em>sūtra-kartā</em>),</li>
+            <li>Яджнявалкья, а также Бхудхука,</li>
+            <li>джьотиша и прочее (<em>jyotiṣa-ādi</em>)</li>
+            <li>появятся в Кали-юге.<a href="#citation-856" id="ref-856" class="citation-mark"><sup>856</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>815. Из мира совершивших заслуги (<em>puṇyakṛtām lokāt</em>),</li>
+            <li>по благу подданных (<em>prajā-bhāgyāt</em>), явится Бали,</li>
+            <li>защитник всех дхарм — царь Бали, владыка земли (<em>mahīpati</em>).<a href="#citation-857" id="ref-857" class="citation-mark"><sup>857</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>816. Вальмики, Масуракша, Каутилья и Ашвалаяна —</li>
+            <li>эти великие риши появятся в грядущем (<em>anāgata</em>).<a href="#citation-858" id="ref-858" class="citation-mark"><sup>858</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>817. Сиддхартха, сын Шакьев (<em>śākya-tanaya</em>),</li>
+            <li>Бхутанта (<em>bhūtānta</em>, «предел явлений») и Панчачудака,</li>
+            <li>Вагбали и Медхавин —</li>
+            <li>появятся в последующие времена (<em>paścāt-kāla</em>).<a href="#citation-859" id="ref-859" class="citation-mark"><sup>859</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>818. Шкуру антилопы (<em>ajina</em>), посох (<em>daṇḍa-kāṣṭha</em>),</li>
+            <li>пояс и диск (<em>cakra-maṇḍala</em>) —</li>
+            <li>Брахма и Махешвара даруют это</li>
+            <li>[тому, кто] утвердился в лесной обители (<em>vana-bhūmi</em>).<a href="#citation-860" id="ref-860" class="citation-mark"><sup>860</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>819. Явится великий йогин по имени Вираджа (<em>viraja</em>),</li>
+            <li>проповедник освобождения (<em>mokṣa-deśaka</em>), Учитель —</li>
+            <li>он воистину знамя мудрецов (<em>muni-dhvaja</em>).<a href="#citation-861" id="ref-861" class="citation-mark"><sup>861</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>820. Брахма, вместе с сотнями брахм (<em>brahma-śata</em>)</li>
+            <li>и множеством богов, сбросив с небес Мою шкуру антилопы,</li>
+            <li>там же исчезает, обуздав себя (<em>vaśin</em>).<a href="#citation-862" id="ref-862" class="citation-mark"><sup>862</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>821. Многообразные одежды (<em>sarva-citra-vāsas</em>),</li>
+            <li>чашу для подаяния (<em>bhaikṣya-pātra</em>) —</li>
+            <li>Индра, Вирудхака и другие даруют Мне в лесной обители.<a href="#citation-863" id="ref-863" class="citation-mark"><sup>863</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>822. Тот, кто принимает учение</li>
+            <li>о невозникновении (<em>anutpāda-vāda</em>) как основание (<em>hetu</em>), —</li>
+            <li>может ли нерождённое (<em>ajāta</em>) возникнуть вновь?</li>
+            <li>Пытаясь доказать невозникновение,</li>
+            <li>он поистине провозглашает лишь слова (<em>vāṅmātra</em>).<a href="#citation-864" id="ref-864" class="citation-mark"><sup>864</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>823. [Говорят,] неведение (<em>avidyā</em>) есть причина развёртывания</li>
+            <li>этих моментов ума (<em>citta</em>).</li>
+            <li>Каково же то состояние (<em>avasthā</em>) в промежутке (<em>antarā</em>),</li>
+            <li>пока форма (<em>rūpa</em>) ещё не возникла?</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>824. Когда непосредственно предшествующее</li>
+            <li>полностью прекращено (<em>samanantara-pradhvasta</em>),</li>
+            <li>возникает иной момент ума.</li>
+            <li>Никакая форма не пребывает;</li>
+            <li>опираясь на что, он будет развёртываться?</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>825. Поскольку [момент] ума, имеющий ложную причину (<em>vitatha-hetuka</em>),</li>
+            <li>где бы ни развёртывался, сам не установлен (<em>na prasiddha</em>),</li>
+            <li>как тогда можно утверждать</li>
+            <li>его мгновенное разрушение (<em>kṣaṇabhaṅga</em>)?<a href="#citation-865" id="ref-865" class="citation-mark"><sup>865</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>826. Поистине, сосредоточения (<em>samāpatti</em>) йогинов,</li>
+            <li>золотые реликвии Победителей (<em>suvarṇa-jina-dhātu</em>),</li>
+            <li>а также сияющие небесные обители (<em>ābhāsvara-vimāna</em>)</li>
+            <li>неразрушимы мирскими причинами (<em>loka-kāraṇa</em>).<a href="#citation-866" id="ref-866" class="citation-mark"><sup>866</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>827. Пребывания, обретение дхарм,</li>
+            <li>совершенство знания Будд,</li>
+            <li>состояние бхикшу и принятие обетов —</li>
+            <li>будучи наблюдаемыми, как же они могут быть мгновенными?<a href="#citation-867" id="ref-867" class="citation-mark"><sup>867</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>828. Формы, подобные городу гандхарвов, магии и прочему, —</li>
+            <li>как же они могут считаться мгновенными?</li>
+            <li>Первоэлементы (<em>bhūta</em>) лишены [истинной]</li>
+            <li>природы первоэлементов (<em>abhūtikāś ca bhūtāś ca</em>),</li>
+            <li>разве они когда-либо и откуда-либо приходят?<a href="#citation-868" id="ref-868" class="citation-mark"><sup>868</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>829. Ум, имеющий причиной неведение (<em>avidyā-hetuka</em>),</li>
+            <li>накопленный безначальными умственными</li>
+            <li>построениями (<em>anādi-mati-saṃcita</em>),</li>
+            <li>связанный с возникновением и разрушением (<em>utpāda-bhaṅga-saṃbaddha</em>),</li>
+            <li>— так он выстраивается логиками</li>
+            <li>через рассуждение (<em>tārkikaiḥ saṃprakalpyate</em>).<a href="#citation-869" id="ref-869" class="citation-mark"><sup>869</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>830. Учение санкхьи (<em>sāṃkhyavāda</em>) двояко:</li>
+            <li>[оно излагает] учение о преобразовании</li>
+            <li>из первопричины (<em>pradhānāt pariṇāmikam</em>).</li>
+            <li>В первопричине существует следствие (<em>kārya</em>),</li>
+            <li>и следствие утверждается</li>
+            <li>через собственную природу (<em>svātma-prasādhitam</em>).<a href="#citation-870" id="ref-870" class="citation-mark"><sup>870</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>831. Первопричина вместе с проявлением (<em>bhāva</em>)</li>
+            <li>провозглашается как различие качеств (<em>guṇa-bheda</em>).</li>
+            <li>Многообразие причин и следствий (<em>kārya-kāraṇa-vaicitrya</em>)</li>
+            <li>в самом преобразовании не обнаруживается.<a href="#citation-871" id="ref-871" class="citation-mark"><sup>871</sup></a></li>
+        </ul>
+    </blockquote>
+
+</div>
+
+<!— Гатхи 832-884 —>
+<div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
+
+    <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>832. Как чистая ртуть (<em>pārada</em>) не затрагивается</li>
+            <li>второстепенными омрачениями (<em>upakleśa</em>),</li>
+            <li>так и <em>Алая</em> чиста — она есть основа (<em>āśraya</em>)</li>
+            <li>всех воплощённых существ.<a href="#citation-872" id="ref-872" class="citation-mark"><sup>872</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>833. Запах асафетиды, [запах] лука,</li>
+            <li>видение плода во чреве беременной,</li>
+            <li>солёность [вкуса] от соли и прочего —</li>
+            <li>разве всё это не пребывает [скрыто], подобно семени (<em>bījavat</em>)?<a href="#citation-873" id="ref-873" class="citation-mark"><sup>873</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>834. Ни в отличии, ни в неотличии,</li>
+            <li>ни в том и другом, ни в отсутствии обоих.</li>
+            <li>Присутствие (<em>astitva</em>), свободное от присвоения (<em>nirupādāna</em>),</li>
+            <li>не отсутствует и не является обусловленным (<em>saṃskṛta</em>).<a href="#citation-874" id="ref-874" class="citation-mark"><sup>874</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>835. [Согласно этому взгляду,] Атман существует,</li>
+            <li>подобно лошади, лишённой коровьей природы,</li>
+            <li>будучи отличным от <em>скандх</em>.</li>
+            <li>Его называют обусловленным и необусловленным,</li>
+            <li>выразимым и невыразимым,</li>
+            <li>обладающим собственной природой (<em>svabhāvakam</em>).<a href="#citation-875" id="ref-875" class="citation-mark"><sup>875</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>836. Загрязнённое ошибочным воззрением (<em>malīkṛtaṃ durdṛṣṭyā</em>),</li>
+            <li>основанным на рассуждении (<em>yukti</em>), предании (<em>āgama</em>)</li>
+            <li>и логических спекуляциях (<em>tarkadṛṣṭyā</em>),</li>
+            <li>называют неопределимым «я» (<em>anirdhāryaṃ vadantyātmā</em>).</li>
+            <li>Оно не обнаруживается ни в присвоении (<em>upādāne</em>), ни отдельно от него.<a href="#citation-876" id="ref-876" class="citation-mark"><sup>876</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>837. Их ошибка (<em>doṣa-nirdhāraṇā</em>) состоит в том,</li>
+            <li>что через <em>скандху</em> рассматривается (<em>vibhāvyate</em>) «я» (<em>ātmā</em>) —</li>
+            <li>либо как тождественное ей, либо как отличное от неё.</li>
+            <li>Но логики (<em>tārkikā</em>) этого не понимают.<a href="#citation-877" id="ref-877" class="citation-mark"><sup>877</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>838. Подобно тому как в зеркале, в воде или в глазу</li>
+            <li>видится (<em>pradṛśyate</em>) отражение (<em>bimba</em>),</li>
+            <li>так и «личность» (<em>pudgala</em>) обнаруживается через <em>скандхи</em>,</li>
+            <li>оставаясь свободной от тождества и различия с ними.<a href="#citation-878" id="ref-878" class="citation-mark"><sup>878</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>839. Созерцаемое (<em>bhāvya</em>), созерцание (<em>vibhāvanā</em>) и созерцающий (<em>adhyātā</em>) —</li>
+            <li>таковы путь и видение истины (<em>satyā ca darśanam</em>).</li>
+            <li>Развивая (<em>vibhāvento</em>) эту триаду,</li>
+            <li>освобождаются от дурных воззрений (<em>kudarśanaiḥ</em>).<a href="#citation-879" id="ref-879" class="citation-mark"><sup>879</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>840. Подобно молнии (<em>vidyut</em>) —</li>
+            <li>появившейся и [тут же] исчезнувшей (<em>dṛṣṭaṃ naṣṭaṃ</em>),</li>
+            <li>или огненному колесу (<em>cakraṃ</em>) в доме с прорехами (<em>chidragṛhe</em>) —</li>
+            <li>таково изменение (<em>pariṇāma</em>) всех явлений (<em>sarvadharmāṇā</em>).</li>
+            <li>Не выстраивай о них понятий (<em>na kalpayet</em>),</li>
+            <li>как это делают невежды (<em>bālairiva</em>).<a href="#citation-880" id="ref-880" class="citation-mark"><sup>880</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>841. Понимание нирваны через бытие и небытие (<em>bhāvābhāvena</em>) —</li>
+            <li>лишь омрачение ума невежд (<em>bālānāṃ cittamohanam</em>).</li>
+            <li>[Она открывается] благодаря подлинному наличию</li>
+            <li>видения Благородных (<em>āryadarśanasadbhāvād</em>) и видению [всего]</li>
+            <li>в его истинном пребывании (<em>yathāvasthānadarśanāt</em>).<a href="#citation-881" id="ref-881" class="citation-mark"><sup>881</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>842. Лишённым возникновения и распада (<em>utpādabhaṅgarahitaṃ</em>),</li>
+            <li>свободным от бытия и небытия (<em>bhāvābhāvavivarjitam</em>),</li>
+            <li>свободным от объекта и признака (<em>lakṣyalakṣaṇanirmuktaṃ</em>) —</li>
+            <li>[таким] следует созерцать изменение (<em>pariṇāmaṃ vibhāvayet</em>).</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>843. Полностью освобождённым от учений тиртхиков (<em>tīrthyavādavinirmuktaṃ</em>),</li>
+            <li>лишённым имени и очертания (<em>nāmasaṃsthānavarjitam</em>),</li>
+            <li>покоящимся во внутреннем видении (<em>adhyātmadṛṣṭinilayaṃ</em>) —</li>
+            <li>[таким] следует созерцать изменение (<em>pariṇāmaṃ vibhāvayet</em>).<a href="#citation-882" id="ref-882" class="citation-mark"><sup>882</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>844. Через соприкосновение и страдание</li>
+            <li>разворачиваются состояния богов и адских существ.</li>
+            <li>Промежуточное существование (<em>antarābhava</em>) не устанавливается —</li>
+            <li>всё это развёртывается сознанием (<em>vijñānena pravartitā</em>).<a href="#citation-883" id="ref-883" class="citation-mark"><sup>883</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>845. Живорождённых, рождённых из яйца,</li>
+            <li>из влаги и прочих (<em>jarajāṇḍajasaṃsvedādyā</em>), а также</li>
+            <li>возникающих через промежуточное существование (<em>antarābhavasaṃbhavāḥ</em>) —</li>
+            <li>эти разнообразные тела существ (<em>sattvakāyā yathā citrā</em>)</li>
+            <li>следует созерцать в их приходе и уходе (<em>gatyāgatyāṃ vibhāvayet</em>).<a href="#citation-884" id="ref-884" class="citation-mark"><sup>884</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>846. Лишённые правильного метода</li>
+            <li>и свидетельств традиции (<em>yuktyāgamavyapetāni</em>),</li>
+            <li>ведущие к разрушению устремления</li>
+            <li>к свободе от омрачений (<em>niḥkleśapakṣakṣayāvahā</em>) —</li>
+            <li>пустословию воззрений тиртхиков (<em>tīrthyadṛṣṭipralāpāni</em>)</li>
+            <li>мудрый не должен следовать (<em>matimān na samācaret</em>).<a href="#citation-885" id="ref-885" class="citation-mark"><sup>885</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>847. Прежде всего (<em>ādau</em>) устанавливается «я» (<em>ātmā</em>),</li>
+            <li>[затем] его следует отличать от присвоения (<em>upādānād viśeṣayet</em>).</li>
+            <li>Без [такого] установления (<em>anirdhārya</em>) наделять отличиями (<em>viśeṣanti</em>) —</li>
+            <li>[всё равно что] наделять отличиями</li>
+            <li>сына бесплодной женщины (<em>vandhyāputraṃ viśiṣyate</em>).<a href="#citation-886" id="ref-886" class="citation-mark"><sup>886</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>848. Вижу (<em>paśyāmi</em>) существ (<em>sattvān</em>) божественным [оком] (<em>divyena</em>) —</li>
+            <li>[оком], лишённым [обычной] мудрости и плоти (<em>prajñāmāṃsavivarjitam</em>),</li>
+            <li>свободным от <em>скандх</em> сансары (<em>saṃsāraskandhanirmuktaṃ</em>) —</li>
+            <li>воплощённость (<em>mūrtimān</em>) всех обладающих телом (<em>sarvadehinām</em>).<a href="#citation-887" id="ref-887" class="citation-mark"><sup>887</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>849. Пребывающее в неочищенном и чистом золоте (<em>durvarṇasuvarṇagataṃ</em>),</li>
+            <li>лишённое различий между освобождённым</li>
+            <li>и неосвобождённым (<em>muktāmuktaviśeṣaṇam</em>) —</li>
+            <li>божественное (<em>divyaṃ</em>), свободное от обусловленного (<em>saṃskāravigataṃ</em>),</li>
+            <li>созерцается в [самом] обусловленном (<em>saṃskārasthaṃ prapaśyate</em>).<a href="#citation-888" id="ref-888" class="citation-mark"><sup>888</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>850. Воплощённость (<em>mūrtimān</em>) в переходе</li>
+            <li>между состояниями существования (<em>gatisaṃdhau</em>)</li>
+            <li>поистине недоступна логикам (<em>tārkikāṇām agocaram</em>).</li>
+            <li>Превзошедшую человеческий удел (<em>atikrāntamānuṣyagatim</em>)</li>
+            <li>[вижу] Я (ahaṃ), [но] не другие, дурные логики (<em>nānye kutārkikāḥ</em>).<a href="#citation-889" id="ref-889" class="citation-mark"><sup>889</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>851. Если «я» (<em>ātmā</em>) не существует (<em>nāsty</em>),</li>
+            <li>то как возникает ум (<em>jāyate cittaṃ</em>).</li>
+            <li>Откуда развёртывается это (<em>kasmād etat pravartate</em>)?</li>
+            <li>Подобно реке, светильнику и семени (<em>nadīdīpabījavat</em>) —</li>
+            <li>почему не объясняется его проявление из предшествующего (<em>nirgama</em>)?<a href="#citation-890" id="ref-890" class="citation-mark"><sup>890</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>852. Когда сознание не возникло (<em>anutpanne ca vijñāne</em>),</li>
+            <li>не обнаруживается неведение и прочее (<em>ajñānādi na vidyate</em>).</li>
+            <li>При его отсутствии (<em>tadabhāve</em>) нет и сознания —</li>
+            <li>как же возникает непрерывность сознания (<em>saṃtatyā</em>)?<a href="#citation-891" id="ref-891" class="citation-mark"><sup>891</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>853. Триада времён (<em>adhvatrayam</em>), вневременное (<em>anadhva</em>)</li>
+            <li>и неизрекаемое (<em>avaktavya</em>) как пятое —</li>
+            <li>это познаваемое буддами (<em>jñeyam etad dhi buddhānām</em>),</li>
+            <li>тогда как логиками лишь провозглашается (<em>tārkikaiḥ saṃprakīrtyate</em>).<a href="#citation-892" id="ref-892" class="citation-mark"><sup>892</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>854. Неизрекаемое (<em>avaktavya</em>) знание,</li>
+            <li>имеющее обусловленное своей причиной (<em>saṃskārahetukam</em>),</li>
+            <li>схватывает то, что пребывает в обусловленном (<em>saṃskāragataṃ</em>).</li>
+            <li>Такое знание называется «обусловленным» (<em>saṃskāraśabditam</em>).<a href="#citation-893" id="ref-893" class="citation-mark"><sup>893</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>855. «При наличии этого возникает то» (<em>asmin satīdaṃ bhavati</em>) —</li>
+            <li>так описываются условия (<em>pratyayā</em>),</li>
+            <li>не имеющие независимой причины (<em>ahetukā</em>).</li>
+            <li>Их разъясняют лишь посредством</li>
+            <li>условного обозначения (<em>vyañjakena upadiśyante</em>);</li>
+            <li>при отсутствии [независимой причины]</li>
+            <li>не обнаруживается и действующего начала (<em>na kārakam</em>).<a href="#citation-894" id="ref-894" class="citation-mark"><sup>894</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>856. Ведь ветер лишь раздувает (<em>preraṇe</em>) огонь,</li>
+            <li>поддерживая, но не порождает (<em>na tu saṃbhave</em>) его.</li>
+            <li>Когда это воздействие прекращается, огонь угасает.</li>
+            <li>Как же тогда условия могут служить доказательством</li>
+            <li>существования существа (<em>sattvaprasādhakāḥ</em>)?<a href="#citation-895" id="ref-895" class="citation-mark"><sup>895</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>857. Изрекаемое как обусловленное</li>
+            <li>и необусловленное (<em>saṃskṛtāsaṃskṛtaṃ vācyam</em>),</li>
+            <li>лишено опоры (<em>upādānavivarjitam</em>) —</li>
+            <li>как может оно что-либо устанавливать?</li>
+            <li>Лишь в воображении глупцов так [существует] огонь.<a href="#citation-896" id="ref-896" class="citation-mark"><sup>896</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>858. Из взаимного действия условий (<em>anyonyasya balādhānād</em>)</li>
+            <li>для людей возникает огонь (<em>vahnir vai jāyate</em>).</li>
+            <li>Но кем приведено в движение существо (<em>sattvaḥ pravartitaḥ kena</em>),</li>
+            <li>раз его мыслят подобным огню (<em>vahnivat kalpyate</em>)?<a href="#citation-897" id="ref-897" class="citation-mark"><sup>897</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>859. Для собрания <em>скандх</em> и <em>аятан</em> (<em>skandhāyatanakadambasya</em>)</li>
+            <li>отсутствие «я» (<em>nairātmā</em>) не берёт начала в <em>манасе</em></li>
+            <li>и прочем (<em>manādyākāraṇaḥ</em>); подобно каравану (<em>sārthavat</em>),</li>
+            <li>оно неотлучно от ума (<em>cittena saha vartate</em>).<a href="#citation-898" id="ref-898" class="citation-mark"><sup>898</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>860. Эти двое (<em>dvāv etau</em>) — непрерывно сияющие (<em>bhāsvarau nityaṃ</em>) —</li>
+            <li>свободны от причины и следствия (<em>kāryakāraṇavarjitau</em>).</li>
+            <li>Поистине, [пример с] огнём не служит для них доказательством (<em>asādhakas teṣāṃ</em>),</li>
+            <li>но логики (<em>tārkikā</em>) этого не осознают.<a href="#citation-899" id="ref-899" class="citation-mark"><sup>899</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>861. Ум, существа и нирвана</li>
+            <li>поистине сияющи по своей природе (<em>prakṛtyā bhāsurā</em>).</li>
+            <li>Омрачённые безначальными помехами (<em>doṣa</em>),</li>
+            <li>[они] нераздельны и подобны пространству (<em>gaganopamāḥ</em>).</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>862. Подобно теням слонов, ложей и прочего,</li>
+            <li>омрачённые воззрениями тиртхиков (<em>tīrthyadṛṣṭi</em>),</li>
+            <li>затемнённые мановиджняной (<em>manovijñāna</em>), —</li>
+            <li>[они] очищаются огнём и подобным (<em>agnirādyaiḥ</em>).</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>863. Увидев [явления] такими, как они есть (<em>yathābhūta</em>),</li>
+            <li>омрачения (<em>kleśa</em>) разрываются.</li>
+            <li>Оставив дебри примеров и аналогий (<em>dṛṣṭāntagahana</em>),</li>
+            <li>они вступают в сферу Благородных (<em>āryagocara</em>).<a href="#citation-900" id="ref-900" class="citation-mark"><sup>900</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>864. Поскольку через различение знания и познаваемого (<em>jñāna-jñeya-vibhāgena</em>)</li>
+            <li>воображается их отличие (<em>anyatvaṃ kalpyate</em>) —</li>
+            <li>дурномыслящие (<em>durmedhā</em>) не осознают [истины].</li>
+            <li>Хотя и говорится о неизрекаемом (<em>avaktavya</em>), они не постигают его.<a href="#citation-901" id="ref-901" class="citation-mark"><sup>901</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>865. Подобно тому как из сандала (<em>candanajā</em>) глупцы (<em>bāla</em>)</li>
+            <li>делают барабан (<em>bherī</em>) — и не иначе, —</li>
+            <li>так и дурные логики (<em>kutārkika</em>) [поступают] со знанием (<em>jñāna</em>),</li>
+            <li>подобным сандалу и алоэ (<em>candanāgaru-saṃkāśa</em>).<a href="#citation-902" id="ref-902" class="citation-mark"><sup>902</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>866. Поднявшись [после трапезы], [из пищи] остаётся лишь то,</li>
+            <li>что прилипло к сосуду (<em>pātra-saṃśrita-mātraka</em>).</li>
+            <li>Свободным от изъянов — искажений лица и прочего (<em>mukha-vikārā-ādi</em>) —</li>
+            <li>следует правильно обращаться с чистой пищей (<em>śuddha-bhakta</em>).<a href="#citation-903" id="ref-903" class="citation-mark"><sup>903</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>867. Кто постигает этот метод (<em>naya</em>), следуя рассуждению (<em>yuktitaḥ</em>),</li>
+            <li>исполнен ясности (<em>prasādavān</em>), предан практике (<em>yoga-paraḥ</em>)</li>
+            <li>и свободен от различений (<em>akalpanaḥ</em>), свободен от опор (<em>anāśritaḥ</em>)</li>
+            <li>и устремлён к истинному смыслу (<em>artha-paraḥ</em>), —</li>
+            <li>тот озаряет золотой путь Дхармы (<em>hiraṇmayī dharma-gati</em>).<a href="#citation-904" id="ref-904" class="citation-mark"><sup>904</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>868. Сеть его дурных воззрений (<em>ku-dṛṣṭi-jāla</em>) запятнанная построениями понятий</li>
+            <li>и заблуждением, основанными на представлениях</li>
+            <li>о бытии и небытии (<em>bhāva-abhāva-pratyaya-moha-kalpanā</em>), —</li>
+            <li>вместе с влечением, неприязнью и гневом (<em>rāga, doṣa, pratigha</em>)</li>
+            <li>прекращается (<em>nivartate</em>). Незапятнанный (<em>nirañjana</em>),</li>
+            <li>он орошается лучами Будд (<em>buddha-karaiḥ sicyate</em>).<a href="#citation-905" id="ref-905" class="citation-mark"><sup>905</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>869. Тиртхики сбиты с толку [поиском] причины (<em>kāraṇa-dig-mūḍhāḥ</em>);</li>
+            <li>другие смущены условиями (<em>pratyaya-vihvalāḥ</em>);</li>
+            <li>иные же, утверждая реальность беспричинности (<em>ahetu-sadbhāvāt</em>),</li>
+            <li>впадают в нигилизм (<em>uccheda</em>), принимая его за путь Благородных.<a href="#citation-906" id="ref-906" class="citation-mark"><sup>906</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>870. Таково преобразование через созревание (<em>vipāka-pariṇāma</em>)</li>
+            <li><em>манаса</em> (<em>manas</em>) и сознания (<em>vijñāna</em>):</li>
+            <li><em>манас</em> возникает из <em>Алая-виджняны</em> (<em>ālaya-saṃbhūta</em>),</li>
+            <li>а сознание порождается <em>манасом</em> (<em>mano-bhava</em>).</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>871. Из <em>Алая-виджняны</em> все сознания (<em>sarva-cittāni</em>)</li>
+            <li>разворачиваются, подобно волнам (<em>taraṃga-vat</em>).</li>
+            <li>Все обусловлены отпечатками (<em>vāsanā-hetuka</em>)</li>
+            <li>и возникают согласно условиям (<em>yathā-pratyaya-saṃbhava</em>).</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>872. Связанные последовательностью мгновений (<em>kṣaṇa-bheda-saṃkalā-baddha</em>),</li>
+            <li>схватывающие как объекты собственные проявления ума (<em>svacittārtha-vigrāhin</em>),</li>
+            <li>принимая вид форм, признаков и образов (<em>saṃsthāna-lakṣaṇa-ākāra</em>) —</li>
+            <li>[они] возникают из <em>манаса</em>, [зрительного] органа</li>
+            <li>и прочего (<em>mano-cakṣv-ādi-saṃbhava</em>).</li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>873. Связанное с безначальными помехами (<em>anādi-doṣa-saṃbaddha</em>),</li>
+            <li>возникший из васан несуществования объекта (<em>artha-abhāva-vāsanā-udita</em>) —</li>
+            <li>ум воспринимается как внешнее (<em>bahirdhā dṛśyate cittaṃ</em>).</li>
+            <li>[Понимание] этого — устранение воззрений тиртхиков (<em>tīrtha-dṛṣṭi-nivāraṇa</em>).<a href="#citation-907" id="ref-907" class="citation-mark"><sup>907</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>874. Всё прочее возникает именно из этого</li>
+            <li>как причины (<em>tad-hetukam evānyat</em>),</li>
+            <li>опираясь на него, разворачивается.</li>
+            <li>Когда возникает воззрение (<em>dṛṣṭi</em>) —</li>
+            <li>разворачивается и сансара.<a href="#citation-908" id="ref-908" class="citation-mark"><sup>908</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>875. Явления (<em>bhāva</em>), подобные иллюзии и сновидению (<em>māyā-svapna</em>),</li>
+            <li>уподобляются городу гандхарвов (<em>gandharva-nagara</em>);</li>
+            <li>подобные миражу и луне в воде (<em>marīci-udaka-candra</em>) —</li>
+            <li>[всё это] следует созерцать как собственное различение (<em>sva-vikalpa</em>).<a href="#citation-909" id="ref-909" class="citation-mark"><sup>909</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>876. Благодаря прекращению деятельности (<em>vṛtti-bheda</em>) —</li>
+            <li>[открывается] Таковость</li>
+            <li>и опирающееся на неё совершенное знание (<em>samyagjñāna</em>);</li>
+            <li>а также высшие <em>самадхи</em> — «Самадхи иллюзии» (<em>māyā-samādhi</em>),</li>
+            <li>«Самадхи, идущего путём героя» (<em>śūraṃgama-samādhi</em>) и прочие.<a href="#citation-910" id="ref-910" class="citation-mark"><sup>910</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>877. Благодаря вступлению на ступени (<em>bhūmipraveśāt</em>) [он] обретает</li>
+            <li><em>сверхзнания</em> (<em>abhijñā</em>) и <em>силы</em> (<em>vaśitāni</em>);</li>
+            <li><em>тело, подобное магическому знанию</em> (<em>jñāna-māyopama-kāyam</em>),</li>
+            <li>и посвящение (<em>abhiṣikta</em>), [даруемое] Сугатами.<a href="#citation-911" id="ref-911" class="citation-mark"><sup>911</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>878. Когда ум (<em>citta</em>) затихает (<em>nivartate</em>),</li>
+            <li>мир (<em>jagat</em>) видится успокоенным (<em>nivṛtta</em>);</li>
+            <li>обретаются ступень «Радостная» (<em>muditā-bhūmi</em>),</li>
+            <li>а затем и ступень Будды (<em>buddhabhūmi</em>).<a href="#citation-912" id="ref-912" class="citation-mark"><sup>912</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>879. Когда основание [ума] преобразовано (<em>āśrayeṇa nivṛttena</em>),</li>
+            <li>[он], подобный драгоценному камню [чинтамани],</li>
+            <li>принимающему все формы (<em>viśvarūpa maṇi</em>),</li>
+            <li>совершает деяния ради существ (<em>sattva-kṛtyāni</em>),</li>
+            <li>подобно отражениям в воде (<em>pratibimba jale</em>).<a href="#citation-913" id="ref-913" class="citation-mark"><sup>913</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>880. Свободная от сторон бытия и небытия (<em>sadasat-pakṣa-nirmuktam</em>),</li>
+            <li>[не принимающая] ни то, ни другое, ни их совместность,</li>
+            <li>ни её отрицание (<em>ubhayaṃ nobhayaṃ na ca</em>);</li>
+            <li>выходящая за пределы [путей] пратьекабудд и шраваков —</li>
+            <li>[такой] становится седьмая ступень (<em>saptamī bhavet</em>).<a href="#citation-914" id="ref-914" class="citation-mark"><sup>914</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>881. Для тех, чьи дхармы постигаются через непосредственное</li>
+            <li>внутреннее видение (<em>pratyātma-dṛṣṭa-dharma</em>), [путь],</li>
+            <li>очищающий подлинные ступени (<em>bhūta-bhūmi-viśodhita</em>),</li>
+            <li>свободный от внешних воззрений тиртхиков (<em>bāhya-tīrthya-vinirmukta</em>) —</li>
+            <li>следует провозгласить Махаяной (<em>mahāyānaṃ vinirdiśet</em>).<a href="#citation-915" id="ref-915" class="citation-mark"><sup>915</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>882. Разворот различения (<em>parāvṛttir vikalpasya</em>),</li>
+            <li>лишённый упадка и уничтожения (<em>cyuti-nāśa-varjita</em>),</li>
+            <li>подобный волосу зайца и драгоценному камню (<em>śaśaroma-maṇi-prakhya</em>) —</li>
+            <li>[этот] метод следует провозглашать</li>
+            <li>освобождённым (<em>muktānāṃ deśayet nayam</em>).<a href="#citation-916" id="ref-916" class="citation-mark"><sup>916</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>883. Подобно тому как текст проясняется текстом (<em>grantho granthena</em>),</li>
+            <li>так и рассуждение проверяется рассуждением (<em>yuktyā yuktiḥ</em>);</li>
+            <li>если из этого возникает верная логика (<em>yuktir bhaved</em>),</li>
+            <li>не следует выстраивать её иначе (<em>anyathā tu na kalpayet</em>).<a href="#citation-917" id="ref-917" class="citation-mark"><sup>917</sup></a></li>
+        </ul>
+
+        <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
+            <li>884. Зрение (<em>cakṣuḥ</em>), карма (<em>karma</em>) и жажда (<em>tṛṣṇā</em>),</li>
+            <li>а также неведение (<em>avidyā</em>) как лоно (<em>yoni</em>);</li>
+            <li>зримый образ и зрение (<em>cakṣu-rūpe</em>), <em>манас</em> (<em>manas</em>),</li>
+            <li>а также замутнённый ум (<em>āvila-manas</em>)…<a href="#citation-918" id="ref-918" class="citation-mark"><sup>918</sup></a></li>
+        </ul>
+    </blockquote>
+
+    <p class="text-center font-bold mt-8">Так завершается Махаяна-сутра, именуемая «Благородная Ланкаватара-сутра» (<em>āryasaddharmalaṅkāvatāra</em>), вместе с разделом гатх (<em>sagāthaka</em>).</p>
+
+    <p class="text-center mt-4">Те дхармы, что возникают из причины (<em>hetuprabhavā</em>), —<br>
+    их причину Татхагата поведал;<br>
+    и то, как [происходит] их прекращение (<em>nirodho</em>), —<br>
+    об этом говорит Великий Шрамана.</p>
+
+</div>
+
+
+ <div class="relative text-center" style="margin-top: 4rem; margin-bottom: 4rem;">
+    <div class="absolute inset-0 flex items-center">
+        <div class="w-full border-t border-sky-300"></div>
+    </div>
+    <span class="relative bg-sky-50 px-4 text-xl text-sky-700">
+        ❈ ❈ ❈
+    </span>
+</div>
+
+
+
 
 
 
@@ -7093,7 +7880,241 @@
     <hr class="my-8 border-t-4 border-gray-500">
 </div>
 
+<div class="citations mt-4 text-lg">
+    <hr class="my-8 border-t-4 border-gray-500">
+    <p class="my-2" id="citation-824"><sup>824</sup> <em>Pratyātma-dṛṣṭi-gatika</em> указывает, что знание открывается через прямое личное видение — при непосредственном обращении ума к самому себе. Словесная передача и рассуждение служат вспомогательными условиями для такого обращения.<a href="#ref-824" class="text-blue-500 hover:underline ml-2">↩</a></p>
 
+    <p class="my-2" id="citation-825"><sup>825</sup> <em>Bāla</em> обозначает отсутствие духовной зрелости — неспособность различать направление пути. Перечисленные состояния указывают на условия, при которых практика становится затруднённой — без указания на категоричность исключения возможности продвижения по пути.<a href="#ref-825" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-826"><sup>826</sup> Гатха фиксирует различие в понимании основания отречения. <em>Pravādin</em> — те, кто проповедует, не признавая указанного основания.<a href="#ref-826" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-827"><sup>827</sup> Перечислены фигуры различных традиций. Их объединение отражает циклическое понимание времени: имена указывают на повторяющиеся типы учителей. Включение <em>śākyanāyaka</em> в этот ряд показывает, что упоминаемые личности рассматриваются как проявления одного принципа учительства в разных циклах.<a href="#ref-827" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-828"><sup>828</sup> Перечисление эпических и исторических фигур носит символический характер и указывает на циклы проявления мира и учения.<a href="#ref-828" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-829"><sup>829</sup> <em>Na bhāvitaḥ</em> указывает, что Дхарма перестаёт культивироваться людьми. Сама Дхарма при этом не исчезает.<a href="#ref-829" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-830"><sup>830</sup> Описание космологического цикла: разрушение Мира Желаний открывает новый цикл развёртывания. Образ «колеса» подчёркивает цикличность, а не линейный прогресс или упадок.<a href="#ref-830" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-831"><sup>831</sup> После разрушения следует восстановление упорядоченного мира. Перечисление варн, правителей и риши обозначает возвращение структур, в рамках которых вновь возможна передача и поддержание Дхармы.<a href="#ref-831" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-832"><sup>832</sup> Гатха указывает на риск, возникающий при передаче учения через словесные жанры. Сказания, предания, проза и комментарии становятся самостоятельным предметом усвоения. При этом «услышанное» (<em>śruta</em>) — сам факт получения учения через слух и текст — может стать источником смятения, когда форма передачи заслоняет прямое постижение смысла.<a href="#ref-832" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-833"><sup>833</sup> Полотно традиционно окрашивается растительными материалами — корнями (например, куркума), стеблями или древесиной (популярна сердцевина джекфрута), корой дерева, листьями, цветами, плодами. Виная ограничивает использование грязи, навоза или глины из-за неприятного запаха и нестойкости цвета. В гатхе эти средства применяются для намеренного нарушения равномерности окраса: ткань покрывается разводами глины и навоза. Результат — потёртая, неравномерная, лишённая новизны ткань. Интересующимся этой темой подробнее лучше обратиться к изучении Винаи.</p>
+    <p class="my-2">Ранее встречался образ ткани и грязи для описания чистоты ума (<em>prakṛti-prabhāsvara</em>) и омрачений. Возможно, эта технология работы с тканью служила напоминанием и скрытой передачей методов работы с умом.</p>
+    <p class="my-2"><em>Tīrthya-liṅga</em> — отличительные знаки небуддийских аскетов. Необычность облика (<em>vicitra-aṅga</em>) — несвязанность ни с какой узнаваемой традицией по внешним признакам.<a href="#ref-833" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-834"><sup>834</sup> Перечисляются правила повседневной дисциплины, сохраняющие чистоту восприятия и поведения. Фильтрация воды, ношение пояса и своевременное принятие подаяния указывают на отказ от грубых привязанностей. Проповедь Учения выступает как завершающий акт реализации, объединяющий внутреннюю ясность с внешним выражением.<a href="#ref-834" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-835"><sup>835</sup> Гатха описывает определённый плод практики: три вида высокого рождения — одно небесное, два человеческих. Традиционно это указание на Чакравартина (вселенского правителя), наделённого семью драгоценностями (<em>sapta-ratna</em>) и тридцатью двумя признаками великого существа (<em>ratna-lakṣaṇa</em>).<a href="#ref-835" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-836"><sup>836</sup> Даже правление, согласованное с Дхармой, не устраняет обусловленность состояния. Долгое пребывание в высших мирах и владение континентами создают почву для возобновления привязанности. Указание на <em>tṛṣṇā</em> предупреждает о временном характере любых достижений, сохраняющих опору на жажду.<a href="#ref-836" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-837"><sup>837</sup> Говорящий (будущий Будда <em>Viraja</em>) относит себя и других Будд к Крита-юге, тогда как Шакьясимха (Будда Шакьямуни) — к Кали-юге. Это разграничение отражает различие эпох проявления. В <em>Ланкаватаре</em> Шакьямуни говорит о будущих циклах от первого лица — включая описание своего собственного будущего воплощения как Вираджи. Это возможно в рамках доктрины о надвременной природе речи Татхагаты: Будда видит все три времени непосредственно и говорит о них не как о внешних событиях, а как о прямо данном. Кроме того, в йогачарской традиции Татхагата рассматривается как принцип, проявляющийся в разных формах в разных циклах — и потому граница между «нынешним» и «будущим» Буддой условна.<a href="#ref-837" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-838"><sup>838</sup> В ряд <em>tīrthya</em> включён и Сиддхартха, сын Шакьев (Будда Шакьямуни). Тем самым указывается, что его учение в будущем будет восприниматься как одна из традиций среди других.<a href="#ref-838" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-839"><sup>839</sup> Формула <em>evaṃ mayā śrutam</em> («так мною было услышано») утратит функцию указания на живую передачу и станет частью историко-литературного жанра (<em>itihāsa</em>).<a href="#ref-839" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-840"><sup>840</sup> Описание соответствует традиционной схеме биографии Будды. <em>Viraja</em> — будущий Будда, «свободный от скверны».<a href="#ref-840" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-841"><sup>841</sup> Чампа — столица древнего царства Анга. <em>Soma-vaṃśa</em> (Лунная династия) — одна из двух великих царских линий индийской традиции.<a href="#ref-841" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-842"><sup>842</sup> <em>Naya —</em> «верный способ видения», ведущий к распознаванию природы ума. <em>Vyākṛtya</em> — технический термин пророчества о будущем пробуждении. Посвящение (<em>abhiṣeka</em>) Махамати устанавливает преемственность линии передачи.<a href="#ref-842" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-843"><sup>843</sup> Мати, Дхарма и Мекхала — имена учеников в линии передачи. Описывается её постепенное ослабление и разрушение в конце цикла.<a href="#ref-843" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-844"><sup>844</sup> Кашьяпа, Кракуччханда и Канака — будды прошлых эпох. Винайака здесь выступает как имя или эпитет в этом ряду.<a href="#ref-844" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-845"><sup>845</sup> <em>Mahāvīra —</em> эпитет Будды<em>.</em> «Пять познаваемых» (<em>pañca-jñeya</em>) скорее всего относятся к пяти дхармам (<em>nāma, lakṣaṇa, vikalpa, samyagjñāna, tathatā</em>), или к пяти объектам познания в йогачаре, или соотносимы с пятью <em>скандхами</em>.<a href="#ref-845" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-846"><sup>846</sup> Крита-юга рассматривается как эпоха полноты Дхармы, в которой возможно полное пробуждение Будд.<a href="#ref-846" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-847"><sup>847</sup> <em>Acchinna-daśaka</em> — технический термин, обозначающий «десятку непрерывных элементов» монашеского одеяния в традиции Винаи. Указание на <em>ahārya-lakṣaṇa</em> («неотъемлемые признаки») и эту структуру связывает внешний вид с установленной формой.<a href="#ref-847" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-848"><sup>848</sup> Размеры узора и промежутков задают меру, при которой украшение не становится объектом влечения. <em>Bāliśa</em> — тот, кто ориентируется на внешнюю привлекательность и не различает, как внешняя форма порождает влечение.<a href="#ref-848" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-849"><sup>849</sup> Три периода дня (<em>tri-sandhyā</em>) задают ритм практики. Образы «огня страсти» и «воды знания» указывают на два согласованных направления: прекращение омрачений и развитие понимания.<a href="#ref-849" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-850"><sup>850</sup> Стрела, трава и дерево подбрасываются одним движением, но движутся по-разному в силу собственной природы. Аналогия показывает, что последствия деяний определяются их качеством: благое направлено и устойчиво, неблагое лишено направленности и ведёт к падению. Одно и то же усилие даёт различные результаты.<a href="#ref-850" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-851"><sup>851</sup> Гатхи 809–812 образуют связанный аргумент против представления о превращении единой сущности (<em>eka</em>) во множество (<em>bahu</em>). Обсуждаемая позиция характерна прежде всего для Санкхьи с её теорией преобразования (<em>pariṇāma</em>), где мир понимается как последовательные видоизменения единой первоосновы (<em>prakṛti</em>). Близкую позицию занимает и адвайта-веданта, где многообразие явлений сводится к проявлениям единого Брахмана.</p>
+    <p class="my-2">Доводы разворачиваются в четыре шага.</p>
+    <p class="my-2 ml-4">Первый (809): различие признаков (<em>vailakṣaṇya</em>) само по себе исключает тождество. Если явления различаются по признакам, они не могут быть одной и той же сущностью в разных состояниях. Указание на ветер и сияние как на <em>grāhaka</em> («схватывающие» факторы) смещает объяснение с единой основы на условия: то, что принимается за действующую причину, выступает лишь как поле (<em>kṣetra</em>) проявления.</p>
+    <p class="my-2 ml-4">Второй (810): позиция оппонента ведёт к внутреннему противоречию. Если единая основа сохраняется через все изменения, она должна быть несотворённой (<em>akṛtaka</em>). Но наблюдаемая изменчивость и разрушимость явлений опровергает это: сотворённое не может быть вечным.</p>
+    <p class="my-2 ml-4">Третий (811): то, что принимается за тождество, есть лишь сходство (<em>sādṛśya</em>). Последовательность пламени светильника или стадий роста семени воспринимается как непрерывное «одно», хотя на деле речь идёт о цепи различающихся, но похожих состояний. Видимость тождества возникает в восприятии на основе последовательного сходства.</p>
+    <p class="my-2 ml-4">Четвёртый (812): причинные связи своеобразны и не допускают взаимозаменяемости. Кунжут даёт кунжут, ячмень — ячмень. Если бы единая сущность становилась многим, такое своеобразие причинных линий было бы необъяснимо.</p>
+    <p class="my-2">В итоге текст переопределяет саму постановку вопроса: множественность явлений объясняется через зависимое возникновение (<em>pratītyasamutpāda</em>) — через условия, сходство и своеобразие причинных связей раскрывается структура опыта. Представление о едином источнике всего сущего уступает место пониманию взаимообусловленных процессов.<a href="#ref-851" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-852"><sup>852</sup> Аргумент приписывается логикам (<em>tārkika</em>): если единая основа превращается во множество, она должна сохраняться во всех изменениях и тем самым быть несотворённой (<em>akṛtaka</em>). Наблюдаемая изменчивость и разрушимость явлений противоречит этому.<a href="#ref-852" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-853"><sup>853</sup> Примеры светильника и семени указывают на последовательность сходных состояний. Сходство (<em>sādṛśya</em>) создаёт видимость тождества, которое лежит в основе утверждения «одно становится многим».<a href="#ref-853" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-854"><sup>854</sup> Примеры с зерном подчёркивают особенность причинных связей: каждый результат возникает из соответствующих условий. Это исключает возможность того, что одна сущность становится различными явлениями.<a href="#ref-854" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-855"><sup>855</sup> Грамматически <em>lokāyata-praṇetāraḥ</em> стоит во множественном числе, что формально распространяет определение на всех перечисленных. Это, вероятно, указывает на общую категорию «учителей мирского знания». <em>Brahmā-garbha</em> («рождённый из Брахмы» / «зародыш Брахмы») не имеет однозначного определения и может отсылать к космогонической доктрине или к конкретной личности брахманической традиции.<a href="#ref-855" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-856"><sup>856</sup> <em>Bhuḍhuka</em> — фигура, не поддающаяся однозначному определению: возможно, имя автора или название текстуальной традиции. <em>Jyotiṣa</em> — одна из шести вспомогательных дисциплин Вед (<em>vedāṅga</em>), охватывающая астрономию и вычисление ритуальных сроков. Упоминание рядом с грамматиками и законодателями показывает, что Кали-юга понимается как эпоха расцвета специализированного знания при ослаблении прямой устной передачи.<a href="#ref-856" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-857"><sup>857</sup> <em>Puṇyakṛtām lokāt</em> («из мира совершивших заслуги») и <em>prajā-bhāgyāt</em> («по благу подданных») — задают двойную причинность явления царя Бали: его приход обусловлен собственными накоплениями и кармической зрелостью тех, кем он призван управлять. Бали в индийской традиции — царь-асура, известный щедростью и праведностью; его образ используется как пример правителя, чьё величие превосходит происхождение.<a href="#ref-857" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-858"><sup>858</sup> Перечисленные фигуры охватывают несколько жанров знания: Вальмики — автор «Рамаяны», Каутилья — «Артхашастры», Ашвалаяна — ведийских ритуальных сутр. Масуракша не имеет однозначного определения. Их объединение в категорию <em>mahābhāga ṛṣi</em> («великих риши») иллюстрирует понимание знания как единого потока, проявляющегося через различные традиции в разные эпохи.<a href="#ref-858" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-859"><sup>859</sup> Включение Сиддхартхи, сына Шакьев, в один ряд с малоизвестными фигурами продолжает линию, намеченную в гатхе 795: Будда Шакьямуни рассматривается как одно из проявлений учительства в определённую эпоху. <em>Bhūtānta</em> («предел явлений») и <em>pañcacūḍaka</em> («пятичубый») — возможно, эпитеты конкретных учителей или указания на доктринальные особенности; <em>vāgbali</em> («сильный речью») и <em>medhāvin</em> («одарённый разумением») — имена собственные с прозрачной этимологией.<a href="#ref-859" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-860"><sup>860</sup> Перечисленные предметы — традиционные атрибуты брахманического аскета: шкура антилопы служит подстилкой для сидения и медитации, посох указывает на странническую практику, пояс — элемент посвятительного одеяния. <em>Cakra-maṇḍala</em> в аскетическом контексте, предшествующем тантрической традиции, обозначает круговой предмет — деревянный диск или подставку, — а не ритуальный рисунок. Дарование этих предметов Брахмой и Махешварой закрепляет признание величия пути отречения со стороны божеств творения и разрушения.<a href="#ref-860" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-861"><sup>861</sup> Вираджа определяется исключительно через деяния: <em>mokṣa-deśaka</em> («проповедник освобождения») и <em>muni-dhvaja</em> («знамя мудрецов»). Образ знамени (<em>dhvaja</em>) — традиционный знак наивысшего достоинства, видимый издалека и указывающий направление. Отсутствие указаний на происхождение или внешние признаки подчёркивает практическую направленность пути.<a href="#ref-861" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-862"><sup>862</sup> <em>Vaśin</em> («обуздавший себя») — эпитет, подчёркивающий внутреннюю дисциплину как основание действия. Брахма удаляется сразу после совершения дара: он сопровождает явление Вираджи, не являясь его источником. <em>Brahma-śata</em> («сотни брахм») указывает на множественность небесных существ этого класса в индийской космологии, где существуют брахмы разных уровней мироздания.<a href="#ref-862" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-863"><sup>863</sup> <em>Virūḍhaka</em> — один из четырёх небесных царей (<em>lokapāla</em>), страж южной стороны света. Его появление вместе с Индрой, царём богов, указывает на охват обоих основных уровней небесной иерархии. Чаша для подаяния (<em>bhaikṣya-pātra</em>) и одеяния даруются будущему Вирадже как знаки статуса, воспроизводя мотив, известный из жизнеописаний: боги являются первыми, кто подносит дары носителю учения.<a href="#ref-863" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-864"><sup>864</sup> Гатха указывает на внутреннее противоречие: если «нерождённое» становится предметом доказательства (<em>sādhayiṣyati</em>), оно тем самым вводится в причинно-логическую структуру, которую это учение отрицает. <em>Vāṅmātra</em> («лишь слова») отмечает разрыв между речью и тем, на что она указывает. (Риторический вопрос <em>ajātaḥ jāyeta vā punaḥ</em> работает на двух уровнях одновременно — и как <em>reductio ad absurdum</em> позиции оппонента («если <em>anutpāda</em> доказуемо, то нерождённое должно было бы возникнуть»), и как указание на то, что сама структура вопрос/ответ неприменима к <em>ajāta</em>.)<a href="#ref-864" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-865"><sup>865</sup> Эти гатхи направлены против представления об уме как цепи строго отдельных мгновений.</p>
+    <p class="my-2 ml-4">(823) ставит вопрос о «промежутке» (<em>antarā</em>): если момент ума определяется познанием формы, то до её распознавания неясно, в каком состоянии находится ум. Указание на <em>avidyā</em> как причину не снимает трудности, а усиливает её: между причиной и её проявлением остаётся неописанный разрыв.</p>
+    <p class="my-2 ml-4">(824) обнажает проблему преемственности: если предшествующий момент полностью прекращён (<em>samanantara-pradhvasta</em>), а форма не сохраняется, следующему моменту не на что опереться (<em>ālambana</em>). Тогда сама связность потока оказывается необъяснимой.</p>
+    <p class="my-2 ml-4">(825) завершает аргумент: если возникновение ума основано на «ложной причине» (<em>vitatha-hetu</em>) и не может быть установлено как действительное (<em>na prasiddha</em>), то утверждение о его мгновенном разрушении лишается основания. Нельзя говорить о распаде того, чьё возникновение не установлено.</p>
+    <p class="my-2">Гатхи показывают, что попытка строго описать ум как цепь независимых мгновений сталкивается с тремя трудностями: неясен «промежуток» между мгновениями познания, не объясняется связь между моментами, нельзя последовательно обосновать ни возникновение, ни разрушение. Тем самым подрывается представление о мгновениях как самостоятельных единицах процесса.<a href="#ref-865" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-866"><sup>866</sup> <em>Samāpatti</em> — устойчивые состояния сосредоточения. <em>Suvarṇa-jina-dhātu</em> — реликвии Будды, понимаемые как не подверженные обычному распаду. <em>Ābhāsvara-vimāna</em> — «сияющие обители», связанные с высшими медитативными уровнями. Фраза <em>abhedyā lokakāraṇāt</em> означает: они неразрушимы для мирских причин, то есть обычные причинные силы не действуют на них.<a href="#ref-866" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-867"><sup>867</sup> Перечислены явления, предполагающие длительность и накопление: пребывание, обретение дхарм, знание Будд, монашество, обеты. Риторический вопрос указывает: если всё строго мгновенно, невозможно объяснить устойчивость практики и постепенность пути.<a href="#ref-867" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-868"><sup>868</sup> Город гандхарвов — классический пример иллюзорного, но воспринимаемого явления. Даже такие явления не переживаются как «одно мгновение». Игра слов <em>bhūta</em> / <em>abhūtika</em>: первоэлементы названы «лишёнными элементности». Это подрывает представление о них как о самостоятельных основаниях. Вопрос «откуда они приходят?» показывает, что сама идея возникновения предполагает уже некую форму существования, что ведёт к противоречию.<a href="#ref-868" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-869"><sup>869</sup> Перечисленные характеристики относятся к способу описания ума. Неведение и безначально накопленные умственные построения формируют представление о нём как связанном с возникновением и разрушением. Пассивная форма (<em>saṃprakalpyate</em>) указывает на условный статус этой схемы: она создаётся рассуждением и не совпадает с непосредственным переживанием. Текст смещает внимание к тому, как такие представления выстраиваются рассуждением.<a href="#ref-869" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-870"><sup>870</sup> Указание на «двоякость» (<em>dvividhaḥ</em>) остаётся нераскрытым в самой гатхе. В контексте Санкхьи это может относиться к различию между непроявленным (<em>pradhāna</em>) и проявленным состоянием, либо к различным аспектам учения о преобразовании. Далее формулируется базовый принцип <em>satkāryavāda</em>: следствие предсуществует в причине. Возникновение понимается как проявление уже наличного — появление нового при этом не требуется.<a href="#ref-870" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-871"><sup>871</sup> Доктрина гун объясняет множественность через различия их сочетаний в первооснове. Однако при признании предсуществования следствия в причине многообразие причин и следствий не находит опоры в самом процессе преобразования. Это указывает на напряжение между идеей изменения и сохранением исходной основы.<a href="#ref-871" class="text-blue-500 hover:underline ml-2">↩</a></p>
+    <hr class="my-8 border-t-4 border-gray-500">
+</div>
+
+<div class="citations mt-4 text-lg">
+
+    <p class="my-2" id="citation-872"><sup>872</sup> Образ ртути связан с индийской алхимической традицией (<em>rasāyana</em>): ртуть понималась как вещество, способное принимать примеси, сохраняя собственную чистоту. Глагол <em>lipyate</em> («прилипает», «загрязняется», «затрагивается») подчёркивает внешний и преходящий характер омрачений.</p>
+    <p class="my-2"><em>Ālaya</em> здесь описывается как основание (<em>āśraya</em>) всех живых существ и одновременно как носитель скрытых отпечатков опыта. Омрачения могут временно покрывать это основание, однако его чистота (<em>śuddha</em>) сохраняется неизменной. Гатха использует образ ртути, чтобы показать: загрязнение касается уровня проявлений, не затрагивая глубинную основу.<a href="#ref-872" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-873"><sup>873</sup> <em>Hiṅgu-gandha</em> («запах асафетиды») и <em>palāṇḍu</em> («лук») — традиционные примеры скрытого следа или отпечатка (<em>vāsanā</em>). Даже после исчезновения самого предмета запах ещё долго сохраняется. Так описывается действие кармических следов: причина уже ушла, однако её воздействие продолжает проявляться.</p>
+    <p class="my-2"><em>Garbhadarśanam</em> («плод во чреве беременной») указывает на скрытое присутствие того, что ещё не стало видимым. Плод уже существует, хотя остаётся недоступным внешнему взгляду. Этот образ применяется к <em>tathāgatagarbha</em> — природе Будды, присутствующей в существах до её раскрытия.</p>
+    <p class="my-2"><em>Lāvaṇya</em> («солёность») показывает неотделимость свойства от носителя: солёность полностью пронизывает соль и не существует отдельно от неё. Так же и ясная природа ума присутствует во всех состояниях сознания, не выступая отдельным объектом.</p>
+    <p class="my-2">Все примеры объединяются образом <em>bījavat</em> («подобно семени»): скрытое присутствует и действует, хотя ещё не проявлено внешне. Риторический вопрос гатхи предполагает утвердительный ответ: да, пребывает.<a href="#ref-873" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-874"><sup>874</sup> Гатха использует схему четырёх отрицаний (<em>catuṣkoṭi</em>): отвергаются различие, тождество, их сочетание и отрицание обоих. Тем самым показывается ограниченность рассудочных категорий при попытке описать основу опыта.</p>
+    <p class="my-2">Термин <em>nirupādāna</em> буквально означает «без присвоения», «без схватывания». Речь идёт о присутствии, которое не становится объектом удержания или понятийного утверждения.</p>
+    <p class="my-2">Фраза <em>na ca nāsti na saṃskṛtam</em> указывает, что это присутствие нельзя определить ни как полное отсутствие, ни как обусловленное явление среди других явлений. Гатха направляет внимание к способу восприятия, свободному от крайностей утверждения и отрицания.<a href="#ref-874" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-875"><sup>875</sup> Гатха воспроизводит позицию небуддийских школ, утверждающих реальное существование «я» как независимого начала. Образ лошади и коровы служит классическим логическим примером: два вида различаются по своей природе, не сливаясь друг с другом. По этой аналогии «я» мыслится как существующее отдельно от совокупностей (<em>скандх</em>). Перечисление взаимоисключающих характеристик показывает попытку описать этот постулат через предельные категории рассуждения, которые в буддийском анализе оказываются несовместимыми.<a href="#ref-875" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-876"><sup>876</sup> Гатха критикует попытку установить «я» посредством рассуждения, предания и логических построений. Такое «я» объявляется неопределимым (<em>anirdhārya</em>), поскольку его невозможно установить ни как тождественное присвоению <em>скандх</em>, ни как существующее отдельно от него.<a href="#ref-876" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-877"><sup>877</sup> Ошибка обнаруживается в самой попытке сопоставить «я» с отдельной скандхой. Этот метод неизбежно приводит к ложному выбору: признанию их полного тождества или абсолютного различия. Логики не осознают, что оба вывода ложны, поскольку сам метод такого рассмотрения исходит из допущения реальности «я».<a href="#ref-877" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-878"><sup>878</sup> Сравнение с отражением указывает на условный статус личности: она возникает зависимо от условий и не устанавливается как независимая сущность. Отражение нельзя назвать ни тождественным зеркалу, ни отдельным от него. Подобным образом личность обнаруживается в связи со <em>скандхами</em>, но не поддаётся определению через категории тождества или различия.</p>
+    <p class="my-2">Три места отражения перечислены не случайно: зеркало — искусственный предмет, вода — природная поверхность, глаз — живое существо. В оптических представлениях того времени зрачок считался зеркалом: смотрящий видит своё отражение в глазу другого. Тем самым отражение возникает везде — в неживом, природном и живом. Личность подобна: она обнаруживается в любых условиях, не совпадая ни с одним из них.<a href="#ref-878" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-879"><sup>879</sup> Гатха описывает триаду созерцательной практики: созерцаемое (<em>bhāvya</em>), сам процесс созерцания (<em>vibhāvanā</em>) и созерцающий (<em>adhyātā</em>). Освоение этой триады составляет путь и непосредственное видение истины. Триада гатхи 839 соотносится с механизмом заблуждения, описанным в следующей гатхе: иллюзия непрерывности явлений порождает ложные понятия о постоянстве. Созерцание разрушает этот механизм через прямое видение мгновенной природы явлений.<a href="#ref-879" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-880"><sup>880</sup> Эти образы иллюстрируют мгновенность явлений. Молния, вспыхивающая и исчезающая в один миг, указывает на отсутствие устойчивого пребывания дхарм. Огненное колесо (<em>cakra</em>) в доме с прорехами — классический образ иллюзии непрерывности: вращаемая в темноте головня кажется цельным кругом, хотя в каждый миг горит лишь одна точка. Видимая связность явлений — лишь результат их мгновенной смены. Ошибка невежд заключается в выстраивании понятий о постоянстве или самостоятельной природе этих превращений.<a href="#ref-880" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-881"><sup>881</sup> Невежды впадают в заблуждение, пытаясь определить нирвану через категории бытия или небытия. Подобное понимание лишь укрепляет омрачённость ума, превращая нирвану в очередной объект умопостроения. Видение Благородных (<em>āryadarśana</em>) открывает нирвану иначе — через непосредственное постижение явлений в их истинном пребывании (<em>yathāvasthāna</em>), за пределами категорий наличия или отсутствия.<a href="#ref-881" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-882"><sup>882</sup> Гатхи 842 и 843 образуют единый блок, описывающий метод созерцания изменения (<em>pariṇāma</em>). Гатха 842 задаёт условия, при которых изменение созерцается вне возникновения и распада, вне категорий бытия и небытия, а также вне разделения на признак (<em>lakṣaṇa</em>) и обозначаемое (<em>lakṣya</em>). Гатха 843 дополняет это практическими условиями: созерцание должно быть очищено от учений тиртхиков, свободно от имён (<em>nāma</em>) и внешних форм (<em>saṃsthāna</em>) и опираться на внутреннее видение (<em>adhyātma-dṛṣṭi</em>), постигаемое лишь на собственном опыте. Вместе эти гатхи описывают созерцание изменения, полностью свободное от рассудочных наложений.<a href="#ref-882" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-883"><sup>883</sup> Состояния богов и обитателей адов разворачиваются через соприкосновение и страдание в самом сознании. Гатха переносит внимание с вопроса о самостоятельном статусе этих состояний на их развёртывание в сознании. <em>Antarābhavika</em> — термин для предполагаемого носителя, переходящего между смертью и новым рождением. По этому вопросу буддийские школы расходились: сарвастивада признавала такое существо, ряд других школ отрицал. Данная гатха отрицает его установленность: всё происходящее — включая переход между рождениями — есть развёртывание сознания (<em>vijñānena pravartitā</em>).<a href="#ref-883" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-884"><sup>884</sup> Стандартный буддийский список включает четыре вида рождения: живорождённых, рождённых из яйца, из влаги и рождённых чудесным образом. Гатха добавляет к ним существ промежуточного состояния, тем самым охватывая весь возможный диапазон форм воплощения. Все эти разнообразные тела лишены самостоятельной природы и подлежат созерцанию в их приходе и уходе — то есть в непрерывной смене рождений. Такое созерцание устраняет представление о неизменном существе, перемещающемся между жизнями, и открывает рождение как возникновение образов-форм в потоке сознания.<a href="#ref-884" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-885"><sup>885</sup> Воззрения тиртхиков отвергаются по двум основаниям: они лишены опоры на правильный метод (<em>yukti</em>) и свидетельства традиции (<em>āgama</em>), а их принятие истощает ту сторону сознания, что устремлена к свободе от омрачений (<em>niḥkleśa-pakṣa</em>). <em>Pralāpa</em> («пустословие») подчёркивает отсутствие содержательной связи между такими учениями и действительным путём. Мудрый (<em>matimān</em>) распознаёт это и не следует подобным воззрениям.<a href="#ref-885" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-886"><sup>886</sup> Логика утверждения признаков требует предварительного установления существования самого объекта. «Я» должно быть установлено прежде, чем его начнут отличать от присвоения. Попытка наделять отличиями неустановленный объект сравнивается с описанием качеств «сына бесплодной женщины» (<em>vandhyāputra</em>) — классическим примером слова без соответствия в действительности в индийской логике. <em>Vandhyāputra</em> наряду с «рогами зайца» (<em>śaśaviṣāṇa</em>) и «цветком в небе» (<em>ākāśapuṣpa</em>) входит в стандартный набор примеров для обозначения того, о чём говорят слова, не имеющие соответствия в действительности. Эти примеры иллюстрируют чисто умозрительные построения, лишённые опоры в действительности и не способные служить основанием рассуждения.<a href="#ref-886" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-887"><sup>887</sup> В индийской традиции различаются три вида глаза: плотской (<em>māṃsacakṣus</em>), глаз мудрости (<em>prajñācakṣus</em>) и божественный (<em>divyacakṣus</em>). Термин <em>prajñāmāṃsavivarjita</em> вызывает трудности интерпретации. Вероятно, речь идёт именно о божественном видении, не ограниченном ни плотским восприятием, ни рассудочным различением. Воплощённость всех обладающих телом (<em>mūrtimān sarvadehinām</em>), воспринимаемая этим оком, предстаёт свободной от <em>скандх</em> сансары. Это означает восприятие проявленных форм без выстроенной рассуждением картины обусловленного существования.<a href="#ref-887" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-888"><sup>888</sup> Образ золота разной степени очистки — традиционное сравнение (<em>upama</em>) для природы ума в учении о Татхагатагарбхе. Золото одинаково по природе в неочищенном и очищенном состоянии: устранение примесей оставляет саму природу металла неизменной. Природа существ в связанном и освобождённом состоянии тождественна изначально. Божественное (<em>divya</em>) пребывает в обусловленном (<em>saṃskārastha</em>) и одновременно свободно от него (<em>saṃskāravigata</em>) — оно созерцается именно внутри обусловленного мира.<a href="#ref-888" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-889"><sup>889</sup> <em>Gatisaṃdhi</em> — «стык между уделами существования» — момент перехода между смертью и новым рождением. Именно эта точка недоступна для понятийного мышления: она не фиксируется ни как объект восприятия, ни как предмет логического вывода. Воплощённость существа в этом переходе созерцается лишь тем, кто превзошёл человеческий удел (<em>atikrāntamānuṣyagati</em>). Термин «дурной логик» (<em>kutārkika</em>) означает носителя неверного метода рассуждения, чьё мышление движется в ложном направлении.<a href="#ref-889" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-890"><sup>890</sup> Гатха ставит вопрос о преемственности опыта в отсутствие «я»: если постоянного субъекта нет, откуда развёртывается ум? Три образа — река, светильник, семя — указывают на классические модели причинной передачи без носителя, где каждое последующее состояние обусловлено предыдущим. Река течёт без постоянной воды, пламя передаётся без переноса огня, семя прорастает без заранее существующего дерева. Термин <em>nirgama</em> («истечение») охватывает оба вопроса одновременно: откуда исходит ум и как он прекращается.<a href="#ref-890" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-891"><sup>891</sup> Гатха выстраивает аргумент двойной взаимозависимости (<em>anyonyāśraya</em>): сознание (<em>vijñāna</em>) не возникает без неведения (<em>ajñāna</em>) как условия, но и неведение не обнаруживается при невозникшем сознании. Каждое из двух требует другого как своего условия. При устранении любого из них преемственность опыта (<em>saṃtati</em>) теряет опору. Тем самым ставится вопрос: на чём держится поток сознания, если его условия взаимозависимы и ни одно не является самостоятельным началом?<a href="#ref-891" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-892"><sup>892</sup> Пятичленный перечень включает три времени (прошлое, настоящее, будущее), вневременное / необусловленное (<em>anadhva</em>) и неизрекаемое (<em>avaktavya</em>). Вневременное соотносится с необусловленным, не вовлечённым в поток становления. Неизрекаемое указывает на то, что принципиально не поддаётся понятийному описанию — оно выходит за пределы любой из четырёх предшествующих категорий. Для будд весь этот перечень открывается в прямом постижении; логики ограничиваются его рассудочным провозглашением (<em>saṃprakīrtyate</em>).<a href="#ref-892" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-893"><sup>893</sup> Гатха раскрывает, почему подлинная природа реальности остаётся неизрекаемой (<em>avaktavya</em>). Обыденное знание (<em>jñāna</em>) имеет своей причиной обусловленное (<em>saṃskāra</em>) и направлено на его же восприятие — оно полностью зависит от причинно-следственных связей и само обозначается как обусловленное. Сознание, занятое схватыванием обусловленного, не способно постичь то, что выходит за пределы этой зависимости. Именно поэтому неизрекаемое остаётся недоступным для такого знания.<a href="#ref-893" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-894"><sup>894</sup> Условия сами лишены независимой причины, выступая лишь как «обозначающие знаки» (<em>vyañjaka</em>), позволяющие описывать поток явлений. При этом сами условия не производят явлений как их независимая причина — они лишь указывают на взаимообусловленность. В отсутствие самостоятельных условий идея действующего лица (<em>kāraka</em>) теряет опору.<a href="#ref-894" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-895"><sup>895</sup> Ветер лишь побуждает (<em>preraṇa</em>) пламя к движению, но не порождает его как независимое явление. Побудив, он затихает — его роль исчерпана в самом акте побуждения. Так же и условия приводят в движение поток явлений, не создавая при этом неизменного «существа» (<em>sattva</em>). Побуждение само по себе преходяще — усматривать в нём основание для утверждения самостоятельной природы «существа» несостоятельно.<a href="#ref-895" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-896"><sup>896</sup> Обусловленное и необусловленное — лишь именования, лишённые самостоятельной опоры (<em>upādāna</em>). Они не могут служить основанием для установления какой-либо сущности. Образ огня, воображаемого глупцами, продолжает аргумент предыдущей гатхи: как ветер лишь поддерживает пламя, не порождая его, так и категории обусловленного и необусловленного остаются результатом различения (<em>vikalpa</em>) — за ними не стоят самостоятельно существующие явления. Глупцы принимают пламя за нечто отдельное, не видя зависимости его горения от условий, логики принимают слова за доказательства реальности «я».<a href="#ref-896" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-897"><sup>897</sup> Огонь возникает лишь при взаимном сочетании условий: трения, топлива, ветра, сухости, температуры. Если «существо» (<em>sattva</em>) признаётся подобным огню, вопрос о том, что именно приводит его в движение, обнажает несостоятельность рассудочного построения: за потоком обусловленных факторов нет самостоятельного источника движения. Представление о «существе» остаётся результатом различения (<em>vikalpa</em>), приписывающего единство и деятельность совокупности преходящих условий.<a href="#ref-897" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-898"><sup>898</sup> Отсутствие «я» (<em>nairātmya</em>) не является идеей, порождаемой <em>манасом</em> или иными условиями, — оно постоянно обнаруживается в самой совокупности <em>скандх</em> и <em>аятан</em>. Образ каравана (<em>sārtha</em>) указывает на единство без сущности: торговый союз состоит из множества участников, движущихся вместе, без единого неизменного «тела» каравана. Так и ум (<em>citta</em>) образует единство без постоянного субъекта. Отсутствие «я» и ум нераздельны — они пребывают вместе, как движение каравана неотделимо от его участников.<a href="#ref-898" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-899"><sup>899</sup> «Эти двое» в контексте предыдущей гатхи — ум (<em>citta</em>) и отсутствие «я» (<em>nairātmya</em>). Они описываются как непрерывно сияющие (<em>bhāsvara</em>), что указывает на их изначальную чистоту, не затронутую причинно-следственными связями. Образ огня, используемый логиками для объяснения возникновения существа, не может служить доказательством (<em>sādhaka</em>) их природы: огонь возникает и угасает в зависимости от внешних условий; сияющая природа ума и отсутствия «я» от таких условий не зависит. Это различие остаётся недоступным для рассудочного подхода логиков.<a href="#ref-899" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-900"><sup>900</sup> Гатхи 861–863 образуют единый блок.</p>
+    <p class="my-2">Гатха 861 утверждает сущностное единство сияющей природы ума, всех существ и нирваны. Безначальные помехи (<em>doṣa</em>) лишь временно скрывают это сияние, не затрагивая его изначальной чистоты. Сравнение с пространством (<em>gagana</em>) указывает на нераздельность (<em>abhinna</em>): подобно тому как пространство не может быть расчленено или осквернено возникающими в нём объектами, так и природа ума остаётся единой и чистой, независимо от состояний заблуждения или освобождения.</p>
+    <p class="my-2">Гатха 862 описывает механизм затемнения: воззрения тиртхиков и деятельность мановиджняны скрывают ясную природу, подобно теням. Очищение «огнём» символизирует устранение этих наслоений через прямое постижение, возвращающее уму чистоту и ясность видения.</p>
+    <p class="my-2">Гатха 863 описывает результат: когда явления увидены такими, как они есть (<em>yathābhūta</em>), омрачения разрываются. «Дебри примеров» (<em>dṛṣṭāntagahana</em>) указывает на множественность рассудочных аналогий и построений, служащих лишь вспомогательным средством. Примечательно, что сама <em>Ланкаватара</em> на протяжении всего текста широко использует именно такие примеры — <em>māyā, svapna, gandharvanagara, bimba</em> и прочие. Гатха 863 тем самым указывает на предел самого этого метода: образы и аналогии служат средствами указания (<em>upāya</em>), которые в конечном счёте должны быть оставлены. Вступление в сферу Благородных (<em>āryagocara</em>) означает непосредственное видение, не опирающееся на рассудочные построения.<a href="#ref-900" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-901"><sup>901</sup> Гатха указывает на корень заблуждения: разделение на знание и познаваемое порождает представление об их взаимном отличии (<em>anyatva</em>). Пока такое различение принимается как самоочевидное, неизрекаемое (<em>avaktavya</em>) остаётся недоступным для рассудочного определения. Дурномыслящие слышат о неизрекаемом и даже говорят о нём, но продолжают воспринимать его через двойственное разделение субъекта и объекта.<a href="#ref-901" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-902"><sup>902</sup> Образ барабана из сандалового дерева указывает на неуместное использование ценного материала. Сандал и алоэ (<em>agaru</em>) традиционно связаны с чистотой и тонким ароматом — здесь они служат образом знания в его изначальной ясности. Дурные логики превращают его в инструмент словесного шума и рассудочных построений, не распознавая собственной природы знания.<a href="#ref-902" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-903"><sup>903</sup> Гатха работает на двух уровнях. Буквально — как наставление о внимательности и умеренности при получении и вкушении подаяния: согласно Винае, монах не должен выказывать ни удовольствия, ни отвращения к пище; мимические реакции (<em>mukha-vikāra</em>) рассматриваются как нарушение правильного поведения при принятии подаяния. После трапезы в сосуде остаются лишь следы пищи.</p>
+    <p class="my-2">На другом уровне пища служит образом чистого знания, сосуд — его словесной или понятийной формой, а остатки — знаков и выражений, принимаемых за саму сущность знания. Искажения лица (<em>mukha-vikāra</em>) указывают на субъективные наслоения, затемняющие непосредственное восприятие. Призыв правильно обращаться с «чистой пищей» означает необходимость распознавать изначальную ясность знания за его внешними формами.</p>
+    <p class="my-2">Гатха продолжает образный ряд предыдущей строфы: если в 865-й драгоценное знание превращалось в шумовой инструмент, то здесь внимание задерживается лишь на остатках и следах, упуская само содержание.<a href="#ref-903" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-904"><sup>904</sup> Здесь описываются качества практикующего как последовательный путь внутреннего преобразования. Рассуждение (<em>yukti</em>) служит первоначальным средством постижения метода (<em>naya</em>), однако не является конечной опорой. <em>Prasāda</em> («ясность», «прозрачность») указывает на ум, свободный от внутреннего помрачения, а практика йоги (<em>yoga-para</em>) — на направленность к непосредственной тренировке. <em>Akalpana</em> («свобода от различений») и <em>anāśrita</em> («неопирающийся») обозначают отказ от построения сети понятий и внешних оснований. <em>Artha-para</em> («устремлённый к смыслу») указывает на направленность к непосредственному постижению того, на что слова и знаки лишь указывают. Образ «золотого пути Дхармы» (<em>hiraṇmayī dharma-gati</em>), который такой практикующий «озаряет» (<em>pradīpayet</em>), подчёркивает живое раскрытие пути через собственную реализацию.<a href="#ref-904" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-905"><sup>905</sup> Гатха описывает результат очищения, намеченного в предыдущих строфах. Сеть дурных воззрений (<em>ku-dṛṣṭi-jāla</em>) возникает из понятийных построений, основанных на представлениях о бытии и небытии. Эти построения поддерживают <em>клеши</em> — влечение (<em>rāga</em>), неприязнь (<em>doṣa</em>) и отталкивание (<em>pratigha</em>), — которые удерживают сознание в двойственном восприятии. Когда они прекращаются, раскрывается состояние незапятнанности (<em>nirañjana</em>). Образ орошения лучами Будд (<em>buddha-kara</em>) указывает на проявление очищенного состояния, в котором присутствие Будд переживается как свет и благословение.<a href="#ref-905" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-906"><sup>906</sup> Перечисляются три искажения, удерживающих мышление в пределах крайностей. Первые тиртхики ищут внешнюю порождающую причину (<em>kāraṇa</em>), блуждая в её поиске. Вторые абсолютизируют обусловленность (<em>pratyaya</em>), превращая её в жёсткую зависимость. Третьи, исходя из признания беспричинности (<em>ahetu</em>), впадают в нигилизм (<em>uccheda</em>), ошибочно принимая это воззрение за путь Благородных (<em>ārya</em>). Все три позиции остаются внутри понятийных построений и не выходят за пределы двойственного мышления.<a href="#ref-906" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-907"><sup>907</sup> Блок гатх 870-874 представляет собой компактную йогачаринскую модель, описывающую развёртывание сансарного опыта: <em>ālaya</em> → <em>vāsanā</em> → <em>manas</em> → <em>vijñāna</em> → проекция вовне → <em>dṛṣṭi</em> → <em>saṃsāra</em>. (Здесь необходимо отметить, что в самой сутре и в этих гатхах употребление ума (<em>citta</em>) и сознания (<em>vijñāna</em>) зачастую синонимично).</p>
+    <p class="my-2">Гатха 870 устанавливает иерархию: <em>Алая-виджняна</em> служит основой для <em>манаса</em>, <em>манас</em> — условием возникновения различающего сознания (<em>vijñāna</em>). Преобразование через созревание (<em>vipāka-pariṇāma</em>) кармических отпечатков движет этим процессом. Зависимость односторонняя: <em>Алая-виджняна</em> → <em>манас</em> → виджняна.</p>
+    <p class="my-2">Гатха 871 вводит центральный образ блока: <em>Алая-виджняна</em> как океан, все сознания — волны (<em>taraṃga</em>). Каждое имеет своей причиной отпечатки (<em>vāsanā</em>) и возникает согласно условиям (<em>pratyaya</em>). Ни одно не обладает независимо существующим.</p>
+    <p class="my-2">Гатха 872 описывает механизм схватывания: связанные последовательностью мгновенных различий, проявления ума возникают как формы, признаки и образы. Они схватывают собственные проявления ума как объекты (<em>svacittārtha-vigrāha</em>) — это почти прямое указание на <em>vijñaptimātra</em>.</p>
+    <p class="my-2">Гатха 873 указывает на корень ошибки: сознание, связанное с безначальными помехами и поднявшееся из отпечатков отсутствия независимого объекта, проецируется вовне и воспринимается как внешний мир. <em>Artha-abhāva-vāsanā</em> можно понимать как укоренившуюся привычку воспринимать независимую объектность там, где независимый объект отсутствует. Осознание этого механизма устраняет воззрения тиртхиков, утверждающих самостоятельную внешнюю реальность.</p>
+    <p class="my-2">Гатха 874 завершает блок: воззрение (<em>dṛṣṭi</em>) само является продуктом описанного механизма — и именно его возникновение приводит в движение сансару. Сансара не существует заранее — она запускается закреплением двойственного воззрения.<a href="#ref-907" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-908"><sup>908</sup> Гатха завершает блок 870-874: воззрение (<em>dṛṣṭi</em>) само является продуктом описанного механизма — и именно его возникновение приводит в движение сансару. Сансара не существует заранее — она запускается закреплением двойственного воззрения.<a href="#ref-908" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-909"><sup>909</sup> Пять классических образов йогачары описывают природу явлений:</p>
+    <p class="my-2 ml-4">Иллюзия (<em>māyā</em>) — видимость без основы.</p>
+    <p class="my-2 ml-4">Сновидение (<em>svapna</em>) — переживание без внешнего объекта.</p>
+    <p class="my-2 ml-4">Город гандхарвов (<em>gandharva-nagara</em>) — то, что кажется существующим, но рассеивается при приближении.</p>
+    <p class="my-2 ml-4">Мираж (<em>marīci</em>) — образ, возникающий из условий восприятия.</p>
+    <p class="my-2 ml-4">Луна в воде (<em>udaka-candra</em>) — отражение, зависящее от основания и воспринимающего.</p>
+    <p class="my-2">Все пять указывают, что явления обладают видимостью, но лишены независимой основы. Их следует созерцать как собственное различение (<em>sva-vikalpa</em>). Как уже говорилось: воззрение (<em>dṛṣṭi</em>) и сансара разворачиваются из различения; созерцание различения как различения прекращает этот механизм.<a href="#ref-909" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-910"><sup>910</sup> Прекращение обычной деятельности ума (<em>vṛtti-bheda</em>) обнажает Таковость как непосредственную основу восприятия. Совершенное знание (<em>samyag-jñāna</em>) описывается как опирающееся на эту основу. <em>Māyā-samādhi</em> и <em>Śūraṃgama-samādhi</em> — классические высшие <em>самадхи</em> Махаяны, указывающие на конкретные плоды этого прекращения.<a href="#ref-910" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-911"><sup>911</sup> Продвижение по ступеням (<em>bhūmi</em>) сопровождается обретением <em>сверхзнаний</em> (<em>abhijñā</em>) и <em>сил</em> (<em>vaśitā</em>). <em>Тело, подобное магическому знанию</em> (<em>jñāna-māyopama-kāya</em>) — классический термин для тела бодхисаттвы на высших ступенях, свободного от обычной кармической обусловленности. Посвящение (<em>abhiṣeka</em>) Сугатами указывает на передачу, подтверждающую достижение соответствующей ступени.<a href="#ref-911" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-912"><sup>912</sup> Затихание ума меняет способ видения: мир видится успокоенным для того, кто видит (<em>paśyataḥ jagat nivṛttam</em>). Обретение ступени «Радостная» (<em>muditā-bhūmi</em> — первая бхуми) и затем ступени Будды указывает на охват всего пути от начала до завершения.<a href="#ref-912" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-913"><sup>913</sup> <em>Āśraya</em> в йогачаре — технический термин, указывающий на основание сознания, претерпевающее <em>āśraya-parāvṛtti</em> (разворот основания). Когда это основание преобразовано, деятельность ради существ возникает спонтанно, без намеренного усилия. Образ драгоценного камня чинтамани, принимающего все формы, указывает на это спонтанное проявление. Образ отражения в воде — на его зависимый и безопорный характер.<a href="#ref-913" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-914"><sup>914</sup> Седьмая ступень (<em>Dūraṃgamā</em>) описывается через свободу от четырёх логических позиций (<em>catuṣkoṭi</em>): бытия, небытия, их сочетания и их отрицания. Это выводит практикующего за пределы путей пратьекабудд и шраваков, остающихся в тонких формах двойственного различения.<a href="#ref-914" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-915"><sup>915</sup> Махаяна определяется через три признака: постижение дхарм через непосредственное внутреннее видение (<em>pratyātma-dṛṣṭa-dharma</em>), очищение подлинных ступеней (<em>bhūta-bhūmi-viśodhana</em>) и свободу от воззрений тиртхиков. Эти три признака противопоставляются пути, опирающемуся на внешние авторитеты.<a href="#ref-915" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-916"><sup>916</sup> <em>Parāvṛtti</em> («разворот различения») описывается как лишённое упадка и уничтожения — это указание на то, что разворот не является простым прекращением. Образ <em>maṇi</em> («драгоценный камень») указывает на сияющую полноту освобождённого состояния.</p>
+    <p class="my-2">Чтение <em>śaśaroma</em> («волос зайца») рукописной традиции ставится под сомнение рядом комментаторов: в буддийской логике стандартным примером несуществующего служат <em>śaśaviṣāṇa</em> («рога зайца»), и предлагается конъектура именно этого чтения. Если принять её, образ приобретает привычную двойственность: несуществующее (<em>śaśaviṣāṇa</em>) и существующее сияющее (<em>maṇi</em>) — что прямо перекликается с гатхой 880 о свободе от крайностей бытия и небытия.</p>
+    <p class="my-2">Если же рукописное чтение <em>śaśaroma</em> верно, образ допускает иное толкование. Волос зайца существует, но настолько тонок и неуловим, что не поддаётся схватыванию как отдельный объект. Тогда пара <em>śaśaroma</em> / <em>maṇi</em> описывает две стороны <em>parāvṛtti</em>: то, что невозможно закрепить понятийно, и то, что сияет в своей полноте. Обе интерпретации согласуются с доктринальным контекстом гатхи. Метод провозглашается освобождённым (<em>mukta-naya</em>).<a href="#ref-916" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-917"><sup>917</sup> Гатха формулирует принцип внутренней согласованности: тексты проясняются текстами, рассуждение проверяется внутренне согласованным рассуждением. Верная логика (<em>yukti</em>) ведёт к устранению понятийных построений (<em>kalpanā</em>), а не к созданию новых.<a href="#ref-917" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <p class="my-2" id="citation-918"><sup>918</sup> Гатха перечисляет компоненты обусловленного опыта: зрение (<em>cakṣus</em>), карму, жажду (<em>tṛṣṇā</em>), неведение (<em>avidyā</em>) как порождающее лоно, зримый образ (<em>rūpa</em>), <em>манас</em> (<em>manas</em>) и замутнённый ум (<em>āvila-manas</em>). Перечисление остаётся незавершённым — без сказуемого и без вывода. На этом десятая глава (<em>Сагатхакам</em>) завершена. Сутра завершается необычным образом: незамкнутым перечислением — что само по себе является указанием на предел словесного изложения. Но возможно последующие стихи не сохранились.<a href="#ref-918" class="text-blue-500 hover:underline ml-2">↩</a></p>
+
+    <hr class="my-8 border-t-4 border-gray-500">
+</div>
 
 <ul class="list-disk mb-6 pl-2 space-y-1 ml-2">
     <li></li>
