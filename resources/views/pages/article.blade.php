@@ -1,87 +1,74 @@
-<x-layout :content="$article">
-    @section('title', $article->title)
+<x-layout :content="$article" :title="$article->title">
 
-    <div
-        x-data="tocComponent()"
-        x-init="init()"
-        class="prose prose-lg max-w-none"
-    >
+    @push('schema')
+    <script type="application/ld+json">
+    @php
+        $authorData = $article->authors->isNotEmpty()
+            ? $article->authors->map(fn($a) => ['@type' => 'Person', 'name' => $a->name])->toArray()
+            : [['@type' => 'Organization', 'name' => 'Dandaron Tradition']];
+
+        $schema = [
+            "@@context" => "https://schema.org",
+            "@type" => "Article",
+            "headline" => $article->title,
+            "description" => $article->getSeoDescription(),
+            "datePublished" => $article->created_at->toIso8601String(),
+            "dateModified" => $article->updated_at->toIso8601String(),
+            "url" => $article->getUrl(),
+            "author" => $authorData,
+            "publisher" => [
+                "@type" => "Organization",
+                "name" => "Dandaron Tradition",
+                "url" => url('/')
+            ],
+            "mainEntityOfPage" => [
+                "@type" => "WebPage",
+                "@id" => $article->getUrl()
+            ]
+        ];
+    @endphp
+    {!! json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+    </script>
+    @endpush
+
+    <div x-data="tocComponent()" x-init="init()" class="prose prose-lg max-w-none">
+
+        <x-breadcrumbs :placement="$article->placement" />
+
         <h1 class="text-center">{{ $article->title }}</h1>
 
         <div x-ref="content">
             {!! $article->fixed_content !!}
         </div>
 
-        <!-- Модальное оглавление -->
         <template x-if="toc.length > 0">
             <template x-teleport="body">
                 <div x-show="tocOpen" x-cloak class="fixed inset-0 z-[9999] flex">
-                    <!-- Затемнение -->
-                    <div
-                        @click="close()"
-                        class="absolute inset-0 bg-black/50 transition-opacity"
-                        x-transition:enter="ease-out duration-300"
-                        x-transition:enter-start="opacity-0"
-                        x-transition:enter-end="opacity-100"
-                        x-transition:leave="ease-in duration-200"
-                        x-transition:leave-start="opacity-100"
-                        x-transition:leave-end="opacity-0"
-                    ></div>
-
-                    <!-- Панель оглавления -->
-                    <div
-                        class="relative flex flex-col max-w-xs w-full h-full bg-white shadow-2xl"
-                        x-transition:enter="ease-out duration-300"
-                        x-transition:enter-start="-translate-x-full"
-                        x-transition:enter-end="translate-x-0"
-                        x-transition:leave="ease-in duration-200"
-                        x-transition:leave-start="translate-x-0"
-                        x-transition:leave-end="-translate-x-full"
-                    >
-                        <!-- Заголовок -->
+                    <div @click="close()" class="absolute inset-0 bg-black/50 transition-opacity"></div>
+                    <div class="relative flex flex-col max-w-xs w-full h-full bg-white shadow-2xl">
                         <div class="p-6 border-b flex items-center justify-between">
                             <h3 class="text-xl font-semibold">Содержание</h3>
-                            <button
-                                @click="close()"
-                                class="p-1 rounded-full hover:bg-gray-200 transition-colors text-2xl leading-none"
-                                aria-label="Закрыть"
-                            >
-                                &times;
-                            </button>
+                            <button @click="close()" class="p-1 rounded-full hover:bg-gray-200 transition-colors text-2xl leading-none">&times;</button>
                         </div>
-
-                        <!-- Список оглавления -->
-                        <!-- Список оглавления -->
                         <div class="p-6 overflow-y-auto flex-grow">
                             <nav aria-label="Оглавление статьи">
                                 <ul class="space-y-2">
                                     <template x-for="item in toc" :key="item.id">
                                         <li :style="'padding-left: ' + (item.indent * 1) + 'rem'">
-                                            <a
-                                                :href="'#' + item.id"
-                                                class="flex items-start gap-3 no-underline hover:text-amber-600 transition-colors py-1 group"
-                                                @click.prevent="goTo(item.id)"
-                                            >
-                                                <!-- Кружки разного размера -->
+                                            <a :href="'#' + item.id" class="flex items-start gap-3 no-underline hover:text-amber-600 transition-colors py-1 group" @click.prevent="goTo(item.id)">
                                                 <span class="flex-shrink-0 mt-2">
-                                                    <template x-if="item.level === 'h2'">
-                                                        <span class="inline-block w-3 h-3 rounded-full bg-sky-600 group-hover:bg-amber-600"></span>
-                                                    </template>
-                                                    <template x-if="item.level === 'h3'">
-                                                        <span class="inline-block w-2.5 h-2.5 rounded-full bg-sky-500 group-hover:bg-amber-500"></span>
-                                                    </template>
-                                                    <template x-if="item.level === 'h4' || item.level === 'h5' || item.level === 'h6'">
-                                                        <span class="inline-block w-2 h-2 rounded-full bg-sky-400 group-hover:bg-amber-400"></span>
-                                                    </template>
+                                                    <template x-if="item.level === 'h2'"><span class="inline-block w-3 h-3 rounded-full bg-sky-600 group-hover:bg-amber-600"></span></template>
+                                                    <template x-if="item.level === 'h3'"><span class="inline-block w-2.5 h-2.5 rounded-full bg-sky-500 group-hover:bg-amber-500"></span></template>
+                                                    <template x-if="['h4', 'h5', 'h6'].includes(item.level)"><span class="inline-block w-2 h-2 rounded-full bg-sky-400 group-hover:bg-amber-400"></span></template>
                                                 </span>
-
                                                 <span class="flex-1" x-text="item.text"></span>
                                             </a>
                                         </li>
                                     </template>
                                 </ul>
                             </nav>
-                        </div>                    </div>
+                        </div>
+                    </div>
                 </div>
             </template>
         </template>

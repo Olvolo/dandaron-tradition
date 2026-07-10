@@ -8,129 +8,55 @@
     <h2 class="text-xl font-bold mt-6">Глава I. Равана просит наставления</h2>
     <h3 class="text-center text-blue-900 font-bold text-2xl sm:text-2xl md:text-2xl mt-6 mb-6">
         Подглава 1. Вступление и собрание в замке Ланки</h3>
-<div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
+    <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
         <p><strong>ОМ</strong>!</p>
-  <p>Поклонение Трём Драгоценностям!</p>
-  <p>Поклонение всем Буддам и бодхисаттвам!</p>
-  <p>Так я слышал.</p>
-
-  <p>Однажды Бхагаван пребывал в городе Ланка, на вершине горы Малайя посреди великого
-  океана, украшенной разного рода драгоценными каменьями и цветами. Там собралось
-  великое множество монахов (<em>бхикшу</em>) и великое множество
-  бодхисаттв-махасаттв, прибывших из разных земель Будды (<em>буддхакшетр</em>) —
-  с бодхисаттвой Махамати («Великая Мудрость») во главе, — свободно
-  проявляющих (<em>vikrīḍita</em>)<a href="#citation-1" id="ref-1" class="citation-mark"><sup>1</sup></a>
-  множество <em>самадхи</em>,
-  <em>владычество</em> (<em>vaśitā</em>),<a href="#citation-2" id="ref-2" class="citation-mark"><sup>2</sup></a>
-  <em>силы</em> (<em>bala</em>),<a href="#citation-3" id="ref-3" class="citation-mark"><sup>3</sup></a>
-  и <em>сверхзнания</em> (<em>abhijñā</em>);<a href="#citation-4" id="ref-4" class="citation-mark"><sup>4</sup></a>
-  наделённых посвящением (<em>abhiṣeka</em>)<a href="#citation-5" id="ref-5" class="citation-mark"><sup>5</sup></a>
-  рукой всех Будд; искусных в полном
-  постижении (<em>parijñāna</em>)<a href="#citation-6" id="ref-6" class="citation-mark"><sup>6</sup></a>
-  области воспринимаемого их собственным умом
-  (<em>svacitta-dṛśya-gocara</em>);<a href="#citation-7" id="ref-7" class="citation-mark"><sup>7</sup></a>
-  принимающих разнообразные
-  формы (<em>rūpa</em>),<a href="#citation-8" id="ref-8" class="citation-mark"><sup>8</sup></a>
-  способы (<em>naya</em>)<a href="#citation-9" id="ref-9" class="citation-mark"><sup>9</sup></a>
-  и воспитательные действия (<em>vinaya</em>)<a href="#citation-10" id="ref-10" class="citation-mark"><sup>10</sup></a>
-  в соответствии с поведением умов различных существ; достигших
-  недвойственного пути<a href="#citation-11" id="ref-11" class="citation-mark"><sup>11</sup></a>
-  в области пяти дхарм (<em>pañca-dharma</em>),<a href="#citation-12" id="ref-12" class="citation-mark"><sup>12</sup></a>
-  [трёх] свабхав (<em>svabhāva</em>),<a href="#citation-13" id="ref-13" class="citation-mark"><sup>13</sup></a>
-  [восьми] виджнян (<em>vijñāna</em>)<a href="#citation-14" id="ref-14" class="citation-mark"><sup>14</sup></a>
-  и отсутствия «я» (<em>nairātmya</em>) —
-  личного<a href="#citation-15" id="ref-15" class="citation-mark"><sup>15</sup></a>
-  и дхармового.<a href="#citation-16" id="ref-16" class="citation-mark"><sup>16</sup></a>
-  </p>
-
-  <p>В то время Бхагаван вышел из дворца Царя Нагов Великого Океана, где пробыл
-  семь дней,<a href="#citation-17" id="ref-17" class="citation-mark"><sup>17</sup></a>
-  и был встречен бесчисленными Индрами, Брахмами и дочерьми
-  нагов.<a href="#citation-18" id="ref-18" class="citation-mark"><sup>18</sup></a>
-  Взглянув на Ланку на горе Малайя, Бхагаван
-  улыбнулся<a href="#citation-19" id="ref-19" class="citation-mark"><sup>19</sup></a> и произнёс:</p>
-
-  <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
-    Эту Дхарму — постигнутую благородной мудростью непосредственного внутреннего
-    опыта (<em>svapratyātmārya-jñāna</em>),<a href="#citation-20" id="ref-20" class="citation-mark"><sup>20</sup></a>
-    не являющуюся областью умозрительных
-    построений (<em>tarka</em>),<a href="#citation-21" id="ref-21" class="citation-mark"><sup>21</sup></a>
-    воззрений тиртхиков, шраваков и
-    пратьекабудд, — проявили<a href="#citation-22" id="ref-22" class="citation-mark"><sup>22</sup></a>
-    здесь, в этом городе Ланка на вершине горы Малайя, прежние Татхагаты, Архаты,
-    Совершенно Пробуждённые. И ныне Я, ради
-    Раваны,<a href="#citation-23" id="ref-23" class="citation-mark"><sup>23</sup></a>
-    Владыки якшей, изложу именно эту Дхарму.
-  </blockquote>
-<p class="text-center font-bold">***</p>
-</div>
+        <p>Поклонение Трём Драгоценностям!</p>
+        <p>Поклонение всем Буддам и бодхисаттвам!</p>
+        <p>Так я слышал.</p>
+        <p>Однажды Бхагаван пребывал в городе Ланка, на вершине горы Малайя, украшенной разного рода драгоценными каменьями и цветами, посреди великого океана. Там собралось великое множество монахов (<em>бхикшу</em>) и великое множество бодхисаттв-махасаттв, прибывших из разных земель Будды (<em>буддхакшетр</em>) — с бодхисаттвой Махамати («Великая Мудрость») во главе, пребывающих в свободном проявлении (<em>vikrīḍita</em>)<a href="#citation-1" id="ref-1" class="citation-mark"><sup>1</sup></a> множества <em>самадхи</em>, <em>владычеств</em> (<em>vaśitā</em>),<a href="#citation-2" id="ref-2" class="citation-mark"><sup>2</sup></a> <em>духовных сил</em> (<em>bala</em>),<a href="#citation-3" id="ref-3" class="citation-mark"><sup>3</sup></a> и <em>сверхзнаний</em> (<em>abhijñā</em>);<a href="#citation-4" id="ref-4" class="citation-mark"><sup>4</sup></a> и  наделённых посвящением (<em>abhiṣeka</em>),<a href="#citation-5" id="ref-5" class="citation-mark"><sup>5</sup></a> [совершённым] руками всех Будд; искусных в полном постижении (<em>parijñāna</em>)<a href="#citation-6" id="ref-6" class="citation-mark"><sup>6</sup></a> области воспринимаемого их собственным умом (<em>svacitta-dṛśya-gocara</em>);<a href="#citation-7" id="ref-7" class="citation-mark"><sup>7</sup></a> принимающих разнообразные формы (<em>rūpa</em>),<a href="#citation-8" id="ref-8" class="citation-mark"><sup>8</sup></a> [искусных в разнообразных] методах (<em>naya</em>)<a href="#citation-9" id="ref-9" class="citation-mark"><sup>9</sup></a> и воспитательных действиях (<em>vinaya</em>)<a href="#citation-10" id="ref-10" class="citation-mark"><sup>10</sup></a> в соответствии с поведением умов различных существ; достигших недвойственного пути<a href="#citation-11" id="ref-11" class="citation-mark"><sup>11</sup></a> в области пяти дхарм (<em>pañca-dharma</em>),<a href="#citation-12" id="ref-12" class="citation-mark"><sup>12</sup></a> [трёх] природ (<em>svabhāva</em>),<a href="#citation-13" id="ref-13" class="citation-mark"><sup>13</sup></a>
+        [восьми] виджнян (<em>vijñāna</em>)<a href="#citation-14" id="ref-14" class="citation-mark"><sup>14</sup></a> и двойного отсутствия «я» (<em>nairātmya</em>) — личного<a href="#citation-15" id="ref-15" class="citation-mark"><sup>15</sup></a> и дхармового.<a href="#citation-16" id="ref-16" class="citation-mark"><sup>16</sup></a></p>
+        <p>В то время Бхагаван вышел из дворца Царя Нагов Великого Океана, где пробыл семь дней,<a href="#citation-17" id="ref-17" class="citation-mark"><sup>17</sup></a> и был встречен бесчисленными Индрами, Брахмами и дочерьми
+        нагов.<a href="#citation-18" id="ref-18" class="citation-mark"><sup>18</sup></a> Взглянув на Ланку на горе Малайя, Бхагаван улыбнулся<a href="#citation-19" id="ref-19" class="citation-mark"><sup>19</sup></a> и произнёс:</p>
+        <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
+            <p>Эту Дхарму — постигнутую благородной мудростью непосредственного внутреннего опыта (<em>svapratyātmārya-jñāna</em>),<a href="#citation-20" id="ref-20" class="citation-mark"><sup>20</sup></a> не являющуюся областью ни умозрительных суждений (<em>tarka</em>),<a href="#citation-21" id="ref-21" class="citation-mark"><sup>21</sup></a> ни воззрений тиртхиков, шраваков и пратьекабудд, — проявили<a href="#citation-22" id="ref-22" class="citation-mark"><sup>22</sup></a> здесь, в этом городе Ланка на вершине горы Малайя, прежние Татхагаты, Архаты, Совершенно Пробуждённые. И ныне Я, ради Раваны,<a href="#citation-23" id="ref-23" class="citation-mark"><sup>23</sup></a> Владыки якшей, изложу именно эту Дхарму.</p>
+        </blockquote>
+        <p class="text-center font-bold">***</p>
+    </div>
 
     <h3 class="text-center text-blue-900 font-bold text-2xl sm:text-2xl md:text-2xl mt-6
     mb-6">Подглава 2. Прибытие Раваны и его гимн</h3>
-<div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
-        <p>Равана, владыка ракшасов, силой благословения Татхагат<a href="#citation-24"
-     id="ref-24" class="citation-mark"><sup>24</sup></a>
-  услышал о Бхагаване и подумал: «Бхагаван вышел из дворца Царя Нагов Великого Океана
-  и стоит теперь у самого моря, окружённый бесчисленными Сакрами, Брахмами и дочерьми
-  нагов и чтимый ими.
-  Он взирает на волны океана и на умы тех, кто собрался вокруг — умы, движимые ветром
-  развёртывающегося сознания (<em>pravṛtti-vijñāna</em>) над океаном
-  Алайя-виджняны.<a href="#citation-25" id="ref-25" class="citation-mark"><sup>25</sup></a>
-  Что если мне отправиться к Бхагавану и пригласить Его посетить Ланку? Это принесёт
-  долгую пользу, благо и счастье богам и людям».</p>
-
-  <p>После этого Равана, владыка ракшасов, вместе со своей свитой взошёл на колесницу
-  Пушпака<a href="#citation-26" id="ref-26" class="citation-mark"><sup>26</sup></a>
-  и направился к Бхагавану. Прибыв, он сошёл с колесницы, и вся его свита последовала
-  за ним. Трижды обошёл он Бхагавана справа и преклонился перед Ним. Под звуки духовых
-  и ударных инструментов он взял в руки вину<a href="#citation-27" id="ref-27"
-  class="citation-mark"><sup>27</sup></a> с грифом из
-  индранелы<a href="#citation-28" id="ref-28" class="citation-mark"><sup>28</sup></a>
-  и инкрустированную вайдурьей<a href="#citation-29" id="ref-29"
-  class="citation-mark"><sup>29</sup></a> и перламутром и прижал её к бедру бесценной
-  тканью, белой, как цветы приянги.<a href="#citation-30" id="ref-30"
-  class="citation-mark"><sup>30</sup></a> Следуя ладам — шадджа, ришабха, гандхара,
-  дхаивата, нишада, мадхьяма и кайшика, — он умело вёл мелодию через грамы, мурчханы
-  и другие музыкальные приёмы.<a href="#citation-31" id="ref-31"
-  class="citation-mark"><sup>31</sup></a> Грациозно играя на вине, он пропел гатхи:</p>
+    <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
+        <p>Равана, владыка ракшасов, побуждаемый благословением Татхагат<a href="#citation-24" id="ref-24" class="citation-mark"><sup>24</sup></a> услышал о Бхагаване и подумал: «Бхагаван вышел из дворца Царя Нагов Великого Океана и стоит теперь у самого моря, окружённый бесчисленными Сакрами, Брахмами и дочерьми нагов, почитаемый ими. Он взирает на волны океана и на умы тех, кто собрался вокруг — умы, движимые ветром развёртывающегося сознания (<em>pravṛtti-vijñāna</em>) над океаном <em>Алайя-виджняны</em>.<a href="#citation-25" id="ref-25" class="citation-mark"><sup>25</sup></a> Что если мне отправиться к Бхагавану и пригласить Его посетить Ланку? Это принесёт неисчислимую пользу, благо и счастье богам и людям».</p>
+        <p>После этого Равана, владыка ракшасов, вместе со своей свитой взошёл на колесницу Пушпака<a href="#citation-26" id="ref-26" class="citation-mark"><sup>26</sup></a> и направился к Бхагавану. Прибыв, он сошёл с колесницы, и вся его свита последовала за ним. Трижды обошёл он Бхагавана справа и преклонился перед Ним. Под звуки духовых и ударных инструментов он взял в руки вину<a href="#citation-27" id="ref-27" class="citation-mark"><sup>27</sup></a> с грифом из индранелы<a href="#citation-28" id="ref-28" class="citation-mark"><sup>28</sup></a> и инкрустированную вайдурьей<a href="#citation-29" id="ref-29" class="citation-mark"><sup>29</sup></a> и перламутром и прижал её к бедру бесценной тканью, белой, как цветы приянги.<a href="#citation-30" id="ref-30" class="citation-mark"><sup>30</sup></a> Следуя ладам — шадджа, ришабха, гандхара, дхаивата, нишада, мадхьяма и кайшика, — он умело вёл мелодию через грамы, мурчханы и другие музыкальные приёмы.<a href="#citation-31" id="ref-31" class="citation-mark"><sup>31</sup></a> Грациозно играя на вине, он пропел гатхи:</p>
         <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>1. О Наставник, изложи здесь путь Дхармы —</li>
-                <li>метод Дхармы, [раскрывающий] природу ума (<em>citta-svabhāva</em>),</li>
-                <li>незапятнанное отсутствие «я» (<em>nairātmya</em>),</li>
-                <li>свободное от всяких воззрений,<a href="#citation-32" id="ref-32"
-                    class="citation-mark"><sup>32</sup></a></li>
-                <li>указывающий на путь личного постижения.<a href="#citation-33" id="ref-33"
-                    class="citation-mark"><sup>33</sup></a></li>
+                <li>метод Дхармы, [указывающий] природу ума (<em>citta-svabhāva</em>),</li>
+                <li>[и] незапятнанное отсутствие «я» (<em>nairātmya</em>),</li>
+                <li>свободное от всяких воззрений,<a href="#citation-32" id="ref-32" class="citation-mark"><sup>32</sup></a></li>
+                <li>указывающее на путь личного постижения.<a href="#citation-33" id="ref-33" class="citation-mark"><sup>33</sup></a></li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>2. О Мудрый, настал час направиться в Ланку.</li>
                 <li>Ты — Сугата, чьё тело собрано из благих дхарм;</li>
-                <li>Ты являешь нирманы (<em>nirmāṇa</em>) и нирмиты
-                    (<em>nirmita</em>)<a href="#citation-34" id="ref-34"
-                    class="citation-mark"><sup>34</sup></a></li>
+                <li>Ты являешь нирманы (<em>nirmāṇa</em>) и нирмиты (<em>nirmita</em>)<a href="#citation-34" id="ref-34" class="citation-mark"><sup>34</sup></a></li>
                 <li>[— деятельность проявления и его проявленные формы];</li>
-                <li>Ты предан Дхарме пути личного постижения.<a href="#citation-35" id="ref-35"
-                    class="citation-mark"><sup>35</sup></a></li>
+                <li>Ты предан Дхарме пути личного постижения.<a href="#citation-35" id="ref-35" class="citation-mark"><sup>35</sup></a></li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>3. Эта Ланка некогда была обителью прежних Победителей</li>
                 <li>и их сыновей — существ, принимающих множество форм.</li>
                 <li>О Господь, изложи здесь превосходную Дхарму:</li>
-                <li>её услышат якши, принимающие множество форм.<a href="#citation-36" id="ref-36"
-                    class="citation-mark"><sup>36</sup></a></li>
+                <li>её услышат якши, принимающие множество форм.<a href="#citation-36" id="ref-36" class="citation-mark"><sup>36</sup></a></li>
             </ul>
         </blockquote>
         <p class="text-center font-bold">***</p>
-</div>
+    </div>
 
     <h3 class="text-center text-blue-900 font-bold text-2xl sm:text-2xl md:text-2xl mt-6
     mb-6">Подглава 3. Равана поёт в ритме Тотака</h3>
     <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
-
-        <p>Затем Равана, владыка Ланки, снова запел гатхи, следуя размеру то́така.<a
-                href="#citation-37" id="ref-37" class="citation-mark"><sup>37</sup></a></p>
-
+        <p>Затем Равана, владыка Ланки, снова запел гатхи, следуя размеру то́така.<a href="#citation-37" id="ref-37" class="citation-mark"><sup>37</sup></a></p>
         <blockquote class="border-l-4 border-sky-500 pl-6 my-6 text-gray-800 text-xl">
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>4. Прошло семь ночей, и Бхагаван, покинув</li>
@@ -142,15 +68,14 @@
                 <li>5. Едва лишь Будда остановился,</li>
                 <li>Равана явился к Нему вместе с апсарами,</li>
                 <li>с разнообразными якшами</li>
-                <li>и мудрыми Шукой и Сараной.<a href="#citation-38" id="ref-38"
-                                                       class="citation-mark"><sup>38</sup></a></li>
+                <li>и мудрыми Шукой и Сараной.<a href="#citation-38" id="ref-38" class="citation-mark"><sup>38</sup></a></li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>6. Силой сверхъестественного могущества (<em>ṛddhi</em>) </li>
                 <li>достигнув того места, где пребывал Владыка,</li>
                 <li>он сошёл с небесной колесницы Пушпака,</li>
                 <li>поклонился и почтил Татхагату,</li>
-                <li>и, наделённый поддержкой Победителя (<em>adhiṣṭhita</em>),</li>
+                <li>и, будучи поддержан силой Победителя (<em>adhiṣṭhita</em>),</li>
                 <li>назвал своё имя:</li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
@@ -177,7 +102,7 @@
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>10. Это — «Сутра о нисхождении в Ланку»,</li>
                 <li>воспетая прежними Буддами,</li>
-                <li>свободная от условных способов изложения,</li>
+                <li>свободная от метода наставления (<em>deśanā-naya</em>),</li>
                 <li>лежащая в сфере личного постижения.</li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
@@ -193,10 +118,10 @@
                 <li>возвестят этот же божественный метод (<em>naya</em>).</li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-                <li>13. Ведь город Ланка — божественный и прекрасный,</li>
-                <li>украшенный множеством драгоценностей,</li>
-                <li>с восточными склонами, прохладными и прекрасными,</li>
-                <li>осенённый сетями из драгоценных камней.</li>
+                <li>13. Ведь город Ланка — прекрасный и божественный,</li>
+                <li>украшенный всяческими драгоценными камнями,</li>
+                <li>с прохладными, очаровательными горными уступами,</li>
+                <li>над которыми раскинулись балдахины из драгоценных сетей.</li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>14. Здесь, Владыка, обитают якши,</li>
@@ -229,8 +154,7 @@
                 <li>18. Прими, великий Мудрец,</li>
                 <li>мой дворец и общество апсар,</li>
                 <li>разнообразные ожерелья</li>
-                <li>и прекрасные рощи ашоки.<a href="#citation-40" id="ref-40"
-                                               class="citation-mark"><sup>40</sup></a></li>
+                <li>и прекрасные рощи ашоки.<a href="#citation-40" id="ref-40" class="citation-mark"><sup>40</sup></a></li>
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>19. Я — исполнитель воли Будд и сынов Победителя.</li>
@@ -280,26 +204,26 @@
         <ul class="list-none mb-8 pl-2 space-y-1 ml-8">
             <li>24. Равана и другие,</li>
             <li>вместе с мудрыми сыновьями Победителя,</li>
-            <li>сопровождаемые апсарами,</li>
-            <li>исполняющими радостные танцы и песни,</li>
+            <li>сопровождаемые апсарами</li>
+            <li>с весельем и танцами</li>
             <li>направились в город.</li>
         </ul>
         <ul class="list-none mb-8 pl-2 space-y-1 ml-8">
             <li>25. Прибыв в прекрасный город,</li>
             <li>Он вновь получил подношения:</li>
             <li>Его почтили Равана и собрание якшей,</li>
-            <li>якшини, сыновья и дочери якшей,</li>
-            <li>украсив Его ажурными накидками из драгоценных камней.</li>
+            <li>якшини, сыновья и дочери якшей</li>
+            <li>поднесли ему сети из драгоценных камней.</li>
         </ul>
         <ul class="list-none mb-8 pl-2 space-y-1 ml-8">
-            <li>26. Равана возложил на главы</li>
-            <li>Благословенного и сыновей Победителя</li>
+            <li>26. Равана возложил на голову Будды</li>
+            <li>и на головы сыновей Победителя</li>
             <li>ожерелья, украшенные драгоценными камнями.</li>
         </ul>
         <ul class="list-none mb-8 pl-2 space-y-1 ml-8">
-            <li>27. Приняв подношения вместе с мудрыми сыновьями Победителя,</li>
-            <li>Благословенный явил Дхарму,<a href="#citation-41" id="ref-41"
-                                              class="citation-mark"><sup>41</sup></a></li>
+            <li>27. Приняв подношения </li>
+            <li>вместе с мудрыми сыновьями Победителя,</li>
+            <li>Благословенный явил Дхарму,<a href="#citation-41" id="ref-41" class="citation-mark"><sup>41</sup></a></li>
             <li>лежащую в сфере личного постижения.</li>
         </ul>
         <p class="text-center font-bold">***</p>
@@ -523,7 +447,8 @@
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
             <li>Этот путь, владыка Ланки,</li>
             <li>ведёт к обретению вселенской формы,<a href="#citation-78" id="ref-78" class="citation-mark"><sup>78</sup></a></li>
-            <li>пробуждает движение по пути собственного внутреннего постижения,<a href="#citation-79" id="ref-79" class="citation-mark"><sup>79</sup></a></li>
+            <li>пробуждает движение по пути</li>
+            <li>собственного внутреннего постижения,<a href="#citation-79" id="ref-79" class="citation-mark"><sup>79</sup></a></li>
             <li>является достижением Махаяны,</li>
             <li>ведёт к обретению высших ступеней (<em>bhūmi</em>).<a href="#citation-80" id="ref-80" class="citation-mark"><sup>80</sup></a></li>
         </ul>
@@ -539,7 +464,8 @@
         </ul>
 
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
-            <li>Поэтому, владыка Ланки, этот смысл должен быть тобой осмыслен —</li>
+            <li>Поэтому, владыка Ланки, этот смысл</li>
+            <li>должен быть тобой осмыслен —</li>
             <li>так, как ты размышлял, узрев Татхагату.</li>
             <li>Ибо именно таково видение Татхагаты.</li>
         </ul>
@@ -566,7 +492,7 @@
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>Того, чья мудрость постигается йогинами</li>
                 <li>в момент прямого йогического постижения,</li>
-                <li>при вхождении во врата самадхи, —</li>
+                <li>при вхождении во врата <em>самадхи</em>, —</li>
                 <li>благодаря такому постижению они и именуются «йогинами».<a href="#citation-84"
                     id="ref-84" class="citation-mark"><sup>84</sup></a></li>
             </ul>
@@ -580,7 +506,8 @@
             </ul>
             <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
                 <li>Пусть, узрев Его, я достигну того, что ещё не достигнуто;</li>
-                <li>а достигнутое — моё пребывание в недвойственном блаженном <em>самадхи</em> —</li>
+                <li>а достигнутое — моё пребывание</li>
+                <li>в недвойственном блаженном <em>самадхи</em> —</li>
                 <li>пусть возрастёт, приближая меня к ступеням стези Татхагаты.</li>
             </ul>
         </blockquote>
@@ -756,20 +683,24 @@
             <li>Это те «дхармы», которые лишены собственной природы,<a href="#citation-125" id="ref-125" class="citation-mark"><sup>125</sup></a></li>
             <li>у которых отсутствует проявление различающих признаков,<a href="#citation-126" id="ref-126" class="citation-mark"><sup>126</sup></a></li>
             <li>и которые не имеют причины.<a href="#citation-127" id="ref-127" class="citation-mark"><sup>127</sup></a></li>
-            <li>Их не-возникновение<a href="#citation-128" id="ref-128" class="citation-mark"><sup>128</sup></a> видится и как существующее, и как несуществующее (<em>bhūta-abhūtataḥ</em>).</li>
+            <li>Их не-возникновение<a href="#citation-128" id="ref-128" class="citation-mark"><sup>128</sup></a> видится и как существующее,</li>
+            <li>и как несуществующее (<em>bhūta-abhūtataḥ</em>).</li>
             <li>В этом и состоит оставление дхармы.</li>
         </ul>
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
             <li>И снова: какие ещё «дхармы» лишены собственной природы?</li>
-            <li>Это — рога зайца, рога верблюда, рога лошади, сын бесплодной женщины и подобные.</li>
+            <li>Это — рога зайца, рога верблюда, рога лошади,</li>
+            <li>сын бесплодной женщины и подобные.</li>
             <li>Поскольку они лишены собственной природы,</li>
             <li>их нельзя мыслить через признаки.<a href="#citation-129" id="ref-129" class="citation-mark"><sup>129</sup></a></li>
         </ul>
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
             <li>Их именуют только ради условного общения,<a href="#citation-130" id="ref-130" class="citation-mark"><sup>130</sup></a></li>
             <li>без привязанности — подобно тому, как именуют кувшины.</li>
-            <li>Подобно тому, как они не захватываются<a href="#citation-131" id="ref-131" class="citation-mark"><sup>131</sup></a> — поскольку сознанию не за что ухватиться, —</li>
-            <li>так же и все проявления различающего мышления<a href="#citation-132" id="ref-132" class="citation-mark"><sup>132</sup></a> подлежат оставлению.</li>
+            <li>Подобно тому, как они не захватываются<a href="#citation-131" id="ref-131" class="citation-mark"><sup>131</sup></a> —</li>
+            <li>поскольку сознанию не за что ухватиться, —</li>
+            <li>так же и все проявления различающего мышления<a href="#citation-132" id="ref-132" class="citation-mark"><sup>132</sup></a></li>
+            <li>подлежат оставлению.</li>
         </ul>
         <ul class="list-none mb-8 pl-2 space-y-1 ml-2">
             <li>Так совершается оставление и дхарм, и не-дхарм.</li>

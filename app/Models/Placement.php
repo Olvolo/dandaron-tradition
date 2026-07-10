@@ -173,7 +173,7 @@ class Placement extends Model
             $current = $parents[$current->parent_id];
         }
 
-        return $ancestors;
+        return $ancestors->reverse()->values();
     }
 
     public function isDescendantOf(Placement $placement): bool

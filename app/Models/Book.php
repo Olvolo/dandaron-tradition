@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Laravel\Scout\Searchable;
+use Illuminate\Support\Str;
 
 /**
  * @property mixed $authors
@@ -30,9 +31,10 @@ class Book extends Model
         'custom_styles',
         'is_protected',
         'background_image_url',
-        'custom_styles',
     ];
+
     protected $casts = ['is_protected' => 'boolean'];
+
     public function authors(): BelongsToMany
     {
         return $this->belongsToMany(Author::class, 'author_book');
@@ -42,8 +44,9 @@ class Book extends Model
     {
         return $this->hasMany(Chapter::class)->orderBy('order_column');
     }
+
     /**
-     * Определяет данные модели, которые должны индексироваться.
+     * Определяет данные модели для поискового индекса.
      */
     public function toSearchableArray(): array
     {
@@ -54,19 +57,34 @@ class Book extends Model
             'description' => strip_tags($this->description),
         ];
     }
+
     public function placement(): MorphOne
     {
         return $this->morphOne(Placement::class, 'placementable');
     }
-    public function getUrl()
+
+    public function getUrl(): string
     {
-        if ($this->placement) {
-            return url($this->placement->full_slug);
-        }
-        return '#';
+        return $this->placement ? url($this->placement->full_slug) : '#';
     }
-    public function getTypeName()
+
+    public function getTypeName(): string
     {
         return 'Книга';
+    }
+
+    /**
+     * Формирует очищенное описание для мета-тегов и Schema.org.
+     */
+    public function getSeoDescription(): string
+    {
+        // Приоритет: Аннотация -> Описание -> "Архив трудов"
+        $text = $this->annotation ?: $this->description ?: 'Архив трудов и исследований Dandaron Tradition.';
+
+        // Очистка от HTML-тегов, декодирование сущностей (например, &mdash;) и удаление лишних пробелов
+        $clean = trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($text))));
+
+        // Обрезаем до 155-160 символов для идеального отображения в поиске
+        return Str::limit($clean, 155);
     }
 }

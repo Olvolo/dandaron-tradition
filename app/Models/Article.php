@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Laravel\Scout\Searchable;
+use Illuminate\Support\Str;
 
 /**
  * @method static where(string $string, string $string1, $article_id)
@@ -18,6 +19,7 @@ use Laravel\Scout\Searchable;
  * @property mixed $annotation
  * @property mixed $content_html
  * @property mixed $id
+ * @property mixed $parent_id
  */
 class Article extends Model
 {
@@ -34,9 +36,10 @@ class Article extends Model
         'custom_styles',
         'is_protected',
         'background_image_url',
-        'custom_styles',
     ];
+
     protected $casts = ['is_protected' => 'boolean'];
+
     /**
      * Связь с родительской статьёй.
      */
@@ -52,6 +55,7 @@ class Article extends Model
     {
         return $this->hasMany(Article::class, 'parent_id');
     }
+
     /**
      * Авторы этой статьи.
      */
@@ -75,31 +79,31 @@ class Article extends Model
     {
         return $this->belongsToMany(Tag::class, 'article_tag');
     }
+
     /**
      * Определяет данные модели, которые должны индексироваться.
      */
     public function toSearchableArray(): array
     {
-        $content = $this->content_html ?? '';
         return [
             'id' => $this->id,
             'title' => $this->title,
             'annotation' => $this->annotation,
-            'content_html' => strip_tags($this->content_html),
+            'content_html' => strip_tags($this->content_html ?? ''),
         ];
     }
+
     public function placement(): MorphOne
     {
         return $this->morphOne(Placement::class, 'placementable');
     }
-    public function getUrl()
+
+    public function getUrl(): string
     {
-        if ($this->placement) {
-            return url($this->placement->full_slug);
-        }
-        return '#';
+        return $this->placement ? url($this->placement->full_slug) : '#';
     }
-    public function getTypeName()
+
+    public function getTypeName(): string
     {
         if ($this->parent_id) {
             $parentTitle = $this->parent ? $this->parent->title : 'Неизвестная книга';
@@ -108,12 +112,23 @@ class Article extends Model
 
         return 'Статья';
     }
+
     public function getFixedContentAttribute(): string
     {
-        // Убираем двойное экранирование
-        $fixed = html_entity_decode($this->content_html, ENT_QUOTES, 'UTF-8');
-        // На случай тройного экранирования (редко, но бывает)
-        $fixed = html_entity_decode($fixed, ENT_QUOTES, 'UTF-8');
-        return $fixed;
+        $fixed = html_entity_decode($this->content_html ?? '', ENT_QUOTES, 'UTF-8');
+        return html_entity_decode($fixed, ENT_QUOTES, 'UTF-8');
+    }
+
+    /**
+     * Формирует очищенное описание для мета-тегов и Schema.org.
+     */
+    public function getSeoDescription(): string
+    {
+        // Аннотация имеет приоритет, если её нет — берем контент
+        $text = $this->annotation ?: $this->content_html ?: 'Статья из архива Dandaron Tradition.';
+
+        $clean = trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($text))));
+
+        return Str::limit($clean, 155);
     }
 }
