@@ -28,11 +28,7 @@
     <div class="bg-white/80 p-2 rounded-lg shadow-lg">
         <h1 class="text-3xl text-center font-bold mb-4">{{ $chapter->title }}</h1>
 
-        <x-breadcrumbs :items="[
-            ['title' => 'Главная', 'url' => url('/')],
-            ['title' => $book->title, 'url' => $book->getUrl()],
-            ['title' => $chapter->title]
-        ]" />
+        <x-breadcrumbs :items="$breadcrumbs" />
 
         <div class="prose prose-lg max-w-none">
             {!! $chapter->content_html !!}

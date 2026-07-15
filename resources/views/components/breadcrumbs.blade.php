@@ -4,7 +4,7 @@
 ])
 
 @php
-if ($placement) {
+if ($items === null) {
     $items = [
         [
             'title' => 'Главная',
@@ -12,20 +12,37 @@ if ($placement) {
         ],
     ];
 
-    foreach ($placement->getAncestors() as $ancestor) {
-        if ($ancestor->full_slug !== '') {
-            $items[] = [
-                'title' => $ancestor->title,
-                'url' => url($ancestor->full_slug),
-            ];
+    if ($placement) {
+        foreach ($placement->getAncestors() as $ancestor) {
+            if ($ancestor->full_slug !== '') {
+                $items[] = [
+                    'title' => $ancestor->title,
+                    'url' => url($ancestor->full_slug),
+                ];
+            }
         }
-    }
 
-    $items[] = [
-        'title' => $placement->title,
-    ];
+        $items[] = [
+            'title' => $placement->title,
+        ];
+    }
 }
 @endphp
+
+@push('schema')
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => collect($items)->values()->map(fn($item, $index) => [
+        '@type' => 'ListItem',
+        'position' => $index + 1,
+        'name' => $item['title'],
+        'item' => $item['url'] ?? url()->current(),
+    ])->toArray(),
+], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+</script>
+@endpush
 
 <nav class="text-sm text-sky-700 mb-4" aria-label="Хлебные крошки">
     <ol class="flex flex-wrap gap-2">

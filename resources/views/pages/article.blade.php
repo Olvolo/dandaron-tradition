@@ -9,7 +9,7 @@
 
         $schema = [
             "@@context" => "https://schema.org",
-            "@type" => "Article",
+            "@@type" => "Article",
             "headline" => $article->title,
             "description" => $article->getSeoDescription(),
             "datePublished" => $article->created_at->toIso8601String(),
@@ -17,7 +17,7 @@
             "url" => $article->getUrl(),
             "author" => $authorData,
             "publisher" => [
-                "@type" => "Organization",
+                "@@type" => "Organization",
                 "name" => "Dandaron Tradition",
                 "url" => url('/')
             ],

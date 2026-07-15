@@ -12,9 +12,12 @@ class SitemapController extends Controller
     public function index()
     {
         // Главы
-        $chapters = Chapter::select('id', 'slug', 'updated_at')
+        $chapters = Chapter::select('id', 'slug', 'book_id', 'updated_at')
+            ->with(['book' => function ($query) {
+                $query->select('id', 'is_protected')->with('placement:id,placementable_id,placementable_type,full_slug');
+            }])
             ->get()
-            ->unique('slug')
+            ->filter(fn($chapter) => $chapter->book && !$chapter->book->is_protected && $chapter->book->placement)
             ->sortByDesc('updated_at');
 
         // Статьи

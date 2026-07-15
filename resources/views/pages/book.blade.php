@@ -61,7 +61,7 @@
 
         {{-- Вывод глав --}}
         @foreach($book->chapters->whereNull('parent_id')->sortBy('order_column') as $chapter)
-            @include('pages.partials.chapter-content', ['chapter' => $chapter, 'level' => 0])
+        @include('pages.partials.chapter-content', ['chapter' => $chapter, 'level' => 0])
         @endforeach
     </div>
 
@@ -101,4 +101,34 @@
             </div>
         </div>
     </template>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const headings = document.querySelectorAll('[data-chapter-url]');
+        if (headings.length === 0) return;
+
+        let currentUrl = null;
+
+        const observer = new IntersectionObserver((entries) => {
+        // Берём заголовок, который ближе всего к верху видимой области
+            const visible = entries
+                .filter(e => e.isIntersecting)
+                .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+            if (visible.length > 0) {
+                const url = visible[0].target.getAttribute('data-chapter-url');
+                if (url && url !== currentUrl) {
+                    currentUrl = url;
+                    history.replaceState(null, '', url);
+                }
+            }
+        }, {
+            // Точка срабатывания — заголовок считается "текущим",
+            // когда пересекает полосу в верхней трети экрана
+            rootMargin: '-15% 0px -80% 0px',
+            threshold: 0
+        });
+
+        headings.forEach(h => observer.observe(h));
+    });
+    </script>
 </x-layout>

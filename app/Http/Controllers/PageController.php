@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Book;
+use App\Models\Chapter;
 use App\Models\Placement;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,19 @@ class PageController extends Controller
     public function show(string $slug = null): View|RedirectResponse
     {
         $searchSlug = $slug ?? '';
-        $placement = Placement::where('full_slug', $searchSlug)->firstOrFail();
+        $placement = Placement::where('full_slug', $searchSlug)->first();
+
+        if (!$placement) {
+            // Прямого совпадения нет — пробуем разобрать путь как
+            // "{full_slug книги}/{slug главы}", отрезав последний сегмент.
+            $chapterResponse = $this->tryResolveChapter($searchSlug);
+
+            if ($chapterResponse) {
+                return $chapterResponse;
+            }
+
+            abort(404);
+        }
 
         if ($placement->is_protected && !Auth::check()) {
             return redirect()->route('login');
@@ -85,6 +98,66 @@ class PageController extends Controller
         return view('home', [
             'featured' => $featured,
             'content' => $homePlacement  // Передаем Placement напрямую
+        ]);
+    }
+
+    /**
+     * Пытается разобрать путь как адрес главы вида
+     * "{full_slug книги}/{slug главы}". Возвращает готовый View
+     * или редирект на логин, либо null, если это не глава.
+     */
+    protected function tryResolveChapter(string $searchSlug): View|RedirectResponse|null
+    {
+        $segments = explode('/', trim($searchSlug, '/'));
+
+        if (count($segments) < 2) {
+            return null;
+        }
+
+        $chapterSlug = array_pop($segments);
+        $bookSlug = implode('/', $segments);
+
+        $bookPlacement = Placement::where('full_slug', $bookSlug)->first();
+
+        if (!$bookPlacement || !($bookPlacement->placementable instanceof Book)) {
+            return null;
+        }
+
+        $book = $bookPlacement->placementable;
+
+        $chapter = $book->chapters()->where('slug', $chapterSlug)->first();
+
+        if (!$chapter) {
+            return null;
+        }
+
+        if ($book->is_protected && !Auth::check()) {
+            return redirect()->route('login');
+        }
+
+        $chapter->load('parent');
+
+        $query = request()->input('q') ?? session('last_search_query');
+        if ($query) {
+            $chapter = $this->highlightContent($chapter, $query);
+        }
+
+        $breadcrumbs = [
+            ['title' => 'Главная', 'url' => url('/')],
+            ['title' => $book->title, 'url' => $book->getUrl()],
+        ];
+
+        foreach ($chapter->getAncestors() as $ancestor) {
+            $breadcrumbs[] = ['title' => $ancestor->title, 'url' => $ancestor->getUrl()];
+        }
+
+        $breadcrumbs[] = ['title' => $chapter->title];
+
+        return view('pages.chapter', [
+            'chapter' => $chapter,
+            'book' => $book,
+            'content' => $chapter,
+            'breadcrumbs' => $breadcrumbs,
         ]);
     }
 

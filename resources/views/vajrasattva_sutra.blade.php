@@ -112,7 +112,7 @@
                 </blockquote>
                 <p>Затем посредством мантры Ṭаккīрāja пусть последовательно представит снаружи четыре ограды: железную, водную, огненную и ветровую.</p>
                 <p class="font-bold text-center italic my-4 text-2xl"><span class="text-red-700">ṭakki hūṁ jaḥ</span></p>
-                <p>Затем посредством слога <span class="font-bold italic text-red-700">BHRŪṀ</span>(<em>bhrūṁkāra</em>) пусть представит над железной оградой ваджрный свод (<em>vajrapañjara</em>), подобный чайтье; посредством трёхсложной мантры (<em>tryakṣara</em>) — защитный покров (<em>kavaca</em>); а посредством слога <span class="font-bold italic text-red-700">HŪṀ</span> (<em>hūṁkāra</em>) — основание, состоящее из двойных ваджров (<em>viśvavajra</em>).</p>
+                <p>Затем посредством слога <span class="font-bold italic text-red-700">BHRŪṀ</span> (<em>bhrūṁkāra</em>) пусть представит над железной оградой ваджрный свод (<em>vajrapañjara</em>), подобный чайтье; посредством трёхсложной мантры (<em>tryakṣara</em>) — защитный покров (<em>kavaca</em>); а посредством слога <span class="font-bold italic text-red-700">HŪṀ</span> (<em>hūṁkāra</em>) — основание, состоящее из двойных ваджров (<em>viśvavajra</em>).</p>
                 <p>Таким образом, совершив ограждение границ направлений, установив ваджрную ограду, ваджрный свод и прочие предписанные элементы, пусть созерцает защитный круг.</p>
                 <p>О достоинствах этого говорится в тринадцатой главе:</p>
                 <blockquote class="border-l-4 border-gray-500 pl-6 my-6 text-gray-800 text-xl">
@@ -232,10 +232,10 @@
                 <p>укрепит Дхармакаю (<em>dharmakāya</em>).</p>
                 <p>Об этом говорится в седьмой главе:</p>
                 <blockquote class="border-l-4 border-gray-500 pl-6 my-6 text-gray-800 text-xl">
-                    Пусть изольёт это из самаи<br>
-                    и согласно предписанию выпьет, стремясь к плоду;<br>
-                    пусть умертвит собрание Татхагат (<em>tathāgatavyūha</em>) —<br>
-                    и тогда в полной мере обретёт свершения (<em>siddhi</em>).
+                    <p>Пусть изольёт семя (<em>retaḥ</em>), происходящее из самаи (<em>samaya</em>),<br>
+                    и, согласно предписанию, выпьет его, стремясь к плоду.</p>
+                    <p>Пусть умертвит собрание Татхагат (<em>tathāgatavyūha</em>) —<br>
+                    и тогда в полной мере обретёт свершения (<em>siddhi</em>).</p>
                 </blockquote>
                 <p>Таким образом, омыв всю скверну клеш (<em>kleśamala</em>) посредством опоры на шуньяту (<em>śūnyatālambana</em>), пусть осуществит себя в образе Великой Печати Ваджрасаттвы (<em>vajrasattvamahāmudrā</em>) следующим образом.</p>
                 <p>Из высшей реальности (<em>paramārthasatya</em>) возникает солнечная мандала; над ней — лунная мандала; над ней — красный восьмилепестковый лотос. На лотосе, поместив один над другим три слога — <span class="font-bold italic text-red-700">OṀ</span>, <span class="font-bold italic text-red-700">ĀḤ</span>, <span class="font-bold italic text-red-700">HUṀ</span>, — и затем свернув всё воедино (<em>saṁhṛtya</em>), пусть созерцает «только-ум» (<em>cittamātra</em>), преобразившийся в форму полной лунной мандалы. Внутрь него пусть вместит весь мир — движущийся и неподвижный (<em>sthāvarajaṅgama</em>). Затем посредством мантры, изложенной в третьей главе:</p>
@@ -631,7 +631,7 @@
         </div>
         <h2 class="text-center mt-6 mb-4 text-xl font-bold">(VII. Колофон)</h2>
         <div>
-            <p>В «Славной Гухьясамаджа-махайога-тантре» (<em>Śrī Guhyasamāja Mahāyogatantra</em>) завершена «Сутра об осуществлении Ваджрасаттвы» (<em>Vajrasattvaniṣpādanasūtra</em>), изложенная в соответствии с методом последовательности возникновения.</p>
+            <p>Завершена «Сутра об осуществлении Ваджрасаттвы» (<em>Vajrasattvaniṣpādanasūtra</em>) традиции «Славной Гухьясамаджа-махайога-тантры» (<em>Śrī Guhyasamāja Mahāyogatantra</em>), посвящённая последовательности возникновения (<em>bhavotpattikrama</em>).</p>
             <p class="text-right italic text-gray-800 mt-4">Сочинение это принадлежит учителю Чандракирти.<a href="#citation-18" id="ref-18" class="citation-mark"><sup>18</sup></a></p>
         </div>
     </div>
@@ -663,7 +663,6 @@
         </style>
         <!-- БЛОК ПРИМЕЧАНИЯ №1 -->
         <div id="citation-1" class="citation-block my-8 border border-sky-200/60 rounded-2xl bg-sky-50/40 backdrop-blur-sm shadow-sm p-3 space-y-2">
-
             <div class="flex items-center justify-between pb-2 border-b border-sky-200/60">
                 <span class="text-lg font-semibold text-sky-900">Примечание 1</span>
                 <a href="#ref-1" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
@@ -685,10 +684,9 @@
                     <p>namo vajrasattvāya||</p>
                     <p>buddhayānābhisamayagotrāḥ prāvacanikāḥ kalyāṇamitraprasaṅgād vajrayānam āruhya kalpitadevatāyogasamādhisamāpannāḥ ṣaṭkoṭivyākhyābahirmukhā vajrācāryamārādhya yathārutaśabdārthadvāreṇa śrīguhyasamājamahāyogatantraṁ śrutvā bālaprabodhanārthaṁ tantrāduddhṛtya yathāprāptopadeśānusāreṇa kalpitadevatāyogasya nānāśabdaracanāviśeṣeṇa sādhanāṅgānyapi kurvanti||</p>
                     <p>tatra kecidvajrācāryāścandravajrakrameṇa vajrasattvaniṣpattiṁ kalpayanti| kecidbhavotpattikrameṇa| kecitpañcākārābhisambodhikrameṇa| kecijjhaṭitikrameṇa vajrasattvaniṣpattiṁ kalpayanti||</p>
-                    <p>māṇḍaleyadevatāstu kecittrayodaśecchanti| kecidūnaviṁśati| kecitpañcaviṁśatidevatānyāsamicchanti||</p>
+                    <p>māṇḍaleyadevatāstu kecittrayodaśecchanti| kecidūnaviṁśati| kecitpañcaviṁśatidevatānyāsamicchanti||</p><a href="#ref-1" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
             <!-- 1.2. Тибетский -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -707,10 +705,9 @@
                     <p>| dpal 'jam pa'i rdo rje la phyag 'tshal lo |</p>
                     <p>| sangs rgyas kyi theg pa mngon par rtogs pa'i rigs can | gsung rab 'chad pa'i dge ba'i bshes gnyen dang phrad pa las rdo rje theg par zhugs nas | rtogs pa'i rnal 'byor gyi ting nge 'dzin la snyoms par 'jug cing | mtha' drug gi bshad pa las kha phyir bltas pa'i rdo rje slob dpon bsnyen bkur byas na sgra ji bzhin pa'i don gyi sgo nas | dpal gsang ba 'dus pa rnal 'byor chen po'i rgyud thos nas byis pas rtogs par bya ba'i don du rgyud nas btus nas | ji ltar thob pa'i man ngag gi rjes su 'brangs nas rtog pa lha'i rnal 'byor gyi sgrub thabs la sogs pa sgra sna tshogs bkod pa'i khyad par gyi lung gi rjes su byed do |</p>
                     <p>de la slob dpon kha cig zla ba dang rdo rje'i rim pas rdo rje sems dpa' rdzogs par rtog go | kha cig ni srid pa skye ba'i rim pas so | kha cig ni mngon par byang chub pa lnga'i rim pas so | kha cig ni skad cig bzhi'i rim pas rdo rje sems dpa' rdzogs par rtog go |</p>
-                    <p>dkyil 'khor pa'i lha yang kha cig ni bcu gsum par 'dod do | kha cig ni bcu dgur 'dod do | kha cig ni lha nyi shu rtsa lngar dgod par 'dod do |</p>
+                    <p>dkyil 'khor pa'i lha yang kha cig ni bcu gsum par 'dod do | kha cig ni bcu dgur 'dod do | kha cig ni lha nyi shu rtsa lngar dgod par 'dod do |</p><a href="#ref-1" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
             <!-- 1.3. Лексический разбор -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -764,10 +761,9 @@
                         <li><strong class="text-sky-900">nyāsa</strong> — «размещение», «установление», «водружение»; тиб. <em>dgod pa</em> — «размещать», «устанавливать», «располагать». Технический термин тантрийской практики: ритуальное или медитативное размещение божеств, слогов или символов в определённых точках мандалы, тела или визуализируемого пространства.</li>
                         <li><strong class="text-sky-900">devatānyāsa</strong> — «размещение божеств».</li>
                         <li><strong class="text-sky-900">evam</strong> — «таким образом», «так»; подводящее итог наречие, закрывающее описание разнообразия традиций.</li>
-                    </ul>
+                    </ul><a href="#ref-1" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
             <!-- 1.4. Комментарий -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -783,24 +779,18 @@
                 </summary>
                 <div class="bg-white/70 p-4 text-lg leading-relaxed text-sky-900 space-y-3">
                     <p>Во вступлении Чандракирти описывает разнообразие индийской традиции Гухьясамаджи. Он не ставит под сомнение авторитет других наставников, признавая их посвящения, опыт созерцания и достижения. Однако различные линии передачи по-разному излагали стадию зарождения, что привело к появлению многочисленных садхан, комментариев (<em>ṭīkā</em>) и пояснительных руководств (<em>pañjikā</em>), основанных на отдельных разделах тантры.</p>
-
                     <p>Автор перечисляет четыре основные крамы: последовательность Луны и Ваджры (<em>candravajrakrama</em>), последовательность возникновения бытия (<em>bhavotpattikrama</em>), последовательность пробуждения через пять аспектов (<em>pañcākārābhisambodhikrama</em>) и мгновенную последовательность (<em>jhaṭitikrama</em>). В данной линии передачи они соотносятся с четырьмя способами рождения существ, известными буддийской космологии: рождением из влаги (<em>saṃsvedaja</em>), из утробы (<em>jarāyuja</em>), из яйца (<em>aṇḍaja</em>) и самопроизвольным возникновением (<em>upapāduka</em>). Тем самым стадия зарождения рассматривается как преобразование всех возможных способов сансарического возникновения в путь пробуждения.</p>
-
                     <p>Различия касались не только методов созерцания, но и структуры самой мандалы. Одни школы использовали мандалы из тринадцати божеств, другие — из девятнадцати, третьи — из двадцати пяти. Эти числа обозначают конкретные канонические варианты, существовавшие в различных ветвях традиции Гухьясамаджи.</p>
-
-                    <p>Уже здесь автор намечает и другую причину расхождений — различные способы понимания самой тантры. Одни наставники ограничивались буквальным смыслом текста (<em>yathārutaśabdārtha</em>), тогда как Арья-линия связывала правильное понимание Гухьясамаджи с методом толкования посредством шести пределов (<em>ṣaṭkoṭivyākhyā</em>). Эта тема становится центральной в следующем разделе.</p>
+                    <p>Уже здесь автор намечает и другую причину расхождений — различные способы понимания самой тантры. Одни наставники ограничивались буквальным смыслом текста (<em>yathārutaśabdārtha</em>), тогда как Арья-линия связывала правильное понимание Гухьясамаджи с методом толкования посредством шести пределов (<em>ṣaṭkoṭivyākhyā</em>). Эта тема становится центральной в следующем разделе.</p><a href="#ref-1" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
         </div>
         <!-- БЛОК ПРИМЕЧАНИЯ №2 -->
         <div id="citation-2" class="citation-block my-8 border border-sky-200/60 rounded-2xl bg-sky-50/40 backdrop-blur-sm shadow-sm p-5 space-y-3">
-
             <div class="flex items-center justify-between pb-2 border-b border-sky-200/60">
                 <span class="text-lg font-semibold text-sky-900">Примечание 2</span>
-                <a href="#ref-1" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
+                <a href="#ref-2" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
             </div>
-
             <!-- 2.1. Санскрит -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -819,10 +809,9 @@
                     <p>tatra vajrayānābhiprasannāḥ śraddhānusāreṇa tattatsampradāyaṁ prāpya śrutacintā-bhāvanākrameṇa kalpitadevatāyogamabhyasyanti||</p>
                     <p>imamarthavaśaṁ jñātvā mayā śrīnāgārjunapādaparamparayā samājavyākhyā-tantrānusāreṇa ṣaṭkotivyākhyādvāreṇa tantraṁ śrutvā kramadvayamadhigamya nānāprakārotpattikramābhiniviṣṭānām utpattikrama-sādhanā-niḥsandehārtham ā saptadaśapaṭalādastavyastavajrasattvaniṣpattisūtraṁ krameṇoddhṛtya melāpakaḥ kriyate||</p>
                     <p>tatra tāvatsādhanaśravaṇānupūrvīkramaḥ pradarśayate-mantrāvadhāraṇaṁ pūrvaṁ dvitīyaṁ nyāsadeśanā|</p>
-                    <p>vyavastholistṛtīyā tu caturthaṁ tattvadarśanam||</p>
+                    <p>vyavastholistṛtīyā tu caturthaṁ tattvadarśanam||</p><a href="#ref-2" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
             <!-- 2.2. Тибетский -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -840,10 +829,9 @@
                     <p>de ltar rgyud 'dir rgyud sna tshogs pa la brten nas / rdo rje sems dpa' la sogs pa lha'i sku rdzogs par byed do / de'i rjes su 'brangs nas yang 'grel bshad dang / dka' 'grel la sogs pa byas nas gdul bar bya ba'i skye bo'i don du ston par byed do //</p>
                     <p>de la rdo rje theg pa la mngon par mos pa dang dad pa'i rjes su 'brang bas de kho na nyid kyi brgyud pa thob nas / thos pa dang bsam pa dang bsgom pa'i rim pas rtog pa'i lha'i rnal 'byor la goms par byed do //</p>
                     <p>don gyi dbang 'di dag rtogs nas bdag gis 'phags pa dpal klu sgrub kyi zhal snga nas kyi brgyud pa las 'dus pa bshad pa'i rgyud kyi rjes su 'brangs pa'i mtha' drug gi bshad pa'i sgo nas rgyud thos shing rim pa gnyis rtogs nas / sna tshogs pa'i bskyed pa'i rim pa la mngon par zhen pa rnams kyi rim pa'i sgrub pa'i thabs la the tshom med par bya ba'i don du / rdo rje sems dpa' bskyed pa nas le'u bcu bdun pa la thug pa mdo rim par btus shing bsdu bar bya'o //</p>
-                    <p>de la re zhig sgrub pa'i rim pa bstan te / sngags kyi nges pa dang po ste / gnyis pa dgod pa bstan pa'o / rnam par gzhag pa yang gsum ste / bzhi pa de nyid bstan pa'o /</p>
+                    <p>de la re zhig sgrub pa'i rim pa bstan te / sngags kyi nges pa dang po ste / gnyis pa dgod pa bstan pa'o / rnam par gzhag pa yang gsum ste / bzhi pa de nyid bstan pa'o /</p><a href="#ref-2" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
             <!-- 2.3. Лексический разбор -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -899,10 +887,9 @@
                         <li><strong class="text-sky-900">nyāsadeśanā</strong> — «наставление о размещении»; <em>nyāsa</em> («размещение», «установление») + <em>deśanā</em> («наставление», «указание», «учение»); тиб. <em>dgod pa bstan pa</em> — «наставление о расположении / размещении». Второй шаг — получение наставления о том, как размещать мантры, слоги и образы в структуре мандалы и тела.</li>
                         <li><strong class="text-sky-900">vyavastholī</strong> — составной термин позднего тантрийского санскрита: <em>vyavasthā</em> («установление», «упорядочение», «расписание») + суффикс <em>-olī</em> / <em>-ulī</em>, характерный для позднего санскрита под влиянием пракритов и местных диалектов, со значением «серия», «последовательность», «свод». Таким образом, <em>vyavastholī</em> означает «свод установленных правил» или «последовательное изложение порядка практики». Тибетский переводчик передаёт термин через <em>rnam par gzhag pa</em> («систематическое упорядочение»).</li>
                         <li><strong class="text-sky-900">tattvadarśana</strong> — «постижение подлинной природы», «видение таттвы»; <em>tattva</em> («таковость», «подлинная природа», «то, чем нечто является в действительности», «истинность», «подлинность») + <em>darśana</em> («видение», «постижение», «непосредственное усмотрение»); тиб. <em>de nyid bstan pa</em> — «указание на таковость», «раскрытие таковости». Примечательно расхождение: санскрит говорит о <em>darśana</em> — «видении», то есть о постижении со стороны практикующего, тогда как тибетский говорит о <em>bstan pa</em> — «указании», «раскрытии» — то есть акцентирует роль наставника, который раскрывает таковость ученику. То есть санскрит ориентирован на результат практики, тибетский — на совершение передачи.</li>
-                    </ul>
+                    </ul><a href="#ref-2" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
-
             <!-- 2.4. Комментарий -->
             <details class="rounded-xl border border-sky-200/50 overflow-hidden">
                 <summary class="flex items-center justify-between px-4 py-2.5 bg-sky-100/60 hover:bg-sky-100 transition-colors">
@@ -918,14 +905,11 @@
                 </summary>
                 <div class="bg-white/70 p-4 text-lg leading-relaxed text-sky-900 space-y-3">
                     <p>После описания существующего многообразия традиций Чандракирти определяет собственное место внутри этой традиции. Он подчёркивает, что следует линии досточтимого Нагарджуны, опирается на объяснительные тантры Гухьясамаджи, получил передачу метода толкования посредством шести пределов (<em>ṣaṭkoṭivyākhyā</em>) и постиг обе стадии пути (<em>kramadvaya</em>). Благодаря этому автор считает возможным предложить собственное систематическое изложение стадии зарождения.</p>
-
                     <p>Главной задачей сочинения становится объединение наставлений, рассеянных по семнадцати главам Гухьясамаджа-тантры, в единый систематический свод. Именно поэтому своё произведение Чандракирти называет <em>melāpaka</em> — «сводом», «собранием». Его цель — устранить сомнения относительно стадии зарождения (<em>utpattikrama</em>), возникавшие вследствие существования различных линий передачи и способов объяснения.</p>
-
-                    <p>Завершается введение краткой программой всего сочинения. Чандракирти выделяет четыре этапа освоения садханы: установление мантры (<em>mantrāvadhāraṇa</em>), наставление о размещении божеств (<em>nyāsadeśanā</em>), последовательное развёртывание практики (<em>vyavastholī</em>) и видение подлинной природы (<em>tattvadarśana</em>).</p>
+                    <p>Завершается введение краткой программой всего сочинения. Чандракирти выделяет четыре этапа освоения садханы: установление мантры (<em>mantrāvadhāraṇa</em>), наставление о размещении божеств (<em>nyāsadeśanā</em>), последовательное развёртывание практики (<em>vyavastholī</em>) и видение подлинной природы (<em>tattvadarśana</em>).<a href="#ref-2" class="text-sky-500 hover:text-sky-900 text-sm font-medium">↩ к тексту</a></p>
                 </div>
             </details>
-
-        </div>
+    </div>
         <!-- БЛОК ПРИМЕЧАНИЯ №3 -->
         <div id="citation-3" class="citation-block my-8 border border-sky-200/60 rounded-2xl bg-sky-50/40 backdrop-blur-sm shadow-sm p-5 space-y-3">
             <div class="flex items-center justify-between pb-2 border-b border-sky-200/60">
@@ -950,7 +934,7 @@
                     <p>tataḥ sādhako mahāṭavyādimano'nukūlapradeśe pūrvobhimukhaḥ sattvaparyaṅkeṇopaviśya sarvasattveṣu mahākaruṇācittamutpādya svaparahitahetorvakṣyamāṇakrameṇa vajrasattvapadaṁ sādhayet|</p>
                     <p>asya sūtraṁ dvādaśapaṭale—</p>
                     <p>mahāṭavīpradeśeṣu phalapuṣpādyalaṅkṛte|</p>
-                    <p>parvate vijane sādhyaṁ sarvasiddhisamuccayam||</p>
+                    <p>parvate vijane sādhyaṁ sarvasiddhisamuccayam||</p><a href="#ref-3" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 3.2. Тибетский -->
@@ -970,7 +954,7 @@
                     <p>zhes bya ba 'i rim pas sgrub pa 'i thabs thos nas / rdo rje bla ma 'i gnang pa thob nas / rang gi ' dod pa 'i lha 'i mdun du arga phul te</p>
                     <p>de nas sgrub pa po dgon pa chen po la sogs pa 'i yid dang rjes su mthun pa 'i gnas su shar du mngon par phyogs pas sems dpa 'i skyil krung gis mnyam par gnas te sems can thams cad la snying rje chen po 'i sems bskyed la ' chad par ' gyur ba 'i rim pas bdag dang gzhan la phan pa 'i rdo rje sems dpa 'i go ' phang bsgrub par bya ' o</p>
                     <p>de'i don ni le'u bcu gnyis pa las /</p>
-                    <p>dgon pa chen po 'i sa phyogs ni / me tog ' bras bu sogs kyis brgyan / ri bo dben pa dag tu ni / dngos grub thams cad bsdus pa ' grub /</p>
+                    <p>dgon pa chen po 'i sa phyogs ni / me tog ' bras bu sogs kyis brgyan / ri bo dben pa dag tu ni / dngos grub thams cad bsdus pa ' grub /</p><a href="#ref-3" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 3.3. Лексический разбор -->
@@ -1019,7 +1003,7 @@
                         <li><strong class="text-sky-900">vijana</strong> — «безлюдный», «уединённый»; <em>vi</em> (отрицательный префикс) + <em>jana</em> («люди»); тиб. <em>dben pa</em> — «уединённый», «пустынный». Уединённость — необходимое условие тантрийской практики: отсутствие посторонних защищает как саму практику, так и непосвящённых.</li>
                         <li><strong class="text-sky-900">sādhya</strong> — от <em>sādh</em> («осуществлять»); «то, что должно быть осуществлено», «следует осуществлять»; тиб. <em>' grub</em> — «осуществляется», «достигается». Тибетский переходит от предписания (<em>sādhyam</em> — «следует осуществлять») к утверждению результата (<em>' grub</em> — «осуществляется»): не «следует делать», а «[это] достигается» — то есть тибетский акцентирует гарантированность результата при соблюдении условий.</li>
                         <li><strong class="text-sky-900">sarvasiddhisamuccaya</strong> — «совокупность всех свершений»; <em>sarva</em> («все») + <em>siddhi</em> («свершение», «достижение», «сверхобычная способность») + <em>samuccaya</em> («совокупность», «собрание», «полнота»); тиб. <em>dngos grub thams cad bsdus pa</em> — «собрание всех свершений». <em>Siddhi</em> в тантрийском контексте обозначает как обычные достижения практики — сверхобычные способности, знания (<em>abhijñā</em>), так и высшее свершение (<em>paramārthasiddhi</em>) — полное пробуждение. Здесь, по всей видимости, имеется в виду второе: в правильном месте, при правильных условиях осуществляется полнота всех плодов практики.</li>
-                    </ul>
+                    </ul><a href="#ref-3" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 3.4. Комментарий -->
@@ -1039,7 +1023,7 @@
                     <p>Данный фрагмент открывает собственно практическую часть трактата. После объяснения цели сочинения Чандракирти переходит к непосредственному изложению садханы, начиная с порядка получения наставлений. Это соответствует классической буддийской триаде <em>śruta – cintā – bhāvanā</em> («слушание — размышление — созерцание»): прежде чем практиковать, необходимо правильно услышать и усвоить учение.</p>
                     <p>Четырёхчастная последовательность — <em>mantrāvadhāraṇa</em>, <em>nyāsadeśanā</em>, <em>vyavastholī</em> и <em>tattvadarśana</em> — представляет собой программу всего последующего трактата. Практика развивается от освоения мантры и ритуальной структуры к систематизации всего процесса и завершается непосредственным постижением подлинной природы реальности.</p>
                     <p>Сначала требуется получить наставления и разрешение ваджрного наставника, что подчёркивает принцип передачи через линию преемственности. Далее перечисляются внешние и внутренние условия медитации: подходящее место, правильная ориентация, устойчивая поза и мотивация бодхисаттвы.</p>
-                    <p>Уже на первой стадии практики автор подчёркивает, что осуществление Ваджрасаттвы совершается ради блага всех существ, и садхана Гухьясамаджи рассматривается как часть пути бодхисаттвы.</p>
+                    <p>Уже на первой стадии практики автор подчёркивает, что осуществление Ваджрасаттвы совершается ради блага всех существ, и садхана Гухьясамаджи рассматривается как часть пути бодхисаттвы.</p><a href="#ref-3" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
 
@@ -1072,7 +1056,7 @@
                     <p>tataḥ prathamapaṭaloktajñānapradīpavajrasamādhinyāyena vajradhṛg iti mantram uccārya tena akṣobhyarūpaṁ kṛṣṇavarṇaṁ trimukhaṁ ṣaḍbhujam ātmapuraḥsthaṁ dṛṣṭvā |</p>
                     <p>punas taṁ svakāye kṣīrodakanyāyena anupraveśya indranīlavarṇam ātmānaṁ dveṣavajrarūpaṁ dhyāyāt |</p>
                     <p>asya sūtraṁ prathamapaṭale —</p>
-                    <p>asya sūtraṁ prathamapaṭale — sarvatathāgatakāyavākcittavidyāpuruṣo 'kṣobhyamahāmudrāsaṁyogaparamapadaiḥ kṛṣṇasitaraktākāreṇa sarvatathāgatakāyavākcittavajrasya sarvatathāgatakāyavākcittavajre niṣīdayāmāsa iti ||</p>
+                    <p>asya sūtraṁ prathamapaṭale — sarvatathāgatakāyavākcittavidyāpuruṣo 'kṣobhyamahāmudrāsaṁyogaparamapadaiḥ kṛṣṇasitaraktākāreṇa sarvatathāgatakāyavākcittavajrasya sarvatathāgatakāyavākcittavajre niṣīdayāmāsa iti ||</p><a href="#ref-4" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 4.2. Тибетский -->
@@ -1095,7 +1079,7 @@
                     <p>'od zer sprin gyi tshogs chen po / sangs rgyas 'bar bar 'dra ba'i 'od /</p>
                     <p>de nas le'u dang po las gsungs pa /</p>
                     <p>ye shes sgron ma rdo rje'i ting nge 'dzin gyi tshul gyis badzra d+h+r-ika ces bya ba'i sngags brjod la des mi bskyod pa'i sku nag po zhal gsum pa / phyag drug pa / bdag nyid kyi mdun du gnas par bltas nas bdag nyid kyi lus la chu dang 'o ma'i tshul gyis rjes su zhugs pas bdag nyid in+d+ra nI la'i mdog can zhe sdang rdo rje'i skur bsgoms te 'di'i mdo ni le'u dang po las /</p>
-                    <p>de bzhin gshegs pa thams cad kyi sku dang gsung dang thugs rig pa'i skyes bu mi bskyod pa'i phyag rgya chen por sbyor ba'i go 'phang mchog gis nag po dkar po dmar po'i rnam pas de bzhin gshegs pa thams cad kyi sku dang gsung dang thugs rdo rje'i de bzhin gshegs pa thams cad kyi sku dang gsung dang thugs rdo rje la bzhugs te</p>
+                    <p>de bzhin gshegs pa thams cad kyi sku dang gsung dang thugs rig pa'i skyes bu mi bskyod pa'i phyag rgya chen por sbyor ba'i go 'phang mchog gis nag po dkar po dmar po'i rnam pas de bzhin gshegs pa thams cad kyi sku dang gsung dang thugs rdo rje'i de bzhin gshegs pa thams cad kyi sku dang gsung dang thugs rdo rje la bzhugs te</p><a href="#ref-4" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 4.3. Лексический разбор -->
@@ -1160,7 +1144,7 @@
                         <li><strong class="text-sky-900">kṛṣṇasitarakta</strong> — «тёмный, белый и красный»; тиб. <em>nag po dkar po dmar po</em> — «чёрный, белый, красный». Три цвета соответствуют триаде Тело-Речь-Ум. Это стандартная цветовая символика традиции Гухьясамаджи.</li>
                         <li><strong class="text-sky-900">ākāra</strong> — «облик», «форма», «вид»; <em>kṛṣṇasitaraktākāra</em> — «в облике тёмного, белого и красного»; тиб. <em>rnam pa</em> — «облик», «аспект», «форма».</li>
                         <li><strong class="text-sky-900">niṣīdayāmāsa</strong> — от <em>ni-sad</em> («сидеть») — «усаживать», «водворять», «помещать»; <em>niṣīdayāmāsa</em> = «водворил», «усадил», «поместил»; тиб. <em>bzhugs te</em> — «пребывая», «войдя». Тибетский переводит иначе: не «водворил», а «пребывая». В санскрите <em>vidyāpuruṣa</em> активно «водворяет» кого-то куда-то, в тибетском он скорее «вошёл и пребывает» в ваджре Тела-Речи-Ума.</li>
-                    </ul>
+                    </ul><a href="#ref-4" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 4.4. Комментарий -->
@@ -1250,7 +1234,7 @@
                     </div>
                     <p>Фраза «Ваджр в Ваджр» описывает акт введения проявленного божества в Ваджр Тела, Речи и Ума Великого Ваджрадхары. Грамматически санскритский текст использует сочетание родительного падежа (<em>vajrasya</em>) и местного падежа (<em>vajre</em>), а Чандракирти в <em>Pradīpodyotana</em> (в тибетском переводе этого сочинения) передаёт смысл этого оборота глаголом <em>zhugs</em> («вошёл»), понимая его как вхождение в Ваджр Тела, Речи и Ума Великого Ваджрадхары. Тем самым речь не идёт о пространственном перемещении между двумя различными объектами, подразумевается введение проявленного божества в Ваджр Тела, Речи и Ума Великого Ваджрадхары, что выражает их нераздельность.</p>
                     <p>Три цвета обозначают трёхликую форму каждого из пяти Татхагат. Центральный цвет соответствует собственному семейству данного Будды, тогда как два остальных выражают его внутреннюю связь с другими семействами и показывают, что каждое семейство содержит в себе всю полноту мандалы.</p>
-                    <p>Таким образом, краткая цитата Чандракирти отсылает к развёрнутому описанию первой главы коренной тантры и предполагает, что читатель уже знаком с полной последовательностью возникновения пяти семейств Будд. Вне ритуального контекста первой главы выражение «водворить Ваджр в Ваджр» остаётся непонятным.</p>
+                    <p>Таким образом, краткая цитата Чандракирти отсылает к развёрнутому описанию первой главы коренной тантры и предполагает, что читатель уже знаком с полной последовательностью возникновения пяти семейств Будд. Вне ритуального контекста первой главы выражение «водворить Ваджр в Ваджр» остаётся непонятным.</p><a href="#ref-4" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -1303,7 +1287,7 @@
                     <p>abhāve bhāvanābhāvo bhāvanā naiva bhāvanā |</p>
                     <p>iti bhāvo na bhāvaḥ syād bhāvanā nopalabhyate ||</p>
                     <p>iti |</p>
-                    <p>iyam api paramā rakṣā ||</p>
+                    <p>iyam api paramā rakṣā ||</p><a href="#ref-5" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 5.2. Тибетский -->
@@ -1345,7 +1329,7 @@
                     <p>'di'i phan yon gyi mdo ni le'u bcu gsum pa las/_bsam gtan gang gis yi dam ni| |gnas gang du ni mnyam spyod pa| |bsam gtan sbyor ba 'di yis ni| |gnas nas sangs rgyas byin gyis rlob| |ces bya'o||</p>
                     <p>de nas le'u gnyis pa las gsungs pa'i byang chub sems kyi tshigs bcad kyis srung ba'i 'khor lo dang| khams gsum yang de bzhin nyid du gzhug par bya'o||</p>
                     <p>|de la tshigs bcad 'di yin te| |dngos po med pa sgom du med| |bsgom par bya ba bsgom pa med| |de ltar dngos dang dngos med pa'I bsgom pa dmigs su med pa'o|| zhes bya'o||</p>
-                    <p>'di yang don dam pa'i srung ba'o||</p>
+                    <p>'di yang don dam pa'i srung ba'o||</p><a href="#ref-5" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 5.3. Лексический разбор -->
@@ -1510,7 +1494,7 @@
                         <li><strong class="text-sky-900">api</strong> — усилительная частица «также», «тоже», «даже»; тиб. <em>yang</em> — «также», «тоже». Частица <em>api</em> здесь принципиальна: «также есть высшая защита» — то есть введение в таковость является защитой наряду с внешним защитным кругом, описанным ранее, но более высокого уровня.</li>
                         <li><strong class="text-sky-900">paramā</strong> — от <em>parama</em> («высший», «предельный», «наивысший»); «высшая»; тиб. <em>don dam pa</em> — «высшая», «относящаяся к абсолютной истине». <em>don dam pa</em> — стандартный тибетский термин для <em>paramārtha</em> («абсолютная истина», «высший смысл»). Тем самым тибетский делает явным то, что в санскрите лишь подразумевается: «высшая защита» — это защита на уровне абсолютной истины, в отличие от внешнего <em>rakṣācakra</em>, который является защитой на уровне относительной истины.</li>
                         <li><strong class="text-sky-900">rakṣā</strong> — «защита», «охрана»; тиб. <em>srung ba</em> — «защита», «охрана».</li>
-                    </ul>
+                    </ul><a href="#ref-5" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 5.4. Комментарий -->
@@ -1583,7 +1567,7 @@
                     <p>Первая строка гатхи говорит: «При отсутствии [чего-либо] отсутствует и созерцание». Речь идёт об отсутствии независимой опоры для созерцания. Пока существует представление о существующем объекте, сохраняется и представление о созерцающем его субъекте. Когда же такая опора не обнаруживается, исчезает и двойственное понимание самого процесса созерцания. Далее говорится: «Созерцание вовсе не является созерцанием». Здесь отвергается привычное представление о практике как о действии, совершаемом самостоятельным субъектом по отношению к самостоятельному объекту, полностью исключающее такое двойственное видение. И сам упоминаемый процесс «созерцания» есть не более чем обозначение. Нет никакого независимо существующего явления «созерцания».</p>
                     <p>Следующая строка продолжает ту же мысль: «Так и явление не может быть явлением». Слово <em>bhāva</em> в данном контексте сохраняет свою многозначность, объединяя значения «явление», «наличное» и «существующее». Речь идёт об отсутствии независимо установленной реальности, за которую могло бы ухватиться мышление, при полном сохранении живого опыта. Поэтому заключительные слова — «само созерцание не обнаруживается» — указывают на прекращение всякой попытки сделать созерцание предметом нового цепляния.</p>
                     <p>Именно после этого следует фраза: «Это также есть высшая защита» (<em>iyam api paramā rakṣā</em>). Частица <em>api</em> («также») показывает, что созерцание таковости сохраняет уже построенный защитный круг. Внешняя защита и постижение её истинной природы принадлежат одному процессу. Сначала внимание собирается посредством образов, мантр и защитных сооружений; затем исчезает представление об их самостоятельном существовании. Благодаря этому защита перестаёт зависеть от усилия удерживать построенные образы и получает своё завершение в непосредственном видении таковости.</p>
-                    <p><strong>Послесловие.</strong> Хотя текст не проводит подобных сопоставлений, построение защитного пространства невольно вызывает ассоциацию с традиционным кочевым жилищем Центральной Азии: ваджрная решётка, защитный покров и ваджрное основание вместе образуют завершённое сакральное пространство, подобно тому как каркас, войлочное покрытие и основание образуют единое жилище. Подобная аналогия особенно естественна в тибето-монгольской культурной среде, где дворец божества воспринимается как космологическая схема и одновременно как место пребывания божества и самого практикующего; однако такое сопоставление носит исключительно иллюстративный характер и не выводится непосредственно из текста садханы.</p>
+                    <p><strong>Послесловие.</strong> Хотя текст не проводит подобных сопоставлений, построение защитного пространства невольно вызывает ассоциацию с традиционным кочевым жилищем Центральной Азии: ваджрная решётка, защитный покров и ваджрное основание вместе образуют завершённое сакральное пространство, подобно тому как каркас, войлочное покрытие и основание образуют единое жилище. Подобная аналогия особенно естественна в тибето-монгольской культурной среде, где дворец божества воспринимается как космологическая схема и одновременно как место пребывания божества и самого практикующего; однако такое сопоставление носит исключительно иллюстративный характер и не выводится непосредственно из текста садханы.</p><a href="#ref-5" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -1612,7 +1596,7 @@
                     <p>maṇḍalacatuṣṭayaṁ saṁhṛtya pṛthivīmaṇḍalamātraṁ dhyāyāt ||</p>
                     <p>asya sūtram ekādaśapaṭale</p>
                     <p>khavajramadhyagataṁ cintenmaṇḍalaṁ sarvavajrajam |</p>
-                    <p>bhrūṁkāraṁ bhāvayettatra vajrameghasamāvaham ||</p>
+                    <p>bhrūṁkāraṁ bhāvayettatra vajrameghasamāvaham ||</p><a href="#ref-6" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 6.2. Тибетский -->
@@ -1638,7 +1622,7 @@
                     <p>dkyil 'khor rdo rje kun las skyes |</p>
                     <p>nam mkha'i khams kyi dbus gnas bsam |</p>
                     <p>der ni b+h+rUM yig bsgom par bya |</p>
-                    <p>rdo rje'i sprin ni mnyam 'phro'o ||</p>
+                    <p>rdo rje'i sprin ni mnyam 'phro'o ||</p><a href="#ref-6" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 6.3. Лексический разбор -->
@@ -1691,7 +1675,7 @@
                         <li><strong class="text-sky-900">vajramegha</strong> — «облако ваджр»; тиб. <em>rdo rje'i sprin</em> — «облако ваджр». Образ «облака ваджр» — множества ваджных форм, собирающихся вокруг слога <em>bhrūṁ</em> — из этого слога развернётся весь последующий ваджный дворец.</li>
                         <li><strong class="text-sky-900">samāvaha</strong> — «собирающий», «приносящий», «вызывающий» от <em>sam-ā-vah</em> — «собирать», «привлекать», «вызывать»; тиб. <em>mnyam 'phro</em> — «равномерно излучающий». Санскрит описывает <em>bhrūṁ</em> как собирающий облако ваджр — то есть притягивающий; тибетский описывает его как равномерно излучающий — то есть распространяющий.</li>
                         <li><strong class="text-sky-900">vicintya — vibhāvya — dhyāyāt</strong>: в этом разделе последовательно используются три разных глагола визуализации: (1) <em>vicintya</em> — «мысленно представить», «обдумать образ»; (2) <em>vibhāvya</em> — «ясно проявить в созерцании», «отчётливо визуализировать»; (3) <em>dhyāyāt</em> — «устойчиво созерцать». Эта последовательность отражает постепенное укрепление визуализации: от первоначального мысленного построения образа к его полной ясности и затем к устойчивому удержанию в медитации.</li>
-                    </ul>
+                    </ul><a href="#ref-6" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 6.4. Комментарий -->
@@ -1711,7 +1695,7 @@
                     <p>После введения защитного круга в таковость (<em>tathatā</em>) начинается постепенное построение самой мандалы Будды. Первым возникает её основание из элементов, на котором впоследствии будут последовательно воздвигнуты дворец, престол и размещены божества.</p>
                     <p>Построение начинается в середине элемента пространства (<em>ākāśadhātu</em>). Из семенных слогов последовательно возникают четыре великих элемента (<em>mahābhūta</em>): ветер, огонь, вода и земля.</p>
                     <p>После завершения построения четырёх мандал элементов текст сразу предписывает их свёртывание (<em>saṁhṛtya</em>), оставляя лишь земную мандалу. Следующим объектом созерцания становится семенной слог <strong><em>BHRŪṀ</em></strong>, из которого постепенно разворачивается архитектура дворца.</p>
-                    <p>Касательно слога <strong><em>BHRŪṀ</em></strong> санскрит говорит о «собирающем облако ваджре» (<em>vajrameghasamāvaha</em>), тогда как тибетский перевод обращает внимание на последующее распространение этого облака во все стороны. Одно описание показывает собирание облака вокруг семенного слога, другое — его последующее развёртывание, из которого возникает дворец мандалы.</p>
+                    <p>Касательно слога <strong><em>BHRŪṀ</em></strong> санскрит говорит о «собирающем облако ваджре» (<em>vajrameghasamāvaha</em>), тогда как тибетский перевод обращает внимание на последующее распространение этого облака во все стороны. Одно описание показывает собирание облака вокруг семенного слога, другое — его последующее развёртывание, из которого возникает дворец мандалы.</p><a href="#ref-6" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -1745,7 +1729,7 @@
                     <p>asya sūtram aṣṭamapaṭale —</p>
                     <p>yojanaśatavistāraṁ caturasraṁ suśobhanam |</p>
                     <p>catūratnamayaṁ caityaṁ svacchaṁ prakṛtinirmalam ||</p>
-                    <p>iti ||</p>
+                    <p>iti ||</p><a href="#ref-7" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 7.2. Тибетский -->
@@ -1779,7 +1763,7 @@
                     <p>dpag tshad brgya yi khyon tsam la |</p>
                     <p>legs par mdzes shing gru bzhi pa |</p>
                     <p>rin chen bzhi dngos mchod rten ' dra |</p>
-                    <p>gsal zhing rang bzhin dri med pa'o ||</p>
+                    <p>gsal zhing rang bzhin dri med pa'o ||</p><a href="#ref-7" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 7.3. Лексический разбор -->
@@ -1827,7 +1811,7 @@
                         <li><strong class="text-sky-900">caitya</strong> — «святилище», «чайтья», «сакральное сооружение»; тиб. <em>mchod rten ' dra</em> — «подобное чайтье», «напоминающее ступу». Тибетский добавляет сравнение (<em>' dra</em> — «подобный»): дворец подобен чайтье, но не является ею. Санскрит употребляет <em>caitya</em> как прямую характеристику.</li>
                         <li><strong class="text-sky-900">svaccha</strong> — «прозрачный», «чистый», «ясный»; тиб. <em>gsal</em> — «ясный», «прозрачный», «светлый». Дворец не является плотным физическим строением, он соткан из чистого света.</li>
                         <li><strong class="text-sky-900">prakṛtinirmala</strong> — «изначально чистый по природе»; <em>prakṛti</em> («природа», «изначальная основа») + <em>nirmala</em> («незапятнанный», «чистый»); тиб. <em>rang bzhin dri med</em> — «незапятнанный по природе», «чистый по своей природе» — указывает на то, что дворец мандалы является выражением изначальной, незамутнённой природы ума. Он не «очищенный» в результате практики, он «изначально и неизменно чистый».</li>
-                    </ul>
+                    </ul><a href="#ref-7" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 7.4. Комментарий -->
@@ -1846,7 +1830,7 @@
                 <div class="bg-white/70 p-4 text-lg leading-relaxed text-sky-900 space-y-3">
                     <p>После завершения построения основания из элементов начинается следующий этап стадии зарождения — возникновение дворца (<em>kūṭāgāra</em>) — пространства, предназначенного для размещения божеств. Поэтому дворец предшествует престолу, центральному божеству и всей последующей структуре мандалы.</p>
                     <p>Дворец возникает непосредственно из семенного слога <strong><em>BHRŪṀ</em></strong>. Из этого слога последовательно разворачиваются его архитектурные элементы: квадратная форма, четыре врата, воротные арки, колонны, гирлянды и прочие украшения. Во многих тантрических комментариях отдельные элементы дворца получают символическое истолкование, однако их подробный разбор выходит за рамки настоящего комментария.</p>
-                </div>
+                </div><a href="#ref-7" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
             </details>
         </div>
         <!-- БЛОК ПРИМЕЧАНИЯ №8 -->
@@ -1872,7 +1856,7 @@
                     <p>evaṁguṇaviśiṣṭaṁ devamanuṣyātikrāntaṁ prāsādavaraṁ pṛthivīmaṇḍalopari vicintya candrasūryādyāsanaṁ saṁsthāpya svayaṁ prākṛtāhaṅkāram apanīya jhaṭiti mahāvajradhararūpam ātmānam indranīlavarṇaṁ trimukhaṁ ṣaḍbhujaṁ dakṣiṇe vajraṁ cakraṁ padmaṁ vāme ghaṇṭāṁ cintāmaṇiṁ khadgaṁ sampuṭayogena madhyamaṇḍale padmacandrāsane sattvaparyaṅkeṇopaviṣṭaṁ vicintayet |</p>
                     <p>tataḥ pūrve vairocanam dakṣiṇe ratnasambhavam paścime amitābham uttare amoghasiddhim agnikoṇe locanām nairṛtyāṁ māmakīm vāyavyāṁ pāṇḍaravāsinīm aiśānyāṁ tārāṁ garbhamaṇḍale pravicintya |</p>
                     <p>dvitīyapuṭe agnikoṇe rūpavajrām nairṛtyāṁ śabdavajrām vāyavyāṁ gandhavajrām aiśānyāṁ rasavajrām madhye sparśavajrāṁ vajrasattvaṁ samāliṅgya sthitāṁ cintayet |</p>
-                    <p>tathā tṛtīye puṭe pūrvapaṭṭikāyāṁ maitreyaṁ kṣitigarbham dakṣiṇapaṭṭikāyāṁ vajrapāṇiṁ khagarbham paścimapaṭṭikāyāṁ lokeśvaraṁ mañjughoṣam uttarapaṭṭikāyāṁ sarvanīvaraṇaviṣkambhinaṁ samantabhadram pūrvadvāre yamāntakam dakṣiṇadvāre aparājitam paścimadvāre hayagrīvam uttaradvāre amṛtakuṇḍalim agnikoṇe acalam nairṛtyāṁ ṭakkirājam vāyavyāṁ nīladaṇḍam aiśānyāṁ mahābalam ūrdhvam uṣṇīṣacakravartinam adho niśumbharājam dhyāyāt ||</p>
+                    <p>tathā tṛtīye puṭe pūrvapaṭṭikāyāṁ maitreyaṁ kṣitigarbham dakṣiṇapaṭṭikāyāṁ vajrapāṇiṁ khagarbham paścimapaṭṭikāyāṁ lokeśvaraṁ mañjughoṣam uttarapaṭṭikāyāṁ sarvanīvaraṇaviṣkambhinaṁ samantabhadram pūrvadvāre yamāntakam dakṣiṇadvāre aparājitam paścimadvāre hayagrīvam uttaradvāre amṛtakuṇḍalim agnikoṇe acalam nairṛtyāṁ ṭakkirājam vāyavyāṁ nīladaṇḍam aiśānyāṁ mahābalam ūrdhvam uṣṇīṣacakravartinam adho niśumbharājam dhyāyāt ||</p><a href="#ref-8" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 8.2. Тибетский -->
@@ -1892,7 +1876,7 @@
                     <p>de lta bu'i lha dang mi las yon tan khyad par du 'phags pa'i khang bzangs dam pa sa'i dkyil 'khor gyi steng du bsams shing zla ba dang nyi ma'i gdan rnam par bkod nas bdag gi rang bzhin gyis tha mal pa'i nga rgyal bsal la skad cig gis bdag nyid rdo rje 'chang chen po'i gzugs in+d+ra nI la'i mdog can zhal gsum phyag drug pa g.yas kyis rdo rje dang 'khor lo dang pad+ma g.yon gyis dril bu dang yid bzhin gyi nor bu dang ral gri 'dzin pa kha sbyor gyi sbyor bas dkyil 'khor gyi dbus su pad+ma dang nyi ma'i gdan la sems dpa'i skyil krung gis nye bar gnas par bsam mo ||</p>
                     <p>de nas shar du rnam par snang mdzad lhor rin chen 'byung ldan nub tu 'od dpag med byang du don yod grub pa'o me'i mtshams su spyan ma bden bral du mA ma kI rlung du gos dkar mo dbang ldan du sgrol ma rnams snying po'i dkyil 'khor bsams nas |</p>
                     <p>rim pa gnyis la me'i mtshams su gzugs rdo rje ma bden bral du sgra rdo rje ma rlung du dri rdo rje ma dbang ldan du ro rdo rje ma dbus su reg rdo rje ma rdo rje sems dpa' dang yang dag par 'khyud nas gnas par bsam mo ||</p>
-                    <p>de bzhin du rim pa gsum pa'i shar gyi snam bu la byams pa dang sa'i snying po lho'i snam bu la phyag na rdo rje dang nam mkha'i snying po nub kyi snam bu la 'jig rten dbang phyug dang 'jam pa'i dbyangs byang gi snam bu la sgrib pa thams cad rnam par sel ba dang kun tu bzang po shar gyi sgor gshin rje gshed po lho'i sgor gzhan gyis mi thub pa nub kyi sgor rta mgrin byang gi sgor bdud rtsi 'khyil pa me mtshams su mi g.yo ba bden bral du 'dod pa'i rgyal po rlung du dbyug pa sngon po dbang ldan du stobs po che steng du gtsug tor 'khor los sgyur ba 'og tu gnod mdzes rgyal po bsam mo ||</p>
+                    <p>de bzhin du rim pa gsum pa'i shar gyi snam bu la byams pa dang sa'i snying po lho'i snam bu la phyag na rdo rje dang nam mkha'i snying po nub kyi snam bu la 'jig rten dbang phyug dang 'jam pa'i dbyangs byang gi snam bu la sgrib pa thams cad rnam par sel ba dang kun tu bzang po shar gyi sgor gshin rje gshed po lho'i sgor gzhan gyis mi thub pa nub kyi sgor rta mgrin byang gi sgor bdud rtsi 'khyil pa me mtshams su mi g.yo ba bden bral du 'dod pa'i rgyal po rlung du dbyug pa sngon po dbang ldan du stobs po che steng du gtsug tor 'khor los sgyur ba 'og tu gnod mdzes rgyal po bsam mo ||</p><a href="#ref-8" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 8.3. Лексический разбор -->
@@ -1972,7 +1956,7 @@
                         <li><strong class="text-sky-900">mahābala</strong> — «Махабала», «Великая Сила»; тиб. <em>stobs po che</em> — «Обладающий великой силой». Гневный северо-восточного угла.</li>
                         <li><strong class="text-sky-900">uṣṇīṣacakravartin</strong> — «Ушнишачакравартин», «Вселенский правитель [с природой] ушниши»; <em>uṣṇīṣa</em> («ушниша», «священный нарост на макушке») + <em>cakravartin</em> («вселенский правитель»); тиб. <em>gtsug tor 'khor los sgyur ba</em> — «Вращающий колесо [с природой] ушниши». Располагается над мандалой.</li>
                         <li><strong class="text-sky-900">niśumbharāja</strong> — «Нисумбхараджа»; тиб. <em>gnod mdzes rgyal po</em> — «Царь Нисумбха». Располагается под мандалой.</li>
-                    </ul>
+                    </ul><a href="#ref-8" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 8.4. Комментарий -->
@@ -2003,7 +1987,7 @@
                     <p>Общее число божеств — тридцать два — соответствует классической мандале Арья-Гухьясамаджи. Именно эта структура лежит в основе большинства последующих комментариев данной традиции и отличает её от системы Джнянапады, использующей мандалу девятнадцати божеств с Манджуваджрой в центре.</p>
                     <p>Заключительная цитата из первой главы подводит итог всему построению. Мандала описывается как прозрачная (<em>svaccha</em>), изначально чистая по своей природе, наполненная сиянием и соединённая с облаками Будд. Тем самым подчёркивается, что все её многочисленные божества представляют различные проявления единой просветлённой природы.</p>
                     <p>Следующий раздел переносит эту же структуру внутрь самого практикующего посредством ньясы (<em>nyāsa</em>). Внешняя мандала становится внутренней мандалой тела. Благодаря этому космическое устройство мандалы и собственное тело йогина раскрываются как два способа проявления одной и той же пробуждённой природы.</p>
-                    <p>Структура мандалы из 32 божеств следует описанию в <em>Śrīguhyasamājatantra</em> (главы 8, 11, 12) и её разъяснению в <em>Pradīpoddyotanā</em> Чандракирти. См. также: Akhu Sherap Gyatso, «Sacred Words of Lord Akshobya – Guhyasamaja Tantra Commentary», translated by Geshe Thupten Jinpa (1999).</p>
+                    <p>Структура мандалы из 32 божеств следует описанию в <em>Śrīguhyasamājatantra</em> (главы 8, 11, 12) и её разъяснению в <em>Pradīpoddyotanā</em> Чандракирти. См. также: Akhu Sherap Gyatso, «Sacred Words of Lord Akshobya – Guhyasamaja Tantra Commentary», translated by Geshe Thupten Jinpa (1999).</p><a href="#ref-8" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -2040,7 +2024,7 @@
                     <p>sutattvāśayayogānāṁ devatālambanena kim |</p>
                     <p>ātmayogasvasamayāt sidhyate paramākṣaram ||</p>
                     <p>ātmā vai sarvabuddhatvaṁ sarvasauritvam eva ca |</p>
-                    <p>tasmāt sarvaprayatnena hy ātmānaṁ pūjayet sadā ||</p>
+                    <p>tasmāt sarvaprayatnena hy ātmānaṁ pūjayet sadā ||</p><a href="#ref-9" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 9.2. Тибетский -->
@@ -2081,7 +2065,7 @@
                     <p>bdag nyid sangs rgyas thams cad nyid |</p>
                     <p>kun gyi mchog nyid kyang yin no |</p>
                     <p>de bas 'bad pa thams cad kyis |</p>
-                    <p>bdag nyid rtag tu mchod par bya |</p>
+                    <p>bdag nyid rtag tu mchod par bya |</p><a href="#ref-9" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 9.3. Лексический разбор -->
@@ -2146,7 +2130,7 @@
                         <li><strong class="text-sky-900">sarvasauritva</strong> — «совокупность героических качеств», «полнота доблести»; тиб. <em>kun gyi mchog nyid</em>.</li>
                         <li><strong class="text-sky-900">sarvaprayatnena</strong> — «всеми силами», «со всем старанием»; тиб. <em>'bad pa thams cad kyis</em> — «всеми усилиями».</li>
                         <li><strong class="text-sky-900">pūjayet</strong> — от <em>pūj</em> («почитать», «поклоняться»); «пусть почитает»; тиб. <em>mchod par bya</em> — «следует почитать». «Следует всегда почитать самого себя» — это может ввести в заблуждение, но подразумевается не ложное «я», вера в которое разрушается на Пути, а природа Будды, присутствующая в практикующем.</li>
-                    </ul>
+                    </ul><a href="#ref-9" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 9.4. Комментарий -->
@@ -2166,7 +2150,7 @@
                     <p>Данный фрагмент завершает построение мандалы, перенося её из внешнего пространства в тело практикующего. Это классическая ньяса (размещение) — ключевой момент стадии зарождения, где внешние формы божеств отождествляются с аспектами собственного существа.</p>
                     <p>Пять Будд соответствуют пяти скандхам — основным составляющим личности. Четыре богини-видьи (Лочана, Мамаки, Пандара, Тара) — природе четырёх великих элементов. Богини второго круга (Рупаваджра и другие) — объектам пяти чувств. Бодхисаттвы третьего круга — двенадцати аятанам (органам чувств и их объектам). Гневные цари соотносятся с частями тела. Таким образом, всё, что составляет обычное человеческое существо, раскрывается как проявление просветлённых качеств.</p>
                     <p>Различение между «йогой отражения» (<em>pratibimbamaya</em>) и «йогой самого себя» (<em>ātmayoga</em>) показывает, что подлинная реализация достигается через постижение собственной природы, тождественной состоянию всех Будд. Утверждение «самость есть состояние всех Будд» (<em>ātmā vai sarvabuddhatvam</em>) является одним из наиболее радикальных во всём тексте. Под «самостью» здесь подразумевается природа Будды практикующего, — именно её и следует «почитать» предписанием <em>ātmānaṁ pūjayet</em>.</p>
-                    <p>Так завершается формирование полной мандалы тела, где внешнее и внутреннее становятся нераздельными.</p>
+                    <p>Так завершается формирование полной мандалы тела, где внешнее и внутреннее становятся нераздельными.</p><a href="#ref-9" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -2197,7 +2181,7 @@
                     <p>paramārthasatyāt sūryamaṇḍalaṁ tadupari candramaṇḍalaṁ punas tadupari raktāṣṭadalapadmaṁ padmopari oṁ āḥ hūṁ ity akṣaratrayam uparyupari vinyasya sarvaṁ saṁhṛtya paripūrṇacandramaṇḍalākārapariṇataṁ cittamātraṁ dhyātvā tasmiñ jagat sthāvarajaṅgamam antarbhāvya tṛtīyapaṭalokta-oṁ dharmadhātusvabhāvātmako'ham iti mantreṇa svacittaratnaṁ dṛḍhīkuryāt |</p>
                     <p>ity ayaṁ prathamo yogaḥ ||</p>
                     <p>imam arthaṁ dyotayann āha saṁvare —</p>
-                    <p>jñānamātrasamāpattir yoga ity abhidhīyate ||</p>
+                    <p>jñānamātrasamāpattir yoga ity abhidhīyate ||</p><a href="#ref-10" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 10.2. Тибетский -->
@@ -2223,7 +2207,7 @@
                     <p>de ltar stong pa nyid du dmigs pas nyon mongs pa'i dri ma thams cad bsal nas de nas bdag nyid rdo rje sems dpa'i phyag rgya chen po'i gzugs su bskyed par bya ste rim pa 'dis don dam pa'i bden pa las nyi ma'i dkyil 'khor de'i steng du zla ba'i dkyil 'khor de'i steng du pad+ma dmar po 'dab ma brgyad pa'i steng du oM AHhUM zhes pa'i yi ge gsum gong nas gong du dgod de thams cad bsdus pa las zla ba'i dkyil 'khor yongs su rdzogs par gyur te sems tsam du bsams nas de gnyis brtan pa dang g.yo ba'i 'gro ba nang du 'dus te le'u gsum pa las gsungs pa'i oM d+har+m+ma d+hA tu swa b+hA ba At+ma ko&haM zhes bya ba'i rang gi sngags kyis rang gi sems rin po che brtan par bya'o zhes bya ba 'di ni dang po'i rnal 'byor ro ||</p>
                     <p>don 'di gsal bar 'khor lo sdom pa las gsungs te |</p>
                     <p>ye shes tsam la snyoms 'jug pa |</p>
-                    <p>rnal 'byor zhes ni mngon par brjod |</p>
+                    <p>rnal 'byor zhes ni mngon par brjod |</p><a href="#ref-10" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 10.3. Лексический разбор -->
@@ -2287,7 +2271,7 @@
                         <li><strong class="text-sky-900">jñānamātrasamāpatti</strong> — «вхождение в состояние одного лишь знания».</li>
                         <li><strong class="text-sky-900">yoga</strong> — «йога»; тиб. <em>rnal 'byor</em>. В данном контексте определяется через результат — пребывание в состоянии чистого осознавания.</li>
                         <li><strong class="text-sky-900">abhidhīyate</strong> — «именуется», «называется»; тиб. <em>mngon par brjod</em> — «ясно провозглашается».</li>
-                    </ul>
+                    </ul><a href="#ref-10" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 10.4. Комментарий -->
@@ -2325,7 +2309,7 @@
                     <p>Внутрь этого «только-ума» вмещается весь мир — движущийся и неподвижный (<em>sthāvarajaṅgama</em>). Это означает, что всё мироздание включается в единое осознавание. Затем посредством мантры <em>oṁ dharmadhātusvabhāvātmako'ham</em> («ОМ. Я есть тот, чья природа — дхармадхату») утверждается «драгоценность собственного ума» (<em>svacittaratna</em>).</p>
                     <p>Завершающая цитата из тантры «Самвара» определяет первую йогу как «вхождение в состояние одного лишь знания» (<em>jñānamātrasamāpatti</em>). Тибетское <em>ye shes tsam</em> («только изначальное знание») значительно богаче санскритского <em>jñānamātra</em>: речь идёт о состоянии, в котором нет ничего, кроме пробуждённого осознавания как такового.</p>
                     <p>Термин <em>samāpatti</em> («вхождение») — технический термин для медитативного погружения. В отличие от <em>samādhi</em>, акцент делается не на состоянии, а на вхождении в него. Тибетское <em>snyoms 'jug</em> буквально означает «ровное вхождение» — подчёркивая плавность и равностность перехода.</p>
-                    <p>Таким образом, первая йога завершается утверждением в природе дхармадхату — абсолютной реальности, тождественной природе ума. Это создаёт основу для последующего самопорождения в образе Ваджрасаттвы, которое будет описано в следующей йоге.</p>
+                    <p>Таким образом, первая йога завершается утверждением в природе дхармадхату — абсолютной реальности, тождественной природе ума. Это создаёт основу для последующего самопорождения в образе Ваджрасаттвы, которое будет описано в следующей йоге.</p><a href="#ref-10" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -2354,7 +2338,7 @@
                     <p>iti pañcadaśapaṭale vacanāt |</p>
                     <p>dvitīyo'nuyogaḥ ||</p>
                     <p>asya sūtram ekādaśapaṭale — trivajrākṣaramantrāgrair mahāmudrāvibhāvanam |</p>
-                    <p>kartavyaṁ jñānavajreṇa sarvabodhisamāvaham ||</p>
+                    <p>kartavyaṁ jñānavajreṇa sarvabodhisamāvaham ||</p><a href="#ref-11" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 11.2. Тибетский -->
@@ -2382,7 +2366,7 @@
                     <p>rdo rje gsum yig sngags mchog gis |</p>
                     <p>phyag rgya chen po bsgom pa ni |</p>
                     <p>ye shes rdo rje bya ba ste |</p>
-                    <p>byang chub thams cad mnyam bskyed pa'i |</p>
+                    <p>byang chub thams cad mnyam bskyed pa'i |</p><a href="#ref-11" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 11.3. Лексический разбор -->
@@ -2415,7 +2399,7 @@
                 <li><strong class="text-sky-900">kartavya</strong> — «должно быть осуществлено», «надлежит осуществить»; тиб. <em>bya ba ste</em>.</li>
                 <li><strong class="text-sky-900">jñānavajra</strong> — «ваджр знания», «ваджр мудрости»; тиб. <em>ye shes rdo rje</em>. Пробуждённое осознавание в его нерушимом аспекте. Повторное появление термина <em>jñānavajra</em> связывает вторую ануйогу с завершением первой йоги. Если ранее «ваджр знания» характеризовала природу Дхармакаи, то теперь именно она становится непосредственным источником проявления просветлённой формы.</li>
                 <li><strong class="text-sky-900">sarvabodhisamāvaha</strong> — «несущая в себе всё пробуждение», «собирающая всё пробуждение»; <em>sarva</em> + <em>bodhi</em> («пробуждение») + <em>samāvaha</em> («несущий», «собирающий», «содержащий»); тиб. <em>byang chub thams cad mnyam bskyed pa</em> — «порождающая равностно всё пробуждение». Тибетское <em>mnyam</em> («равностно», «одинаково») добавляет важный оттенок: ваджра знания несёт в себе всё пробуждение не избирательно, в равной полноте, без различия на «больше» или «меньше», «выше» или «ниже».</li>
-            </ul>
+            </ul><a href="#ref-11" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 11.4. Комментарий -->
@@ -2434,7 +2418,7 @@
                 <div class="bg-white/70 p-4 text-lg leading-relaxed text-sky-900 space-y-3">
                     <p>Вторая ануйога продолжает практику с того состояния, которым завершилась первая йога. После растворения мандалы в <em>paramārthamaṇḍala</em> и утверждения Дхармакаи начинается последовательное проявление просветлённой формы.</p>
                     <p>Исходной точкой нового этапа становятся три слога (<em>tryakṣara</em>) — <em>oṁ āḥ hūṁ</em>. Из них возникает ваджр, а из ваджра практикующий созерцает проявление себя в образе Махаваджрадхары. Такая последовательность показывает разворачивание просветлённой формы непосредственно из Дхармакаи, утверждённой в предыдущей йоге.</p>
-                    <p>Связь между двумя йогами подчёркивается и повторным употреблением термина <em>jñānavajra</em>. В первой йоге формула <em>śūnyatājñānavajra</em> описывает природу Дхармакаи. Во второй употребляется более краткое <em>jñānavajra</em>, обозначающее ту же самую основу уже как источник проявления просветлённой формы. Термин <em>sarvabodhisamāvaha</em> раскрывает её как полноту всех аспектов пробуждения.</p>
+                    <p>Связь между двумя йогами подчёркивается и повторным употреблением термина <em>jñānavajra</em>. В первой йоге формула <em>śūnyatājñānavajra</em> описывает природу Дхармакаи. Во второй употребляется более краткое <em>jñānavajra</em>, обозначающее ту же самую основу уже как источник проявления просветлённой формы. Термин <em>sarvabodhisamāvaha</em> раскрывает её как полноту всех аспектов пробуждения.</p><a href="#ref-11" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -2473,7 +2457,7 @@
                     <p>asya sūtraṁ prathamapaṭale —</p>
                     <p>mahāvidyāpuruṣamūrtiṁ sarvatathāgatamantrādhiṣṭhānam adhiṣṭhāpayāmāsa |</p>
                     <p>samanantarādhiṣṭhitamātre sa eva bhagavān bodhicittavajras tathāgatais trimukhākāreṇa sandṛśyate sma iti |</p>
-                    <p>tṛtīyo'tiyogaḥ ||</p>
+                    <p>tṛtīyo'tiyogaḥ ||</p><a href="#ref-12" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 12.2. Тибетский -->
@@ -2521,7 +2505,7 @@
                     <p>spyi bor gtsug tor 'khor los sgyur ba |</p>
                     <p>rkang pa gnyis la gnod mdzes rgyal po bkod nas phyogs bcur rjes su 'jug par bya'o |</p>
                     <p>'di'i mdo ni le'u dang po las |</p>
-                    <p>rig pa'i skyes bu chen po'i sku de bzhin gshegs pa thams cad kyi sngags kyis byin gyis brlabs nas de ma thag tu byin gyis brlabs pa tsam gyis byang chub kyi sems rdo rje de nyid de bzhin gshegs pa rnams kyi zhal gsum gyi rnam par mthong bar gyur to zhes bya ba ni gsum pa shin tu rnal 'byor ro ||</p>
+                    <p>rig pa'i skyes bu chen po'i sku de bzhin gshegs pa thams cad kyi sngags kyis byin gyis brlabs nas de ma thag tu byin gyis brlabs pa tsam gyis byang chub kyi sems rdo rje de nyid de bzhin gshegs pa rnams kyi zhal gsum gyi rnam par mthong bar gyur to zhes bya ba ni gsum pa shin tu rnal 'byor ro ||</p><a href="#ref-12" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 12.3. Лексический разбор -->
@@ -2619,7 +2603,7 @@
                         <li><strong class="text-sky-900">sandṛśyate sma</strong> — «являлся», «становился видимым»; <em>sandṛśyate</em> (от <em>sam-dṛś</em> — «видеть», «являться») + <em>sma</em> (частица, переводящая настоящее в прошедшее); тиб. <em>mthong bar gyur to</em> — «стало видимым», «явилось».</li>
                         <li><strong class="text-sky-900">trimukhākāra</strong> — «в образе трёхликого»; тиб. <em>zhal gsum gyi rnam pa</em> — «в облике трёхликого». Три лика — три ваджры (Тело, Речь, Ум) — являются всем Татхагатам одновременно как завершённая, совершенная форма.</li>
                         <li><strong class="text-sky-900">atiyoga</strong> — «атийога», «превосходящая йога»; <em>ati-</em> («за пределами», «превосходящий») + <em>yoga</em>; тиб. <em>shin tu rnal 'byor</em> — «высшая йога», «чрезвычайная йога». В отличие от первой «йоги» (<em>yogaḥ</em>) и второй «ануйоги» (<em>anuyogaḥ</em>), третья называется «атийога» — «йога, превосходящая [предыдущие]». Это качественно иная ступень.</li>
-                    </ul>
+                    </ul><a href="#ref-12" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 12.4. Комментарий -->
@@ -2645,7 +2629,7 @@
                     <p>Майтрея размещается в сухожилиях, Самантабхадра — во всех сочленениях тела. Тем самым ньяса распространяется на саму телесную организацию. Просветлённая природа охватывает уже не только скандхи, элементы и органы восприятия, но и всё тело как единое целое.</p>
                     <p>Размещение десяти гневных царей воспроизводит их расположение во внешней мандале, однако теперь они становятся защитниками самого тела практикующего. После завершения ньясы тело и внешняя мандала оказываются построенными по одной и той же схеме. Заключительное введение их силы в десять направлений вновь соединяет внутреннюю и внешнюю мандалы в единую структуру.</p>
                     <p>Заключительная цитата показывает плод выполненной ньясы. Едва завершается освящение мантрами всех Татхагат (<em>adhiṣṭhitamātra</em>), как Ваджра Бодхичитты является в трёхликом образе. Тем самым полностью построенное тело становится непосредственным проявлением просветлённого присутствия.</p>
-                    <p>Заключительное обозначение этой стадии как атийоги завершает внутреннюю трёхчастную структуру текста — йога, ануйога и атийога. В данном памятнике эта терминология используется для обозначения последовательных стадий единой садханы Гухьясамаджи. Такое употребление предшествует позднейшей классификации йоги, ануйоги и атийоги, получившей развитие в традиции Ньингма.</p>
+                    <p>Заключительное обозначение этой стадии как атийоги завершает внутреннюю трёхчастную структуру текста — йога, ануйога и атийога. В данном памятнике эта терминология используется для обозначения последовательных стадий единой садханы Гухьясамаджи. Такое употребление предшествует позднейшей классификации йоги, ануйоги и атийоги, получившей развитие в традиции Ньингма.</p><a href="#ref-12" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
 
@@ -2705,7 +2689,7 @@
                     <p>evaṁ samayasattvahṛdaye jñānasattvaṁ vicintya jñānasattvasyāpi hṛdaye hūṁkāraṁ samādhisattvākhyaṁ satatodayaṁ bṛhatpradīpasadṛśam ajñānāndhakāravidhvaṁsanārtham ālokapuñjākāraṁ dhyāyād iti |</p>
                     <p>asya sūtram ekādaśapaṭale — buddhamaṇḍalamadhyasthaṁ vajrākṣobhyaṁ prabhāvayet | hūṁkāraṁ hṛdaye dhyātvā cittaṁ bindugataṁ nyaset ||</p>
                     <p>iti | mahāyogaḥ ||</p>
-                    <p>evaṁ yogacatuṣṭayenātmānaṁ trisattvātmakaṁ svārthasampatsvabhāvaṁ samādhirājāgrīṁ niṣpādya</p>
+                    <p>evaṁ yogacatuṣṭayenātmānaṁ trisattvātmakaṁ svārthasampatsvabhāvaṁ samādhirājāgrīṁ niṣpādya</p><a href="#ref-13" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 13.2. Тибетский -->
@@ -2800,7 +2784,7 @@
                     <p>hUM yig snying gar bsgoms nas ni |</p>
                     <p>sems ni thig ler gnas par bzhag |</p>
                     <p>ces bya ba ni rnal 'byor chen po'o ||</p>
-                    <p>de ltar rnal 'byor bzhis bdag nyid sems dpa' gsum gyi bdag nyid can gyi bdag gi don phun sum tshogs pa'i rang bzhin ting nge 'dzin rgyal po mchog bskyed nas da ni gzhan gyi don phun sum tshogs pa'i phyir dkyil 'khor rgyal po mchog ces bya ba'i ting nge 'dzin bstan pa'i skabs la 'jug par bya ste</p>
+                    <p>de ltar rnal 'byor bzhis bdag nyid sems dpa' gsum gyi bdag nyid can gyi bdag gi don phun sum tshogs pa'i rang bzhin ting nge 'dzin rgyal po mchog bskyed nas da ni gzhan gyi don phun sum tshogs pa'i phyir dkyil 'khor rgyal po mchog ces bya ba'i ting nge 'dzin bstan pa'i skabs la 'jug par bya ste</p><a href="#ref-13" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 13.3. Лексический разбор -->
@@ -2935,7 +2919,7 @@
                         <li><strong class="text-sky-900">trisattvātmaka</strong> — «имеющий природу трёх существ»; тиб. <em>sems dpa' gsum gyi bdag nyid can</em> — «обладающий природой трёх героев / существ». Три существа: <em>samayasattva, jñānasattva, samādhisattva</em>.</li>
                         <li><strong class="text-sky-900">svārthasampat</strong> — «совершенство собственного блага»; <em>svārtha</em> («собственное благо», «собственная цель») + <em>sampat</em> («совершенство», «достижение», «полнота»); тиб. <em>bdag gi don phun sum tshogs pa</em> — «полнота / совершенство собственной цели». Четыре йоги направлены на <em>svārtha</em> — пробуждение самого практикующего; теперь начинается раздел <em>parārtha</em> — деятельности ради других.</li>
                         <li><strong class="text-sky-900">samādhirājāgrī</strong> — «высший Царь Самадхи»; <em>samādhi</em> + <em>rāja</em> («царь») + <em>agrī</em> (от <em>agra</em> — «высший»); тиб. <em>ting nge 'dzin rgyal po mchog</em> — «высший царь самадхи».</li>
-                    </ul>
+                    </ul><a href="#ref-13" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 13.4. Комментарий -->
@@ -2967,7 +2951,7 @@
                     <p>После благословения трёх ваджр созерцание переходит к трём уровням осуществления божества. Сначала осуществляется <em>samayasattva</em> (существо обета) — трёхликий и шестирукий Ваджрасаттва. Затем в его сердце помещается <em>jñānasattva</em> (существо мудрости) — двурукая форма красного цвета. <em>Samayasattva</em> представляет осуществлённую форму божества, тогда как <em>jñānasattva</em> обозначает пребывающую в ней пробуждённую мудрость. Наконец, в сердце самого существа мудрости созерцается слог <strong><em>ХУМ</em></strong>, именуемый <em>samādhisattva</em> (существо самадхи). Он постоянно возникает (<em>satatodaya</em>), подобен великому светильнику, рассеивающему тьму неведения, и имеет облик скопления света. Эта трёхслойная структура показывает последовательное раскрытие одного и того же пробуждённого состояния: от формы божества — к пребывающей в ней мудрости, затем — к её световому средоточию.</p>
                     <p>Заключительное наставление — «пусть поместит ум в бинду» (<em>cittaṁ bindugataṁ nyaset</em>) — завершает весь процесс благословения. Бинду становится средоточием всего предшествующего созерцания. Помещение ума в бинду завершает внутреннее осуществление мандалы. Всё, что на протяжении стадии зарождения последовательно разворачивалось в виде дворца, божеств и трёх ваджр, получает своё сосредоточение в едином центре.</p>
                     <p>Последовательность построения стадии зарождения обнаруживает движение от семенного слога к полному развёртыванию мандалы. Завершение четвёртой махайоги вновь приводит созерцание к бинду, в котором всё ранее развёрнутое получает своё сосредоточение.</p>
-                    <p>Тем самым завершается стадия зарождения и открывается возможность перехода к стадии завершения (<em>sampannakrama</em>).</p>
+                    <p>Тем самым завершается стадия зарождения и открывается возможность перехода к стадии завершения (<em>sampannakrama</em>).</p><a href="#ref-13" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -3008,7 +2992,7 @@
                     <p>rūpādiviṣayasvabhāvena rūpavajrādīn nyaset |</p>
                     <p>punas tasyā bhujādyavayaveṣu krodharājñīr nyaset |</p>
                     <p>tatra dakṣiṇabhuje vajraveṭālīṁ vāmabhuje aparājitāṁ mukhe bhṛkuṭīṁ guhye ekajaṭāṁ punar dakṣiṇabāhau viśvavajrīṁ vāmabāhau viśvaratnīṁ dakṣiṇajānau viśvapadmīṁ vāmajānau viśvakarmīṁ mūrdhni gaganavajriṇīṁ pādayor dharaṇīndharīṁ nyased iti |</p>
-                    <p>asya sūtram aṣṭamapaṭale — stanāntaraṁ yāvac chikhāntam adhye caraṇāntare cāpi nyased vidhijñaḥ | nābhikaṭīguhya jinātmajānāṁ nyāsaṁ prakuryāt kulapañcakānām ||</p>
+                    <p>asya sūtram aṣṭamapaṭale — stanāntaraṁ yāvac chikhāntam adhye caraṇāntare cāpi nyased vidhijñaḥ | nābhikaṭīguhya jinātmajānāṁ nyāsaṁ prakuryāt kulapañcakānām ||</p><a href="#ref-14" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 14.2. Тибетский -->
@@ -3069,7 +3053,7 @@
                     <p>nu ma gnyis kyi bar dang ji srid spyi bor phyin gyi bar |</p>
                     <p>rkang par thug gi bar du yang ni cho ga shes pas dgod |</p>
                     <p>rked pa lte bar gsang ba'i rgyal ba'i sras |</p>
-                    <p>rigs lnga rnams ni dgod par rab tu bya |</p>
+                    <p>rigs lnga rnams ni dgod par rab tu bya |</p><a href="#ref-14" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 14.3. Лексический разбор -->
@@ -3148,7 +3132,7 @@
                         <li><strong class="text-sky-900">kulapañcaka</strong> — «пять семейств»; тиб. <em>rigs lnga</em> — «пять родов».</li>
                         <li><strong class="text-sky-900">prakuryāt</strong> — от <em>pra-kṛ</em> («совершать»); «пусть совершает»; тиб. <em>dgod par rab tu bya</em> — «следует в полноте разместить».</li>
                         <li><strong class="text-sky-900">abhisaṁskṛtya</strong> — от <em>abhi-saṁ-kṛ</em> («освящать», «совершать обряд над»); «совершив это освящение»; тиб. <em>mngon par 'dus byas nas</em> — «явно / полно освятив».</li>
-                    </ul>
+                    </ul><a href="#ref-14" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 14.4. Комментарий -->
@@ -3177,7 +3161,7 @@
                     <p>Цитата из седьмой главы обосновывает практику с внешней партнёршей. Предписание созерцать женщину как Татхагати или Лочану (<em>vibhāvayet</em>) вводит её в пространство мандалы и преобразует способ её восприятия. Три формулы освящения (<em>adhiṣṭhānapada</em>) соответствуют благословению Тела, Речи и Ума.</p>
                     <p>Далее текст переходит к ньясе пяти семейств для мудры. Она полностью воспроизводит ньясу тела практикующего: используются те же биджа-слоги, те же соответствия элементов, объектов чувств и гневных божеств. Благодаря этому тело мудры получает ту же структуру мандалы, что и тело практикующего.</p>
                     <p>Затем вместо гневных царей (<em>krodharāja</em>) появляются соответствующие гневные царицы (<em>krodharājñī</em>). Та же система соответствий переносится на женское тело, хотя состав имён изменяется, образуя самостоятельную группу женских защитниц мандалы.</p>
-                    <p>Гатха из восьмой главы подтверждает описанную ньясу, подчёркивая охват всего тела — от темени до стоп, включая области, имеющие особое значение в тантрийской анатомии.</p>
+                    <p>Гатха из восьмой главы подтверждает описанную ньясу, подчёркивая охват всего тела — от темени до стоп, включая области, имеющие особое значение в тантрийской анатомии.</p><a href="#ref-14" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -3226,7 +3210,7 @@
                     <p>sa eva bhagavān yamāntakādikrodhasamādhibhir daśadigvighnagaṇāṁs tarjayati |</p>
                     <p>sarvayogo hi bhagavān vajrasattvas tathāgataḥ |</p>
                     <p>tasyopabhogaṁ sarvaṁ vai traidhātukaṁ aśeṣataḥ ||</p>
-                    <p>iti vacanāt | maṇḍalarājāgrī nāma dvitīyaḥ samādhiḥ ||</p>
+                    <p>iti vacanāt | maṇḍalarājāgrī nāma dvitīyaḥ samādhiḥ ||</p><a href="#ref-15" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 15.2. Тибетский -->
@@ -3279,7 +3263,7 @@
                     <p>de yi nye bar longs spyod kun |</p>
                     <p>khams gsum dag ni ma lus pa'o ||</p>
                     <p>zhes gsungs pa'i phyir ro ||</p>
-                    <p>dkyil 'khor gyi rgyal po mchog ces bya ba'i ting nge 'dzin gnyis pa'o ||</p>
+                    <p>dkyil 'khor gyi rgyal po mchog ces bya ba'i ting nge 'dzin gnyis pa'o ||</p><a href="#ref-15" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 15.3. Лексический разбор -->
@@ -3353,7 +3337,7 @@
                         <li><strong class="text-sky-900">upabhoga</strong> — «наслаждение», «пользование», «вкушение»; тиб. <em>nye bar longs spyod</em> — «непосредственное наслаждение», «использование». <em>Upabhoga</em> в тантрийском контексте указывает на то, что весь феноменальный мир является «наслаждением» Ваджрасаттвы — в смысле его просветлённой деятельности, пронизывающей всё.</li>
                         <li><strong class="text-sky-900">aśeṣataḥ</strong> — «без остатка», «полностью»; тиб. <em>ma lus pa</em> — «без остатка».</li>
                         <li><strong class="text-sky-900">maṇḍalarājāgrī</strong> — «Высший Царь Мандал»; тиб. <em>dkyil 'khor gyi rgyal po mchog</em> — «высший царь мандалы».</li>
-                    </ul>
+                    </ul><a href="#ref-15" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 15.4. Комментарий -->
@@ -3385,7 +3369,7 @@
 
                     <p>Заключительная гатха подводит итог всему разделу. Утверждение, что «все йоги есть Бхагаван Ваджрасаттва-Татхагата», отождествляет все описанные практики с единой природой Ваджрасаттвы. Утверждение, что всё трёхмирие является его <em>upabhoga</em> («наслаждением», «вкушением»), раскрывает мир как сферу проявления просветлённой деятельности.</p>
 
-                    <p>Формула <em>maṇḍalarājāgrī nāma dvitīyaḥ samādhiḥ</em> завершает второй великий самадхи трактата. После осуществления внутренней мандалы начинается её непрерывное развёртывание как деятельности ради блага существ.</p>
+                    <p>Формула <em>maṇḍalarājāgrī nāma dvitīyaḥ samādhiḥ</em> завершает второй великий самадхи трактата. После осуществления внутренней мандалы начинается её непрерывное развёртывание как деятельности ради блага существ.</p><a href="#ref-15" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -3429,7 +3413,7 @@
                     <p>śuddhasvabhāvasambhūta vajrasattva namo'stu te ||</p>
                     <p>tadanantaraṁ buddhajñānaṁ prakāśya maṇḍalacakramanurāgya pūrvavatsvakāyamaṇḍale praveśyopasaṁhāraṁ kuryādanena krameṇa |</p>
                     <p>svahṛdayasthaṁ hūṁkāramuccārya tena sakalasattvadhātūnmahāvajradhararūpapariṇatānvicintya tanmanasikāreṇa viharediti |</p>
-                    <p>asya sūtraṁ daśamapaṭale — ākāśadhātumadhyasthaṁ bhāvayedvyūhamaṇḍalam | hūṁkāraṁ tatra madhyasthaṁ svabimbena prakalpayet ||</p>
+                    <p>asya sūtraṁ daśamapaṭale — ākāśadhātumadhyasthaṁ bhāvayedvyūhamaṇḍalam | hūṁkāraṁ tatra madhyasthaṁ svabimbena prakalpayet ||</p><a href="#ref-16" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 16.2. Тибетский -->
@@ -3490,7 +3474,7 @@
                     <p>'di'i mdo ni le'u bcu gnyis pa las |</p>
                     <p>nam mkha'i khams kyi dbus gnas par | bkod pa'i dkyil 'khor bsgom par bya |</p>
                     <p>hUM ni de yi dbus gnas par |</p>
-                    <p>rang gi gzugs brnyan dag tu brtag</p>
+                    <p>rang gi gzugs brnyan dag tu brtag</p><a href="#ref-16" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 16.3. Лексический разбор -->
@@ -3603,7 +3587,7 @@
                         <li><strong class="text-sky-900">tatra madhyastha</strong> — «пребывающий там, в центре»; тиб. <em>de yi dbus gnas par</em> — «пребывающий в центре этого». Слог ХУМ находится в центре мандалы, которая сама находится в центре пространства.</li>
                         <li><strong class="text-sky-900">svabimba</strong> — «собственный образ», «отражение самого себя»; <em>sva</em> («свой», «собственный») + <em>bimba</em> («образ», «отражение», «диск»); тиб. <em>rang gi gzugs brnyan</em> — «собственное отражение», «собственный образ». Точный перевод: <em>bimba</em> буквально означает «отражение».</li>
                         <li><strong class="text-sky-900">prakalpayet</strong> — от <em>pra-kḷp</em> («представлять», «воображать», «устанавливать»); тиб. <em>brtag</em> — «исследовать», «рассматривать», «постигать».</li>
-                    </ul>
+                    </ul><a href="#ref-16" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 16.4. Комментарий -->
@@ -3628,7 +3612,7 @@
                     <p>Структура гимна последовательно раскрывает пять семейств Будд. Каждая строфа прославляет соответствующий аспект просветлённой природы: Акшобхью как Великое Знание (<em>mahājñāna</em>), Вайрочану как Великую Чистоту (<em>mahāśuddha</em>), Ратнасамбхаву как воплощение природной чистоты (<em>svabhāvaśuddha</em>), Амитабху как достигшего совершенства страсти (<em>rāgapāramitāprāpta</em>), Амогхасиддхи как исполняющего все устремления. Тем самым после пребывания в единстве Ясного Света единая природа Будды раскрывается как система пяти мудростей и пяти семейств.</p>
                     <p>Заключительная часть раздела посвящена <em>upasaṁhāra</em> — свёртыванию мандалы. После повторного проявления знания Будды вся развёрнутая мандала вновь вводится в тело практикующего. Затем посредством слога <strong><em>ХУМ</em></strong> все миры существ созерцаются преобразованными в образ Махаваджрадхары. Это означает завершение полного цикла стадии завершения: мандала, возникшая из Ясного Света, вновь сосредоточивается в своём едином основании.</p>
                     <p>На протяжении всего трактата <strong><em>ХУМ</em></strong> выступал как сердечный центр мандалы (<em>samādhisattva</em>) и источник её развёртывания. Поэтому сведение всей практики к одному слогу означает сосредоточение всей структуры мандалы в едином просветлённом уме. Одновременно созерцание всех существ в образе Махаваджрадхары показывает окончательный результат всей садханы: мир воспринимается как уже обладающий природой Будды, и деятельность практикующего осуществляется исходя из этого видения.</p>
-                    <p>Тем самым данный раздел завершает полный цикл практики Гухьясамаджи. Развёртывание мандалы, её растворение в Ясном Свете, новое проявление благодаря великому состраданию и окончательное свёртывание в слоге <strong><em>ХУМ</em></strong> образуют единую последовательность, в которой нераздельность шуньяты, великого блаженства и просветлённой деятельности раскрывается как внутренний смысл всей садханы.</p>
+                    <p>Тем самым данный раздел завершает полный цикл практики Гухьясамаджи. Развёртывание мандалы, её растворение в Ясном Свете, новое проявление благодаря великому состраданию и окончательное свёртывание в слоге <strong><em>ХУМ</em></strong> образуют единую последовательность, в которой нераздельность шуньяты, великого блаженства и просветлённой деятельности раскрывается как внутренний смысл всей садханы.</p><a href="#ref-16" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -3655,7 +3639,7 @@
                     <p>evamādikarmikeṇa pratiṣṭhāpitasamayasaṁvareṇābhiṣekaprāptena prākṛtāhaṅkārāpagatena catuḥsandhyādevatāyogābhyāsena svaparārthasampādanotsukena śāntikarmādiviśiṣṭataramapi kartavyam</p>
                     <p>sādhanoktakrameṇāhāraśodhanaṁ kaṇṭhaśodhanaṁ hṛdayaśodhanaṁ ca kṛtvāhārakṛtyaṁ kuryāt sukhena pariṇamati</p>
                     <p>bāhyādhyātmikahomena tryakṣareṇa mālāmantreṇa vā mantrauṣadhiyogenenāpi padmavajrasamāyogena ca sarvakarma prasādhayet</p>
-                    <p>iti karmarājāgrī nāma tṛtīyaḥ samādhiḥ</p>
+                    <p>iti karmarājāgrī nāma tṛtīyaḥ samādhiḥ</p><a href="#ref-17" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 17.2. Тибетский -->
@@ -3675,7 +3659,7 @@
                     <p>de ltar las dang po pa dam tshig dang sdom pa la gnas shing dbang thob pas tha mal pa'i nga rgyal bsal la thun bzhir lha'i rnal 'byor goms par byed pas bdag dang gzhan gyi don phun sum tshogs pa la mos pas zhi ba'i las la sogs pa shin tu khyad par can yang bya'o||</p>
                     <p>sgrub thabs las gsungs pa'i rim pas kha zas sbyang ba dang snying ga sbyang ba dang lkog ma sbyang ba dang kha zas kyi bya ba byas nas bde bar 'jug par 'gyur ro||</p>
                     <p>phyi dang nang gi bdag nyid can gyi sbyin sreg yi ge gsum mam phreng ba'i sngags sam sngags dang sman gyi sbyor bas kyang rdo rje dang pad+ma mnyam par sbyar ba byas nas las thams cad bsgrub par bya'o||</p>
-                    <p>zhes bya ba ni las kyi rgyal po mchog ces bya ba'i ting nge 'dzin gsum pa'o||</p>
+                    <p>zhes bya ba ni las kyi rgyal po mchog ces bya ba'i ting nge 'dzin gsum pa'o||</p><a href="#ref-17" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 17.3. Лексический разбор -->
@@ -3719,7 +3703,7 @@
                         <li><strong class="text-sky-900">nāma</strong> — «именуемый», «называемый»; тиб. <em>ces bya ba</em> — «называемый», «именуемый».</li>
                         <li><strong class="text-sky-900">tṛtīya</strong> — «третий»; тиб. <em>gsum pa</em> — «третий».</li>
                         <li><strong class="text-sky-900">samādhi</strong> — «самадхи»; тиб. <em>ting nge 'dzin</em> — «крепко удерживающий» или «тот, кто твёрдо держится».</li>
-                    </ul>
+                    </ul><a href="#ref-17" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 17.4. Комментарий -->
@@ -3746,7 +3730,7 @@
                         <li>мантры и лекарства (<em>mantrauṣadhi</em>) для исцеления болезней;</li>
                         <li>соединение лотоса и ваджра (<em>padmavajrasamāyoga</em>) в смысле союза двух начал в ритуале кармамудры или слияние Мудрости постижения шуньяты и Метода великого блаженства в центральном канале йогина.</li>
                     </ul>
-                    <p>В традиции «Гухьясамаджи» процесс созерцания  делится на три последовательных самадхи: <em>Samādhirāja</em> — растворение в шуньяте и воссоздание себя как главного божества; <em>Maṇḍalarājāgrī</em> — проявление из своего сердца всей свиты божеств мандалы; и <em>Karmarājāgrī</em> — завершающий этап стадии зарождения, её воплощение в конкретных ритуальных действиях. Тем самым трактат образует завершённую последовательность: от внутреннего осуществления через проявление мандалы к непрерывной просветлённой деятельности, охватывающей как созерцание, так и повседневную жизнь.</p>
+                    <p>В традиции «Гухьясамаджи» процесс созерцания  делится на три последовательных самадхи: <em>Samādhirāja</em> — растворение в шуньяте и воссоздание себя как главного божества; <em>Maṇḍalarājāgrī</em> — проявление из своего сердца всей свиты божеств мандалы; и <em>Karmarājāgrī</em> — завершающий этап стадии зарождения, её воплощение в конкретных ритуальных действиях. Тем самым трактат образует завершённую последовательность: от внутреннего осуществления через проявление мандалы к непрерывной просветлённой деятельности, охватывающей как созерцание, так и повседневную жизнь.</p><a href="#ref-17" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>
@@ -3771,7 +3755,7 @@
                 </summary>
                 <div class="bg-white/70 p-4 text-lg font-mono leading-relaxed text-sky-900 space-y-2">
                     <p>śrīguhyasamājamahāyogatantre bhavotpattikrameṇa vajrasattvaniṣpādanasūtraṁ samāptam ||</p>
-                    <p>kṛtiriyamācāryacandrakīrtipādānām ||</p>
+                    <p>kṛtiriyamācāryacandrakīrtipādānām ||</p><a href="#ref-18" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 18.2. Тибетский -->
@@ -3788,7 +3772,7 @@
                     </span>
                 </summary>
                 <div class="bg-white/70 p-4 text-lg leading-relaxed text-sky-900 space-y-2" style="font-family: 'Noto Serif Tibetan', 'Microsoft Himalaya', serif;">
-                    <p>dpal gsang ba 'dus pa rnal 'byor chen po'i rgyud kyi srid pa skye ba'i rim pas rdo rje sems dpa'i sgrub thabs slob dpon zla ba grags pas mdzad pa rdzogs so ||</p>
+                    <p>dpal gsang ba 'dus pa rnal 'byor chen po'i rgyud kyi srid pa skye ba'i rim pas rdo rje sems dpa'i sgrub thabs slob dpon zla ba grags pas mdzad pa rdzogs so ||</p><a href="#ref-18" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 18.3. Лексический разбор -->
@@ -3812,7 +3796,7 @@
                         <li><strong class="text-sky-900">samāptam</strong> — «завершена»; от <em>sam-āp</em> («завершить», «достичь полноты»); тиб. <em>rdzogs so</em> — «завершено», «полно».</li>
                         <li><strong class="text-sky-900">kṛtir iyam</strong> — «это сочинение»; <em>kṛti</em> («сочинение», «произведение», «труд», от <em>kṛ</em> — «делать») + <em>iyam</em> (от <em>idam</em> — «этот»); тибетский колофон сразу называет автора.</li>
                         <li><strong class="text-sky-900">ācāryacandrakīrtipādānām</strong> — «учителя Чандракирти»; <em>ācārya</em> («учитель», «наставник») + <em>Candrakīrti</em> (имя собственное: <em>candra</em> «луна» + <em>kīrti</em> «слава» — «Лунная Слава») + <em>pāda</em> (буквально «стопа» — почтительный суффикс, прибавляемый к имени учителя) + <em>-ānām</em> («принадлежит [стопам]»); тиб. <em>slob dpon zla ba grags pas mdzad pa</em> — «созданное учителем Злаба Грагс па» (тибетская транслитерация Чандракирти).</li>
-                    </ul>
+                    </ul><a href="#ref-18" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
             <!-- 18.4. Комментарий -->
@@ -3829,7 +3813,7 @@
                     </span>
                 </summary>
                 <div class="bg-white/70 p-4 text-lg leading-relaxed text-sky-900 space-y-3">
-                    <p>Колофон выполняет три функции. Во-первых, он относит сочинение к «Гухьясамаджа-махайога-тантре». Во-вторых, уточняет, что изложенная садхана представляет собой осуществление Ваджрасаттвы согласно методу <em>bhavotpattikrama</em> («последовательности возникновения»), тем самым отличая её от трёх других способов осуществления, перечисленных во введении трактата. В-третьих, колофон приписывает сочинение Чандракирти, включая его в традицию Арья, восходящую к Нагарджуне.</p>
+                    <p>Колофон выполняет три функции. Во-первых, он относит сочинение к «Гухьясамаджа-махайога-тантре». Во-вторых, уточняет, что изложенная садхана представляет собой осуществление Ваджрасаттвы согласно методу <em>bhavotpattikrama</em> («последовательности возникновения»), тем самым отличая её от трёх других способов осуществления, перечисленных во введении трактата. В-третьих, колофон приписывает сочинение Чандракирти, включая его в традицию Арья, восходящую к Нагарджуне.</p><a href="#ref-18" class="text-sky-500 hover:text-sky-700 text-sm font-medium">↩ к тексту</a>
                 </div>
             </details>
         </div>

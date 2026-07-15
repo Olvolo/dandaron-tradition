@@ -3,8 +3,12 @@
 @endphp
 
 <div class="mt-8 scroll-mt-20">
-    {!! "<h".$headingLevel." id=\"chapter-$chapter->slug\" class=\"text-2xl font-bold mb-4 text-center\">" !!}
-    {{ $chapter->title }}
+    {!! "<h".$headingLevel." id=\"chapter-$chapter->slug\" data-chapter-url=\"".$chapter->getUrl()."\" class=\"text-2xl font-bold mb-4 text-center group\">" !!}
+        {{ $chapter->title }}
+        <a href="{{ $chapter->getUrl() }}"
+           @click.prevent="history.pushState(null, '', '{{ $chapter->getUrl() }}')"
+           class="ml-2 text-sky-400 opacity-0 group-hover:opacity-100 text-base align-middle no-underline"
+           title="Постоянная ссылка на главу">#</a>
     {!! "</h".$headingLevel.">" !!}
 
     <div class="prose prose-lg max-w-none">

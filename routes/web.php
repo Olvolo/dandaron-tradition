@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ChapterController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SearchController;
@@ -18,7 +17,6 @@ use App\Http\Controllers\SitemapController;
 
 // --- Публичные маршруты ---
 Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('/chapters/{chapter:slug}', [ChapterController::class, 'show'])->name('chapters.show');
 Route::get('/search', SearchController::class)->name('search');
 
 // --- Маршруты аутентификации (Breeze) ---

@@ -23,8 +23,7 @@
     $hasChildren = $chapter->children->isNotEmpty();
 @endphp
 
-{{-- <li class="text-sm text-black" x-data="{ open: $persist(true).as('toc-{{ $chapter->slug }}') }"> --}}
-    <li class="text-sm text-black" 
+<li class="text-sm text-black"
     x-data="{ open: $persist(true).as('toc-{{ $chapter->slug }}') }"
     @toc-control.window="open = $event.detail.open">
     <div class="flex items-start gap-1 py-1 group">
@@ -38,10 +37,18 @@
             <span class="w-4 h-4"></span>
         @endif
 
-        <a href="#chapter-{{ $chapter->slug }}"
-           @click.prevent="document.querySelector('#chapter-{{ $chapter->slug }}').scrollIntoView
-               ({ behavior: 'smooth' }); tocOpen = false;"
-           class="flex items-start gap-1 flex-1 hover:text-amber-600 transition-colors">
+       <a href="{{ $chapter->getUrl() }}"
+            @click.prevent="
+                const target = document.querySelector('#chapter-{{ $chapter->slug }}');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    history.pushState(null, '', '{{ $chapter->getUrl() }}');
+                    tocOpen = false;
+                } else {
+                    window.location = '{{ $chapter->getUrl() }}';
+                }
+            "
+            class="flex items-start gap-1 flex-1 hover:text-amber-600 transition-colors">
 
             <svg class="{{ $iconSize }} flex-shrink-0 {{ $currentIcon['color'] }} group-hover:text-amber-600 mt-0.5"
                  fill="none" stroke="currentColor" viewBox="0 0 24 24">

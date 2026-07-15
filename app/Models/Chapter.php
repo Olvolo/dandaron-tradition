@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Support\Collection;
 use Laravel\Scout\Searchable;
 use Illuminate\Support\Str;
 
@@ -72,14 +73,35 @@ class Chapter extends Model
         ];
     }
 
-    public function getUrl(): string
+    /**
+     * Список всех предков главы (родительские главы вверх по дереву).
+     */
+    public function getAncestors(): Collection
     {
-        return route('chapters.show', ['chapter' => $this->slug]);
+        $ancestors = collect();
+        $current = $this->parent;
+
+        while ($current !== null) {
+            $ancestors->push($current);
+            $current = $current->parent;
+        }
+
+        return $ancestors->reverse()->values();
     }
 
-    public function getUrlAttribute()
+    /**
+     * Адрес главы строится как {full_slug книги}/{slug главы},
+     * используя путь книги в дереве Placement.
+     */
+    public function getUrl(): string
     {
-        return route('chapter.show', [$this->book->slug, $this->slug]);
+        $book = $this->relationLoaded('book') ? $this->book : $this->book()->first();
+
+        if (!$book || !$book->placement) {
+            return '#';
+        }
+
+        return url(trim($book->placement->full_slug, '/') . '/' . $this->slug);
     }
 
     public function getTypeName(): string
@@ -92,7 +114,6 @@ class Chapter extends Model
      */
     public function getSeoDescription(): string
     {
-        // Для главы берем контент или дефолтную фразу
         $text = $this->content_html ?: ('Глава «' . $this->title . '» из книги ' . ($this->book->title ?? 'наследия Дандарона'));
 
         $clean = trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($text))));
