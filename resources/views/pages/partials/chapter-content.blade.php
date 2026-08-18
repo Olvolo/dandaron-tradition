@@ -12,7 +12,7 @@
     {!! "</h".$headingLevel.">" !!}
 
     <div class="prose prose-lg max-w-none">
-        {!! $chapter->content_html !!}
+        {!! $chapter->getContentWithAbsoluteAnchors() !!}
     </div>
 </div>
 

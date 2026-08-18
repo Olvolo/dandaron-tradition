@@ -133,7 +133,7 @@
                 {{ $slot }}
             </div>
         </main>
-        {{-- Правый сайдбар --}}
+       {{-- Правый сайдбар --}}
         <aside class="hidden xl:block">
             <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pl-2">
                 <div class="bg-sky-50/10 backdrop-blur-sm rounded-2xl p-4 border border-sky-200/30">
@@ -146,11 +146,16 @@
                     <div class="flex justify-center">
                         <figure class="rounded-lg shadow-sm w-full max-w-none">
                             <img
-                                src="{{ asset('images/authors/dandaron_dharmaraja_right_sidebar.webp') }}"
+                                src="{{ asset('/images/biography_materials/dandaron_siddha.webp') }}"
                                 alt="Дандарон Дхармараджа"
                                 class="rounded-lg w-full h-auto object-contain"
                             >
                         </figure>
+                    </div>
+
+                    {{-- Плашка "Новости сайта" --}}
+                    <div class="mt-4">
+                        <x-news-widget />
                     </div>
                 </div>
             </div>
@@ -179,6 +184,36 @@
               d="M5 15l7-7 7 7"/>
     </svg>
 </button>
+
+<script>
+    document.addEventListener('click', function (e) {
+        const link = e.target.closest('a[href*="#citation-"], a[href*="#ref-"]');
+        if (!link) return;
+
+        const url = new URL(link.href, window.location.href);
+
+        if (url.pathname === window.location.pathname) {
+            const target = document.querySelector(url.hash);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.pushState(null, '', url.hash);
+            }
+        }
+
+    });
+
+    window.addEventListener('load', function () {
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(function () {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 150);
+            }
+        }
+    });
+</script>
 
 {{-- Мобильная левая панель --}}
 <div

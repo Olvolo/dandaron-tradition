@@ -74,7 +74,8 @@ class Chapter extends Model
     }
 
     /**
-     * Список всех предков главы (родительские главы вверх по дереву).
+     * Список всех предков главы (родительские главы вверх по дереву),
+     * от самого верхнего к непосредственному родителю.
      */
     public function getAncestors(): Collection
     {
@@ -90,8 +91,9 @@ class Chapter extends Model
     }
 
     /**
-     * Адрес главы строится как {full_slug книги}/{slug главы},
-     * используя путь книги в дереве Placement.
+     * Адрес главы строится как
+     * {full_slug книги}/{slug предка 1}/{slug предка 2}/.../{slug главы},
+     * то есть полностью отражает вложенность в дереве глав.
      */
     public function getUrl(): string
     {
@@ -101,7 +103,9 @@ class Chapter extends Model
             return '#';
         }
 
-        return url(trim($book->placement->full_slug, '/') . '/' . $this->slug);
+        $pathSegments = $this->getAncestors()->pluck('slug')->push($this->slug);
+
+        return url(trim($book->placement->full_slug, '/') . '/' . $pathSegments->implode('/'));
     }
 
     public function getTypeName(): string
@@ -119,5 +123,26 @@ class Chapter extends Model
         $clean = trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($text))));
 
         return Str::limit($clean, 155);
+    }
+    /**
+     * Возвращает content_html с абсолютными адресами для сносок/примечаний
+     * (#citation-N, #ref-N), чтобы они работали и на странице книги целиком,
+     * и на отдельной странице главы.
+     */
+    public function getContentWithAbsoluteAnchors(): string
+    {
+        $book = $this->relationLoaded('book') ? $this->book : $this->book()->first();
+
+        if (!$book) {
+            return $this->content_html ?? '';
+        }
+
+        $bookUrl = $book->getUrl();
+
+        return preg_replace(
+            '/href="#(citation-\d+|ref-\d+)"/',
+            'href="' . $bookUrl . '#$1"',
+            $this->content_html ?? ''
+        );
     }
 }

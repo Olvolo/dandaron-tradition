@@ -26,7 +26,7 @@ class PageController extends Controller
 
         if (!$placement) {
             // Прямого совпадения нет — пробуем разобрать путь как
-            // "{full_slug книги}/{slug главы}", отрезав последний сегмент.
+            // "{full_slug книги}/{slugs предков}/{slug главы}".
             $chapterResponse = $this->tryResolveChapter($searchSlug);
 
             if ($chapterResponse) {
@@ -103,8 +103,16 @@ class PageController extends Controller
 
     /**
      * Пытается разобрать путь как адрес главы вида
-     * "{full_slug книги}/{slug главы}". Возвращает готовый View
-     * или редирект на логин, либо null, если это не глава.
+     * "{full_slug книги}/{slugs предков главы}/{slug главы}".
+     *
+     * Путь книги может занимать несколько первых сегментов (это full_slug
+     * из дерева Placement), а после него идут slugs родительских глав
+     * (0 и более) и в конце — slug самой главы. Поскольку slug главы
+     * уникален в пределах книги, промежуточные сегменты для поиска не
+     * обязательны — но мы всё равно проверяем их совпадение с реальной
+     * цепочкой предков, чтобы отсечь случайные/поддельные URL.
+     *
+     * Возвращает готовый View, редирект на логин, либо null, если это не глава.
      */
     protected function tryResolveChapter(string $searchSlug): View|RedirectResponse|null
     {
@@ -114,20 +122,45 @@ class PageController extends Controller
             return null;
         }
 
+        // Последний сегмент — всегда slug искомой главы.
         $chapterSlug = array_pop($segments);
-        $bookSlug = implode('/', $segments);
 
-        $bookPlacement = Placement::where('full_slug', $bookSlug)->first();
+        // Оставшиеся сегменты делятся на "путь книги" + "slugs предков главы".
+        // Пробуем найти книгу, укорачивая путь с конца, пока не найдём
+        // реальный Placement типа Book.
+        $bookPlacement = null;
+        $bookSegmentsCount = count($segments);
 
-        if (!$bookPlacement || !($bookPlacement->placementable instanceof Book)) {
+        while ($bookSegmentsCount > 0) {
+            $candidatePath = implode('/', array_slice($segments, 0, $bookSegmentsCount));
+            $candidate = Placement::where('full_slug', $candidatePath)->first();
+
+            if ($candidate && $candidate->placementable instanceof Book) {
+                $bookPlacement = $candidate;
+                break;
+            }
+
+            $bookSegmentsCount--;
+        }
+
+        if (!$bookPlacement) {
             return null;
         }
 
         $book = $bookPlacement->placementable;
-
         $chapter = $book->chapters()->where('slug', $chapterSlug)->first();
 
         if (!$chapter) {
+            return null;
+        }
+
+        // Сегменты между путём книги и slug главы — это ожидаемые slugs
+        // предков. Сверяем их с реальной цепочкой, чтобы не открывать
+        // главу по произвольному "похожему" пути.
+        $expectedAncestorSlugs = array_slice($segments, $bookSegmentsCount);
+        $actualAncestorSlugs = $chapter->getAncestors()->pluck('slug')->all();
+
+        if ($expectedAncestorSlugs !== $actualAncestorSlugs) {
             return null;
         }
 

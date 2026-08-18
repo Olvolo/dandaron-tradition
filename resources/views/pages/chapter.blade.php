@@ -31,7 +31,7 @@
         <x-breadcrumbs :items="$breadcrumbs" />
 
         <div class="prose prose-lg max-w-none">
-            {!! $chapter->content_html !!}
+            {!! $chapter->getContentWithAbsoluteAnchors() !!}
         </div>
 
         <x-book-toc :book="$book" />

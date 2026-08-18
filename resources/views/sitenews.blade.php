@@ -1,0 +1,41 @@
+@php
+    $title = 'Новости сайта';
+@endphp
+
+@section('content')
+    <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
+        <ul class="list-none mb-6 pl-2 space-y-1 ml-2">
+            <li><strong>17 августа 2026</strong> — Опубликованы новые статьи: <a href="/ucenie/tantra/guhyagarbhatantra/guhyagarbhatantra-introduction" class="text-blue-500 hover:underline">Гухьягарбхатантра. Предисловие</a>, <a href="/ucenie/tantra/guhyagarbhatantra/guhyagarbhatantra-chapter-one" class="text-blue-500 hover:underline">Гухьягарбха, глава I</a>, <a href="/ucenie/tantra/guhyagarbhatantra/guhyagarbhatantra-chapter-two" class="text-blue-500 hover:underline">Гухьягарбха, глава II</a></li>
+            <li><strong>14 августа 2026</strong> — Опубликован перевод: <a href="/ucenie/tantra/guhyasamaja-tantra/pindikrita-sadhana" class="text-blue-500 hover:underline">Пиндикрита-садхана Нагарджуны</a></li>
+            <li><strong>16 июля 2026</strong> — Опубликован русский перевод индийского тантрического трактата <a href="/ucenie/tantra/guhyasamaja-tantra/vyavastholi" class="text-blue-500 hover:underline">«Руководство по установлению мандалы Шри-Гухьясамаджи»</a> (Śrīguhyasamājamaṇḍalopāyikā-vyavastholī), принадлежащего ачарье Нагабуддхипаде</li>
+            <li><strong>3 июля 2026</strong> — Опубликован перевод работы Чандракирти <a href="/ucenie/tantra/guhyasamaja-tantra/vajrasattva-sutra" class="text-blue-500 hover:underline">об осуществлении Ваджрасаттвы</a> на основе Гухьясамаджатантры с приведением санскрита, тибетского перевода, лексического разбора и комментарием</li>
+            <li><strong>17 июня 2026</strong> — Опубликован <a href="/dandaron/articles-dandaron/tibetan-mongolian-terminological-dictionary-of-buddhism" class="text-blue-500 hover:underline">Тибетско-монгольский терминологический словарь буддизма. Парамита и Мадхьямика</a> (перевод Дандарона, Пубаева)</li>
+            <li><strong>17 июня 2026</strong> — Завершён перевод <a href="/ucenie/cenhs/maxaiana-lankavatara-sutra" class="text-blue-500 hover:underline">Махаяна-Ланкаватара сутры</a></li>
+            <li><strong>9 апреля 2026</strong> — Опубликован комментарий Владимира Михайловича Монтлевича <a href="/ucenie/tantra/ritual-podnoseniia/o-smysle-rituala-soksod-montlevic-v-m" class="text-blue-500 hover:underline">на согшод</a></li>
+            <li><strong>19 марта 2026</strong> — Опубликован <a href="/ucenie/tantra/ritual-podnoseniia/kommentarii-k-sogsodu" class="text-blue-500 hover:underline">Комментарий к согшоду</a></li>
+            <li><strong>28 февраля 2026</strong> — Опубликован <a href="/ucenie/tantra/ritual-podnoseniia/all-encompassing-sacrifice" class="text-blue-500 hover:underline">Сокшод на русском с иллюстрациями</a></li>
+            <li><strong>8 февраля 2026</strong> — Опубликован <a href="/ucenie/tantra/ritual-podnoseniia/ritual-podnoseniia-ucitelia-i-sobraniia-dreva-pribezishha-na-tibetskom" class="text-blue-500 hover:underline">Сокшод на тибетском</a></li>
+            <li><strong>5 февраля 2026</strong> — Опубликован <a href="/ucenie/tantra/ritual-podnoseniia/kratkii-ritual-podnoseniia" class="text-blue-500 hover:underline">Подношение, краткий ритуал</a></li>
+            <li><strong>15 января 2026</strong> — Опубликован перевод с санскрита <a href="/ucenie/cenhs/sutra-serdca-pradzniaparamity" class="text-blue-500 hover:underline">«Сутра сердца праджняпарамиты»</a></li>
+            <li><strong>14 января 2026</strong> — Опубликована <a href="/ucenie/cenhs/sutra-o-bukve-a" class="text-blue-500 hover:underline">«Сутра о букве А»</a></li>
+            <li><strong>13 января 2026</strong> — Опубликовано <a href="/ucenie/tantra/osnovy/perenesenie-tela-reci-i-uma-padmasambxavy" class="text-blue-500 hover:underline">«Перенесение Тела, Речи и Ума Падмасамбхавы»</a></li>
+            <li><strong>13 января 2026</strong> — Опубликован <a href="/ucenie/tantra/vajrasattva/metod-iogi-vadzrasattvy" class="text-blue-500 hover:underline">«Метод йоги Ваджрасаттвы»</a></li>
+            <li><strong>13 января 2026</strong> — Опубликована <a href="/ucenie/cenhs/sutra-odnoi-bukvy" class="text-blue-500 hover:underline">«Сутра Одной Буквы»</a></li>
+            <li><strong>8 января 2026</strong> — Опубликована <a href="/ucenie/cenhs/vadzraccxedika-pradzniaparamita-sutra" class="text-blue-500 hover:underline">«Ваджраччхедика-праджняпарамита-сутра»</a></li>
+            <li><strong>3 января 2026</strong> — Опубликована <a href="/ucenie/tantra/vajrabhairava-tantra/dragocennyi-larec-sadxana-trinadcati-bozestv-sri-vadzrabxairavy" class="text-blue-500 hover:underline">«Драгоценный ларец» – Садхана Тринадцати Божеств Шри Ваджрабхайравы</a></li>
+            <li><strong>3 января 2026</strong> — Опубликована <a href="/ucenie/tantra/vajrasattva/liniia-preemstvennosti-vadzrasattvy-semnadcati-bozestv" class="text-blue-500 hover:underline">«Линия преемственности Ваджрасаттвы Семнадцати Божеств»</a></li>
+        </ul>
+    </div>
+
+    @endsection
+    body {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url('/backgrounds/golden_marble.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-size: 110%;
+    }

@@ -1417,16 +1417,16 @@
                     tathaivāntarābhavastho 'pi mātuḥ kukṣau praviśet |<br>
                     koṭīśataṃ cāsya dīpikānām ābhāsate |<br>
                     yathoktaṃ bhadrapāliparipṛcchāsūtre |<br>
-                    sa ca sopabhūtapuruṣaḥ prahitvā divyāṃ smṛtiṃ pratilabhate |<br>
+                    sa ca sopapādukapuruṣaḥ prahitvā divyāṃ smṛtiṃ pratilabhate |<br>
                     ṣaṭkāmāvacarān devān paśyati |<br>
                     ṣoḍaśamahānirayān paśyati |<br>
-                    sa ca samakaracaraṇam ātmabhāvaṃ paśyati |<br>
+                    sa ca samakalācaraṇam ātmabhāvaṃ paśyati |<br>
                     evaṃ ca prajānāti — idānīṃ taṃ madīyaṃ kalevaram iti |<br>
                     yathoktaṃ kośakārikāyām —<br>
                     pūrvakālabhavākṛtiḥ sa karmarddhivegavān |<br>
-                    divyacakṣuḥ samānajātīyadṛśyaḥ apratighavān anivartyaḥ sa gandhabhuk iti |<br>
+                    divyacakṣuḥsamānajātīyadṛśyaḥ apratighavān anivartyaḥ sa gandhabhuk iti |<br>
                     anenotpattikramabhāvakānāṃ yogānuyogakrameṇa niṣpannadevatāmūrtiṃ deśayati |<br>
-                    yathā caramabhāviko bodhisattvo mahāsatvaḥ<br>
+                    yathā caramabhāviko bodhisattvo mahāsattvaḥ<br>
                     saṃbhogakāyena manuṣyāṇām arthaḥ kartuṃ na śakyata iti kṛtvā<br>
                     skandhadhātvāyatanānupraveśena nirmāṇakāyagrahaṇārthaṃ garbhāvakrāntim upadarśayati |<br>
                     tathā 'ntarābhavastho 'pi saptāhātyayena<br>
@@ -1598,8 +1598,8 @@
                     etan mātrāṇy uktāni piṇḍasya saṃgrahāṇi ca |<br>
                     rūpavedanāsaṃjñāsaṃskārāvijñānam eva ca |<br>
                     paṃcabuddhamayaṃ viśvaṃ skandhādyā iti kathyate |<br>
-                    ity uktaṃ bhagavātā Caturdevīparipṛcchā-mahāyogatantre |<br>
-                    iyatā granthena caturyoganiṣpanno 'ham iti mantriṇā dāṛḍhyam utpādayitavyam iti ||<br>
+                    ity uktaṃ bhagavatā Caturdevīparipṛcchā-mahāyogatantre |<br>
+                    iyatā granthena caturyoganiṣpanno 'ham iti mantriṇā dārḍhyam utpādayitavyam iti ||<br>
                     [dvitīyanyāsadeśanāparicchedaḥ ||]<br>
                     [tathotpattikramavyavasthā prathamaḥ paricchedaḥ || 1 ||]</p>
                     <div class="mt-3 pt-2 border-t border-sky-100">
@@ -2478,7 +2478,7 @@
                 </summary>
                 <div class="bg-white/70 p-4 text-lg font-mono leading-relaxed text-sky-900 space-y-2">
                     <p>ime devā dvātriṃśan nirmāṇakāyās trimukhaṣaḍbhujākārā nānācihnamudrāgṛhītāhastāḥ |<br>
-                    bodhicittān mantraikanirmāṇād vānābhogenaiva sādhakasya kāyamaṇḍalād vinirgatya puṇyasambhāravṛddhyarthaṃ rāgadveṣamohādicaritasatvānāṃ tattatsamādhinā kleśādyāvaraṇāni viśodhya punar āgatya svakasvakīyeṣvāsaneṣu niṣaṇṇā abhūvann iti ||</p>
+                    bodhicittān mantraikanirmāṇād vānābhogenaiva sādhakasya kāyamaṇḍalād vinirgatya puṇyasambhāravṛddhyarthaṃ rāgadveṣamohādicaritasattvānāṃ tattatsamādhinā kleśādyāvaraṇāni viśodhya punar āgatya svakasvakīyeṣvāsaneṣu niṣaṇṇā abhūvann iti ||</p>
                     <div class="mt-3 pt-2 border-t border-sky-100">
                         <a href="#ref-17" class="text-sm text-sky-600 hover:text-sky-900 font-medium transition-colors">↩ к тексту</a>
                     </div>
@@ -4042,6 +4042,8 @@
             <span class="bg-sky-50 px-4 text-2xl text-sky-800">☸</span>
         </div>
     </div>
+
+
 
 @endsection
 body {
