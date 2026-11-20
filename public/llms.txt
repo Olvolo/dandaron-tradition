@@ -1,0 +1,31 @@
+# Dandaron Tradition
+
+> Онлайн-архив трудов и материалов, посвящённых Бидии Дандаровичу Дандарону (1914–1974), его учителю Лубсану Сандану Цыденову и традиции «необуддизма». Сайт содержит переводы сутр (включая Ланкаватару), тантрические тексты, философские работы Дандарона, воспоминания учеников и исследования буддийской философии.
+
+Сайт на русском языке. Основной фокус — буддийская философия, йогачара, ваджраяна и наследие Дандарона.
+
+## Основные разделы
+
+- [Истоки](https://dandaron-tradition.com/tradiciia): История традиции, жития учителей, материалы о Лубсане Сандане Цыденове и махасиддхах
+- [Дандарон](https://dandaron-tradition.com/dandaron): Биография, книги, статьи и переводы Б. Д. Дандарона
+- [Антология](https://dandaron-tradition.com/anthology): Работы учеников и исследователей (Пятигорский, Монтлевич, Донец, Волкова и др.)
+- [Учение](https://dandaron-tradition.com/ucenie): Сутры, тантра, абхидхарма, упадеши
+- [Дополнения](https://dandaron-tradition.com/dopolneniia): Видео, фото, дополнительные материалы
+- [Дневник](https://dandaron-tradition.com/diary): Новости сайта
+
+## Ключевые тексты Дандарона
+
+- [99 писем о любви](https://dandaron-tradition.com/dandaron/books-dandaron/99-pisem-o-liubvi): Главное эпистолярное наследие Дандарона
+- [Мысли буддиста](https://dandaron-tradition.com/dandaron/books-dandaron/mysli-buddista): Философские размышления
+- [Чёрная тетрадь](https://dandaron-tradition.com/dandaron/books-dandaron/cernaia-tetrad-o-cetyrex-blagorodnyx-istinax-buddy): О Четырёх благородных истинах
+
+## Важные сутры и тантра
+
+- [Ланкаватара-сутра](https://dandaron-tradition.com/ucenie/cenhs/maxaiana-lankavatara-sutra): Полный перевод с комментариями
+- [Ваджраччхедика](https://dandaron-tradition.com/ucenie/cenhs/vadzraccxedika-pradzniaparamita-sutra): Алмазная сутра
+- [Ваджрабхайрава-тантра](https://dandaron-tradition.com/ucenie/tantra/vajrabhairava-tantra/dragocennyi-larec-sadxana-trinadcati-bozestv-sri-vadzrabxairavy): Садхана тринадцати божеств
+
+## Optional
+
+- [Новости сайта](https://dandaron-tradition.com/diary/novosti-sajta)
+- [Контакты](https://dandaron-tradition.com/kontakty/sviazatsia-s-nami)

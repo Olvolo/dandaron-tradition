@@ -3,7 +3,7 @@
 @endphp
 
 <div class="mt-8 scroll-mt-20">
-    {!! "<h".$headingLevel." id=\"chapter-$chapter->slug\" data-chapter-url=\"".$chapter->getUrl()."\" class=\"text-2xl font-bold mb-4 text-center group\">" !!}
+    {!! "<h".$headingLevel." id=\"chapter-$chapter->slug\" data-chapter-url=\"".$chapter->getUrl()."\" class=\"text-2xl font-bold mb-8 text-center group\">" !!}
         {{ $chapter->title }}
         <a href="{{ $chapter->getUrl() }}"
            @click.prevent="history.pushState(null, '', '{{ $chapter->getUrl() }}')"

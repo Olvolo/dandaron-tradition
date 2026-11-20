@@ -19,6 +19,10 @@
 /storage/indexes
 /storage/*.key
 /storage/pail
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/logs/
 /storage/framework/views/*
 !/storage/framework/views/.gitignore
 /vendor

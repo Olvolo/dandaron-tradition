@@ -196,7 +196,7 @@
             const target = document.querySelector(url.hash);
             if (target) {
                 e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                target.scrollIntoView({ behavior: 'auto', block: 'start' });
                 history.pushState(null, '', url.hash);
             }
         }
@@ -208,7 +208,7 @@
             const target = document.querySelector(window.location.hash);
             if (target) {
                 setTimeout(function () {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    target.scrollIntoView({ behavior: 'auto', block: 'start' });
                 }, 150);
             }
         }

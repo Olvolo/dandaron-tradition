@@ -39,7 +39,20 @@
             </span>
             </a>
         </div>
-
+            <!-- QR-код -->
+        <div class="not-prose flex justify-center pt-4">
+            <figure class="text-center"><a href="/" class="inline-block bg-white p-4 rounded-xl shadow-md">
+                <img src="/images/qr/qr-code.webp"
+                    alt="QR-код со ссылкой на сайт Dandaron Tradition"
+                    width="500" height="500"
+                    loading="lazy"
+                    class="w-full h-auto object-contain"
+                    style="max-width: 240px;"></a>
+                <figcaption class="mt-2 px-4 italic text-gray-800 text-sm">
+                        QR-код со ссылкой на сайт. Им удобно поделиться или распечатать.
+                </figcaption>
+            </figure>
+        </div>
     </div>
 
 @endsection

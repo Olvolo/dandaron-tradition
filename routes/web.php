@@ -16,7 +16,23 @@ use App\Http\Controllers\SitemapController;
 
 
 // --- Публичные маршруты ---
-Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/', function (\Illuminate\Http\Request $request) {
+    if (str_contains($request->header('Accept', ''), 'text/markdown')) {
+        $markdown = <<<'MD'
+# Dandaron Tradition
+
+Онлайн-архив трудов и материалов, посвящённых Бидии Дандаровичу Дандарону, его учителю Лубсану Сандану Цыденову и традиции «необуддизма».
+
+Полный каталог материалов, сутр и книг доступен по адресу: https://dandaron-tradition.com/llms.txt
+MD;
+
+        return response($markdown, 200)
+            ->header('Content-Type', 'text/markdown; charset=UTF-8')
+            ->header('Vary', 'Accept');
+    }
+
+    return app(PageController::class)->home($request);
+})->name('home');
 Route::get('/search', SearchController::class)->name('search');
 
 // --- Маршруты аутентификации (Breeze) ---

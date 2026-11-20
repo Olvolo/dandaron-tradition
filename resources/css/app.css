@@ -55,19 +55,19 @@ body {
 }
 /* Улучшенные стили для заголовков */
 .prose h1 {
-    @apply text-4xl font-bold text-sky-900 mb-6 mt-4 text-center;
+    @apply text-4xl font-bold text-sky-900 mb-10 mt-4 text-center;
 }
 
 .prose h2 {
-    @apply text-3xl font-bold text-sky-900 mb-5 mt-4;
+    @apply text-3xl font-bold text-sky-900 mb-10 mt-4;
 }
 
 .prose h3 {
-    @apply text-2xl font-semibold text-sky-800 mb-4 mt-4;
+    @apply text-2xl font-semibold text-sky-800 mb-10 mt-4;
 }
 
 .prose h4 {
-    @apply text-xl font-medium text-sky-800 mb-3 mt-4;
+    @apply text-xl font-medium text-sky-800 mb-10 mt-4;
 }
 
 /* Стили для таблицы с выравниванием слов и тире */
@@ -125,11 +125,14 @@ body {
 }
 
 .citation-mark {
-    @apply text-red-600 font-bold transition-all duration-200 rounded;
+    @apply text-red-600 font-bold rounded ml-0.5 border border-transparent;
+    transition: color 200ms, box-shadow 200ms, border-color 200ms, text-shadow 200ms;
+    text-shadow: 0 0 0 transparent;
 }
 
 .citation-mark:hover {
-    @apply text-blue-600 scale-110 border border-blue-600 shadow-md;
+    @apply text-blue-600 border-blue-600;
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
 blockquote {
@@ -240,21 +243,50 @@ html {
     height: auto;
     vertical-align: top; /* Альтернатива display: block */
 }
+/* ===== Таблицы сравнения ===== */
 
 .comparison-table {
     @apply w-full max-w-4xl mx-auto border-collapse border border-sky-300 text-sm sm:text-base;
 }
+
 .comparison-table thead tr {
     @apply bg-sky-100;
 }
+
 .comparison-table th {
-    @apply border border-sky-300 px-2 py-3 sm:px-4 font-bold text-sky-900;
+    @apply border border-sky-300 px-2 py-3 sm:px-4 font-bold text-sky-900
+           uppercase text-xs tracking-wider;
 }
+
 .comparison-table td {
     @apply border border-sky-300 px-2 py-2 sm:px-4 sm:py-3 text-sky-950;
 }
+
 .comparison-table tbody tr:nth-child(even) {
     @apply bg-sky-50;
+}
+
+/* ===== Модификаторы для указателя имён / текстов ===== */
+
+.comparison-table-wrap {
+    @apply w-full overflow-x-auto rounded-lg;
+}
+
+.comparison-table .page {
+    @apply text-right whitespace-nowrap;
+}
+
+.comparison-table .empty {
+    @apply text-sky-300;
+}
+
+.comparison-table .wylie {
+    @apply font-mono text-[0.9em];
+}
+
+/* Опционально — hover поверх чередования */
+.comparison-table tbody tr:hover {
+    @apply bg-sky-100;
 }
 
 .tree-indent {
