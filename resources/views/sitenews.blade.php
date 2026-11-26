@@ -5,6 +5,7 @@
 @section('content')
     <div class="prose text-justify max-w-4xl mx-auto leading-relaxed space-y-4">
         <ul class="list-none mb-6 pl-2 space-y-1 ml-2">
+            <li><strong>26 ноября 2026</strong> — Опубликована книга <a href="/anthology/donec-andrei-mixailovic/books-donets/two-comments" class="text-blue-500 hover:underline">«Два комментария на сутры Праджня-парамиты»</a> в переводе А. М. Донца с тибетского языка, с предисловием и примечаниями</li>
             <li><strong>19 ноября 2026</strong> — Опубликована книга <a href="/ucenie/stupeni-i-puti-buddizma/puti-sutr-i-tantr-v-tibetskom-buddizme" class="text-blue-500 hover:underline">«Пути Сутр и Тантр в тибетском буддизме»</a> в переводе А. М. Донца с тибетского языка, с предисловием и комментариями</li>
             <li><strong>16 ноября 2026</strong> — Опубликована книга <a href="/ucenie/cenhs/ashtasahasrika-donets" class="text-blue-500 hover:underline">«Праджняпарамита восьмитысячная» (<em>Aṣṭasāhasrikā Prajñāpāramitā</em>)</a> в переводе А. М. Донца с тибетского языка, с предисловием, комментариями и глоссарием</li>
             <li><strong>12 ноября 2026</strong> — Опубликован <a href="/ucenie/cenhs/ratnagunasamcayagatha" class="text-blue-500 hover:underline">«Ратнагунасамчаягатха» (<em>Ratnaguṇasaṃcayagāthā</em>)</a>: Строфы собрания драгоценных качеств. Праджняпарамита в редакции Харибхадры. Перевод с санскрита О. Л. Волошановского, с предисловием и примечаниями</li>
