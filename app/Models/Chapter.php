@@ -8,18 +8,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Collection;
-use Laravel\Scout\Searchable;
 use Illuminate\Support\Str;
+use Laravel\Scout\Searchable;
 
-/**
- * @property mixed $content_html
- * @property mixed $title
- * @property mixed $id
- * @property mixed $parent
- * @property mixed $book
- * @method static find($chapterId)
- * @method static findOrFail($chapterId)
- */
 class Chapter extends Model
 {
     use HasFactory, Searchable;
@@ -35,114 +26,231 @@ class Chapter extends Model
         'background_image_url',
     ];
 
+    /**
+     * Непосредственные дочерние главы.
+     */
     public function children(): HasMany
     {
-        return $this->hasMany(Chapter::class, 'parent_id')->orderBy('order_column');
+        return $this->hasMany(Chapter::class, 'parent_id')
+            ->orderBy('order_column');
     }
 
+    /**
+     * Рекурсивная загрузка дерева дочерних глав.
+     */
     public function childrenRecursive(): HasMany
     {
         return $this->children()->with('childrenRecursive');
     }
 
+    /**
+     * Родительская глава.
+     */
     public function parent(): BelongsTo
     {
         return $this->belongsTo(Chapter::class, 'parent_id');
     }
 
+    /**
+     * Книга, к которой относится глава.
+     */
     public function book(): BelongsTo
     {
         return $this->belongsTo(Book::class);
     }
 
+    /**
+     * Размещение книги в общей структуре сайта.
+     */
     public function placement(): MorphOne
     {
         return $this->morphOne(Placement::class, 'placementable');
     }
 
     /**
-     * Определяет данные модели, которые должны индексироваться.
+     * Подготовка данных для поискового индекса.
      */
     public function toSearchableArray(): array
     {
         $content = $this->content_html ?? '';
+
+        $plainText = html_entity_decode(
+            strip_tags($content),
+            ENT_QUOTES | ENT_HTML5,
+            'UTF-8'
+        );
+
+        $plainText = preg_replace('/\s+/u', ' ', $plainText) ?? '';
+
         return [
             'id' => $this->id,
             'title' => $this->title ?? '',
-            'content_html' => substr(strip_tags($content), 0, 10000),
+            'content_html' => Str::substr(trim($plainText), 0, 10000),
         ];
     }
 
     /**
-     * Список всех предков главы (родительские главы вверх по дереву),
-     * от самого верхнего к непосредственному родителю.
+     * Получение всех предков главы:
+     * от корневой главы до непосредственного родителя.
+     *
+     * Учитываются только главы той же книги.
+     * Предусмотрена защита от циклических связей.
      */
     public function getAncestors(): Collection
     {
         $ancestors = collect();
-        $current = $this->parent;
 
-        while ($current !== null) {
-            $ancestors->push($current);
-            $current = $current->parent;
+        $visited = [
+            (int) $this->id => true,
+        ];
+
+        $parentId = $this->parent_id;
+
+        while ($parentId !== null) {
+            $parentId = (int) $parentId;
+
+            // Защита от циклической связи.
+            if (isset($visited[$parentId])) {
+                break;
+            }
+
+            $visited[$parentId] = true;
+
+            // Получаем родителя только из текущей книги.
+            $ancestor = self::query()
+                ->where('book_id', $this->book_id)
+                ->whereKey($parentId)
+                ->first([
+                    'id',
+                    'book_id',
+                    'parent_id',
+                    'title',
+                    'slug',
+                    'order_column',
+                ]);
+
+            // Если родитель отсутствует или относится к другой книге,
+            // дальнейшее построение цепочки прекращается.
+            if (!$ancestor) {
+                break;
+            }
+
+            $ancestors->push($ancestor);
+
+            $parentId = $ancestor->parent_id;
         }
 
         return $ancestors->reverse()->values();
     }
 
     /**
-     * Адрес главы строится как
-     * {full_slug книги}/{slug предка 1}/{slug предка 2}/.../{slug главы},
-     * то есть полностью отражает вложенность в дереве глав.
+     * Построение полного адреса главы:
+     *
+     * {адрес размещения книги}/{slug предка}/{slug главы}
      */
     public function getUrl(): string
     {
-        $book = $this->relationLoaded('book') ? $this->book : $this->book()->first();
+        /** @var \App\Models\Book|null $book */
+        $book = $this->relationLoaded('book')
+            ? $this->book
+            : $this->book()->first();
 
-        if (!$book || !$book->placement) {
+        if (!$book) {
             return '#';
         }
 
-        $pathSegments = $this->getAncestors()->pluck('slug')->push($this->slug);
+        $book->loadMissing('placement');
 
-        return url(trim($book->placement->full_slug, '/') . '/' . $pathSegments->implode('/'));
+        if (!$book->placement) {
+            return '#';
+        }
+
+        $pathSegments = $this->getAncestors()
+            ->pluck('slug')
+            ->push($this->slug)
+            ->filter(fn ($slug) => $slug !== null && $slug !== '');
+
+        if ($pathSegments->isEmpty()) {
+            return '#';
+        }
+
+        $basePath = trim($book->placement->full_slug, '/');
+        $chapterPath = $pathSegments->implode('/');
+
+        $fullPath = $basePath !== ''
+            ? $basePath . '/' . $chapterPath
+            : $chapterPath;
+
+        return url($fullPath);
     }
 
+    /**
+     * Название типа содержимого.
+     */
     public function getTypeName(): string
     {
         return 'Глава';
     }
 
     /**
-     * Формирует очищенное описание для мета-тегов и Schema.org.
+     * Формирование очищенного описания для SEO.
      */
     public function getSeoDescription(): string
     {
-        $text = $this->content_html ?: ('Глава «' . $this->title . '» из книги ' . ($this->book->title ?? 'наследия Дандарона'));
+        $text = $this->content_html ?? '';
 
-        $clean = trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($text))));
+        if ($text === '') {
+            $book = $this->relationLoaded('book')
+                ? $this->book
+                : $this->book()->first();
 
-        return Str::limit($clean, 155);
+            $bookTitle = $book?->title ?? 'наследия Дандарона';
+
+            $text = 'Глава «' . $this->title . '» из книги ' . $bookTitle;
+        }
+
+        $clean = html_entity_decode(
+            strip_tags($text),
+            ENT_QUOTES | ENT_HTML5,
+            'UTF-8'
+        );
+
+        $clean = preg_replace('/\s+/u', ' ', $clean) ?? '';
+
+        return Str::limit(trim($clean), 155);
     }
+
     /**
-     * Возвращает content_html с абсолютными адресами для сносок/примечаний
-     * (#citation-N, #ref-N), чтобы они работали и на странице книги целиком,
-     * и на отдельной странице главы.
+     * Возвращает содержимое главы с абсолютными адресами
+     * для ссылок на сноски и примечания.
+     *
+     * Обрабатываются ссылки вида:
+     * #citation-N
+     * #ref-N
      */
     public function getContentWithAbsoluteAnchors(): string
     {
-        $book = $this->relationLoaded('book') ? $this->book : $this->book()->first();
+        $content = $this->content_html ?? '';
+
+        /** @var \App\Models\Book|null $book */
+        $book = $this->relationLoaded('book')
+            ? $this->book
+            : $this->book()->first();
 
         if (!$book) {
-            return $this->content_html ?? '';
+            return $content;
         }
 
         $bookUrl = $book->getUrl();
 
-        return preg_replace(
-            '/href="#(citation-\d+|ref-\d+)"/',
-            'href="' . $bookUrl . '#$1"',
-            $this->content_html ?? ''
-        );
+        return preg_replace_callback(
+            '/href=(["\'])#(citation-\d+|ref-\d+)\1/',
+            function ($matches) use ($bookUrl) {
+                return 'href="' .
+                    htmlspecialchars($bookUrl, ENT_QUOTES, 'UTF-8') .
+                    '#' . $matches[2] . '"';
+            },
+            $content
+        ) ?? $content;
     }
 }

@@ -1,43 +1,47 @@
 <x-layout :content="$book">
     @section('title', $book->title)
 
+
     @push('schema')
-    <script type="application/ld+json">
-    {
-        "@@context": "https://schema.org",
-        "@type": "Book",
-        "name": "{{ $book->title }}",
-        "description": "{{ $book->getSeoDescription() }}",
-        "url": "{{ $book->getUrl() }}",
-        "author": [
-            @foreach($book->authors as $author)
-            {
-                "@type": "Person",
-                "name": "{{ $author->name }}"
-            }{{ !$loop->last ? ',' : '' }}
-            @endforeach
-        ],
-        "publisher": {
-            "@type": "Organization",
-            "name": "Dandaron Tradition",
-            "url": "{{ url('/') }}"
-        },
-        "hasPart": [
-            @foreach($book->chapters->whereNull('parent_id')->sortBy('order_column')->values() as $index => $chapter)
-            {
-                "@type": "Chapter",
-                "name": "{{ $chapter->title }}",
-                "position": {{ $index + 1 }},
-                "url": "{{ $chapter->getUrl() }}"
-            }{{ !$loop->last ? ',' : '' }}
-            @endforeach
-        ]
-        @if(!empty($book->background_image_url))
-        , "image": "{{ asset($book->background_image_url) }}"
-        @endif
-    }
-    </script>
+        @php
+            $bookSchema = [
+                '@context' => 'https://schema.org',
+                '@type' => 'Book',
+                'name' => $book->title,
+                'description' => $book->getSeoDescription(),
+                'url' => $book->getUrl(),
+                'author' => $book->authors->map(fn ($author) => [
+                    '@type' => 'Person',
+                    'name' => $author->name,
+                ])->values()->all(),
+                'publisher' => [
+                    '@type' => 'Organization',
+                    'name' => 'Dandaron Tradition',
+                    'url' => url('/'),
+                ],
+                'hasPart' => $book->chapters
+                    ->whereNull('parent_id')
+                    ->sortBy('order_column')
+                    ->values()
+                    ->map(fn ($chapter, $index) => [
+                        '@type' => 'Chapter',
+                        'name' => $chapter->title,
+                        'position' => $index + 1,
+                        'url' => $chapter->getUrl(),
+                    ])
+                    ->all(),
+            ];
+
+            if (!empty($book->background_image_url)) {
+                $bookSchema['image'] = asset($book->background_image_url);
+            }
+        @endphp
+
+        <script type="application/ld+json">
+            @json($bookSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
+        </script>
     @endpush
+
 
     <div class="bg-white/80 p-4 md:p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         {{-- Хлебные крошки --}}

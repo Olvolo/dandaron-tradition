@@ -146,8 +146,11 @@
                     <div class="flex justify-center">
                         <figure class="rounded-lg shadow-sm w-full max-w-none">
                             <img
-                                src="{{ asset('/images/biography_materials/dandaron_siddha.webp') }}"
+                                src="{{ asset('/images/biography_materials/dandaron_siddha_aside.webp') }}"
                                 alt="Дандарон Дхармараджа"
+                                width="650"
+                                height="894"
+                                fetchpriority="high"
                                 class="rounded-lg w-full h-auto object-contain"
                             >
                         </figure>

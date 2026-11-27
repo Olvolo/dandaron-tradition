@@ -21,11 +21,14 @@ class AuthServiceProvider extends ServiceProvider
      * Register any authentication / authorization services.
      */
     public function boot(): void
-    {
-        Gate::define('view-admin-panel', function (User $user) {
-            // Используем прямой, надежный доступ к атрибуту модели
-            return $user->getAttribute('role') === 'admin';
-        });
-    }
+{
+    Gate::define('view-admin-panel', function (User $user) {
+        return $user->getAttribute('role') === 'admin';
+    });
+
+    Gate::define('manage-structure', function (User $user) {
+        return Gate::forUser($user)->allows('view-admin-panel');
+    });
+}
 
 }

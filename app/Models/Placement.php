@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
+use LogicException;
 
 class Placement extends Model
 {
@@ -18,7 +21,7 @@ class Placement extends Model
         'parent_id',
         'title',
         'slug',
-        'full_slug', // ДОБАВЛЯЕМ в fillable!
+        'full_slug',
         'placementable_type',
         'placementable_id',
         'order_column',
@@ -30,92 +33,247 @@ class Placement extends Model
     ];
 
     protected $casts = [
+        'parent_id' => 'integer',
         'show_in_menu' => 'boolean',
         'show_on_main' => 'boolean',
         'is_protected' => 'boolean',
     ];
 
-    protected static function booted()
+    protected static function booted(): void
     {
-        // При сохранении пересчитываем full_slug
-        static::saving(function ($placement) {
+        static::saving(function (Placement $placement) {
             $placement->updateFullSlug();
         });
 
-        // После сохранения обновляем потомков
-        static::saved(function ($placement) {
-            $placement->updateDescendantsFullSlugs();
-            Cache::forget('menu_tree');
-            Cache::forget('menu_tree_optimized');
-            Cache::forget('placement_slugs_map');
+        static::saved(function (Placement $placement) {
+            // У только что созданного раздела потомков нет.
+            if (
+                ! $placement->wasRecentlyCreated
+                && $placement->wasChanged(['slug', 'parent_id'])
+            ) {
+                $placement->updateDescendantsFullSlugs();
+            }
+
+            DB::afterCommit(function () {
+                static::flushMenuCache();
+            });
         });
 
         static::deleted(function () {
-            Cache::forget('menu_tree');
-            Cache::forget('menu_tree_optimized');
-            Cache::forget('placement_slugs_map');
+            DB::afterCommit(function () {
+                static::flushMenuCache();
+            });
         });
     }
 
     /**
-     * Обновляем full_slug ПЕРЕД сохранением
+     * Формирование полного адреса раздела.
      */
     protected function updateFullSlug(): void
     {
-        if ($this->slug === 'home') {
-            $this->full_slug = '';
+        // Пересчёт нужен при создании и при изменении slug или родителя.
+        // Прочие сохранения (например, смена порядка) его не затрагивают.
+        if (
+            $this->exists
+            && $this->full_slug !== null
+            && ! $this->isDirty(['slug', 'parent_id'])
+        ) {
             return;
         }
 
-        $parts = [];
-        $current = $this;
+        $currentSlug = trim($this->slug ?? '');
 
-        // Собираем slugs до корня
-        while ($current !== null && $current->slug !== null) {
-            if ($current->slug !== 'home') {
-                array_unshift($parts, $current->slug);
-            }
-
-            // Если parent_id изменился, загружаем нового родителя
-            if ($current->isDirty('parent_id') && $current->parent_id) {
-                $current = self::find($current->parent_id);
-            } else {
-                $current = $current->parent;
-            }
+        if ($currentSlug === '') {
+            throw ValidationException::withMessages([
+                'slug' => 'Адрес раздела не может быть пустым.',
+            ]);
         }
 
-        $this->full_slug = implode('/', $parts);
+        // Специальный раздел home разрешён только на корневом уровне.
+        if ($currentSlug === 'home') {
+            if ($this->parent_id !== null) {
+                throw ValidationException::withMessages([
+                    'parent_id' => 'Раздел home может находиться только в корне дерева.',
+                ]);
+            }
+
+            $this->full_slug = '';
+            $this->assertFullSlugUnique('');
+
+            return;
+        }
+
+        $visited = $this->exists ? [$this->id => true] : [];
+        $parentId = $this->parent_id;
+        $parentFullSlug = null; // берётся только у непосредственного родителя
+
+        // Цикл проходит всю цепочку предков, чтобы обнаружить циклы,
+        // но адрес берётся только у ближайшего родителя.
+        while ($parentId !== null) {
+            if (isset($visited[$parentId])) {
+                throw ValidationException::withMessages([
+                    'parent_id' => 'Обнаружена циклическая зависимость в дереве разделов.',
+                ]);
+            }
+
+            $visited[$parentId] = true;
+
+            $parent = static::query()
+                ->select(['id', 'parent_id', 'slug', 'full_slug'])
+                ->find($parentId);
+
+            if (! $parent) {
+                throw new LogicException(
+                    "Нарушение ссылочной целостности: родитель с ID {$parentId} не найден."
+                );
+            }
+
+            if ($parentFullSlug === null) {
+                $parentFullSlug = trim($parent->full_slug ?? '');
+            }
+
+            if (trim($parent->slug ?? '') === 'home' && $parent->parent_id !== null) {
+                throw new LogicException('Раздел home обнаружен не на корневом уровне.');
+            }
+
+            $parentId = $parent->parent_id;
+        }
+
+        $this->full_slug = $this->composeFullSlug($parentFullSlug ?? '');
+
+        $this->assertFullSlugUnique($this->full_slug);
     }
 
     /**
-     * Обновляем full_slug у всех потомков (рекурсивно)
+     * Составление полного адреса из адреса родителя и собственного slug.
+     * Проверка длины здесь применяется и к самому разделу, и ко всем потомкам.
+     */
+    protected function composeFullSlug(string $parentFullSlug): string
+    {
+        $slug = trim($this->slug ?? '');
+
+        if ($slug === '' || $slug === 'home') {
+            throw ValidationException::withMessages([
+                'slug' => 'Недопустимый адрес подраздела.',
+            ]);
+        }
+
+        $fullSlug = trim($parentFullSlug . '/' . $slug, '/');
+
+        if (mb_strlen($fullSlug) > 255) {
+            throw ValidationException::withMessages([
+                'slug' => 'Полный адрес раздела слишком длинный (максимум 255 символов).',
+            ]);
+        }
+
+        return $fullSlug;
+    }
+
+    /**
+     * Проверка уникальности полного адреса на уровне приложения.
+     * Окончательную защиту от гонок даёт уникальный индекс full_slug в БД.
+     */
+    protected function assertFullSlugUnique(string $fullSlug): void
+    {
+        $query = static::query()->where('full_slug', $fullSlug);
+
+        if ($this->exists) {
+            $query->where('id', '!=', $this->id);
+        }
+
+        if ($query->exists()) {
+            throw ValidationException::withMessages([
+                'slug' => 'Такой полный адрес уже используется другим разделом.',
+            ]);
+        }
+    }
+
+    /**
+     * Пересчёт адресов всех потомков (сверху вниз).
      */
     protected function updateDescendantsFullSlugs(): void
     {
-        $children = $this->children()->get();
+        $visited = [$this->id => true];
 
-        foreach ($children as $child) {
-            $child->updateFullSlug();
-            $child->saveQuietly(); // Сохраняем без триггера событий
-            $child->updateDescendantsFullSlugs();
+        $this->updateDescendantsFullSlugsRecursive($visited);
+    }
+
+    protected function updateDescendantsFullSlugsRecursive(array &$visited): void
+    {
+        foreach ($this->children()->get() as $child) {
+            if (isset($visited[$child->id])) {
+                throw ValidationException::withMessages([
+                    'parent_id' => 'Обнаружена циклическая зависимость при пересчёте адресов.',
+                ]);
+            }
+
+            $visited[$child->id] = true;
+
+            $child->full_slug = $child->composeFullSlug((string) $this->full_slug);
+
+            if ($child->isDirty('full_slug')) {
+                $child->assertFullSlugUnique($child->full_slug);
+                $child->saveQuietly();
+            }
+
+            $child->updateDescendantsFullSlugsRecursive($visited);
         }
     }
 
     /**
-     * Быстрый поиск по full_slug через индекс БД
+     * Является ли текущий раздел потомком указанного.
      */
-    public static function findByFullSlug(string $slug): ?self
+    public function isDescendantOf(Placement $placement): bool
     {
-        return self::where('full_slug', $slug)->first();
+        $visited = [];
+        $parentId = $this->parent_id;
+
+        while ($parentId !== null) {
+            if ((int) $parentId === (int) $placement->id) {
+                return true;
+            }
+
+            if (isset($visited[$parentId])) {
+                return true;
+            }
+
+            $visited[$parentId] = true;
+
+            $parentId = static::query()
+                ->whereKey($parentId)
+                ->value('parent_id');
+        }
+
+        return false;
     }
 
     /**
-     * Метод для ручного сброса кеша
+     * Все предки раздела: от корня к ближайшему родителю.
      */
-    public static function clearMenuCache(): void
+    public function getAncestors(): Collection
     {
-        Cache::forget('menu_tree');
-        Cache::forget('placement_slugs_map');
+        $ancestors = collect();
+        $visited = [$this->id => true];
+        $parentId = $this->parent_id;
+
+        while ($parentId !== null) {
+            if (isset($visited[$parentId])) {
+                throw new LogicException('Обнаружен цикл в цепочке родителей Placement.');
+            }
+
+            $visited[$parentId] = true;
+
+            $parent = static::query()->find($parentId);
+
+            if (! $parent) {
+                throw new LogicException("Родитель раздела с ID {$parentId} не найден.");
+            }
+
+            $ancestors->push($parent);
+            $parentId = $parent->parent_id;
+        }
+
+        return $ancestors->reverse()->values();
     }
 
     public function parent(): BelongsTo
@@ -129,64 +287,29 @@ class Placement extends Model
             ->orderBy('order_column');
     }
 
-    public function placementable(): MorphTo
-    {
-        return $this->morphTo();
-    }
-
+    /**
+     * Рекурсивная загрузка дерева.
+     * Предполагает целостность дерева: при циклах в данных
+     * встроенной защиты от бесконечного обхода нет.
+     */
     public function childrenRecursive(): HasMany
     {
         return $this->children()->with('childrenRecursive');
     }
 
-    /**
-     * Список всех предков (с кешированием запроса)
-     */
-    public function getAncestors(): Collection
+    public function placementable(): MorphTo
     {
-        if (!$this->parent_id) {
-            return collect();
-        }
-
-        // Загружаем всю цепочку родителей одним запросом
-        $ancestors = collect();
-        $parentIds = [];
-        $current = $this;
-
-        // Собираем все parent_id
-        while ($current->parent_id) {
-            $parentIds[] = $current->parent_id;
-            $current = $current->parent;
-        }
-
-        if (empty($parentIds)) {
-            return collect();
-        }
-
-        // Загружаем всех родителей одним запросом
-        $parents = self::whereIn('id', $parentIds)->get()->keyBy('id');
-
-        // Восстанавливаем порядок
-        $current = $this;
-        while ($current->parent_id && isset($parents[$current->parent_id])) {
-            $ancestors->push($parents[$current->parent_id]);
-            $current = $parents[$current->parent_id];
-        }
-
-        return $ancestors->reverse()->values();
+        return $this->morphTo();
     }
 
-    public function isDescendantOf(Placement $placement): bool
+    protected static function flushMenuCache(): void
     {
-        $current = $this->parent;
-
-        while ($current !== null) {
-            if ($current->id === $placement->id) {
-                return true;
-            }
-            $current = $current->parent;
+        foreach ([
+            'menu_tree',
+            'menu_tree_optimized',
+            'placement_slugs_map',
+        ] as $key) {
+            Cache::forget($key);
         }
-
-        return false;
     }
 }

@@ -3,96 +3,161 @@
 
     <div class="max-w-4xl mx-auto mt-8 px-4">
 
-        {{-- Форма Поиска и Фильтров --}}
-        <form action="{{ route('search') }}" method="GET" class="bg-white p-6 rounded-lg shadow-md mb-8">
+        {{-- Форма поиска и фильтров --}}
+        <form action="{{ route('search') }}" method="GET"
+              class="bg-white p-6 rounded-lg shadow-md mb-8">
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {{-- Поле для текстового поиска --}}
+
+                {{-- Поле текстового поиска --}}
                 <div class="md:col-span-3">
-                    <label for="q" class="block text-sm font-medium text-gray-700">Поисковый запрос</label>
-                    <input type="text" name="q" id="q" value="{{ old('q', $query) }}" placeholder="Введите слово или фразу..." class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                    <label for="q"
+                           class="block text-sm font-medium text-gray-700">
+                        Поисковый запрос
+                    </label>
+
+                    <input
+                        type="text"
+                        name="q"
+                        id="q"
+                        value="{{ old('q', $query) }}"
+                        placeholder="Введите слово или фразу..."
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"
+                    >
                 </div>
 
-                {{-- Фильтр по Категориям --}}
+                {{-- Фильтр по категориям --}}
                 <div>
-                    <label for="category" class="block text-sm font-medium text-gray-700">Категория</label>
-                    <select name="category" id="category" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                    <label for="category"
+                           class="block text-sm font-medium text-gray-700">
+                        Категория
+                    </label>
+
+                    <select
+                        name="category"
+                        id="category"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"
+                    >
                         <option value="">-- Все категории --</option>
+
                         @foreach($categories as $category)
-                            <option value="{{ $category->id }}" @if(request('category') == $category->id) selected @endif>
+                            <option
+                                value="{{ $category->id }}"
+                                @selected(request('category') == $category->id)
+                            >
                                 {{ $category->name }}
                             </option>
                         @endforeach
                     </select>
                 </div>
 
-                {{-- Фильтр по Тегам --}}
+                {{-- Фильтр по тегам --}}
                 <div>
-                    <label for="tag" class="block text-sm font-medium text-gray-700">Тег</label>
-                    <select name="tag" id="tag" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                    <label for="tag"
+                           class="block text-sm font-medium text-gray-700">
+                        Тег
+                    </label>
+
+                    <select
+                        name="tag"
+                        id="tag"
+                        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"
+                    >
                         <option value="">-- Все теги --</option>
+
                         @foreach($tags as $tag)
-                            <option value="{{ $tag->id }}" @if(request('tag') == $tag->id) selected @endif>
+                            <option
+                                value="{{ $tag->id }}"
+                                @selected(request('tag') == $tag->id)
+                            >
                                 {{ $tag->name }}
                             </option>
                         @endforeach
                     </select>
                 </div>
 
-                {{-- Кнопка "Применить" --}}
+                {{-- Кнопка применения --}}
                 <div class="md:col-start-3 flex items-end">
-                    <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    <button
+                        type="submit"
+                        class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+                    >
                         Применить
                     </button>
                 </div>
+
             </div>
         </form>
 
-        {{-- Результаты Поиска --}}
-        <h1 class="text-2xl text-sky-950 font-bold mb-4">Результаты поиска</h1>
+        {{-- Результаты поиска --}}
+        <h1 class="text-2xl text-sky-950 font-bold mb-4">
+            Результаты поиска
+        </h1>
 
         @if($results->isEmpty())
-            <p class="text-gray-600">Ничего не найдено по вашему запросу.</p>
-        @else
-            <p class="text-gray-600 mb-4">Найдено результатов: {{ $results->count() }}</p>
 
-            {{-- ЭТОТ БЛОК БЫЛ ПРОПУЩЕН --}}
+            <p class="text-gray-600">
+                Ничего не найдено по вашему запросу.
+            </p>
+
+        @else
+
+            <p class="text-gray-600 mb-4">
+                Найдено результатов: {{ $results->count() }}
+            </p>
+
             <div class="space-y-6">
+
                 @foreach($results as $item)
+
                     <div class="bg-white p-6 rounded-lg shadow-md">
+
                         {{-- Заголовок --}}
                         <h3 class="text-lg font-semibold mb-2">
-                            <a href="{{ $item->url }}" class="text-blue-600 hover:underline">
+                            <a
+                                href="{{ $item->url }}"
+                                class="text-blue-600 hover:underline"
+                            >
                                 {!! $item->title !!}
                             </a>
                         </h3>
 
-                        {{-- Тип контента --}}
+                        {{-- Тип содержимого --}}
                         <div class="mb-3">
                             <span class="inline-block bg-sky-100 text-sky-800 px-2 py-1 rounded text-sm">
                                 {{ $item->type }}
                             </span>
                         </div>
 
-                        {{-- Фрагменты --}}
+                        {{-- Поисковые фрагменты --}}
                         @if(!empty($item->fragments))
+
                             @foreach($item->fragments as $fragment)
+
                                 <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-3">
                                     <div class="text-sky-900 leading-relaxed">
                                         {!! $fragment !!}
                                     </div>
                                 </div>
+
                             @endforeach
-                        @else
-                            {{-- Если фрагментов нет, показываем аннотацию или описание --}}
+
+                        {{-- Аннотация или описание --}}
+                        @elseif($item->description !== '')
+
                             <div class="text-sky-700 mb-3 italic">
-                                {{ Str::limit(strip_tags($item->model->annotation ?? $item->model->description ?? 'Нет описания'), 250) }}
+                                {{ $item->description }}
                             </div>
+
                         @endif
+
                     </div>
+
                 @endforeach
+
             </div>
-            {{-- КОНЕЦ ПРОПУЩЕННОГО БЛОКА --}}
 
         @endif
+
     </div>
 </x-layout>
