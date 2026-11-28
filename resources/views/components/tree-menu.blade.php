@@ -1,25 +1,37 @@
+
 @php use App\Models\Placement; @endphp
+
 @props(['items' => null])
 
 @php
-    // Используем database кеш с правильным ключом
-    $menuItems = $items ?? cache()->remember('menu_tree_optimized', 3600, function () {
-        return Placement::whereNull('parent_id')
-            ->select('id', 'parent_id', 'title', 'full_slug')
-            ->with(['children' => function($query) {
-                $query->select('id', 'parent_id', 'title', 'full_slug')
-                    ->orderBy('order_column')
-                    ->with(['children' => function($q) {
-                        $q->select('id', 'parent_id', 'title', 'full_slug')
-                            ->orderBy('order_column')
-                            ->with(['children' => function($q2) {
-                                $q2->select('id', 'parent_id', 'title', 'full_slug')
-                                    ->orderBy('order_column');
-                            }]);
-                    }]);
-            }])
+    // Загружаем все разделы одним SQL-запросом.
+    // Иерархию строим в памяти, без дополнительных запросов к БД.
+    $menuItems = $items ?? cache()->remember('menu_tree_optimized_v2', 3600, function () {
+
+        $placements = Placement::query()
+            ->select('id', 'parent_id', 'title', 'full_slug', 'order_column')
             ->orderBy('order_column')
             ->get();
+
+        // Группируем разделы по родительскому ID.
+        $childrenByParent = $placements->groupBy(
+            fn ($placement) => $placement->parent_id ?? 0
+        );
+
+        // Рекурсивно собираем дерево из уже загруженных данных.
+        $buildTree = function ($parentId) use (&$buildTree, $childrenByParent) {
+            return $childrenByParent->get($parentId, collect())
+                ->map(function ($item) use (&$buildTree) {
+                    $item->setRelation(
+                        'children',
+                        $buildTree((int) $item->id)
+                    );
+
+                    return $item;
+                });
+        };
+
+        return $buildTree(0);
     });
 @endphp
 

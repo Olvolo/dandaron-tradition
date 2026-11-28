@@ -1,24 +1,26 @@
 @props(['item', 'isMobile' => false])
 
 @if ($isMobile)
-    {{-- Мобильная версия для footer (разворачивается вверх) --}}
-    <a href="{{ url($item->full_slug) }}" class="block px-4 py-2 text-sm text-sky-50
-    hover:text-sky-100">
+    {{-- Мобильная версия для footer --}}
+    <a href="{{ url($item->full_slug) }}"
+       class="block px-3 py-1.5 text-sm text-sky-950 hover:text-sky-700 transition-colors">
         {{ $item->title }}
     </a>
+
     @if($item->children->where('show_in_menu', true)->isNotEmpty())
-        <div class="pl-4">
+        <div class="pl-3">
             @foreach($item->children->where('show_in_menu', true) as $child)
-                <a href="{{ url($child->full_slug) }}" class="block px-8 py-1 text-xs
-                text-sky-100 hover:text-sky-50">
+                <a href="{{ url($child->full_slug) }}"
+                   class="block px-6 py-1 text-xs text-sky-900 hover:text-sky-700 transition-colors">
                     {{ $child->title }}
                 </a>
             @endforeach
         </div>
     @endif
 @else
-    {{-- Десктопная версия для footer (простые ссылки без подменю) --}}
-    <a href="{{ url($item->full_slug) }}" class="text-sky-50 hover:text-sky-100 transition-colors">
+    {{-- Десктопная версия --}}
+    <a href="{{ url($item->full_slug) }}"
+       class="text-sky-950 hover:text-sky-700 transition-colors leading-none">
         {{ $item->title }}
     </a>
 @endif

@@ -1,85 +1,95 @@
-@php@endphp
-@props(['content' => null])
+@props(['content' => null, 'title' => null])
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {{-- 1. Динамический заголовок: название страницы + название сайта --}}
-    <title>{{ isset($title) ? $title . ' | Dandaron Tradition' : 'Dandaron Tradition' }}</title>
+    @php
+        $siteName = 'Dandaron Tradition';
 
-    {{-- 2. Описание для Google (не более 160 символов) --}}
-    <meta name="description" content="{{ Str::limit(strip_tags($content->annotation ?? 'Dandaron Tradition - онлайн-архив статей и книг, посвящённый работам ряда авторов.'), 160) }}">
+        // Название приходит и строкой, и слотом.
+        $pageTitle = trim(strip_tags((string) ($title ?? '')));
+        $metaTitle = $pageTitle !== '' ? $pageTitle : $siteName;
 
-    {{-- 3. Каноническая ссылка (защита от дублей) --}}
+        $metaDescription = Str::limit(
+            trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags(
+                $content->annotation
+                    ?? 'Dandaron Tradition — онлайн-архив статей и книг, посвящённый работам ряда авторов.'
+            ), ENT_QUOTES | ENT_HTML5, 'UTF-8'))),
+            160
+        );
+
+        $metaImage = !empty($content->background_image_url)
+            ? asset($content->background_image_url)
+            : null;
+
+        $jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG;
+
+        $siteSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'WebSite',
+            'name' => $siteName,
+            'url' => url('/'),
+            'potentialAction' => [
+                '@type' => 'SearchAction',
+                'target' => url('/search') . '?q={search_term_string}',
+                'query-input' => 'required name=search_term_string',
+            ],
+        ];
+
+        $pageSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'WebPage',
+            'name' => $metaTitle,
+            'description' => $metaDescription,
+        ];
+    @endphp
+
+    <title>{{ $metaTitle === $siteName ? $siteName : $metaTitle . ' | ' . $siteName }}</title>
+    <meta name="description" content="{{ $metaDescription }}">
     <link rel="canonical" href="{{ url()->current() }}">
 
-    {{-- 4. Open Graph (Как страница будет выглядеть в соцсетях и мессенджерах) --}}
-    <meta property="og:title" content="{{ $title ?? 'Dandaron Tradition' }}">
-    <meta property="og:description" content="{{ Str::limit(strip_tags($content->annotation ?? 'Архив трудов...'), 160) }}">
+    {{-- Open Graph --}}
+    <meta property="og:title" content="{{ $metaTitle }}">
+    <meta property="og:description" content="{{ $metaDescription }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:site_name" content="Dandaron Tradition">
-    @if(!empty($content->background_image_url))
-        <meta property="og:image" content="{{ asset($content->background_image_url) }}">
+    <meta property="og:site_name" content="{{ $siteName }}">
+    <meta property="og:locale" content="ru_RU">
+    @if($metaImage)
+        <meta property="og:image" content="{{ $metaImage }}">
     @endif
 
     {{-- Twitter Card --}}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $title ?? 'Dandaron Tradition' }}">
-<meta name="twitter:description" content="{{ Str::limit(strip_tags($content->annotation ?? 'Архив статей и книг'), 160) }}">
-@if(!empty($content->background_image_url))
-    <meta name="twitter:image" content="{{ asset($content->background_image_url) }}">
-@endif
-
-{{-- Стек для микроразметки (будет заполняться в шаблонах страниц) --}}
-@stack('schema')
-
-{{-- Базовая микроразметка для всех страниц --}}
-<script type="application/ld+json">
-{!! json_encode([
-    '@context' => 'https://schema.org',
-    '@type' => 'WebSite',
-    'name' => 'Dandaron Tradition',
-    'url' => url('/'),
-    'potentialAction' => [
-        '@type' => 'SearchAction',
-        'target' => url('/search') . '?q={search_term_string}',
-        'query-input' => 'required name=search_term_string'
-    ]
-], JSON_UNESCAPED_UNICODE) !!}
-</script>
-
-    {{-- Подключение ресурсов --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    {{-- Тибетские шрифты --}}
-    <style>
-        @@font-face {
-            font-family: 'Microsoft Himalaya';
-            src: url('{{ asset('fonts/microsoft-microsoft-himalaya.ttf') }}') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan&display=swap" rel="stylesheet">
-
-    {{-- Кастомные стили (если есть в БД) --}}
-    @if(!empty($content->custom_styles))
-        <style>{!! $content->custom_styles !!}</style>
+    <meta name="twitter:card" content="{{ $metaImage ? 'summary_large_image' : 'summary' }}">
+    <meta name="twitter:title" content="{{ $metaTitle }}">
+    <meta name="twitter:description" content="{{ $metaDescription }}">
+    @if($metaImage)
+        <meta name="twitter:image" content="{{ $metaImage }}">
     @endif
 
-    <script type="application/ld+json">
-    {
-  "@@context": "https://schema.org",
-  "@@type": "WebPage",
-  "name": "{{ $title ?? 'Dandaron Tradition' }}",
-  "description": "{{ Str::limit(strip_tags($content->annotation ?? 'Архив статей и книг'), 160) }}"
-    }
-    </script>
+    {{-- Картинка LCP на десктопе: в DOM она стоит после основного контента,
+         поэтому браузеру нужна подсказка. Значения должны совпадать с <img>. --}}
+    <link rel="preload" as="image" fetchpriority="high"
+          media="(min-width: 1280px)"
+          imagesrcset="{{ asset('images/biography_materials/dandaron_siddha_aside_434.webp') }} 240w,
+                       {{ asset('images/biography_materials/dandaron_siddha_aside_650.webp') }} 480w"
+          imagesizes="240px">
+
+    {{-- Микроразметка --}}
+    @stack('schema')
+    <script type="application/ld+json">{!! json_encode($siteSchema, $jsonFlags) !!}</script>
+    <script type="application/ld+json">{!! json_encode($pageSchema, $jsonFlags) !!}</script>
+
+    {{-- Ресурсы (шрифт Noto Serif Tibetan подключается через npm, см. ниже) --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    {{-- Кастомные стили из БД; закрывающий тег style внутри значения исключён --}}
+    @if(!empty($content->custom_styles))
+        <style>{!! str_ireplace('</style', '<\/style', $content->custom_styles) !!}</style>
+    @endif
 </head>
 
 <body
@@ -108,8 +118,9 @@
     <div class="grid grid-cols-1 xl:grid-cols-[minmax(240px,1fr)_minmax(0,4fr)_minmax(240px,1fr)] gap-4 md:gap-6">
 
 
-        <aside class="hidden xl:block">
-            <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pr-2">
+        <aside class="hidden xl:block" aria-label="Карта сайта">
+            <div id="site-tree-scroll"
+     class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pr-2">
                 <div class="bg-gradient-to-br from-sky-50/90 via-white/80 to-sky-50/90
             backdrop-blur-xl border border-sky-200/60
             rounded-2xl shadow-lg shadow-sky-200/30
@@ -134,9 +145,9 @@
             </div>
         </main>
        {{-- Правый сайдбар --}}
-        <aside class="hidden xl:block">
+        <aside class="hidden xl:block" aria-label="Об авторе и новости">
             <div class="sticky top-14 max-h-[calc(100vh-4rem-1.5rem)] overflow-y-auto pl-2">
-                <div class="bg-sky-50/10 backdrop-blur-sm rounded-2xl p-4 border border-sky-200/30">
+                <div class="relative bg-sky-50/10 backdrop-blur-sm rounded-2xl p-4 border border-sky-200/30">
 
                     {{-- Декоративные элементы --}}
                     <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-sky-200/20 to-transparent rounded-full blur-2xl"></div>
@@ -146,11 +157,15 @@
                     <div class="flex justify-center">
                         <figure class="rounded-lg shadow-sm w-full max-w-none">
                             <img
-                                src="{{ asset('/images/biography_materials/dandaron_siddha_aside.webp') }}"
+                                src="{{ asset('images/biography_materials/dandaron_siddha_aside_434.webp') }}"
+                                srcset="{{ asset('images/biography_materials/dandaron_siddha_aside_434.webp') }} 240w,
+                                        {{ asset('images/biography_materials/dandaron_siddha_aside_650.webp') }} 480w"
+                                sizes="240px"
                                 alt="Дандарон Дхармараджа"
-                                width="650"
-                                height="894"
+                                width="480"
+                                height="660"
                                 fetchpriority="high"
+                                decoding="async"
                                 class="rounded-lg w-full h-auto object-contain"
                             >
                         </figure>
@@ -166,23 +181,25 @@
 
     </div>
 </div>
-{{-- Кнопка "Содержание" (ВНЕ основного контейнера) --}}
+{{-- Кнопка "Содержание" --}}
 <button
     x-show="tocAvailable"
     @click="window.dispatchEvent(new CustomEvent('open-toc'))"
     x-transition
-    class="fixed bottom-5 left-5 z-40 px-4 py-2 bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-700">
+    class="fixed bottom-3 left-3 z-40 px-3 py-1.5 text-sm bg-sky-600 text-white rounded-full shadow-lg hover:bg-sky-700"
+>
     Содержание
 </button>
+
 @include('layouts.partials.footer')
 
 {{-- Кнопка "вверх" --}}
 <button x-show="!atTop"
         @click="window.scrollTo({top: 0, behavior: 'smooth'})"
         x-transition
-        class="fixed bottom-5 right-5 z-40 p-3 bg-sky-600 text-sky-100 rounded-full shadow-lg hover:bg-slate-700 focus:outline-none"
+        class="fixed bottom-3 right-3 z-40 p-2 bg-sky-600 text-sky-100 rounded-full shadow-lg hover:bg-slate-700 focus:outline-none"
         aria-label="Прокрутить наверх">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M5 15l7-7 7 7"/>
     </svg>
@@ -255,7 +272,11 @@
             </button>
         </div>
 
-        <x-tree-menu />
+        <template x-if="mobileLeftSidebar">
+            <div>
+                <x-tree-menu />
+            </div>
+        </template>
     </div>
 </div>
 
@@ -310,6 +331,50 @@
         @endauth
     </div>
 </div>
+<script>
+(() => {
+    const key = 'site-tree-scroll-position';
 
+    // Сохраняем положение меню перед переходом.
+    document.addEventListener('click', (event) => {
+        const link = event.target.closest('#site-tree-scroll a[href]');
+
+        if (!link) return;
+
+        const url = new URL(link.href, window.location.href);
+
+        if (
+            url.origin === window.location.origin &&
+            !event.ctrlKey &&
+            !event.metaKey &&
+            !event.shiftKey &&
+            !event.altKey &&
+            event.button === 0
+        ) {
+            const container = document.getElementById('site-tree-scroll');
+
+            if (container) {
+                sessionStorage.setItem(key, container.scrollTop);
+            }
+        }
+    });
+
+    // Восстанавливаем положение после инициализации Alpine.js.
+    document.addEventListener('alpine:initialized', () => {
+        const container = document.getElementById('site-tree-scroll');
+        const savedPosition = sessionStorage.getItem(key);
+
+        if (!container || savedPosition === null) return;
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                container.scrollTop = Number(savedPosition);
+                sessionStorage.removeItem(key);
+            });
+        });
+    }, { once: true });
+
+})();
+</script>
 </body>
 </html>

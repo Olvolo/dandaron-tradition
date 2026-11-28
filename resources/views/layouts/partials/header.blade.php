@@ -14,7 +14,13 @@
                 </button>
 
                 <a href="{{ route('home') }}" class="flex items-center space-x-2">
-                    <img src="{{ asset('images/logo/logo.webp') }}" alt="Логотип" class="h-8 w-auto">
+                    <img
+                        src="{{ asset('images/logo/logo.webp') }}"
+                        alt="Логотип Dandaron Tradition"
+                        width="64"
+                        height="64"
+                        class="h-8 w-8"
+                    >
                 </a>
             </div>
 
@@ -26,13 +32,20 @@
                         name="q"
                         value="{{ request('q') }}"
                         placeholder="Поиск..."
-                        class="w-full pl-4 pr-10 py-1.5 text-sm rounded-lg border border-sky-300
-                               bg-white/80 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sky-800"
+                        aria-label="Поиск по сайту"
+                        class="w-full pl-4 pr-12 py-2 text-sm rounded-lg border border-sky-300
+                            bg-white/90 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sky-950"
                     >
-                    <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-sky-700">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button
+                        type="submit"
+                        aria-label="Найти"
+                        class="absolute right-1 top-1/2 -translate-y-1/2
+                            w-9 h-9 flex items-center justify-center
+                            rounded-md text-sky-900 hover:bg-sky-100 transition-colors"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
                 </form>
@@ -44,20 +57,20 @@
                 {{-- Десктопная аутентификация --}}
                 <div class="hidden xl:flex items-center space-x-3">
                     @guest
-                        <a href="{{ route('login') }}" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
+                        <a href="{{ route('login') }}" class="text-sm font-medium text-sky-950 hover:text-sky-700 transition-colors">
                             Вход
                         </a>
-                        <a href="{{ route('register') }}" class="text-sm font-medium px-3 py-1 bg-sky-500 text-sky-50 rounded-md hover:bg-sky-600 transition-colors">
+                        <a href="{{ route('register') }}" class="text-sm font-medium px-3 py-1.5 bg-sky-900 text-white rounded-md hover:bg-sky-950 transition-colors">
                             Регистрация
                         </a>
                     @endguest
                     @auth
-                        <a href="{{ route('dashboard') }}" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
+                        <a href="{{ route('dashboard') }}" class="text-sm text-sky-950 hover:text-sky-600 transition-colors">
                             Личный кабинет
                         </a>
                         <form method="POST" action="{{ route('logout') }}" class="inline">
                             @csrf
-                            <button type="submit" class="text-sm text-sky-800 hover:text-sky-600 transition-colors">
+                            <button type="submit" class="text-sm text-sky-950 hover:text-sky-600 transition-colors">
                                 Выход
                             </button>
                         </form>
